@@ -1,0 +1,22 @@
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+

@@ -3,6 +3,8 @@ import styles from './Idex.module.css';
 import { Header } from "../Header/Header";
 import { Home } from "../Home/Home";
 import { About } from "../About/About";
+import { ServicesWrapp } from "../ServicesWrapp/ServicesWrapp";
+import { PortfolioWrapper } from "../PortfolioWrapper/PortfolioWrapper";
 
 export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
     return (
@@ -12,6 +14,10 @@ export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
             <Home className={styles['section']} />
 
             <About className={styles['section']} />
+
+            <ServicesWrapp className={styles['section']} />
+
+            <PortfolioWrapper className={styles['section']} />
 
         </div>
     );

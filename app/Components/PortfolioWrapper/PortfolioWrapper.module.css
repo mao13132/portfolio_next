@@ -1,0 +1,23 @@
+.portfolio-wrapper {
+    background: var(--second-bg-color);
+}
+
+.portfolio-wrapper h2 {
+    margin-bottom: 4rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
