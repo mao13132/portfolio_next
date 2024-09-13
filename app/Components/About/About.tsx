@@ -6,6 +6,7 @@ import cn from 'classnames';
 import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
+import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
 
 export const About = ({ className, ...props }: AboutProps): JSX.Element => {
     return (
@@ -24,7 +25,7 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
 
             <div className={styles['content']}>
 
-                <h2 className={styles['heading']}>About <span>Me</span></h2>
+                <HeadingTitle title="About " spanTitle="Me" />
 
                 <h3>Frontend Developer</h3>
 

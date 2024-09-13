@@ -4,12 +4,13 @@ import styles from './PortfolioWrapper.module.css';
 
 import cn from 'classnames';
 import { ProjectsPortfolio } from "./ProjectsPortfolio/ProjectsPortfolio";
+import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
 
 export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps): JSX.Element => {
     return (
-        <section className={cn(className, styles['portfolio-wrapper'])} {...props}>
-
-            <h2 className={styles["heading"]}>Lates <span>Projects</span></h2>
+        <section className={cn(className, styles['portfolio-wrapper'])} id="portfolio" {...props}>
+            
+            <HeadingTitle title="Lates" spanTitle="Projects" />
 
             <div className={styles['container']}>
 

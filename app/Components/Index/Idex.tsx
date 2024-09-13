@@ -5,6 +5,7 @@ import { Home } from "../Home/Home";
 import { About } from "../About/About";
 import { ServicesWrapp } from "../ServicesWrapp/ServicesWrapp";
 import { PortfolioWrapper } from "../PortfolioWrapper/PortfolioWrapper";
+import { Contacts } from "../Contacts/Contacts";
 
 export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
     return (
@@ -18,6 +19,8 @@ export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
             <ServicesWrapp className={styles['section']} />
 
             <PortfolioWrapper className={styles['section']} />
+
+            <Contacts className={styles['section']} />
 
         </div>
     );

@@ -1,0 +1,57 @@
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.contact-wrapper h2 {
+    margin-bottom: 3rem;
+}
+
+.contact-wrapper form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input-box input,
+.contact-wrapper form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    background: var(--second-bg-color);
+    border-radius: .8ren;
+    margin: .7rem 0;
+    color: var(--text-color);
+}
+
+.input-box input {
+    width: 49%;
+}
+
+.contact-wrapper form textarea {
+    resize: none;
+    min-height: 200px;
+}

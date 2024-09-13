@@ -10,7 +10,7 @@ import { ButtonLink } from "../ButtonLink/ButtonLink";
 
 export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
     return (
-        <section {...props} className={cn(styles['home'], className)}>
+        <section {...props} className={cn(styles['home'], className)} id="home">
 
             <div className={styles['home-content']}>
                 <h3>Hello, It's Me</h3>

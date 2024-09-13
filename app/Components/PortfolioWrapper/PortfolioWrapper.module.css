@@ -12,12 +12,3 @@
     align-items: center;
     gap: 2.5rem;
 }
-
-.heading {
-    text-align: center;
-    font-size: 4.5rem;
-}
-
-.heading span {
-    color: var(--main-color);
-}

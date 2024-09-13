@@ -3,14 +3,14 @@ import { ServicesWrappProps } from "./ServicesWrapp.props";
 import styles from './ServicesWrapp.module.css';
 
 import cn from 'classnames';
-import { ButtonLink } from "../ButtonLink/ButtonLink";
 import { Services } from "./Services/Services";
+import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
 
 export const ServicesWrapp = ({ className, ...props }: ServicesWrappProps): JSX.Element => {
     return (
-        <section className={cn(className, styles['services'])} {...props}>
-
-            <h2 className={styles['heading']}>Our <span>Services</span></h2>
+        <section className={cn(className, styles['services'])} id="services" {...props}>
+            
+            <HeadingTitle title="Our " spanTitle="Services" />
 
             <div className={styles['service-container']}>
                 <Services
