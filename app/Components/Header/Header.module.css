@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg_color);
+    background: var(--bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,4 +23,8 @@
     color: var(--text-color);
 
     display: none;
+}
+
+.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }

@@ -2,8 +2,12 @@ import { NavbarProps } from "./Navbar.props";
 
 import styles from './Navbar.module.css';
 import Link from "next/link";
+import { useActiveSections } from "./useActiveSections";
 
 export const Navbar = ({ className, ...props }: NavbarProps): JSX.Element => {
+
+    useActiveSections();
+    
     return (
         <nav className={styles['navbar']} {...props}>
             <Link href={`#home`} className={styles['active']}>Home</Link>

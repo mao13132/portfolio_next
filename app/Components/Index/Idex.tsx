@@ -6,8 +6,10 @@ import { About } from "../About/About";
 import { ServicesWrapp } from "../ServicesWrapp/ServicesWrapp";
 import { PortfolioWrapper } from "../PortfolioWrapper/PortfolioWrapper";
 import { Contacts } from "../Contacts/Contacts";
-
+import { Footer } from "../Footer/Footer";
+import { useEffect } from "react";
 export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
+
     return (
         <div className={styles['index-wrapper']} {...props}>
             <Header />
@@ -21,6 +23,8 @@ export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
             <PortfolioWrapper className={styles['section']} />
 
             <Contacts className={styles['section']} />
+
+            <Footer />
 
         </div>
     );
