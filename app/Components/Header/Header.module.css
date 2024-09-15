@@ -28,3 +28,15 @@
 .sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+}

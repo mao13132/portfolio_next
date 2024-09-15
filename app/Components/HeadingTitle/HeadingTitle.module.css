@@ -8,3 +8,10 @@
 .heading span {
     color: var(--main-color);
 }
+
+@media (max-width: 768px) {
+    .heading {
+        margin-bottom: 3rem;
+    }
+}
+

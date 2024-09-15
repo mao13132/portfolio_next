@@ -2,3 +2,9 @@
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
+
+@media (max-width: 991px) {
+    .section {
+        padding: 10rem 3% 2rem;
+    }
+}

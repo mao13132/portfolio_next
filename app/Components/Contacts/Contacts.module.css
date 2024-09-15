@@ -42,7 +42,7 @@
     padding: 1.5rem;
     font-size: 1.6rem;
     background: var(--second-bg-color);
-    border-radius: .8ren;
+    border-radius: .8rem;
     margin: .7rem 0;
     color: var(--text-color);
 }
@@ -55,3 +55,17 @@
     resize: none;
     min-height: 200px;
 }
+
+@media (max-width: 991px) {
+    .contact-wrapper {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {}

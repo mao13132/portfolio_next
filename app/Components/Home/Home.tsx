@@ -1,14 +1,31 @@
 import { HomeProps } from "./Home.props";
 import styles from './Home.module.css';
 import { SocialMedia } from "../SocialMedia/SocialMedia";
-import Link from "next/link";
 import Image from "next/image";
+import Typed from 'typed.js';
 
 import cn from 'classnames';
 import { ButtonLink } from "../ButtonLink/ButtonLink";
+import { useEffect, useRef } from "react";
 
 
 export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
+    const multiText = useRef(null);
+
+    useEffect(() => {
+        const typed = new Typed(multiText.current, {
+            strings: ['Frontend разработчик', 'разработчик Telegram ботов', 'Backend разработчик', 'SEO оптимизатор', 'Маркетплейс автоматизатор'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+
+        return () => {
+            typed.destroy();
+        }
+    }, []);
+
     return (
         <section {...props} className={cn(styles['home'], className)} id="home">
 
@@ -17,7 +34,7 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
 
                 <h1>Dmitry Malyshev <span>Full Stack Developer</span></h1>
 
-                <h3>Я <span className={styles['move-h3']}>бекенд разработчик</span></h3>
+                <h3>Я <span className={styles['move-h3']} ref={multiText}></span></h3>
 
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolore ea unde nulla voluptatibus quos delectus quam doloremque, debitis eligendi tenetur veniam aliquid repudiandae? Aliquid expedita deserunt
                     itaque aspernatur omnis.</p>

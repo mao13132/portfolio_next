@@ -9,6 +9,8 @@ import { useEffect, useState } from "react";
 
 export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 
+    const [openMenu, setOpenMenu] = useState<boolean>(false);
+
     const [classStiky, setClassStiky] = useState<boolean>(false);
 
     useEffect(() => {
@@ -38,9 +40,16 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 
             <Link className={styles['logo']} href={`#`}>Portfolio</Link>
 
-            <i className='bx bx-menu' id={styles['menu-icon']}></i>
+            <i
+                onClick={() => { setOpenMenu(oldState => !oldState) }}
+                className={cn({
+                    'bx bx-menu': !openMenu,
+                    'bx bx-x': openMenu
+                })}
+                id={styles['menu-icon']}
+            ></i>
 
-            <Navbar />
+            <Navbar setOpenMenu={setOpenMenu} openStatus={openMenu} />
 
         </header>
     );
