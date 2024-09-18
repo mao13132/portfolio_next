@@ -27,16 +27,22 @@
 .home-img img {
     width: 25vw !important;
     height: 100% !important;
-    animation: floatImage 4s ease-in-out infinite;
+/*     -webkit-animation: startImage 1s ease-in-out forwards, floatImage 4s ease-in-out infinite;
+    -moz-animation: startImage 1s ease-in-out forwards, floatImage 4s ease-in-out infinite;
+    -o-animation: startImage 1s ease-in-out forwards, floatImage 4s ease-in-out infinite; */
+    animation: floatImage 4s ease-in-out infinite
 }
+
 
 @keyframes floatImage {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-2.4rem);
     }
+
     100% {
         transform: translateY(0);
     }

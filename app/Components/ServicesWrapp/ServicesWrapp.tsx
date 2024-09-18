@@ -4,15 +4,30 @@ import styles from './ServicesWrapp.module.css';
 
 import cn from 'classnames';
 import { Services } from "./Services/Services";
-import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
+import { MHeadingTitle } from "../HeadingTitle/HeadingTitle";
+import { motion } from "framer-motion";
+import { servicesAnimation, titleServiceAnimation } from "./animationsServices";
 
 export const ServicesWrapp = ({ className, ...props }: ServicesWrappProps): JSX.Element => {
     return (
         <section className={cn(className, styles['services'])} id="services" {...props}>
-            
-            <HeadingTitle title="Our " spanTitle="Services" />
 
-            <div className={styles['service-container']}>
+            <MHeadingTitle
+
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 1 }}
+                variants={titleServiceAnimation}
+
+                title="Our " spanTitle="Services" />
+
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                transition={{ duration: 0.8 }}
+                variants={servicesAnimation}
+
+                className={styles['service-container']}>
                 <Services
                     icon="bx bx-paint"
                     title="Graphic Desing"
@@ -47,7 +62,7 @@ export const ServicesWrapp = ({ className, ...props }: ServicesWrappProps): JSX.
                 />
 
 
-            </div>
+            </motion.div>
 
         </section>
     );

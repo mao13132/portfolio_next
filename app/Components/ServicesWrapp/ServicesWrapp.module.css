@@ -1,3 +1,9 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .heading {
     text-align: center;
     font-size: 4.5rem;

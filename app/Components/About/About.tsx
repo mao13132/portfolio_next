@@ -4,15 +4,23 @@ import styles from './About.module.css';
 
 import cn from 'classnames';
 import Image from "next/image";
-import Link from "next/link";
 import { ButtonLink } from "../ButtonLink/ButtonLink";
-import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
+import { HeadingTitle, MHeadingTitle } from "../HeadingTitle/HeadingTitle";
+
+import { motion } from "framer-motion";
+import { ImageAboutAnimation, textAboutAnimation, titleAboutAnimation } from "./animationAbout";
 
 export const About = ({ className, ...props }: AboutProps): JSX.Element => {
     return (
         <section className={cn(className, styles['about'])} {...props} id="about">
 
-            <div className={styles['about-img']}>
+            <motion.div
+                transition={{ duration: 2 }}
+                variants={ImageAboutAnimation}
+                initial="hidden"
+                whileInView="visible"
+                
+                className={styles['about-img']}>
 
                 <Image src={`/home.png`}
                     alt=""
@@ -21,11 +29,22 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
                     style={{ objectFit: 'cover' }}
                     sizes="100" />
 
-            </div>
+            </motion.div>
 
-            <div className={styles['content']}>
+            <motion.div
+                transition={{ duration: 1 }}
+                variants={textAboutAnimation}
+                initial="hidden"
+                whileInView="visible"
 
-                <HeadingTitle title="About " spanTitle="Me" />
+                className={styles['content']}>
+
+                <MHeadingTitle
+                    transition={{ duration: 1.3 }}
+                    variants={titleAboutAnimation}
+
+                    title="About "
+                    spanTitle="Me" />
 
                 <h3>Frontend Developer</h3>
 
@@ -36,7 +55,7 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
 
                 <ButtonLink link={`#`} text={`Read More`} />
 
-            </div>
+            </motion.div>
 
         </section>
     );

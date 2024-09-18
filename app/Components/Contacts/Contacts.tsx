@@ -2,15 +2,32 @@ import styles from './Contacts.module.css';
 
 import cn from 'classnames';
 import { ContactsProps } from './Contacts.props';
-import { HeadingTitle } from '../HeadingTitle/HeadingTitle';
+import { HeadingTitle, MHeadingTitle } from '../HeadingTitle/HeadingTitle';
+
+import { motion } from 'framer-motion';
+import { formContactAnimation, titleContactAnimation } from './animationsContact';
 
 export const Contacts = ({ className, ...props }: ContactsProps): JSX.Element => {
     return (
         <section className={cn(className, styles['contact-wrapper'])} id='contact' {...props}>
 
-            <HeadingTitle title="Contact " spanTitle="Me!" />
+            <MHeadingTitle
 
-            <form action={`#`}>
+                transition={{ duration: 2 }}
+                variants={titleContactAnimation}
+                initial="hidden"
+                whileInView="visible"
+
+                title="Contact " spanTitle="Me!" />
+
+            <motion.form
+
+                transition={{ duration: 1 }}
+                variants={formContactAnimation}
+                initial="hidden"
+                whileInView="visible"
+                
+                action={`#`}>
 
                 <div className={styles['input-box']}>
 
@@ -30,7 +47,7 @@ export const Contacts = ({ className, ...props }: ContactsProps): JSX.Element =>
 
                 <input type='submit' value={`Send Message`} className={styles['btn']} />
 
-            </form>
+            </motion.form>
 
         </section>
     );
