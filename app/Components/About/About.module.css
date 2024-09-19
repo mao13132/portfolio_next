@@ -8,7 +8,7 @@
 
 .about-img img {
 
-    width: 35vw !important;
+    width: 22vw !important;
     height: 100% !important;
 }
 
@@ -38,11 +38,18 @@
 @media (max-width: 768px) {
     .about {
         flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .about-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .about-img img {
 
-        width: 70vw !important;
+        width: 50vw !important;
         margin-top: 4rem;
     }
 }

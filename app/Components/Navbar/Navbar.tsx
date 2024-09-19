@@ -6,13 +6,14 @@ import { useActiveSections } from "./useActiveSections";
 
 import cn from 'classnames';
 
-export const Navbar = ({ setOpenMenu, openStatus, className, ...props }: NavbarProps): JSX.Element => {
+export const Navbar = ({ setOpenMenu, openStatus, closeStatus, className, ...props }: NavbarProps): JSX.Element => {
 
     useActiveSections();
 
     return (
         <nav className={cn(styles['navbar'], {
-            [styles['active']]: openStatus,
+            [styles['open']]: openStatus,
+            [styles['close']]: closeStatus,
         })} {...props}>
             <Link onClick={() => setOpenMenu(false)} href={`#home`} className={styles['active']}>Главная</Link>
             <Link onClick={() => setOpenMenu(false)} href={`#about`}>Обо мне</Link>

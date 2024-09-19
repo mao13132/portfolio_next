@@ -2,5 +2,6 @@ import { DetailedHTMLProps, Dispatch, HTMLAttributes, SetStateAction } from "rea
 
 export interface NavbarProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
     openStatus: boolean,
+    closeStatus: boolean,
     setOpenMenu: Dispatch<SetStateAction<boolean>>;
 };

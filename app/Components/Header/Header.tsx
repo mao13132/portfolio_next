@@ -11,7 +11,26 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 
     const [openMenu, setOpenMenu] = useState<boolean>(false);
 
+    const [closeMenu, setCloseMenu] = useState<boolean>(false);
+
     const [classStiky, setClassStiky] = useState<boolean>(false);
+
+    const openCloseNav = async () => {
+        if (openMenu) {
+
+            setCloseMenu(true);
+
+            const interval = setTimeout(() => {
+
+                setCloseMenu(false);
+                setOpenMenu(false);
+                
+            }, 700)
+
+            return;
+        }
+        setOpenMenu(oldState => !oldState)
+    };
 
     useEffect(() => {
 
@@ -41,7 +60,7 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
             <Link className={styles['logo']} href={`#`}>Портфолио</Link>
 
             <i
-                onClick={() => { setOpenMenu(oldState => !oldState) }}
+                onClick={openCloseNav}
                 className={cn({
                     'bx bx-menu': !openMenu,
                     'bx bx-x': openMenu
@@ -49,7 +68,7 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
                 id={styles['menu-icon']}
             ></i>
 
-            <Navbar setOpenMenu={setOpenMenu} openStatus={openMenu} />
+            <Navbar setOpenMenu={setOpenMenu} openStatus={openMenu} closeStatus={closeMenu} />
 
         </header>
     );

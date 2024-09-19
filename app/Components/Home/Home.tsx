@@ -58,8 +58,10 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
                 <motion.p
                     transition={{ duration: 1.2 }}
                     variants={otherTextAnimation}
-                >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolore ea unde nulla voluptatibus quos delectus quam doloremque, debitis eligendi tenetur veniam aliquid repudiandae? Aliquid expedita deserunt
-                    itaque aspernatur omnis.</motion.p>
+                    className={styles['text']}
+
+                >Реализовываю идеи заказчиков. Работаю на качество. Полностью погружаюсь в задачу, дополняю задумки своими идеями при необходимости.
+                    Отдаю заказчику максимум: инструкции, поддержка 24/7, гарантия</motion.p>
 
                 <div className={styles['actions']}>
 
@@ -81,6 +83,7 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
                 className={styles['home-img']}>
 
                 <Image src={`/home.png`}
+                    priority
                     alt=""
                     width={100}
                     height={100}

@@ -5,6 +5,32 @@
     transition: color .3s ease-in-out;
 }
 
+.open {
+    animation: openAnimation .5s ease-in-out;
+}
+
+@keyframes openAnimation {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.close {
+    animation: closeAnimation 1s ease-in-out;
+}
+
+@keyframes closeAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
@@ -23,7 +49,7 @@
         display: none;
     }
 
-    .active {
+    .open {
         display: block;
     }
 

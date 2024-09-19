@@ -15,14 +15,14 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
         <section className={cn(className, styles['about'])} {...props} id="about">
 
             <motion.div
-                transition={{ duration: 2 }}
+                transition={{ duration: 1 }}
                 variants={ImageAboutAnimation}
                 initial="hidden"
                 whileInView="visible"
 
                 className={styles['about-img']}>
 
-                <Image src={`/home.png`}
+                <Image src={`/home2.png`}
                     alt=""
                     width={100}
                     height={100}
@@ -47,14 +47,15 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
                     title="Обо "
                     spanTitle="мне" />
 
-                <h3>Frontend Developer</h3>
+                <h3>Full-stack Developer</h3>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                     elit. Hic, ratione delectus nostrum enim laudantium nam quod quo
                     quos est incidunt iure velit dolore amet quam blanditiis consequuntur sunt vero asperiores!
                 </p>
 
-                <ButtonLink link={`#`} text={`Read More`} />
+                <div className={styles['about-btn']}><ButtonLink link={`#`} text={`Read More`} /></div>
+
 
             </motion.div>
 
