@@ -18,7 +18,7 @@ export const Contacts = ({ className, ...props }: ContactsProps): JSX.Element =>
                 initial="hidden"
                 whileInView="visible"
 
-                title="Contact " spanTitle="Me!" />
+                title="Написать " spanTitle="мне" />
 
             <motion.form
 
@@ -45,7 +45,7 @@ export const Contacts = ({ className, ...props }: ContactsProps): JSX.Element =>
 
                 <textarea placeholder='Your Message'></textarea>
 
-                <input type='submit' value={`Send Message`} className={styles['btn']} />
+                <input type='submit' value={`Отправить сообщение`} className={styles['btn']} />
 
             </motion.form>
 

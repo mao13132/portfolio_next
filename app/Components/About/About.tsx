@@ -19,7 +19,7 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
                 variants={ImageAboutAnimation}
                 initial="hidden"
                 whileInView="visible"
-                
+
                 className={styles['about-img']}>
 
                 <Image src={`/home.png`}
@@ -42,9 +42,10 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
                 <MHeadingTitle
                     transition={{ duration: 1.3 }}
                     variants={titleAboutAnimation}
+                    style={{ overflow: 'hidden' }}
 
-                    title="About "
-                    spanTitle="Me" />
+                    title="Обо "
+                    spanTitle="мне" />
 
                 <h3>Frontend Developer</h3>
 

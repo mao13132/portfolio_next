@@ -18,8 +18,9 @@ export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps)
                 variants={titleProjectsAnimation}
                 initial="hidden"
                 whileInView="visible"
+                style={{ overflow: 'hidden' }}
 
-                title="Lates" spanTitle="Projects" />
+                title="Последние " spanTitle="проекты" />
 
             <motion.div
                 transition={{ duration: 2 }}
@@ -78,8 +79,6 @@ export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps)
                 />
 
             </motion.div>
-
-
 
 
 

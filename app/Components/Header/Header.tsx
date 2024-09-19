@@ -34,11 +34,11 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
     }, []);
 
     return (
-        <header className={cn(styles['header'], {
+        <header className={cn(className, styles['header'], {
             [styles['sticky']]: classStiky,
         })} {...props}>
 
-            <Link className={styles['logo']} href={`#`}>Portfolio</Link>
+            <Link className={styles['logo']} href={`#`}>Портфолио</Link>
 
             <i
                 onClick={() => { setOpenMenu(oldState => !oldState) }}

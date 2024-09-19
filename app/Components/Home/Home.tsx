@@ -18,7 +18,7 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
 
     useEffect(() => {
         const typed = new Typed(multiText.current, {
-            strings: ['Frontend разработчик', 'разработчик Telegram ботов', 'Backend разработчик', 'SEO оптимизатор', 'Маркетплейс автоматизатор'],
+            strings: ['разработчик Telegram ботов', 'маркетплейс автоматизатор', 'Backend разработчик', 'Frontend разработчик', 'SEO оптимизатор'],
             typeSpeed: 100,
             backSpeed: 100,
             backDelay: 1000,
@@ -37,19 +37,22 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
                 transition={{ duration: 1 }}
                 initial="hidden"
                 whileInView="visible"
+
                 variants={textBlockAnimation}
 
                 className={styles['home-content']}
             >
-                <h3>Hello, It's Me</h3>
+                <h3 className={styles['hello']}>Приветствую, меня зовут</h3>
 
                 <motion.h1
 
                     transition={{ duration: 1.2 }}
                     variants={nameTextAnimation}
-                >Dmitry Malyshev</motion.h1>
+                >Дмитрий Малышев</motion.h1>
 
-                <motion.h3>Я <span className={styles['move-h3']} ref={multiText}></span></motion.h3>
+                <div className={styles['multi-wrapper']}>
+                    <motion.h3>Я <span className={styles['move-h3']} ref={multiText}></span></motion.h3>
+                </div>
 
                 <motion.p
                     transition={{ duration: 1.2 }}
@@ -59,12 +62,12 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
 
                 <SocialMedia />
 
-                <ButtonLink link={`#`} text={`Donwloan CV`} />
+                <ButtonLink link={`#contact`} text={`Написать мне`} />
 
             </motion.div>
 
             <motion.div
-                transition={{ duration: 1 }}
+                transition={{ duration: 1.2 }}
                 initial="hidden"
                 whileInView="visible"
                 variants={imageHomeAnimation}

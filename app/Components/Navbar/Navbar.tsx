@@ -14,11 +14,11 @@ export const Navbar = ({ setOpenMenu, openStatus, className, ...props }: NavbarP
         <nav className={cn(styles['navbar'], {
             [styles['active']]: openStatus,
         })} {...props}>
-            <Link onClick={() => setOpenMenu(false)} href={`#home`} className={styles['active']}>Home</Link>
-            <Link onClick={() => setOpenMenu(false)} href={`#about`}>About</Link>
-            <Link onClick={() => setOpenMenu(false)} href={`#services`}>Services</Link>
-            <Link onClick={() => setOpenMenu(false)} href={`#portfolio`}>Portfolio</Link>
-            <Link onClick={() => setOpenMenu(false)} href={`#contact`}>Contact</Link>
+            <Link onClick={() => setOpenMenu(false)} href={`#home`} className={styles['active']}>Главная</Link>
+            <Link onClick={() => setOpenMenu(false)} href={`#about`}>Обо мне</Link>
+            <Link onClick={() => setOpenMenu(false)} href={`#services`}>Навыки</Link>
+            <Link onClick={() => setOpenMenu(false)} href={`#portfolio`}>Примеры работ</Link>
+            <Link onClick={() => setOpenMenu(false)} href={`#contact`}>Контакты</Link>
         </nav>
     );
 };
