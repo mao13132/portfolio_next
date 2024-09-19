@@ -10,6 +10,7 @@ import cn from 'classnames';
 import { ButtonLink } from "../ButtonLink/ButtonLink";
 import { useEffect, useRef } from "react";
 import { imageHomeAnimation, nameTextAnimation, otherTextAnimation, textBlockAnimation } from "./animationHome";
+import { ButtonLinkPulse } from "../ButtonLinkPulse/ButtonLinkPulse";
 
 
 
@@ -60,9 +61,14 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
                 >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat dolore ea unde nulla voluptatibus quos delectus quam doloremque, debitis eligendi tenetur veniam aliquid repudiandae? Aliquid expedita deserunt
                     itaque aspernatur omnis.</motion.p>
 
-                <SocialMedia />
+                <div className={styles['actions']}>
 
-                <ButtonLink link={`#contact`} text={`Написать мне`} />
+                    <SocialMedia />
+
+                    <ButtonLinkPulse link={`#contact`} text={`Написать мне`} />
+
+                </div>
+
 
             </motion.div>
 

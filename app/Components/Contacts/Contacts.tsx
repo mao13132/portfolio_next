@@ -2,7 +2,7 @@ import styles from './Contacts.module.css';
 
 import cn from 'classnames';
 import { ContactsProps } from './Contacts.props';
-import { HeadingTitle, MHeadingTitle } from '../HeadingTitle/HeadingTitle';
+import { MHeadingTitle } from '../HeadingTitle/HeadingTitle';
 
 import { motion } from 'framer-motion';
 import { formContactAnimation, titleContactAnimation } from './animationsContact';
