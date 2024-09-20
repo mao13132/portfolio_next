@@ -19,3 +19,12 @@ export const formContactAnimation = {
         opacity: 1,
     },
 }
+
+export const errorAnimation = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+    },
+}

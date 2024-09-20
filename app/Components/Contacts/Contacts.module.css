@@ -12,6 +12,7 @@
 
     margin-top: 2rem;
     cursor: pointer;
+    margin: auto ;
 }
 
 .btn:hover {
@@ -29,11 +30,35 @@
     margin-bottom: 3rem;
 }
 
-.input-box {
+.form {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px 20px;
+}
+
+.input-wrapper {
+    position: relative;
+    min-width: 100%;
+}
+
+.input-wrapper input {
+    min-width: 100%;
+}
+
+.error {
+    position: absolute;
+    left: 5px;
+    bottom: -12px;
+    font-size: 12px;
+    color: rgba(255, 127, 127, 0.856);
 }
 
 .input-box input,
@@ -56,6 +81,19 @@
     min-height: 200px;
 }
 
+.off {
+    display: none;
+}
+
+.button-form {
+    margin-top: 30px !important;
+}
+
+.load {
+    transition: all 1s;
+    opacity: 0.3;
+}
+
 @media (max-width: 991px) {
     .contact-wrapper {
         min-height: auto;
@@ -65,6 +103,12 @@
 @media (max-width: 768px) {
     .input-box input {
         width: 100%;
+    }
+}
+
+@media (max-width: 617px) {
+    .input-box {
+        grid-template-columns: 1fr;
     }
 }
 

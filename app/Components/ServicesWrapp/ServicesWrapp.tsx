@@ -21,12 +21,14 @@ export const ServicesWrapp = ({ className, ...props }: ServicesWrappProps): JSX.
                 <MHeadingTitle
                     transition={{ duration: 1 }}
                     variants={titleServiceAnimation}
+                    viewport={{ once: true }}
 
                     title="Мои " spanTitle="навыки" />
 
                 <motion.div
                     variants={servicesAnimation}
                     transition={{ duration: 2 }}
+                    viewport={{ once: true }}
 
                     className={styles['service-container']}>
                     <Services

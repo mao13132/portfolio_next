@@ -9,6 +9,10 @@
     color: var(--main-color);
 }
 
+/* .heading {
+    text-transform: uppercase;
+} */
+
 @media (max-width: 768px) {
     .heading {
         margin-bottom: 3rem;

@@ -12,6 +12,7 @@
     align-items: center;
     gap: 2.5rem;
 }
+
 @media (max-width: 991px) {
     .portfolio-wrapper {
         padding-bottom: 7rem;
