@@ -8,8 +8,13 @@ import { HeadingTitle, MHeadingTitle } from "../HeadingTitle/HeadingTitle";
 
 import { motion } from "framer-motion";
 import { projectsAnimation, titleProjectsAnimation } from "./animationsPortfolio";
+import { useContext } from "react";
+import { AppContext } from "@/app/Context/app.context";
 
 export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps): JSX.Element => {
+    
+    const { category } = useContext(AppContext);
+    
     return (
         <section className={cn(className, styles['portfolio-wrapper'])} id="portfolio" {...props}>
 
@@ -32,6 +37,16 @@ export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps)
 
                 className={styles['container']}>
 
+                {category && category.map(cat => <ProjectsPortfolio 
+                key={cat.id}
+                image={cat.image}
+                title={cat.title}
+                text={cat.description}
+                link={`${process.env.NEXT_PUBLIC_BACKEND}/${cat.slug}`}
+                icon={cat.icon}
+
+                />)}
+
                 <ProjectsPortfolio
                     image={`/1.jpg`}
                     title="Web Dising"
@@ -45,7 +60,7 @@ export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps)
                     title="Web Dising"
                     text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione ut non alias adipisci molestias? Dolores iste totam vitae atque, necessitatibus, quia, itaque a dolorem explicabo dolor animi asperiores quam cumque?"
                     link="#"
-                    icon='bx bx-link-external'
+                    icon='bx bxl-telegram'
                 />
 
                 <ProjectsPortfolio

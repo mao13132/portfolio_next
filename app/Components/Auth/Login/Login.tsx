@@ -11,7 +11,7 @@ import { ButtonAuth } from "../ButtonAuth/ButtonAuth";
 export const Login = ({ className, ...props }: LoginProps): JSX.Element => {
     return (
         <Auth
-            title="Login"
+            title="Авторизация"
         >
 
             <div className={cn(className, styles['login'])} {...props}>
