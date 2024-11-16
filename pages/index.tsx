@@ -5,6 +5,8 @@ import { API } from "@/app/utils/api";
 import axios from "axios";
 import { GetStaticProps } from "next";
 
+import { category_no_backend } from '../app/utils/category_no_backend'
+
 function IndexPage({ }: IIndexPage): JSX.Element {
     return (
         <Index />
@@ -37,7 +39,7 @@ export const getStaticProps: GetStaticProps<IIndexPage> = async () => {
 
         return {
             props: {
-                category: [],
+                category: category_no_backend as ICategory[],
             },
             revalidate: 3600,
         }

@@ -18,12 +18,13 @@ export const ProjectsPortfolio = ({ icon, image, link, text, title, className, .
                 sizes="100" />
 
             <div className={styles['layer']}>
+                <Link href={link}>
+                    <h4>{title}</h4>
 
-                <h4>{title}</h4>
+                    <p>{text}</p>
 
-                <p>{text}</p>
-
-                <Link href={link}><i className={icon} ></i></Link>
+                    <i className={icon} ></i>
+                </Link>
 
             </div>
 

@@ -24,7 +24,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    background: linear-gradient(rgba(0, 0, 0, .7), var(--main-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +33,9 @@
     padding: 0 4rem;
     transform: translateY(100%);
     transition: .5s ease;
+
+    
+    
 }
 
 .box:hover .layer {
@@ -42,27 +45,34 @@
 
 .layer h4 {
     font-size: 3rem;
-    cursor: default;
 }
 
 .layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
-    cursor: default;
 }
 
 .layer a {
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+
+}
+
+.layer a i {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 2rem;
+    color: var(--second-bg-color);
     width: 5rem;
     height: 5rem;
     background: var(--text-color);
     border-radius: 50%;
 }
 
-.layer a i {
-    font-size: 2rem;
-    color: var(--second-bg-color);
-}
 

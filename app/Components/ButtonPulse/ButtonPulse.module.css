@@ -11,9 +11,11 @@
     font-weight: 600;
     transition: .5s ease;
 
-    width: fit-content;
+    width: auto;
     display: flex;
     margin: auto;
+
+    cursor: pointer;
 }
 
 .btn:hover {
