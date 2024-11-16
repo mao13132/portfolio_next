@@ -6,8 +6,9 @@ import styles from './CategoryPage.module.css';
 import cn from 'classnames';
 import { useContext } from "react";
 import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
+import { WorkItem } from "../WorkItem/WorkItem";
 
-export const Category = ({ className, ...props }: CategoryPageProps):JSX.Element => {
+export const Category = ({ className, ...props }: CategoryPageProps): JSX.Element => {
     const { works, category: categorys, current_category } = useContext(AppContext);
 
     /* debugger */
@@ -17,7 +18,9 @@ export const Category = ({ className, ...props }: CategoryPageProps):JSX.Element
             <HeadingTitle title={current_category?.title || ''} spanTitle="" />
 
             <div className={styles['works-wrapper']}>
-                {works && works?.length > 0 && works?.map(work => <div>{work.title}</div>)}
+
+                {works && works?.length > 0 && works?.map(work => <WorkItem key={work.id} work={work} />)}
+                
             </div>
 
         </div>
