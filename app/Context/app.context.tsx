@@ -1,10 +1,12 @@
 import { PropsWithChildren, createContext } from "react";
 import { ICategory } from "../interface/category";
+import { IWorks } from "../interface/works";
 
 export interface IAppContext {
     category: ICategory[],
     slug?: string,
-    current_category?: ICategory
+    current_category?: ICategory,
+    works?: IWorks[],
 }
 
 export const AppContext = createContext<IAppContext>({

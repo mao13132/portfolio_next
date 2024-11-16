@@ -4,15 +4,19 @@ import { ParsedUrlQuery } from "querystring";
 import { API } from "@/app/utils/api";
 import axios from "axios";
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from "next";
+import { Category } from "@/app/Components/CategoryPage/Category";
+import { IWorks } from "@/app/interface/works";
 
 export interface ICategoryPage extends Record<string, unknown> {
     slug: string,
     current_category: ICategory,
+    category: ICategory[],
+    works: IWorks[],
 };
 
 function CategoryPage({ }: ICategoryPage) {
     return (
-        <>Страница категории</>
+        <Category />
     );
 };
 
@@ -63,14 +67,24 @@ export const getStaticProps: GetStaticProps<ICategoryPage> = async ({ params }: 
             }
         }
 
+        const start_data =  await axios.get(API.index.get_start_data);
+
+        const categorys = start_data.data.category;
+
+        const works_reponse =  await axios.post(API.works.get_by_category_id, {id_category: current_category.id});
+
+        const works = works_reponse.data;
+
         return {
             props: {
                 slug,
-                current_category
+                current_category,
+                category: categorys,
+                works,
             }
         }
 
-    } catch {
+    } catch (error) {
         return {
             notFound: true,
         }
