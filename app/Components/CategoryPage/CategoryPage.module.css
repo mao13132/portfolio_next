@@ -1,5 +1,33 @@
-.works-wrapper {
+.wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
+
+.works-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 270px);
+
+    justify-content: center;
+    gap: 15px;
+}
+
+.h1 {
+    margin-bottom: 40px;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-top: 0 !important;
+    }
+}
+@media (max-width: 991px) {
+    .main {
+        margin-top: 80px;
+    }
+}
+
+

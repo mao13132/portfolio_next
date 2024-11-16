@@ -42,7 +42,7 @@ export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps)
                 image={cat.image}
                 title={cat.title}
                 text={cat.description}
-                link={`${process.env.NEXT_PUBLIC_BACKEND}/${cat.slug}`}
+                link={`${process.env.NEXT_PUBLIC_FRONTEND}/category/${cat.slug}`}
                 icon={cat.icon}
 
                 />)}
