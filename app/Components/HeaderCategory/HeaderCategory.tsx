@@ -4,7 +4,7 @@ import styles from './HeaderCategory.module.css';
 import Link from "next/link";
 
 import cn from 'classnames';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { NavbarCategory } from "./NavbarCategory/NavbarCategory";
 
 export const HeaderCategory = ({ className, ...props }: HeaderCategoryProps): JSX.Element => {
@@ -12,8 +12,6 @@ export const HeaderCategory = ({ className, ...props }: HeaderCategoryProps): JS
     const [openMenu, setOpenMenu] = useState<boolean>(false);
 
     const [closeMenu, setCloseMenu] = useState<boolean>(false);
-
-    const [classStiky, setClassStiky] = useState<boolean>(false);
 
     const openCloseNav = async () => {
         if (openMenu) {
@@ -32,32 +30,12 @@ export const HeaderCategory = ({ className, ...props }: HeaderCategoryProps): JS
         setOpenMenu(oldState => !oldState)
     };
 
-    useEffect(() => {
 
-        const activeStiky = function () {
-
-            if (window.scrollY > 100) {
-                setClassStiky(true);
-            } else {
-                setClassStiky(false);
-            }
-
-        };
-
-        window.addEventListener('scroll', activeStiky);
-
-        return function () {
-            window.removeEventListener('scroll', activeStiky);
-        };
-
-    }, []);
 
     return (
-        <header className={cn(className, styles['header'], {
-            [styles['sticky']]: classStiky,
-        })} {...props}>
+        <header className={cn(className, styles['header'], styles['sticky'])} {...props}>
 
-            <Link className={styles['logo']} href={`#`}>Портфолио</Link>
+            <Link className={styles['logo']} href={`${process.env.NEXT_PUBLIC_FRONTEND}`}>Портфолио</Link>
 
             <i
                 onClick={openCloseNav}

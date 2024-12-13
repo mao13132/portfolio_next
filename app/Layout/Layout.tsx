@@ -7,6 +7,7 @@ import { AppContextProvider } from "../Context/app.context";
 import { IIndexPage } from "@/pages";
 import { ICategoryPage } from "@/pages/category/[slug]";
 import { LoaderHead } from "../Components/LoaderHead/LoaderHead";
+import { IWorkPage } from "@/pages/work/[slug]";
 
 export const Layout = ({ children }: LayoutProps): JSX.Element => {
     return (
@@ -20,7 +21,7 @@ export const Layout = ({ children }: LayoutProps): JSX.Element => {
 
 
 /* HOC */
-export const withLayout = <T extends Record<string, unknown> & IIndexPage & ICategoryPage>(Component: FunctionComponent<T>) => {
+export const withLayout = <T extends Record<string, unknown> & IIndexPage & ICategoryPage & IWorkPage>(Component: FunctionComponent<T>) => {
     return function withLayoutComponent(props: T): JSX.Element {
         return (
             <LoaderHead>

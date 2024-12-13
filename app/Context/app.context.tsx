@@ -7,6 +7,7 @@ export interface IAppContext {
     slug?: string,
     current_category?: ICategory,
     works?: IWorks[],
+    work?: IWorks,
 }
 
 export const AppContext = createContext<IAppContext>({

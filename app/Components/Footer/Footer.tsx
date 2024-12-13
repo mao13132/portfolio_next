@@ -3,8 +3,6 @@ import { FooterProps } from "./Footer.props";
 import styles from './Footer.module.css';
 
 import cn from 'classnames';
-import Link from "next/link";
-
 export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
     return (
         <footer className={cn(className, styles['footer'])} {...props}>
@@ -16,7 +14,9 @@ export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
             </div>
 
             <div className={styles['iconTop']}>
-                <Link href={`#home`}><i className='bx bx-up-arrow-alt'></i></Link>
+
+                <i onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className={cn('bx bx-up-arrow-alt', styles['btn'])}></i>
+
             </div>
 
         </footer>
