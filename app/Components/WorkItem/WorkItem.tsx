@@ -4,6 +4,7 @@ import styles from './WorkItem.module.css';
 import Image from "next/image";
 
 import cn from 'classnames';
+import Link from "next/link";
 
 
 export const WorkItem = ({ work, className, ...props }: WorkItemProps): JSX.Element => {
@@ -11,27 +12,28 @@ export const WorkItem = ({ work, className, ...props }: WorkItemProps): JSX.Elem
 
     return (
         <div className={cn(className, styles['work'])} {...props}>
+            <Link href={`${process.env.NEXT_PUBLIC_FRONTEND}/work/${work.slug}`} className={styles['work']}>
 
-            {work.image && <Image src={work.image}
-                alt=""
-                width={100}
-                height={100}
-                style={{ objectFit: 'cover' }}
-                sizes="100" />}
+                {work.image && <Image src={work.image}
+                    alt=""
+                    width={100}
+                    height={100}
+                    style={{ objectFit: 'cover' }}
+                    sizes="100" />}
 
-            <div className={styles['layer']}>
+                <div className={styles['layer']}>
 
-                <div className={styles['text-wrapper']}>
+                    <div className={styles['text-wrapper']}>
 
-                    <div className={styles['title']}>{work.title}</div>
+                        <div className={styles['title']}>{work.title}</div>
 
-                    <div className={styles['short-text']}>{work.short_text}</div>
-                    
+                        <div className={styles['short-text']}>{work.short_text}</div>
+
+                    </div>
+
+
                 </div>
-
-
-            </div>
-
+            </Link>
 
         </div>
     );

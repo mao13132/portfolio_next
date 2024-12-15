@@ -9,7 +9,7 @@ export const Footer = ({ className, ...props }: FooterProps): JSX.Element => {
 
             <div className={styles['text']}>
 
-                <p>Copyright &copy; 2024 by Dmitry | All Rights Reserved.</p>
+                <p>Copyright &copy; 2025 by Dmitry | All Rights Reserved.</p>
 
             </div>
 
