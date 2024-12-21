@@ -12,6 +12,7 @@ import { useAddMessage } from './useAddMessage';
 import { ButtonLinkPulse } from '../ButtonLinkPulse/ButtonLinkPulse';
 import { ButtonPulse } from '../ButtonPulse/ButtonPulse';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 export const Contacts = ({ className, ...props }: ContactsProps): JSX.Element => {
     
@@ -19,7 +20,9 @@ export const Contacts = ({ className, ...props }: ContactsProps): JSX.Element =>
 
     const { handleSubmit, register, formState: { errors }, setValue, getValues, control } = useForm<IContanct>();
 
-    const { handleAddMessage } = useAddMessage({setIsLoading, setValue});
+    const { asPath } = useRouter();
+
+    const { handleAddMessage } = useAddMessage({setIsLoading, setValue, asPath});
 
     return (
         <section className={cn(className, styles['contact-wrapper'], {

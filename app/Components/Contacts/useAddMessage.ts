@@ -4,19 +4,23 @@ import { getContact } from "../utils/url.config";
 import { axiosClassic } from "../utils/interceptor";
 import { json } from "node:stream/consumers";
 import { Dispatch, SetStateAction, cache } from "react";
+import { usePathname } from "next/navigation";
 
 interface ContanctFormFunc {
     setIsLoading: Dispatch<SetStateAction<boolean>>,
-    setValue: UseFormSetValue<IContanct>
+    setValue: UseFormSetValue<IContanct>,
+    asPath: string,
 }
 
-export const useAddMessage = ({ setIsLoading, setValue }: ContanctFormFunc) => {
+export const useAddMessage = ({ setIsLoading, setValue, asPath }: ContanctFormFunc) => {
 
     const handleAddMessage: SubmitHandler<IContanct> = async (data: IContanct) => {
 
         setIsLoading(true);
 
-        const json_data = JSON.stringify(data);
+        const newDate = {...data, url: asPath}
+
+        const json_data = JSON.stringify(newDate);
 
         try {
             const response = await axiosClassic.post(getContact(), json_data);
