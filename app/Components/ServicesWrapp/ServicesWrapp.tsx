@@ -31,37 +31,31 @@ export const ServicesWrapp = ({ className, ...props }: ServicesWrappProps): JSX.
                     viewport={{ once: true }}
 
                     className={styles['service-container']}>
+
                     <Services
-                        icon="bx bx-paint"
-                        title="Graphic Desing"
-                        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Quod molestiae, reiciendis dolor impedit ratione iusto nesciunt.
-                            Porro quisquam exercitationem, harum numquam recusandae ipsa perspiciatis
-                            vitae, laboriosam at rerum impedit! Magni!"
-                        link={`#`}
-                        textLink="Read More"
+                        icon="bx bxl-telegram"
+                        title="Любая логика в TG"
+                        text="Создаю умных и надёжных помощников для бизнеса. 
+                        Будь то автоматизация заказов, уведомления, интеграция с CRM или что-то уникальное – ваш бот будет работать безупречно"
+                        link={`#portfolio`}
+                        textLink="Кейсы"
                     />
 
                     <Services
-                        icon="bx bx-code-alt"
-                        title="Web Development"
-                        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Quod molestiae, reiciendis dolor impedit ratione iusto nesciunt.
-                            Porro quisquam exercitationem, harum numquam recusandae ipsa perspiciatis
-                            vitae, laboriosam at rerum impedit! Magni!"
-                        link={`#`}
-                        textLink="Read More"
+                        icon="bx bxs-store-alt"
+                        title="Автоматизация маркетплейсов"
+                        text="Оптимизирую управление вашим магазином на маркетплейсах, автоматизирую сбор аналитики, управление заказами и даже работу с отзывами. 
+                        Всё, чтобы вы фокусировались на масштабировании бизнеса"
+                        link={`#portfolio`}
+                        textLink="Кейсы"
                     />
 
                     <Services
-                        icon="bx bx-bar-chart-alt"
-                        title="Digital Marketing"
-                        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Quod molestiae, reiciendis dolor impedit ratione iusto nesciunt.
-                            Porro quisquam exercitationem, harum numquam recusandae ipsa perspiciatis
-                            vitae, laboriosam at rerum impedit! Magni!"
-                        link={`#`}
-                        textLink="Read More"
+                        icon="bx bxs-planet"
+                        title="Сервисы. Сайты"
+                        text="Разрабатываю современные и быстрые веб-приложения, которые привлекают клиентов и увеличивают конверсию"
+                        link={`#portfolio`}
+                        textLink="Кейсы"
                     />
 
 

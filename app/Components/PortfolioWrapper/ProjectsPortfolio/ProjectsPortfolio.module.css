@@ -5,7 +5,9 @@
     overflow: hidden;
     display: flex;
 
-    height: 300px;
+    height: 350px;
+
+    /* min-width: 320px; */
 }
 
 .box img {

@@ -6,6 +6,10 @@ const nextConfig = {
         }
     },
     /* Отключить показ движка */
+    experimental: {
+        //largePageDataBytes: 128 * 1000, // 128KB by default
+        largePageDataBytes: 220 * 1000,
+    },
     poweredByHeader: false,
     optimizeFonts: false,
     images: {

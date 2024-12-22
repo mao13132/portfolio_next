@@ -81,7 +81,8 @@ export const getStaticProps: GetStaticProps<ICategoryPage> = async ({ params }: 
                 current_category,
                 category: categorys,
                 works,
-            }
+            },
+            revalidate: 3600,
         }
 
     } catch (error) {

@@ -44,17 +44,26 @@ export const About = ({ className, ...props }: AboutProps): JSX.Element => {
                     variants={titleAboutAnimation}
                     style={{ overflow: 'hidden' }}
 
-                    title="Обо "
-                    spanTitle="мне" />
+                    title="Почему стоит выбрать "
+                    spanTitle="меня" />
 
-                <h3>Full-stack Developer</h3>
+                <h3>Комплексный подход</h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Hic, ratione delectus nostrum enim laudantium nam quod quo
-                    quos est incidunt iure velit dolore amet quam blanditiis consequuntur sunt vero asperiores!
-                </p>
+                <p>Я не просто выполняю задачи, а понимаю ваш бизнес и предлагаю решения, которые работают</p>
 
-                <div className={styles['about-btn']}><ButtonLink link={`#`} text={`Read More`} /></div>
+                <h3>Скорость и качество</h3>
+
+                <p>Ваш проект будет готов вовремя и на высоком уровне</p>
+
+                <h3>Прозрачность</h3>
+
+                <p>Всегда держу вас в курсе прогресса, доступен для обсуждений и корректировок</p>
+
+                <h3>Результат, который окупается</h3>
+
+                <p>Работая со мной, вы получаете не только исполнителя, но и партнёра, который заботится о вашем успехе</p>
+
+                <div className={styles['about-btn']}><ButtonLink link={`#portfolio`} text={`Мои кейсы`} /></div>
 
 
             </motion.div>

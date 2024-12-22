@@ -64,7 +64,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: .2rem solid var(--bg-color);
+    border: .2rem solid var(--main-color);
     transition: .5s ease;
     width: 100%;
     max-width: 720px;
@@ -77,9 +77,6 @@
     width: 100%;
 }
 
-.video-wrapper:hover {
-    border-color: var(--main-color);
-}
 
 .desc-wrapper {
     margin: 100px 0;

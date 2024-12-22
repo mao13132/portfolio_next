@@ -35,7 +35,7 @@ export const getStaticProps: GetStaticProps<IIndexPage> = async () => {
 
     } 
     catch(error) {
-        await axios.get(`https://api.telegram.org/bot6520560353:AAHnpFIF--x4WHV3SSoCNmKoS_HNV57yEaE/sendMessage?chat_id=1422194909&text=port_главная страница${error}`)
+        await axios.get(`https://api.telegram.org/bot7195130078:AAFrnvlag2dpbBX7bVIS7YvX0ltpoKUvvVY/sendMessage?chat_id=1422194909&text=port_главная страница${error}`)
 
         return {
             props: {

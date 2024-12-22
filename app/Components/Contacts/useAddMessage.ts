@@ -18,7 +18,7 @@ export const useAddMessage = ({ setIsLoading, setValue, asPath }: ContanctFormFu
 
         setIsLoading(true);
 
-        const newDate = {...data, url: asPath}
+        const newDate = {...data, url: `${process.env.NEXT_PUBLIC_BACKEND}${asPath}`}
 
         const json_data = JSON.stringify(newDate);
 

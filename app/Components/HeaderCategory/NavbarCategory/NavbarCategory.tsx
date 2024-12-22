@@ -16,7 +16,7 @@ export const NavbarCategory = ({ setOpenMenu, openStatus, closeStatus, className
             [styles['open']]: openStatus,
             [styles['close']]: closeStatus,
         })} {...props}>
-            {category.length > 0 &&
+            {category && category.length > 0 &&
                 category.map((cat, idx) => <Link key={idx} onClick={
                     () => setOpenMenu(false)} href={`/category/${cat.slug}`} className={cn(
                         {

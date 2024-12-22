@@ -33,7 +33,7 @@ export const Category = ({ className, ...props }: CategoryPageProps): JSX.Elemen
 
                 <div className={styles['works-wrapper']} >
 
-                    {works && works?.length > 0 && works?.map(work => <WorkItem key={work.id} work={work} />)}
+                    {works && (works?.length > 0 && works?.map(work => <WorkItem key={work.id} work={work} />))}
 
                 </div>
 

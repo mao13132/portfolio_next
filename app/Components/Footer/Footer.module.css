@@ -31,6 +31,7 @@
 @media (max-width: 991px) {
     .footer {
         padding: 2rem 3%;
+        margin-top: 50px;
     }
 }
 

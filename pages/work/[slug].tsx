@@ -26,7 +26,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
     const start_data = await axios.get(API.works.get_all);
 
-
     const works = start_data.data as IWorks[];
 
     paths = works.map(work => `/work/${work.slug}`)
@@ -41,6 +40,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps<IWorkPage> = async ({ params }: GetStaticPropsContext<ParsedUrlQuery>) => {
     try {
+        
+        debugger
 
         const slug = params?.slug as string;
 

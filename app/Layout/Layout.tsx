@@ -8,11 +8,13 @@ import { IIndexPage } from "@/pages";
 import { ICategoryPage } from "@/pages/category/[slug]";
 import { LoaderHead } from "../Components/LoaderHead/LoaderHead";
 import { IWorkPage } from "@/pages/work/[slug]";
+import { ClickComponent } from "../Components/ClickComponent/ClickComponent";
 
 export const Layout = ({ children }: LayoutProps): JSX.Element => {
     return (
         <div className={styles['main']}>
-
+            <ClickComponent />
+            
             <div className={styles['content']}>{children}</div>
 
         </div>
