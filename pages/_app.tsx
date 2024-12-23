@@ -24,6 +24,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
                 <meta property="og:image" content="https://dima-razrab.ru/media/og_desc.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630"></meta>
+                <meta name="twitter:card" content="summary_large_image" />
 
                 <link rel="icon" href="/favicon.ico" />
                 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'></link>
