@@ -5,10 +5,8 @@ export const SocialMedia = ({ className, ...props }: SocialMediaProps): JSX.Elem
     return (
         <div className={styles['social-media']} {...props}>
 
-            <a href="#"><i className='bx bxl-telegram'></i></a>
-            <a href="#"><i className='bx bxl-vk' ></i></a>
-            <a href="#"><i className='bx bxl-tiktok' ></i></a>
-            <a href="#"><i className='bx bxl-reddit' ></i></a>
+            <a href="https://t.me/developer_telegrams"><i className='bx bxl-telegram'></i></a>
+            <a href="https://vk.com/dembels"><i className='bx bxl-vk' ></i></a>
 
         </div>
     );

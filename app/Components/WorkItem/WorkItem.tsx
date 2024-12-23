@@ -14,7 +14,7 @@ export const WorkItem = ({ work, className, ...props }: WorkItemProps): JSX.Elem
         <div className={cn(className, styles['work'])} {...props}>
             <Link href={`${process.env.NEXT_PUBLIC_FRONTEND}/work/${work.slug}`} className={styles['work']}>
 
-                {work.image && <Image src={work.image}
+                {work.image && <Image src={`${process.env.NEXT_PUBLIC_FRONTEND}/${work.image}`}
                     alt=""
                     width={100}
                     height={100}

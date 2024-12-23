@@ -11,7 +11,7 @@ export const ClickComponent = ({ }: ClickComponentProps): JSX.Element => {
     useEffect(() => {
         const link = `${API_URL}${getClick()}`;
 
-        axios.post(link, { url: `${process.env.NEXT_PUBLIC_BACKEND}${asPath}` }).then(
+        axios.post(link, { url: `${process.env.NEXT_PUBLIC_FRONTEND}${asPath}` }).then(
             response => {
                 
             }

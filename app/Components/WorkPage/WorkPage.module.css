@@ -1,6 +1,8 @@
 .wrapper {
     display: flex;
     flex-direction: column;
+    overflow: hidden !important;
+    
 }
 
 .works-wrapper {
@@ -83,6 +85,7 @@
 }
 
 .descriptions {
+    margin-left: 20px;
     margin-top: 50px;
 
     font-size: 16px;
