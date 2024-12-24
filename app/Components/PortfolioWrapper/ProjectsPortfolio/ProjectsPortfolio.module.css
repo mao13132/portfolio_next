@@ -42,7 +42,7 @@
 
 .desc {
     display: flex;
-    padding: 30px 0;
+    padding: 10px 0 30px 0;
     height: 100% !important;
     flex-direction: column !important;
     justify-content: space-between !important;
