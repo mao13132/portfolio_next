@@ -11,9 +11,20 @@ export const ClickComponent = ({ }: ClickComponentProps): JSX.Element => {
     useEffect(() => {
         const link = `${API_URL}${getClick()}`;
 
-        axios.post(link, { url: `${process.env.NEXT_PUBLIC_FRONTEND}${asPath}` }).then(
+        const cookies = document.cookie.split('; ').reduce((acc, cookie) => {
+            const [name, value] = cookie.split('=');
+            acc[name] = value;
+            return acc;
+        }, {} as Record<string, string>);
+
+        const utm_source = cookies['utm_source'];
+
+        const data = { url: `${process.env.NEXT_PUBLIC_FRONTEND}${asPath}`, utm_source: utm_source };
+
+
+        axios.post(link, data).then(
             response => {
-                
+
             }
         ).catch(error => {
 

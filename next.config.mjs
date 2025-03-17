@@ -9,6 +9,7 @@ const nextConfig = {
     experimental: {
         //largePageDataBytes: 128 * 1000, // 128KB by default
         largePageDataBytes: 220 * 1000,
+        middleware: true,
     },
     poweredByHeader: false,
     optimizeFonts: false,
