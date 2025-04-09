@@ -726,7 +726,13 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                                                                 className={cn(styles.optionTooltip, {
                                                                     [styles.active]: activeTooltip === option.id
                                                                 })}
+                                                                onClick={(e) => e.stopPropagation()}
                                                             >
+                                                                <button 
+                                                                    className={styles.closeButton}
+                                                                    onClick={() => setActiveTooltip(null)}
+                                                                    aria-label="Закрыть подсказку"
+                                                                />
                                                                 {option.description}
                                                             </div>
                                                         </div>
