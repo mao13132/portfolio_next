@@ -144,6 +144,19 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
     const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
     const tooltipRef = useRef<HTMLDivElement>(null);
 
+    // Добавляем обработку скролла
+    useEffect(() => {
+        if (isSubmitted) {
+            const quizElement = document.getElementById('quiz');
+            if (quizElement) {
+                // Используем requestAnimationFrame для гарантии выполнения после рендера
+                requestAnimationFrame(() => {
+                    quizElement.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        }
+    }, [isSubmitted]);
+
     const currentQuestions = quizData[currentSection]?.questions || [];
     const currentQuestion = currentQuestions[currentQuestionIndex];
 
@@ -554,13 +567,13 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                                 <div className={styles['input-wrapper']}>
                                     <InputMask
                                         mask="+7 (999) 999-99-99"
-                                value={phone}
-                                onChange={handlePhoneChange}
-                                onKeyPress={handleKeyPress}
+                                        value={phone}
+                                        onChange={handlePhoneChange}
+                                        onKeyPress={handleKeyPress}
                                         placeholder="+7 (___) ___-__-__"
                                         className={styles['contact-input']}
-                            />
-                            {phoneError && <div className={styles['error']}>{phoneError}</div>}
+                                    />
+                                    {phoneError && <div className={styles['error']}>{phoneError}</div>}
                                 </div>
                             ) : (
                                 <div className={styles['input-wrapper']}>
@@ -577,13 +590,13 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                         </div>
                         <div className={styles['quiz-submit']}>
                             <QuizButton
-                                text="Назад"
-                                onClick={handlePrevious}
-                            />
-                            <QuizButton
                                 text={isLoading ? "Отправка..." : "Отправить"}
                                 onClick={handleSubmit}
                                 disabled={contactType === 'phone' ? !validatePhone(phone) : telegram.trim().length === 0 || isLoading}
+                            />
+                            <QuizButton
+                                text="Назад"
+                                onClick={handlePrevious}
                             />
                         </div>
                     </motion.div>
@@ -593,16 +606,18 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
     }
 
     if (!currentQuestion) {
-        return <section className={cn(className, styles['quiz'])} {...props} id="quiz">
-            <div className={styles['quiz-wrapper']}>
-                <div className={styles['quiz-content']}>
-                    <HeadingTitle title="Ошибка загрузки вопроса" spanTitle="" />
-                    <p style={{ textAlign: 'center', marginTop: '20px' }}>
-                        Пожалуйста, попробуйте начать опрос заново.
-                    </p>
+        return (
+            <section className={cn(className, styles['quiz'])} {...props} id="quiz">
+                <div className={styles['quiz-wrapper']}>
+                    <div className={styles['quiz-content']}>
+                        <HeadingTitle title="Ошибка загрузки вопроса" spanTitle="" />
+                        <p style={{ textAlign: 'center', marginTop: '20px' }}>
+                            Пожалуйста, попробуйте начать опрос заново.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>;
+            </section>
+        );
     }
 
     return (
@@ -613,161 +628,90 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
             
             <div className={styles['quiz-wrapper']}>
                 <AnimatePresence mode="wait">
-                    {!isSubmitted ? (
-                        showContactInput ? (
-                            <motion.div 
-                                key="contact"
-                                className={styles.contactSection}
-                                variants={fadeAnimation}
+                    <motion.div 
+                        key="question"
+                        variants={fadeAnimation}
+                        initial="hidden"
+                        animate="visible"
+                        exit="exit"
+                        className={styles['quiz-content']}
+                        ref={contentRef}
+                        style={{ height: contentHeight }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                    >
+                        <div className={styles['quiz-question']}>
+                            <motion.h3
+                                variants={questionAnimation}
                                 initial="hidden"
                                 animate="visible"
                                 exit="exit"
                             >
-                                <h3>Оставьте контактные данные</h3>
-                                <div className={styles['contact-type-selector']}>
-                                    <button
-                                        className={cn(styles['contact-type-button'], {
-                                            [styles['active']]: contactType === 'phone'
-                                        })}
-                                        onClick={() => handleContactTypeChange('phone')}
-                                    >
-                                        Телефон
-                                    </button>
-                                    <button
-                                        className={cn(styles['contact-type-button'], {
-                                            [styles['active']]: contactType === 'telegram'
-                                        })}
-                                        onClick={() => handleContactTypeChange('telegram')}
-                                    >
-                                        Telegram
-                                    </button>
-                                </div>
-                                {contactType === 'phone' ? (
-                                    <div className={styles['input-wrapper']}>
-                                        <InputMask
-                                            mask="+7 (999) 999-99-99"
-                                    value={phone}
-                                    onChange={handlePhoneChange}
-                                    onKeyPress={handleKeyPress}
-                                            placeholder="+7 (___) ___-__-__"
-                                            className={styles['contact-input']}
-                                />
-                                {phoneError && <p className={styles.error}>{phoneError}</p>}
-                                    </div>
-                                ) : (
-                                    <div className={styles['input-wrapper']}>
-                                        <input
-                                            type="text"
-                                            value={telegram}
-                                            onChange={handleTelegramChange}
-                                            placeholder="@username"
-                                            className={styles['contact-input']}
-                                        />
-                                        {telegramError && <p className={styles.error}>{telegramError}</p>}
-                                    </div>
-                                )}
-                                <div className={styles.buttonGroup}>
-                                    <button onClick={handlePrevious} className={styles.backButton}>
-                                        Назад
-                                    </button>
-                                    <button onClick={handleSubmit} className={styles.submitButton}>
-                                        Отправить
-                                    </button>
-                                </div>
-                            </motion.div>
-                        ) : (
-                            <motion.div 
-                                key="question"
-                                variants={fadeAnimation}
-                                initial="hidden"
-                                animate="visible"
-                                exit="exit"
-                                className={styles['quiz-content']}
-                                ref={contentRef}
-                                style={{ height: contentHeight }}
-                                transition={{ duration: 0.3, ease: "easeInOut" }}
-                            >
-                                <div className={styles['quiz-question']}>
-                                    <motion.h3
-                                        variants={questionAnimation}
+                                {currentQuestion.text}
+                            </motion.h3>
+                            <div className={styles['quiz-options']}>
+                                {currentQuestion.options.map((option, index) => (
+                                    <motion.div 
+                                        key={option.id}
+                                        className={styles.optionWrapper}
+                                        variants={optionsAnimation}
                                         initial="hidden"
                                         animate="visible"
                                         exit="exit"
+                                        custom={index}
                                     >
-                                        {currentQuestion.text}
-                                    </motion.h3>
-                                    <div className={styles['quiz-options']}>
-                                        {currentQuestion.options.map((option, index) => (
-                                            <div 
-                                                key={option.id}
-                                                className={styles.optionWrapper}
-                                            >
-                                                <button
-                                                    className={cn(styles['quiz-option'])}
-                                                    onClick={() => handleOptionSelect(option)}
-                                                >
-                                                    <span className={styles.optionText}>{option.text}</span>
-                                                    {option.description && (
-                                                        <div className={styles.tooltipContainer}>
-                                                            <span 
-                                                                className={styles.questionMark}
-                                                                onClick={(e) => {
-                                                                    e.stopPropagation();
-                                                                    handleTooltipClick(option.id, e);
-                                                                }}
-                                                            >
-                                                                <div className={cn(styles.pulse, styles.pulseOne)}></div>
-                                                                <div className={cn(styles.pulse, styles.pulseTwo)}></div>
-                                                                <div className={cn(styles.pulse, styles.pulseThree)}></div>
-                                                                ?
-                                                            </span>
-                                                            <div 
-                                                                ref={tooltipRef}
-                                                                className={cn(styles.optionTooltip, {
-                                                                    [styles.active]: activeTooltip === option.id
-                                                                })}
-                                                                onClick={(e) => e.stopPropagation()}
-                                                            >
-                                                                <button 
-                                                                    className={styles.closeButton}
-                                                                    onClick={() => setActiveTooltip(null)}
-                                                                    aria-label="Закрыть подсказку"
-                                                                />
-                                                                {option.description}
-                                                            </div>
-                                                        </div>
-                                                    )}
-                                                </button>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
+                                        <button
+                                            className={cn(styles['quiz-option'])}
+                                            onClick={() => handleOptionSelect(option)}
+                                        >
+                                            <span className={styles.optionText}>{option.text}</span>
+                                            {option.description && (
+                                                <div className={styles.tooltipContainer}>
+                                                    <span 
+                                                        className={styles.questionMark}
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            handleTooltipClick(option.id, e);
+                                                        }}
+                                                    >
+                                                        <div className={cn(styles.pulse, styles.pulseOne)}></div>
+                                                        <div className={cn(styles.pulse, styles.pulseTwo)}></div>
+                                                        <div className={cn(styles.pulse, styles.pulseThree)}></div>
+                                                        ?
+                                                    </span>
+                                                    <div 
+                                                        ref={tooltipRef}
+                                                        className={cn(styles.optionTooltip, {
+                                                            [styles.active]: activeTooltip === option.id
+                                                        })}
+                                                        onClick={(e) => e.stopPropagation()}
+                                                    >
+                                                        <button 
+                                                            className={styles.closeButton}
+                                                            onClick={() => setActiveTooltip(null)}
+                                                            aria-label="Закрыть подсказку"
+                                                        />
+                                                        {option.description}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </button>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
 
-                                {currentSection !== 'main' && (
-                                    <motion.button 
-                                        onClick={handlePrevious} 
-                                        className={styles.backButton}
-                                        variants={fadeAnimation}
-                                        initial="hidden"
-                                        animate="visible"
-                                    >
-                                        Назад
-                                    </motion.button>
-                                )}
-                            </motion.div>
-                        )
-                    ) : (
-                        <motion.div 
-                            key="success"
-                            className={styles.successMessage}
-                            variants={successAnimation}
-                            initial="hidden"
-                            animate="visible"
-                        >
-                            <h3>Спасибо за ваши ответы!</h3>
-                            <p>Мы свяжемся с вами в ближайшее время.</p>
-                        </motion.div>
-                    )}
+                        {currentSection !== 'main' && (
+                            <motion.button 
+                                onClick={handlePrevious} 
+                                className={styles.backButton}
+                                variants={fadeAnimation}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                Назад
+                            </motion.button>
+                        )}
+                    </motion.div>
                 </AnimatePresence>
             </div>
         </section>
