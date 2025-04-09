@@ -141,6 +141,8 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
     const [isLoading, setIsLoading] = useState(false);
     const contentRef = useRef<HTMLDivElement>(null);
     const startTime = Date.now();
+    const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
+    const tooltipRef = useRef<HTMLDivElement>(null);
 
     const currentQuestions = quizData[currentSection]?.questions || [];
     const currentQuestion = currentQuestions[currentQuestionIndex];
@@ -361,8 +363,8 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
         if (contactType === 'phone') {
             isValid = validatePhone(phone);
             if (!isValid) {
-                setPhoneError('Введите корректный номер телефона в формате +7 XXX XXX-XX-XX или других стран СНГ');
-                return;
+            setPhoneError('Введите корректный номер телефона в формате +7 XXX XXX-XX-XX или других стран СНГ');
+            return;
             }
             contactValue = phone.replace(/\D/g, '');
         } else {
@@ -477,6 +479,24 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
     const isPhoneValid = phone.trim() !== '' && validatePhone(phone);
 
     useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (tooltipRef.current && !tooltipRef.current.contains(event.target as Node)) {
+                setActiveTooltip(null);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    const handleTooltipClick = (optionId: string, event: React.MouseEvent) => {
+        event.stopPropagation();
+        setActiveTooltip(activeTooltip === optionId ? null : optionId);
+    };
+
+    useEffect(() => {
         if (contentRef.current) {
             setContentHeight(contentRef.current.scrollHeight);
         }
@@ -534,13 +554,13 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                                 <div className={styles['input-wrapper']}>
                                     <InputMask
                                         mask="+7 (999) 999-99-99"
-                                        value={phone}
-                                        onChange={handlePhoneChange}
-                                        onKeyPress={handleKeyPress}
+                                value={phone}
+                                onChange={handlePhoneChange}
+                                onKeyPress={handleKeyPress}
                                         placeholder="+7 (___) ___-__-__"
                                         className={styles['contact-input']}
-                                    />
-                                    {phoneError && <div className={styles['error']}>{phoneError}</div>}
+                            />
+                            {phoneError && <div className={styles['error']}>{phoneError}</div>}
                                 </div>
                             ) : (
                                 <div className={styles['input-wrapper']}>
@@ -626,13 +646,13 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                                     <div className={styles['input-wrapper']}>
                                         <InputMask
                                             mask="+7 (999) 999-99-99"
-                                            value={phone}
-                                            onChange={handlePhoneChange}
-                                            onKeyPress={handleKeyPress}
+                                    value={phone}
+                                    onChange={handlePhoneChange}
+                                    onKeyPress={handleKeyPress}
                                             placeholder="+7 (___) ___-__-__"
                                             className={styles['contact-input']}
-                                        />
-                                        {phoneError && <p className={styles.error}>{phoneError}</p>}
+                                />
+                                {phoneError && <p className={styles.error}>{phoneError}</p>}
                                     </div>
                                 ) : (
                                     <div className={styles['input-wrapper']}>
@@ -679,7 +699,7 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                                     <div className={styles['quiz-options']}>
                                         {currentQuestion.options.map((option, index) => (
                                             <div 
-                                                key={option.id} 
+                                                key={option.id}
                                                 className={styles.optionWrapper}
                                             >
                                                 <button
@@ -689,8 +709,24 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                                                     <span className={styles.optionText}>{option.text}</span>
                                                     {option.description && (
                                                         <div className={styles.tooltipContainer}>
-                                                            <span className={styles.questionMark}>?</span>
-                                                            <div className={styles.optionTooltip}>
+                                                            <span 
+                                                                className={styles.questionMark}
+                                                                onClick={(e) => {
+                                                                    e.stopPropagation();
+                                                                    handleTooltipClick(option.id, e);
+                                                                }}
+                                                            >
+                                                                <div className={cn(styles.pulse, styles.pulseOne)}></div>
+                                                                <div className={cn(styles.pulse, styles.pulseTwo)}></div>
+                                                                <div className={cn(styles.pulse, styles.pulseThree)}></div>
+                                                                ?
+                                                            </span>
+                                                            <div 
+                                                                ref={tooltipRef}
+                                                                className={cn(styles.optionTooltip, {
+                                                                    [styles.active]: activeTooltip === option.id
+                                                                })}
+                                                            >
                                                                 {option.description}
                                                             </div>
                                                         </div>
