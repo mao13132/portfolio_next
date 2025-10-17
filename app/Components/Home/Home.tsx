@@ -66,7 +66,13 @@ export const Home = ({ className, ...props }: HomeProps): JSX.Element => {
 
                     <SocialMedia />
 
-                    <ButtonLinkPulse link={`#contact`} text={`Написать мне`} />
+                    <div className={styles['btns']}>
+
+                        <ButtonLinkPulse link={`#contact`} text={`Написать мне`} />
+
+                        <ButtonLinkPulse link={`#portfolio`} text={`Мои работы`} />
+
+                    </div>
 
                 </div>
 

@@ -3,6 +3,8 @@
     flex-direction: row;
     gap: 5px;
     margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
 }
 
 .social-media a {
@@ -19,7 +21,7 @@
     font-size: 36px;
 
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 3rem 1.5rem 3rem 1.5rem;
 
     transition: .5s ease;
 }

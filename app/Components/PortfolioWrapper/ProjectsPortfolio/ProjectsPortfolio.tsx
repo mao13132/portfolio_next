@@ -10,7 +10,7 @@ export const ProjectsPortfolio = ({ icon, image, link, text, title, className, .
     return (
         <div className={cn(className, styles["box"])} {...props}>
             <Link href={link} className={styles['wrapp']}>
-                <Image src={`${process.env.NEXT_PUBLIC_FRONTEND}/${image}`}
+                <Image src={image}
                     alt=""
                     width={100}
                     height={100}

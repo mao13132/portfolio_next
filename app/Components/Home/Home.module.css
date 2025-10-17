@@ -6,7 +6,7 @@
 }
 
 .actions {
-        width: fit-content;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,6 +53,14 @@
     -moz-animation: startImage 1s ease-in-out forwards, floatImage 4s ease-in-out infinite;
     -o-animation: startImage 1s ease-in-out forwards, floatImage 4s ease-in-out infinite; */
     animation: floatImage 4s ease-in-out infinite
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    justify-content: center;
 }
 
 
@@ -115,6 +123,11 @@
     }
     .hello {
         margin-bottom: 10px;
+    }
+    .btns {
+        flex-direction: column;
+        width: fit-content;
+        gap: 50px;
     }
 }
 @media (max-width: 500px) {
