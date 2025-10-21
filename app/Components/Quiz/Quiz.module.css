@@ -45,6 +45,7 @@
     min-height: 300px;
 }
 
+/* Улучшенные стили для заголовков вопросов */
 .quiz-question h3 {
     font-size: 3.6rem;
     color: var(--main-color);
@@ -56,6 +57,11 @@
     right: 60px;
     min-height: 90px;
     margin: 0;
+    /* Добавляем обработку переполнения текста */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.2;
 }
 
 .quiz-options {
@@ -434,49 +440,163 @@
     }
 
     .quiz-content {
-        padding: 25px 15px;
         border-radius: 20px;
         min-height: 350px;
+        padding: 25px 15px;
     }
 
     .quiz-question {
-        padding-top: 120px;
+        padding-top: 100px;
+        margin-bottom: 60px;
     }
 
     .quiz-question h3 {
-        font-size: 3rem;
-        min-height: 60px;
-        top: 25px;
-        left: 15px;
-        right: 15px;
+        font-size: 2.2rem;
+        min-height: 50px;
+        top: 15px;
+        left: 10px;
+        right: 10px;
+        line-height: 1.3;
+    }
+
+    .quiz-options {
+        gap: 12px;
+        margin-top: 15px;
     }
 
     .quiz-option {
-        padding: 15px 20px;
-        font-size: 1.7rem;
-        border-radius: 12px;
+        padding: 12px 15px;
+        font-size: 1.5rem;
+        border-radius: 10px;
+        min-height: 50px;
+    }
+
+    .optionText {
+        padding-right: 30px;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .questionMark {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+        right: 10px;
     }
 
     .quiz-phone h3 {
-        font-size: 2rem;
-        min-height: 60px;
+        font-size: 1.8rem;
+        min-height: 50px;
     }
 
     .quiz-phone input,
     .quiz-button,
     .backButton {
+        padding: 12px 15px;
+        font-size: 1.5rem;
+    }
+
+    .contact-type-button {
+        padding: 12px 15px;
+        font-size: 1.5rem;
+    }
+
+    .contact-input {
         padding: 15px 20px;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+    }
+
+    .quiz-contact h3 {
+        font-size: 2.2rem;
+        min-height: 50px;
     }
 
     .error {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
     .quiz-button:disabled:hover::after {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        padding: 8px 10px;
+        width: 220px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 360px) {
+    .quiz-content {
+        padding: 20px 10px;
+        min-height: 320px;
+    }
+
+    .quiz-question {
+        padding-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .quiz-question h3 {
+        font-size: 1.9rem;
+        min-height: 45px;
+        top: 10px;
+        left: 5px;
+        right: 5px;
+        line-height: 1.2;
+    }
+
+    .quiz-option {
         padding: 10px 12px;
-        width: 250px;
+        font-size: 1.4rem;
+        min-height: 45px;
+    }
+
+    .optionText {
+        padding-right: 25px;
+        font-size: 1.4rem;
+    }
+
+    .questionMark {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        right: 8px;
+    }
+
+    .quiz-phone h3 {
+        font-size: 1.6rem;
+        min-height: 45px;
+    }
+
+    .quiz-phone input,
+    .quiz-button,
+    .backButton {
+        padding: 10px 12px;
+        font-size: 1.4rem;
+    }
+
+    .contact-type-button {
+        padding: 10px 12px;
+        font-size: 1.4rem;
+    }
+
+    .contact-input {
+        padding: 12px 15px;
+        font-size: 1.5rem;
+    }
+
+    .quiz-contact h3 {
+        font-size: 1.9rem;
+        min-height: 45px;
+    }
+
+    .error {
+        font-size: 1.2rem;
+    }
+
+    .optionTooltip {
+        width: 95%;
+        max-width: 300px;
+        font-size: 14px;
+        padding: 12px;
     }
 }
 
