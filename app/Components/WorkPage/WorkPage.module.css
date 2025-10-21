@@ -27,34 +27,44 @@
 .title-row {
     display: flex;
     flex-direction: column;
-
     align-items: center;
     text-align: center;
-
-
+    /* Убираем отладочную рамку */
     margin-top: 30px;
+    padding: 0 20px; /* Добавляем внутренние отступы для лучшего размещения */
+    max-width: 100%; /* Ограничиваем максимальную ширину */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
 }
 
 .title {
     text-transform: uppercase;
-    word-wrap: unset;
+    word-wrap: break-word; /* Исправляем перенос слов */
+    hyphens: auto; /* Добавляем автоматические переносы */
+    max-width: 100%; /* Ограничиваем ширину заголовка */
+    line-height: 1.2; /* Оптимальная высота строки */
+    margin: 0; /* Убираем стандартные отступы */
 }
 
 .text {
-
     margin: 60px 0;
-
     font-size: 16px;
     line-height: 30px;
+    max-width: 100%; /* Ограничиваем ширину текста */
+    word-wrap: break-word; /* Обеспечиваем перенос длинных слов */
+    hyphens: auto; /* Автоматические переносы */
+    text-align: center; /* Центрируем текст */
 }
 
 .main {
     margin-top: 80px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
+    /* Убираем отладочную рамку */
+    padding: 0 20px; /* Добавляем отступы для мобильных устройств */
+    max-width: 100%; /* Ограничиваем ширину */
+    box-sizing: border-box;
 }
 
 .footer {
@@ -82,26 +92,143 @@
 
 .desc-wrapper {
     margin: 100px 0;
+    padding: 0 20px; /* Добавляем боковые отступы */
+    max-width: 100%; /* Ограничиваем ширину */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+    overflow-x: hidden; /* Скрываем горизонтальное переполнение */
+    width: 100%; /* Принудительно устанавливаем ширину */
+}
+
+/* Принудительные ограничения для всех дочерних элементов */
+.desc-wrapper * {
+    max-width: 100% !important; /* Принудительно ограничиваем ширину всех элементов */
+    box-sizing: border-box !important; /* Учитываем padding и border */
+    word-wrap: break-word !important; /* Принудительный перенос слов */
+    overflow-wrap: break-word !important; /* Дополнительный перенос */
+    hyphens: auto !important; /* Автоматические переносы */
+}
+
+/* Специальные правила для блочных элементов */
+.desc-wrapper div,
+.desc-wrapper p,
+.desc-wrapper h1,
+.desc-wrapper h2,
+.desc-wrapper h3,
+.desc-wrapper h4,
+.desc-wrapper h5,
+.desc-wrapper h6 {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 .descriptions {
     margin-left: 20px;
     margin-top: 50px;
-
     font-size: 16px;
-
     line-height: 30px;
+    word-wrap: break-word; /* Обеспечиваем перенос длинных слов */
+    hyphens: auto; /* Автоматические переносы */
+    max-width: 100%; /* Ограничиваем ширину текста */
+    width: calc(100% - 20px); /* Учитываем левый отступ */
 }
 
 @media (max-width: 768px) {
     .main {
-        margin-top: 0 !important;
+        margin-top: 40px !important; /* Уменьшаем отступ сверху на мобильных */
+        padding: 0 15px; /* Уменьшаем боковые отступы */
+    }
+
+    .title-row {
+        margin-top: 20px; /* Уменьшаем отступ сверху */
+        padding: 0 15px; /* Уменьшаем боковые отступы */
+    }
+
+    .title {
+        font-size: clamp(1.5rem, 4vw, 2.5rem); /* Адаптивный размер шрифта */
+        line-height: 1.1; /* Более компактная высота строки */
+    }
+
+    .text {
+        margin: 30px 0; /* Уменьшаем вертикальные отступы */
+        font-size: 14px; /* Уменьшаем размер шрифта */
+        line-height: 24px; /* Уменьшаем высоту строки */
+        padding: 0 10px; /* Добавляем небольшие отступы */
+    }
+
+    .desc-wrapper {
+        margin: 60px 0; /* Уменьшаем вертикальные отступы */
+        padding: 0 15px; /* Уменьшаем боковые отступы */
+        width: 100% !important; /* Принудительная ширина */
+        overflow-x: hidden !important; /* Скрываем переполнение */
+    }
+
+    /* Усиленные ограничения для планшетов */
+    .desc-wrapper * {
+        max-width: calc(100vw - 30px) !important; /* Учитываем отступы viewport */
+        width: auto !important;
+    }
+
+    .descriptions {
+        margin-left: 15px; /* Уменьшаем левый отступ */
+        margin-top: 30px; /* Уменьшаем верхний отступ */
+        font-size: 14px; /* Уменьшаем размер шрифта */
+        line-height: 26px; /* Уменьшаем высоту строки */
+        width: calc(100% - 15px) !important; /* Учитываем левый отступ */
+        max-width: calc(100vw - 45px) !important; /* Viewport ограничение */
     }
 
     /* 
     .video-wrapper {
         width: 200px !important;
     } */
+}
+
+@media (max-width: 480px) {
+    .main {
+        margin-top: 20px !important; /* Еще меньше отступ для очень маленьких экранов */
+        padding: 0 10px;
+    }
+
+    .title-row {
+        margin-top: 15px;
+        padding: 0 10px;
+    }
+
+    .title {
+        font-size: clamp(1.2rem, 5vw, 2rem); /* Еще более адаптивный размер */
+        line-height: 1.0;
+    }
+
+    .text {
+        margin: 20px 0;
+        font-size: 13px;
+        line-height: 22px;
+        padding: 0 5px;
+    }
+
+    .desc-wrapper {
+        margin: 40px 0; /* Еще меньше вертикальные отступы */
+        padding: 0 10px; /* Минимальные боковые отступы */
+        width: 100% !important; /* Принудительная ширина */
+        overflow-x: hidden !important; /* Скрываем переполнение */
+    }
+
+    /* Максимально строгие ограничения для мобильных */
+    .desc-wrapper * {
+        max-width: calc(100vw - 20px) !important; /* Учитываем отступы viewport */
+        width: auto !important;
+        min-width: 0 !important; /* Позволяем сжиматься */
+    }
+
+    .descriptions {
+        margin-left: 10px; /* Минимальный левый отступ */
+        margin-top: 20px; /* Уменьшаем верхний отступ */
+        font-size: 13px; /* Минимальный размер шрифта */
+        line-height: 24px; /* Компактная высота строки */
+        width: calc(100% - 10px) !important; /* Учитываем левый отступ */
+        max-width: calc(100vw - 30px) !important; /* Viewport ограничение */
+    }
 }
 
 @media (max-width: 991px) {
