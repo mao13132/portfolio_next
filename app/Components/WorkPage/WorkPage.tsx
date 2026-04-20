@@ -1,5 +1,7 @@
 import { WorkPageProps } from "./WorkPage.props";
 import { AppContext } from "@/app/Context/app.context";
+import Head from "next/head";
+import { useEffect } from "react";
 
 import styles from './WorkPage.module.css';
 
@@ -17,15 +19,29 @@ import { descriptionsAnimation } from "./animationsDescriptions";
 export const WorkPage = ({ className, ...props }: WorkPageProps): JSX.Element => {
     const { work } = useContext(AppContext);
 
+    useEffect(() => {
+        if (work?.title) {
+            document.title = `${work.title} | Портфолио Дмитрия Малышева`;
+        }
+    }, [work]);
+
     return (
-        <div className={cn(className, styles['wrapper'])} {...props}>
+        <>
+            <Head>
+                {work?.title && <title>{work.title} | Портфолио Дмитрия Малышева</title>}
+                {work?.title && <meta name="description" content={work.title} />}
+                {work?.title && <meta property="og:title" content={work.title} />}
+                {work?.title && <meta property="og:description" content={work.title} />}
+            </Head>
+
+            <div className={cn(className, styles['wrapper'])} {...props}>
 
             <HeaderCategory />
 
             <div className={cn(index_styles['section'], styles['main'])}>
 
                 <div className={styles['title-row']}>
-                    <HeadingTitle className={styles['title']} title='' spanTitle={work?.title || ``} />
+                    <HeadingTitle tag='h1' className={styles['title']} title='' spanTitle={work?.title || ``} />
 
                     <div className={styles['text']}>{work?.text || ``}</div>
 
@@ -51,6 +67,7 @@ export const WorkPage = ({ className, ...props }: WorkPageProps): JSX.Element =>
 
             <Footer className={styles['footer']} />
 
-        </div>
+            </div>
+        </>
     );
 };

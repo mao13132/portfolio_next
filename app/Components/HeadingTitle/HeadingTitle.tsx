@@ -6,9 +6,10 @@ import { HeadingTitleProps } from './HeadingTitle.props';
 import { motion } from 'framer-motion';
 import { ForwardedRef, forwardRef } from 'react';
 
-export const HeadingTitle = forwardRef(({ spanTitle, title, className, ...props }: HeadingTitleProps, ref: ForwardedRef<HTMLDivElement>): JSX.Element => {
+export const HeadingTitle = forwardRef(({ spanTitle, title, className, tag = 'h2', ...props }: HeadingTitleProps, ref: ForwardedRef<HTMLHeadingElement>): JSX.Element => {
+    const Tag = tag;
     return (
-        <h2 ref={ref} className={cn(className, styles["heading"])} {...props}>{title}<span>{spanTitle}</span></h2>
+        <Tag ref={ref} className={cn(className, styles["heading"])} {...props}>{title}<span>{spanTitle}</span></Tag>
     );
 });
 
