@@ -35,7 +35,7 @@ export const LandingHeader = ({ navLinks }: LandingHeaderProps) => {
                     ))}
                 </nav>
 
-                <a href="tel:+79001234567" className={styles.headerPhone}>
+                <a href="tel:+79648325336" className={styles.headerPhone}>
                     <i className='bx bx-phone' />
                     Связаться
                 </a>

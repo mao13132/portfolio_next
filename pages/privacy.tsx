@@ -45,7 +45,7 @@ export default function PrivacyPage() {
                                 Адрес электроннойной почты: <a href="mailto:dima@example.com">dima@example.com</a>
                             </p>
                             <p>
-                                Telegram: <a href="https://t.me/dima_razrab" target="_blank" rel="noopener noreferrer">@dima_razrab</a>
+                                Telegram: <a href="https://t.me/developer_telegrams" target="_blank" rel="noopener noreferrer">@developer_telegrams</a>
                             </p>
                         </section>
 

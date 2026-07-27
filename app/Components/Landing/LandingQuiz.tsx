@@ -74,7 +74,7 @@ export const LandingQuiz = ({ title = 'Подберём решение за 30 �
 
             setSuccess(true);
         } catch {
-            setError('Ошибка отправки. Попробуйте написать в Telegram: @dima_razrab');
+            setError('Ошибка отправки. Попробуйте написать в Telegram: @developer_telegrams');
         }
         setLoading(false);
     };

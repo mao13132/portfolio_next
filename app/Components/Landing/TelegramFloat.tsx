@@ -5,7 +5,7 @@ interface TelegramFloatProps {
     username?: string;
 }
 
-export const TelegramFloat = ({ username = 'dima_razrab' }: TelegramFloatProps) => {
+export const TelegramFloat = ({ username = 'developer_telegrams' }: TelegramFloatProps) => {
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {

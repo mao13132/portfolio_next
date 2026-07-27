@@ -374,7 +374,7 @@ const LeadForm = ({ source, title, subtitle, compact = false }: LeadFormProps) =
             setPrivacy(false);
             setSuccess(true);
         } catch {
-            setError('Ошибка отправки. Попробуйте написать в Telegram: @dima_razrab');
+            setError('Ошибка отправки. Попробуйте написать в Telegram: @developer_telegrams');
         }
         setLoading(false);
     };
@@ -592,7 +592,7 @@ export default function RazrabotkaBotovPage() {
                         <a href="#faq" onClick={() => setMobileMenu(false)}>FAQ</a>
                     </nav>
 
-                    <a href="tel:+79001234567" className={styles.headerPhone}>
+                    <a href="tel:+79648325336" className={styles.headerPhone}>
                         <i className='bx bx-phone' />
                         Связаться
                     </a>
@@ -1186,8 +1186,8 @@ export default function RazrabotkaBotovPage() {
                         </div>
                         <div>
                             <h4>Связаться</h4>
-                            <a href="https://t.me/dima_razrab" target="_blank" rel="noopener noreferrer">
-                                Telegram: @dima_razrab
+                            <a href="https://t.me/developer_telegrams" target="_blank" rel="noopener noreferrer">
+                                Telegram: @developer_telegrams
                             </a>
                         </div>
                     </div>

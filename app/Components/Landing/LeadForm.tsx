@@ -52,7 +52,7 @@ export const LeadForm = ({ source, pageUrl, title, subtitle, compact = false }: 
             setPrivacy(false);
             setSuccess(true);
         } catch {
-            setError('Ошибка отправки. Попробуйте написать в Telegram: @dima_razrab');
+            setError('Ошибка отправки. Попробуйте написать в Telegram: @developer_telegrams');
         }
         setLoading(false);
     };

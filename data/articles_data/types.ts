@@ -62,7 +62,7 @@ const author = {
     "name": "Дмитрий Малышев",
     "url": SITE_URL,
     "jobTitle": "Fullstack-разработчик",
-    "sameAs": ["https://t.me/dima_razrab"],
+    "sameAs": ["https://t.me/developer_telegrams"],
 };
 
 export const makeArticleSchema = (

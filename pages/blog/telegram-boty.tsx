@@ -316,8 +316,8 @@ export default function TelegramBotyHubPage() {
                             </div>
                             <div>
                                 <h4>Связаться</h4>
-                                <a href="https://t.me/dima_razrab" target="_blank" rel="noopener noreferrer">
-                                    Telegram: @dima_razrab
+                                <a href="https://t.me/developer_telegrams" target="_blank" rel="noopener noreferrer">
+                                    Telegram: @developer_telegrams
                                 </a>
                                 <a href="/privacy" target="_blank" rel="noopener noreferrer">
                                     Политика конфиденциальности
