@@ -77,6 +77,9 @@ export default function BlogIndexPage() {
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Блог о Telegram-ботах и автоматизации бизнеса" />
+                <meta name="twitter:description" content="Полезные статьи о Telegram-ботах, автоматизации и разработке. Руководства и кейсы." />
+                <meta name="twitter:image" content={`${SITE_URL}/media/og_desc.jpg`} />
 
                 <script
                     type="application/ld+json"

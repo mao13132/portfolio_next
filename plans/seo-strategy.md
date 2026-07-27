@@ -135,102 +135,102 @@
 
   <!-- Главная -->
   <url>
-    <loc>https://dima-razrab.ru/</loc>
+    <loc>https://dima-razrab.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- Коммерческие страницы -->
   <url>
-    <loc>https://dima-razrab.ru/razrabotka-botov</loc>
+    <loc>https://dima-razrab.com/razrabotka-botov</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/razrabotka-servisov</loc>
+    <loc>https://dima-razrab.com/razrabotka-servisov</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/razrabotka-crm</loc>
+    <loc>https://dima-razrab.com/razrabotka-crm</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/avtomatizaciya-biznesa</loc>
+    <loc>https://dima-razrab.com/avtomatizaciya-biznesa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Блог -->
   <url>
-    <loc>https://dima-razrab.ru/blog</loc>
+    <loc>https://dima-razrab.com/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Хаб-страница -->
   <url>
-    <loc>https://dima-razrab.ru/blog/telegram-boty</loc>
+    <loc>https://dima-razrab.com/blog/telegram-boty</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Статьи блога -->
   <url>
-    <loc>https://dima-razrab.ru/blog/telegram-bot-dlya-biznesa</loc>
+    <loc>https://dima-razrab.com/blog/telegram-bot-dlya-biznesa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/skolko-stoit-razrabotka-telegram-bota</loc>
+    <loc>https://dima-razrab.com/blog/skolko-stoit-razrabotka-telegram-bota</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/kak-sdelat-telegram-bota-na-python</loc>
+    <loc>https://dima-razrab.com/blog/kak-sdelat-telegram-bota-na-python</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/telegram-bot-dlya-priyoma-zayavok</loc>
+    <loc>https://dima-razrab.com/blog/telegram-bot-dlya-priyoma-zayavok</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/telegram-bot-dlya-internet-magazina</loc>
+    <loc>https://dima-razrab.com/blog/telegram-bot-dlya-internet-magazina</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/telegram-bot-dlya-zapisi-klientov</loc>
+    <loc>https://dima-razrab.com/blog/telegram-bot-dlya-zapisi-klientov</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/telegram-bot-dlya-prodazh</loc>
+    <loc>https://dima-razrab.com/blog/telegram-bot-dlya-prodazh</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/ai-telegram-bot-dlya-biznesa</loc>
+    <loc>https://dima-razrab.com/blog/ai-telegram-bot-dlya-biznesa</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/razrabotka-telegram-bota-pod-klyuch</loc>
+    <loc>https://dima-razrab.com/blog/razrabotka-telegram-bota-pod-klyuch</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://dima-razrab.ru/blog/kak-sozdat-ai-bot-telegram</loc>
+    <loc>https://dima-razrab.com/blog/kak-sozdat-ai-bot-telegram</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Прочее -->
   <url>
-    <loc>https://dima-razrab.ru/privacy</loc>
+    <loc>https://dima-razrab.com/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -246,7 +246,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dima-razrab.ru/sitemap.xml
+Sitemap: https://dima-razrab.com/sitemap.xml
 
 # Disallow admin/API routes
 Disallow: /api/
