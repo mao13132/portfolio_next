@@ -1,7 +1,7 @@
 import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, NextScript } from "next/document";
 
 
-class MyDOcument extends Document {
+class MyDocument extends Document {
     static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
         const initialProps = await Document.getInitialProps(ctx);
 
@@ -12,7 +12,11 @@ class MyDOcument extends Document {
     render(): JSX.Element {
         return (
             <Html lang="ru">
-                <Head />
+                <Head>
+                    {/* Google Fonts — Inter */}
+                    <link rel="preconnect" href="https://fonts.googleapis.com" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                </Head>
 
                 <body>
 
@@ -28,4 +32,4 @@ class MyDOcument extends Document {
 
 };
 
-export default MyDOcument;
+export default MyDocument;

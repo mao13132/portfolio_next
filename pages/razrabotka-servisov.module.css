@@ -1,0 +1,152 @@
+/* ============================================================
+   PAGE-SPECIFIC STYLES: РАЗРАБОТКА СЕРВИСОВ
+   ============================================================ */
+
+/* ─── Hero Diagonal Ribbon (corner ribbon technique) ─── */
+.heroDiagonalRibbon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.heroDiagonalRibbon span {
+    position: absolute;
+    top: 30px;
+    left: -35px;
+    display: inline-block;
+    background: linear-gradient(135deg, var(--lp-cyan), var(--lp-purple));
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 6px 50px;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 15px rgba(0, 212, 255, 0.3);
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .heroDiagonalRibbon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .heroDiagonalRibbon span {
+        top: 22px;
+        left: -28px;
+        font-size: 9px;
+        padding: 5px 40px;
+    }
+}
+
+/* ─── SEO Content ─── */
+.seoContent {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.seoContent p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--lp-text-muted);
+    margin-bottom: 16px;
+}
+
+.seoContent strong {
+    color: var(--lp-text);
+}
+
+.seoH2 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: -0.3px;
+}
+
+.seoH3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.seoList {
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.seoList li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--lp-text-muted);
+    margin-bottom: 10px;
+}
+
+.seoList li strong {
+    color: var(--lp-text);
+}
+
+.seoInternalLinks {
+    margin-top: 40px;
+    padding: 40px;
+    background: var(--lp-glass-bg);
+    border: 1px solid var(--lp-glass-border);
+    border-radius: var(--lp-radius-lg);
+    text-align: center;
+}
+
+.seoInternalLinks h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.seoLinksGrid {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.seoLinksGrid a {
+    padding: 10px 20px;
+    background: rgba(0, 212, 255, 0.06);
+    border: 1px solid rgba(0, 212, 255, 0.15);
+    border-radius: 100px;
+    color: var(--lp-cyan);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.seoLinksGrid a:hover {
+    background: rgba(0, 212, 255, 0.12);
+    border-color: var(--lp-cyan);
+    box-shadow: var(--lp-shadow-cyan);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .seoH2 {
+        font-size: 22px;
+    }
+    .seoH3 {
+        font-size: 18px;
+    }
+    .seoLinksGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
