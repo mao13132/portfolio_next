@@ -57,7 +57,13 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
             [styles['sticky']]: classStiky,
         })} {...props}>
 
-            <Link className={styles['logo']} href={`#`}>Портфолио</Link>
+            <div className={styles['logo-group']}>
+                <Link className={styles['logo']} href={`#`}>Портфолио</Link>
+                <span className={styles['guarantee-badge']}>
+                    <i className='bx bx-shield-quarter' />
+                    30 дней поддержки
+                </span>
+            </div>
 
             <i
                 onClick={openCloseNav}

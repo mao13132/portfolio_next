@@ -23,6 +23,7 @@ export const PortfolioWrapper = ({ className, ...props }: PortfolioWrapperProps)
                 variants={titleProjectsAnimation}
                 initial="hidden"
                 whileInView="visible"
+                viewport={{ once: true }}
                 style={{ overflow: 'hidden' }}
                 className={styles['title-portfolio']}
 

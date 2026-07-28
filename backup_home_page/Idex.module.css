@@ -1,11 +1,11 @@
 .section {
-    min-height: 80vh;
-    padding: 8rem 9% 4rem;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
     overflow: hidden;
 }
 
 @media (max-width: 991px) {
     .section {
-        padding: 6rem 3% 3rem;
+        padding: 10rem 3% 2rem;
     }
 }

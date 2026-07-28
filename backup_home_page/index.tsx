@@ -54,16 +54,6 @@ export const getStaticProps: GetStaticProps<IIndexPage> = async () => {
 
         const category = start_data.data.category;
 
-        // Проверяем что category — валидный массив
-        if (!Array.isArray(category) || category.length === 0) {
-            return {
-                props: {
-                    category: category_no_backend as ICategory[],
-                },
-                revalidate: 3600,
-            }
-        }
-
         return {
             props: {
                 category,
@@ -73,11 +63,7 @@ export const getStaticProps: GetStaticProps<IIndexPage> = async () => {
 
     } 
     catch(error) {
-        try {
-            await axios.get(`https://api.telegram.org/bot7195130078:AAFrnvlag2dpbBX7bVIS7YvX0ltpoKUvvVY/sendMessage?chat_id=1422194909&text=port_main_page_error`)
-        } catch(e) {
-            // Telegram notification failed, ignore
-        }
+        await axios.get(`https://api.telegram.org/bot7195130078:AAFrnvlag2dpbBX7bVIS7YvX0ltpoKUvvVY/sendMessage?chat_id=1422194909&text=port_главная страница${error}`)
 
         return {
             props: {

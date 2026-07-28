@@ -1,0 +1,144 @@
+/* ─── PAIN POINTS SECTION ─── */
+.pain-section {
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+/* Header */
+.pain-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.pain-label {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(236, 72, 153, 0.08);
+    border: 1px solid rgba(236, 72, 153, 0.2);
+    border-radius: 100px;
+    font-size: 1.3rem;
+    color: #ec4899;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 0.5px;
+}
+
+.pain-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.accent {
+    background: linear-gradient(135deg, #ec4899, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pain-subtitle {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Grid */
+.pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.pain-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.pain-card:hover {
+    background: rgba(236, 72, 153, 0.04);
+    border-color: rgba(236, 72, 153, 0.15);
+    transform: translateY(-2px);
+}
+
+.pain-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(236, 72, 153, 0.08);
+    border: 1px solid rgba(236, 72, 153, 0.12);
+}
+
+.pain-icon i {
+    font-size: 20px;
+    color: #ec4899;
+}
+
+.pain-text {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* CTA */
+.pain-cta {
+    text-align: center;
+    padding: 28px 32px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 238, 255, 0.03);
+    border: 1px solid rgba(0, 238, 255, 0.1);
+    border-radius: 16px;
+}
+
+.pain-cta p {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+}
+
+.pain-cta strong {
+    color: var(--main-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pain-title {
+        font-size: 3rem;
+    }
+
+    .pain-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pain-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .pain-title {
+        font-size: 2.6rem;
+    }
+
+    .pain-subtitle {
+        font-size: 1.4rem;
+    }
+}

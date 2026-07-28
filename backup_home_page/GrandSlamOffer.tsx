@@ -1,29 +1,14 @@
 import { motion } from 'framer-motion';
+import { fadeUp, scaleIn } from './animations';
 import styles from './landing.module.css';
 
 interface GrandSlamOfferProps {
-    scrollToForm?: () => void;
+    scrollToForm: () => void;
 }
-
-const fadeUp = {
-    hidden: { opacity: 0, y: 40 },
-    visible: (i: number = 0) => ({
-        opacity: 1, y: 0,
-        transition: { duration: 0.6, delay: i * 0.12, ease: [0.25, 0.46, 0.45, 0.94] }
-    }),
-};
-
-const scaleIn = {
-    hidden: { opacity: 0, scale: 0.85 },
-    visible: (i: number = 0) => ({
-        opacity: 1, scale: 1,
-        transition: { duration: 0.5, delay: i * 0.15, ease: 'easeOut' }
-    }),
-};
 
 export const GrandSlamOffer = ({ scrollToForm }: GrandSlamOfferProps) => {
     return (
-        <section className={styles.grandSlamSection} id="offer">
+        <section className={styles.grandSlamSection}>
             <div className={styles.container}>
                 <motion.div className={styles.sectionHeader} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                     <h2 className={styles.sectionTitle}>
@@ -32,34 +17,6 @@ export const GrandSlamOffer = ({ scrollToForm }: GrandSlamOfferProps) => {
                     <p className={styles.sectionSubtitle}>
                         Я забираю на себя весь объём работ — вам остаётся только получить результат
                     </p>
-                </motion.div>
-
-                {/* Value Stack */}
-                <motion.div className={styles.valueStack} variants={scaleIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                    <h3 className={styles.valueStackTitle}>Что вы получаете</h3>
-                    <div className={styles.valueStackGrid}>
-                        {[
-                            { icon: 'bx bx-message-detail', label: 'Бесплатная консультация', value: '→ 0 ₽' },
-                            { icon: 'bx bx-search-alt', label: 'Бесплатный аудит проекта', value: '→ 0 ₽' },
-                            { icon: 'bx bx-help-circle', label: 'Помогу понять что вам нужно', value: '→ 0 ₽' },
-                            { icon: 'bx bx-server', label: 'Установка на ваш сервер', value: '→ 0 ₽' },
-                            { icon: 'bx bx-code-alt', label: 'Полный исходный код', value: '→ 0 ₽' },
-                            { icon: 'bx bx-file', label: 'NDA по запросу', value: '→ 0 ₽' },
-                            { icon: 'bx bx-support', label: '30 дней бесплатной поддержки', value: '→ 0 ₽' },
-                            { icon: 'bx bx-group', label: 'Обучение вашей команды', value: '→ 0 ₽' },
-                        ].map((item, i) => (
-                            <motion.div key={i} className={styles.valueItem} variants={fadeUp} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                                <i className={item.icon} />
-                                <span className={styles.valueLabel}>{item.label}</span>
-                                <span className={styles.valuePrice}>{item.value}</span>
-                            </motion.div>
-                        ))}
-                    </div>
-                    <div className={styles.valueStackTotal}>
-                        <span>Общая стоимость бонусов</span>
-                        <span className={styles.valueTotalPrice}>Более 50 000 ₽</span>
-                        <span className={styles.valueFreeLabel}>— для вас бесплатно</span>
-                    </div>
                 </motion.div>
 
                 {/* Comparison Table */}
@@ -82,10 +39,10 @@ export const GrandSlamOffer = ({ scrollToForm }: GrandSlamOfferProps) => {
                         { label: 'Установка на ваш сервер', other: 'от 5 000 ₽', mine: true },
                         { label: 'Исходный код — ваши права', other: false, mine: true },
                         { label: 'NDA по запросу', other: 'не всегда', mine: true },
-                        { label: 'Бесплатная поддержка', other: '7 дней', mine: '30 дней' },
+                        { label: 'Бесплатная поддержка', other: '7 дней', mine: '30-90 дней' },
                         { label: 'Обучение команды', other: 'от 10 000 ₽', mine: true },
                         { label: 'Фиксированные сроки в договоре', other: false, mine: true },
-                        { label: 'Еженедельные демо прогресса', other: false, mine: true },
+                        { label: 'Еженедельные демо', other: false, mine: true },
                     ].map((row, i) => (
                         <motion.div key={i} className={styles.comparisonRow} variants={fadeUp} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }}>
                             <div className={styles.comparisonLabel}>{row.label}</div>
@@ -102,13 +59,25 @@ export const GrandSlamOffer = ({ scrollToForm }: GrandSlamOfferProps) => {
                     ))}
                 </motion.div>
 
-                {scrollToForm && (
-                    <motion.div style={{ textAlign: 'center', marginTop: '32px' }} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                {/* Guarantee Seal */}
+                <motion.div className={styles.guaranteeSeal} variants={scaleIn} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                    <div className={styles.sealBadge}>
+                        <div className={styles.sealInner}>
+                            <i className='bx bx-shield' />
+                            <span>Гарантия</span>
+                        </div>
+                    </div>
+                    <div className={styles.sealText}>
+                        <h3>100% гарантия результата</h3>
+                        <p>
+                            Если бот/сервис/CRM не работает как описано в ТЗ — исправлю за свой счёт.
+                            Бесплатная поддержка 30-90 дней. Полный исходный код. Без скрытых платежей.
+                        </p>
                         <button className={styles.sealButton} onClick={scrollToForm}>
                             Обсудить проект бесплатно →
                         </button>
-                    </motion.div>
-                )}
+                    </div>
+                </motion.div>
             </div>
         </section>
     );

@@ -1,0 +1,32 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.heading span {
+    color: var(--main-color);
+}
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media (max-width: 991px) {
+    .services {
+        padding-bottom: 7rem;
+    }
+}
