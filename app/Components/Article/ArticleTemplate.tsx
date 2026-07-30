@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState, FormEvent, useRef, useEffect, useMemo } from 'react';
+import React, { useState, FormEvent, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Article, articles } from '@/data/articles';
+import { parseInlineMarkdown, isTable, renderTable, isHr } from './parseMarkdown';
 import { axiosClassic } from '@/app/Components/utils/interceptor';
 import { getContact } from '@/app/Components/utils/url.config';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
@@ -42,6 +43,16 @@ const NAV_LINKS = [
 
 const renderContent = (text: string) => {
     return text.split('\n\n').map((paragraph, i) => {
+        // Handle horizontal rule
+        if (isHr(paragraph)) {
+            return <hr key={i} style={{ border: 'none', borderTop: '1px solid var(--lp-glass-border)', margin: '24px 0' }} />;
+        }
+
+        // Handle tables
+        if (isTable(paragraph)) {
+            return renderTable(paragraph, i);
+        }
+
         // Handle bullet lists
         if (paragraph.trim().startsWith('•') || paragraph.trim().startsWith('-')) {
             const items = paragraph.split('\n').filter(l => l.trim().startsWith('•') || l.trim().startsWith('-'));
@@ -60,7 +71,7 @@ const renderContent = (text: string) => {
                                 color: 'var(--lp-cyan)',
                                 fontWeight: 700,
                             }}>›</span>
-                            {item.replace(/^[•\-]\s*/, '')}
+                            {parseInlineMarkdown(item.replace(/^[•\-]\s*/, ''))}
                         </li>
                     ))}
                 </ul>
@@ -86,13 +97,13 @@ const renderContent = (text: string) => {
                                 fontWeight: 700,
                                 fontSize: '14px',
                             }}>{j + 1}.</span>
-                            {item.replace(/^\d+\.\s*/, '')}
+                            {parseInlineMarkdown(item.replace(/^\d+\.\s*/, ''))}
                         </li>
                     ))}
                 </ol>
             );
         }
-        return <p key={i}>{paragraph}</p>;
+        return <p key={i}>{parseInlineMarkdown(paragraph)}</p>;
     });
 };
 
