@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { articles } from '@/data/articles';
+import { cluster2Articles } from '@/data/articles_data/cluster2/registry';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
@@ -11,7 +12,7 @@ import styles from './blog.module.css';
 import ls from '@/app/Components/Landing/landing.module.css';
 
 /* ============================================================
-   BLOG INDEX PAGE
+   SUPER HUB: Блог — все статьи по кластерам
    /blog
    ============================================================ */
 
@@ -26,6 +27,29 @@ const NAV_LINKS = [
     { href: '/#contacts', label: 'Контакты' },
 ];
 
+// Cluster 1: Telegram боты (все статьи кроме cluster2)
+const cluster1Articles = articles.filter(a => !cluster2Articles.find(c => c.slug === a.slug));
+
+// Кластеры для отображения
+const clusters = [
+    {
+        title: 'Telegram боты для бизнеса',
+        emoji: '🤖',
+        description: 'Полное руководство по Telegram-ботам: от приёма заявок до интернет-магазина и AI-помощников.',
+        hubUrl: '/blog/telegram-boty',
+        color: 'var(--lp-cyan)',
+        articles: cluster1Articles,
+    },
+    {
+        title: 'Автоматизация бизнеса',
+        emoji: '⚡',
+        description: 'Как автоматизировать продажи, маркетинг, склад и финансы. Пошаговые планы, инструменты, реальные кейсы.',
+        hubUrl: '/blog/avtomatizaciya-biznesa',
+        color: 'var(--lp-purple)',
+        articles: cluster2Articles,
+    },
+];
+
 const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -34,7 +58,7 @@ const structuredData = {
             "@id": `${PAGE_URL}#webpage`,
             "url": PAGE_URL,
             "name": "Блог — Telegram-боты, автоматизация, разработка | DimaRazrab",
-            "description": "Полезные статьи о Telegram-ботах, автоматизации бизнеса и разработке. Руководства, кейсы, советы от разработчика.",
+            "description": "Полезные статьи о Telegram-ботах, автоматизации бизнеса и разработке. 15 руководств, кейсы, советы от разработчика.",
             "inLanguage": "ru-RU",
             "isPartOf": { "@id": `${SITE_URL}#website` },
             "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
@@ -57,20 +81,55 @@ const structuredData = {
     ],
 };
 
+// Карточка статьи
+const ArticleCard = ({ article, idx }: { article: typeof articles[0]; idx: number }) => (
+    <motion.article
+        className={styles.articleCard}
+        variants={fadeUp}
+        custom={idx}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+    >
+        <Link href={`/blog/${article.slug}`} className={styles.articleCardLink}>
+            <div className={styles.articleCardTop}>
+                <span className={styles.articleCardBadge}>{article.readingTime}</span>
+                <span className={styles.articleCardWords}>{article.wordCount}</span>
+            </div>
+            <h2 className={styles.articleCardTitle}>{article.h1.split(':')[0]}</h2>
+            <p className={styles.articleCardSubtitle}>
+                {article.h1.split(':')[1]?.trim() || article.heroSubtitle}
+            </p>
+            <p className={styles.articleCardDesc}>{article.metaDescription}</p>
+            <div className={styles.articleCardMeta}>
+                <span>
+                    <i className="bx bx-calendar" />
+                    {new Date(article.modifiedDate).toLocaleDateString('ru-RU', {
+                        year: 'numeric', month: 'long', day: 'numeric',
+                    })}
+                </span>
+                <span className={styles.articleCardReadMore}>
+                    Читать статью <i className="bx bx-right-arrow-alt" />
+                </span>
+            </div>
+        </Link>
+    </motion.article>
+);
+
 export default function BlogIndexPage() {
     return (
         <>
             <Head>
                 <title>Блог о Telegram-ботах и автоматизации бизнеса | DimaRazrab</title>
-                <meta name="description" content="Полезные статьи о Telegram-ботах, автоматизации бизнеса и разработке. Руководства, кейсы, расчёт стоимости, советы от практикующего разработчика." />
-                <meta name="keywords" content="блог о telegram ботах, автоматизация бизнеса статьи, разработка ботов руководство, telegram бот для бизнеса, чат-боты статьи" />
+                <meta name="description" content="15 подробных руководств о Telegram-ботах, автоматизации бизнеса и разработке. Кейсы, расчёт стоимости, пошаговые планы от практикующего разработчика." />
+                <meta name="keywords" content="блог о telegram ботах, автоматизация бизнеса статьи, разработка ботов руководство, telegram бот для бизнеса, чат-боты статьи, автоматизация малого бизнеса, ai автоматизация" />
                 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
                 <link rel="canonical" href={PAGE_URL} />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="DimaRazrab" />
                 <meta property="og:title" content="Блог о Telegram-ботах и автоматизации бизнеса" />
-                <meta property="og:description" content="Полезные статьи о Telegram-ботах, автоматизации и разработке. Руководства и кейсы." />
+                <meta property="og:description" content="15 руководств о Telegram-ботах, автоматизации и разработке. Кейсы, расчёты, пошаговые планы." />
                 <meta property="og:url" content={PAGE_URL} />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:image" content={`${SITE_URL}/media/og_desc.jpg`} />
@@ -78,7 +137,7 @@ export default function BlogIndexPage() {
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Блог о Telegram-ботах и автоматизации бизнеса" />
-                <meta name="twitter:description" content="Полезные статьи о Telegram-ботах, автоматизации и разработке. Руководства и кейсы." />
+                <meta name="twitter:description" content="15 руководств о Telegram-ботах, автоматизации и разработке." />
                 <meta name="twitter:image" content={`${SITE_URL}/media/og_desc.jpg`} />
 
                 <script
@@ -99,7 +158,6 @@ export default function BlogIndexPage() {
                     <div className={styles.heroGlow2} />
 
                     <div className={styles.container}>
-                        {/* Breadcrumbs */}
                         <nav className={styles.breadcrumbs} aria-label="Хлебные крошки">
                             <Link href="/">Главная</Link>
                             <span className={styles.breadcrumbSep}>›</span>
@@ -121,67 +179,143 @@ export default function BlogIndexPage() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.2 }}
                         >
-                            Полезные руководства, реальные кейсы и практические советы
-                            по созданию Telegram-ботов для бизнеса
+                            {articles.length} подробных руководств с примерами, кейсами и расчётами ROI.
+                            Всё, что нужно знать о создании ботов и автоматизации бизнеса.
                         </motion.p>
                     </div>
 
                     <div className={styles.diagonalDivider} />
                 </section>
 
-                {/* ═══════ ARTICLES GRID ═══════ */}
+                {/* ═══════ CLUSTERS ═══════ */}
                 <section className={styles.articlesSection}>
                     <div className={styles.container}>
-                        <div className={styles.articlesGrid}>
-                            {articles.map((article, idx) => (
-                                <motion.article
-                                    key={article.slug}
-                                    className={styles.articleCard}
-                                    variants={fadeUp}
-                                    custom={idx}
-                                    initial="hidden"
-                                    whileInView="visible"
+
+                        {clusters.map((cluster, clusterIdx) => (
+                            <div key={clusterIdx} style={{ marginBottom: clusterIdx < clusters.length - 1 ? '80px' : '0' }}>
+                                {/* Cluster Header */}
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
+                                    transition={{ duration: 0.6 }}
+                                    style={{
+                                        maxWidth: 800,
+                                        margin: '0 auto 40px',
+                                        textAlign: 'center',
+                                    }}
                                 >
-                                    <Link href={`/blog/${article.slug}`} className={styles.articleCardLink}>
-                                        <div className={styles.articleCardTop}>
-                                            <span className={styles.articleCardBadge}>
-                                                {article.readingTime}
-                                            </span>
-                                            <span className={styles.articleCardWords}>
-                                                {article.wordCount}
-                                            </span>
-                                        </div>
+                                    <div style={{
+                                        fontSize: '48px',
+                                        marginBottom: '16px',
+                                    }}>
+                                        {cluster.emoji}
+                                    </div>
 
-                                        <h2 className={styles.articleCardTitle}>
-                                            {article.h1.split(':')[0]}
-                                        </h2>
+                                    <h2 style={{
+                                        fontSize: 'clamp(24px, 3vw, 32px)',
+                                        fontWeight: 700,
+                                        marginBottom: '12px',
+                                        color: 'var(--lp-text)',
+                                    }}>
+                                        <span className={styles.textAccent}>{cluster.title}</span>
+                                    </h2>
 
-                                        <p className={styles.articleCardSubtitle}>
-                                            {article.h1.split(':')[1]?.trim() || article.heroSubtitle}
-                                        </p>
+                                    <p style={{
+                                        fontSize: '16px',
+                                        color: 'var(--lp-text-muted)',
+                                        lineHeight: 1.7,
+                                        marginBottom: '20px',
+                                        maxWidth: 600,
+                                        margin: '0 auto 20px',
+                                    }}>
+                                        {cluster.description}
+                                    </p>
 
-                                        <p className={styles.articleCardDesc}>
-                                            {article.metaDescription}
-                                        </p>
-
-                                        <div className={styles.articleCardMeta}>
-                                            <span>
-                                                <i className="bx bx-calendar" />
-                                                {new Date(article.modifiedDate).toLocaleDateString('ru-RU', {
-                                                    year: 'numeric',
-                                                    month: 'long',
-                                                    day: 'numeric',
-                                                })}
-                                            </span>
-                                            <span className={styles.articleCardReadMore}>
-                                                Читать статью <i className="bx bx-right-arrow-alt" />
-                                            </span>
-                                        </div>
+                                    <Link
+                                        href={cluster.hubUrl}
+                                        style={{
+                                            display: 'inline-flex',
+                                            alignItems: 'center',
+                                            gap: '8px',
+                                            padding: '10px 24px',
+                                            background: `linear-gradient(135deg, ${cluster.color}, var(--lp-purple))`,
+                                            borderRadius: 'var(--lp-radius-sm)',
+                                            color: '#fff',
+                                            fontSize: '14px',
+                                            fontWeight: 600,
+                                            textDecoration: 'none',
+                                            transition: 'all 0.3s ease',
+                                        }}
+                                    >
+                                        <i className="bx bx-link-alt" />
+                                        Хаб-страница кластера
+                                        <i className="bx bx-right-arrow-alt" />
                                     </Link>
-                                </motion.article>
-                            ))}
-                        </div>
+                                </motion.div>
+
+                                {/* Articles Grid */}
+                                <div className={styles.articlesGrid}>
+                                    {cluster.articles.map((article, idx) => (
+                                        <ArticleCard key={article.slug} article={article} idx={idx} />
+                                    ))}
+                                </div>
+
+                                {/* Divider between clusters */}
+                                {clusterIdx < clusters.length - 1 && (
+                                    <div style={{
+                                        width: '100%',
+                                        maxWidth: 200,
+                                        height: 2,
+                                        background: 'linear-gradient(90deg, transparent, var(--lp-glass-border), transparent)',
+                                        margin: '60px auto 0',
+                                    }} />
+                                )}
+                            </div>
+                        ))}
+
+                        {/* ═══════ CTA ═══════ */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            style={{
+                                maxWidth: 700,
+                                margin: '80px auto 0',
+                                textAlign: 'center',
+                                background: 'var(--lp-glass-bg)',
+                                border: '1px solid var(--lp-glass-border)',
+                                borderRadius: 'var(--lp-radius-lg)',
+                                padding: '40px 36px',
+                                backdropFilter: 'blur(var(--lp-glass-blur))',
+                                WebkitBackdropFilter: 'blur(var(--lp-glass-blur))',
+                            }}
+                        >
+                            <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '12px', color: 'var(--lp-text)' }}>
+                                Нужна помощь с <span className={styles.textAccent}>ботом или автоматизацией</span>?
+                            </h2>
+                            <p style={{ fontSize: '16px', color: 'var(--lp-text-muted)', marginBottom: '24px', lineHeight: 1.6 }}>
+                                Бесплатная консультация — расскажу, как бот или автоматизация решит вашу задачу,
+                                и подготовлю точную смету за 24 часа.
+                            </p>
+                            <a
+                                href="/razrabotka-botov"
+                                style={{
+                                    display: 'inline-block',
+                                    padding: '14px 36px',
+                                    background: 'linear-gradient(135deg, var(--lp-cyan), var(--lp-purple))',
+                                    borderRadius: 'var(--lp-radius-sm)',
+                                    color: '#fff',
+                                    fontSize: '16px',
+                                    fontWeight: 700,
+                                    textDecoration: 'none',
+                                    transition: 'all 0.3s ease',
+                                }}
+                            >
+                                Заказать разработку →
+                            </a>
+                        </motion.div>
                     </div>
                 </section>
 

@@ -49,7 +49,7 @@ export const PortfolioPopup = ({ isOpen, onClose }: PortfolioPopupProps) => {
         setView('works');
         setLoading(true);
         try {
-            const res = await axios.get(`${API.works.get_by_category_id}?slug=${cat.slug}`);
+            const res = await axios.post(API.works.get_by_category_id, { id_category: cat.id });
             const data = Array.isArray(res.data) ? res.data : res.data?.results || [];
             setWorks(data);
         } catch {
@@ -98,8 +98,13 @@ export const PortfolioPopup = ({ isOpen, onClose }: PortfolioPopupProps) => {
     // Image URL helper (proxy through next.config rewrites)
     const getImageUrl = (url: string) => {
         if (!url) return '';
+        // Абсолютные URL с localhost → убираем хост (rewrites проксируют)
         if (url.startsWith('http://127.0.0.1') || url.startsWith('http://localhost')) {
             return url.replace(/https?:\/\/127\.0\.0\.1:\d+|https?:\/\/localhost:\d+/, '');
+        }
+        // Относительные URL без / → добавляем / в начало
+        if (!url.startsWith('/') && !url.startsWith('http')) {
+            return '/' + url;
         }
         return url;
     };
@@ -226,7 +231,13 @@ export const PortfolioPopup = ({ isOpen, onClose }: PortfolioPopupProps) => {
                                         )}
                                         {selectedWork.video && (
                                             <div className={styles.popupDetailVideo}>
-                                                <video src={getImageUrl(selectedWork.video)} controls />
+                                                <iframe
+                                                    src={selectedWork.video}
+                                                    frameBorder="0"
+                                                    allow="clipboard-write; autoplay; fullscreen"
+                                                    allowFullScreen
+                                                    style={{ width: '100%', aspectRatio: '16/9', borderRadius: 'var(--lp-radius-md)', background: '#000' }}
+                                                />
                                             </div>
                                         )}
                                     </div>

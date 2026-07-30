@@ -19,6 +19,7 @@ export const Navbar = ({ setOpenMenu, openStatus, closeStatus, className, ...pro
             <Link onClick={() => setOpenMenu(false)} href={`#about`}>Обо мне</Link>
             <Link onClick={() => setOpenMenu(false)} href={`#services`}>Навыки</Link>
             <Link onClick={() => setOpenMenu(false)} href={`#portfolio`}>Примеры работ</Link>
+            <Link onClick={() => setOpenMenu(false)} href={`/blog`}>Блог</Link>
             <Link onClick={() => setOpenMenu(false)} href={`#contact`}>Контакты</Link>
         </nav>
     );
