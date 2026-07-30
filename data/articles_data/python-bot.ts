@@ -1,20 +1,20 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 
 export const articlePythonBot: Article = {
     slug: "kak-sdelat-telegram-bota-na-python",
-    title: "Как сделать Telegram бота на Python — пошаговое руководство 2025 | DimaRazrab",
+    title: "Как сделать Telegram бота на Python — пошаговое руководство 2026 | DimaRazrab",
     metaDescription: "Пошаговое руководство: как сделать Telegram бота на Python с нуля. Aiogram, python-telegram-bot, webhook, база данных. Код, примеры, деплой.",
     keywords: "как сделать телеграм бота на python, telegram бот python, создать бота telegram python, python telegram бот урок, aiogram tutorial, разработка telegram бота python, бот telegram python пошагово",
     h1: "Как сделать Telegram бота на Python: пошаговое руководство для начинающих",
     ogTitle: "Как сделать Telegram бота на Python — пошаговое руководство",
     ogDescription: "Полный гайд по созданию Telegram-бота на Python: от регистрации бота до деплоя на сервер. Aiogram 3, база данных, webhook.",
     canonical: "https://dima-razrab.com/blog/kak-sdelat-telegram-bota-na-python",
-    heroBadge: "🐍 Python • Пошаговый гайд • 2025",
+    heroBadge: "🐍 Python • Пошаговый гайд • 2026",
     heroSubtitle: "Научитесь создавать Telegram-ботов на Python с нуля. От простого echo-бота до полноценного приложения с базой данных и деплоем.",
     readingTime: "18 мин чтения",
     wordCount: "~4500 слов",
-    publishDate: "2025-03-01",
-    modifiedDate: "2025-07-27",
+    publishDate: "2026-03-01",
+    modifiedDate: "2026-07-27",
     author: "Дмитрий Малышев",
 
     toc: [
@@ -82,7 +82,7 @@ export const articlePythonBot: Article = {
 
 Шаг 2: Отправьте команду /newbot. BotFather спросит имя бота — это отображаемое имя, которое увидят пользователи. Например: «Мой Магазин Бот».
 
-Шаг 3: BotFather спросит username бота — это уникальный идентификатор, который заканчивается на «bot». Например: my_shop_2025_bot.
+Шаг 3: BotFather спросит username бота — это уникальный идентификатор, который заканчивается на «bot». Например: my_shop_2026_bot.
 
 Шаг 4: BotFather выдаст токен — длинную строку вида 123456789:ABCdefGHIjklMNOpqrsTUVwxyz. Это ключ доступа к вашему боту. НИКОМУ его не показывайте и не публикуйте в открытом доступе.
 
@@ -110,7 +110,7 @@ export const articlePythonBot: Article = {
             subsections: [
                 {
                     title: "Aiogram 3 (рекомендуемый)",
-                    content: `Асинхронный фреймворк, самый популярный в 2025 году. Поддерживает FSM (машину состояний), middleware, роутеры, inline-кнопки, медиа-группы. Быстрый, хорошо документированный, активное сообщество. Идеален для ботов любой сложности — от простых до enterprise-уровня. Работает на asyncio.`,
+                    content: `Асинхронный фреймворк, самый популярный в 2026 году. Поддерживает FSM (машину состояний), middleware, роутеры, inline-кнопки, медиа-группы. Быстрый, хорошо документированный, активное сообщество. Идеален для ботов любой сложности — от простых до enterprise-уровня. Работает на asyncio.`,
                 },
                 {
                     title: "python-telegram-bot",
@@ -255,10 +255,10 @@ export const articlePythonBot: Article = {
 
     structuredData: makeArticleSchema(
         "kak-sdelat-telegram-bota-na-python",
-        "Как сделать Telegram бота на Python — пошаговое руководство 2025",
+        "Как сделать Telegram бота на Python — пошаговое руководство 2026",
         "Пошаговое руководство: как сделать Telegram бота на Python с нуля. Aiogram 3, база данных, webhook, деплой.",
-        "2025-03-01",
-        "2025-07-27",
+        "2026-03-01",
+        "2026-07-27",
         [
             { name: "Сколько времени нужно чтобы научиться делать ботов на Python?", text: "1-2 дня если знаете Python, 1-2 недели если нет." },
             { name: "Бесплатно ли создание Telegram-бота?", text: "Да. Регистрация бесплатна, библиотеки open source, хостинг от 149₽/мес." },
@@ -267,6 +267,13 @@ export const articlePythonBot: Article = {
             { name: "Нужен ли сервер для бота?", text: "Для продакшена — нужен VPS от 149₽/мес. Для тестирования — достаточно компьютера." },
         ],
         4500,
+        [
+            { name: "Шаг 1: Установка окружения", text: "Установите Python 3.10+, создайте виртуальное окружение, установите aiogram." },
+            { name: "Шаг 2: Регистрация бота", text: "Создайте бота через @BotFather, получите токен." },
+            { name: "Шаг 3: Базовый код", text: "Напишите echo-бота, добавьте команды и кнопки." },
+            { name: "Шаг 4: База данных", text: "Подключите SQLite/PostgreSQL для хранения данных пользователей." },
+            { name: "Шаг 5: Деплой", text: "Разверните бота на VPS, настройте webhook." },
+        ],
     ),
     internalLinks: [
         { anchor: "заказать разработку бота на Python", url: "/razrabotka-botov", context: "Не хотите разбираться сами?" },

@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 
 export const articleAiBot: Article = {
     slug: "ai-telegram-bot-dlya-biznesa",
@@ -9,12 +9,12 @@ export const articleAiBot: Article = {
     ogTitle: "AI Telegram бот — разработка ИИ ботов для бизнеса",
     ogDescription: "Как AI-боты трансформируют бизнес: автоматизация поддержки, продаж, аналитики. GPT, NLP, машинное обучение. Реальные кейсы и ROI.",
     canonical: "https://dima-razrab.com/blog/ai-telegram-bot-dlya-biznesa",
-    heroBadge: "🤖 ИИ • 2025",
+    heroBadge: "🤖 ИИ • 2026",
     heroSubtitle: "Как искусственный интеллект превращает Telegram-бота из простого автомата в умного помощника, который увеличивает продажи и снижает затраты.",
     readingTime: "16 мин чтения",
     wordCount: "~4000 слов",
-    publishDate: "2025-03-15",
-    modifiedDate: "2025-07-27",
+    publishDate: "2026-03-15",
+    modifiedDate: "2026-07-27",
     author: "Дмитрий Малышев",
 
     toc: [
@@ -219,8 +219,8 @@ AI-бот загружает вашу базу знаний: FAQ, докумен
         "ai-telegram-bot-dlya-biznesa",
         "AI Telegram бот для бизнеса — разработка ИИ ботов",
         "Разработка AI Telegram-ботов для бизнеса: GPT, NLP, машинное обучение. Автоматизация поддержки, продаж и аналитики.",
-        "2025-03-15",
-        "2025-07-27",
+        "2026-03-15",
+        "2026-07-27",
         [
             { name: "Нужно ли обучать AI-бота на своих данных?", text: "Для базового использования достаточно промпта. Для точности — RAG." },
             { name: "AI-бот может заменить живых операторов?", text: "На 70-80%. Сложные случаи требуют человека." },

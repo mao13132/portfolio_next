@@ -8,6 +8,7 @@
     overflow: hidden;
     min-height: 100vh;
     padding: 10rem 9% 4rem;
+    background: var(--bg-color);
 }
 
 /* Glow orbs */

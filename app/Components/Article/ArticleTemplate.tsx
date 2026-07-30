@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import { useState, FormEvent, useRef, useEffect } from 'react';
+import { useState, FormEvent, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Article, articles } from '@/data/articles';
 import { axiosClassic } from '@/app/Components/utils/interceptor';
@@ -12,6 +12,7 @@ import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { PortfolioPopup } from '@/app/Components/Landing/PortfolioPopup';
+import { useActiveToc } from './useActiveToc';
 import styles from './Article.module.css';
 import ls from '@/app/Components/Landing/landing.module.css';
 
@@ -107,6 +108,26 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
     const [error, setError] = useState('');
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [portfolioOpen, setPortfolioOpen] = useState(false);
+    const [copied, setCopied] = useState(false);
+
+    // Active ToC tracking
+    const tocIds = useMemo(() => [...article.toc.map(t => t.id), 'faq'], [article.toc]);
+    const activeTocId = useActiveToc(tocIds);
+
+    // Share URLs
+    const shareUrl = article.canonical;
+    const shareTitle = article.ogTitle;
+    const shareTelegram = `https://t.me/share/url?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle)}`;
+    const shareVk = `https://vk.com/share.php?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareTitle)}`;
+    const shareWhatsApp = `https://wa.me/?text=${encodeURIComponent(shareTitle + ' ' + shareUrl)}`;
+
+    const handleCopyLink = async () => {
+        try {
+            await navigator.clipboard.writeText(shareUrl);
+            setCopied(true);
+            setTimeout(() => setCopied(false), 2000);
+        } catch { /* fallback */ }
+    };
 
     // Related articles (exclude current)
     const relatedArticles = articles.filter(a => a.slug !== article.slug).slice(0, 2);
@@ -397,18 +418,43 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
                                 <ul className={styles.tocList}>
                                     {article.toc.map((item) => (
                                         <li key={item.id} className={styles.tocItem}>
-                                            <a href={`#${item.id}`} className={styles.tocLink}>
+                                            <a
+                                                href={`#${item.id}`}
+                                                className={`${styles.tocLink} ${activeTocId === item.id ? styles.tocLinkActive : ''}`}
+                                            >
                                                 {item.title}
                                             </a>
                                         </li>
                                     ))}
                                     <li className={styles.tocItem}>
-                                        <a href="#faq" className={styles.tocLink}>
+                                        <a href="#faq" className={`${styles.tocLink} ${activeTocId === 'faq' ? styles.tocLinkActive : ''}`}>
                                             Частые вопросы
                                         </a>
                                     </li>
                                 </ul>
                             </nav>
+
+                            {/* Share buttons in sidebar */}
+                            <div className={styles.tocCard} style={{ marginTop: 16 }}>
+                                <h3 className={styles.tocTitle}>
+                                    <i className="bx bx-share-alt" />
+                                    Поделиться
+                                </h3>
+                                <div className={styles.shareButtons}>
+                                    <a href={shareTelegram} target="_blank" rel="noopener noreferrer" className={`${styles.shareBtn} ${styles.shareBtnTelegram}`}>
+                                        <i className="bx bxl-telegram" /> Telegram
+                                    </a>
+                                    <a href={shareVk} target="_blank" rel="noopener noreferrer" className={`${styles.shareBtn} ${styles.shareBtnVk}`}>
+                                        <i className="bx bxl-vk" /> VK
+                                    </a>
+                                    <a href={shareWhatsApp} target="_blank" rel="noopener noreferrer" className={`${styles.shareBtn} ${styles.shareBtnWhatsApp}`}>
+                                        <i className="bx bxl-whatsapp" /> WhatsApp
+                                    </a>
+                                    <button onClick={handleCopyLink} className={`${styles.shareBtn} ${styles.shareBtnCopy}`}>
+                                        <i className={`bx ${copied ? 'bx-check' : 'bx-link'}`} /> {copied ? 'Скопировано' : 'Ссылка'}
+                                    </button>
+                                </div>
+                            </div>
 
                             {/* Mini CTA in sidebar */}
                             <div className={styles.tocCard} style={{ marginTop: 16 }}>

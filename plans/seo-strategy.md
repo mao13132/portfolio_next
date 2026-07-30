@@ -228,6 +228,39 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Cluster 2: Автоматизация бизнеса — Хаб -->
+  <url>
+    <loc>https://dima-razrab.com/blog/avtomatizaciya-biznesa</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Cluster 2: Локомотивы -->
+  <url>
+    <loc>https://dima-razrab.com/blog/avtomatizaciya-malogo-biznesa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dima-razrab.com/blog/ai-avtomatizaciya-biznesa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dima-razrab.com/blog/avtomatizaciya-otdela-prodazh</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dima-razrab.com/blog/primery-avtomatizacii-biznesa</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://dima-razrab.com/blog/avtomatizaciya-biznesa-pod-klyuch</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Прочее -->
   <url>
     <loc>https://dima-razrab.com/privacy</loc>

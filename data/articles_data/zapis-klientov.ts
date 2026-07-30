@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 
 export const articleZapisKlientov: Article = {
     slug: "telegram-bot-dlya-zapisi-klientov",
@@ -9,12 +9,12 @@ export const articleZapisKlientov: Article = {
     ogTitle: "Telegram бот для записи клиентов — онлайн-запись 24/7",
     ogDescription: "Как Telegram-бот заменяет запись по телефону: салоны, клиники, фитнес, автосервис. Работает 24/7, не пропускает клиентов, напоминает о визите.",
     canonical: "https://dima-razrab.com/blog/telegram-bot-dlya-zapisi-klientov",
-    heroBadge: "📅 Онлайн-запись • 2025",
+    heroBadge: "📅 Онлайн-запись • 2026",
     heroSubtitle: "Замените запись по телефону на автоматический Telegram-бот. Принимает записи 24/7, напоминает клиентам, не теряет заявки.",
     readingTime: "13 мин чтения",
     wordCount: "~3600 слов",
-    publishDate: "2025-02-15",
-    modifiedDate: "2025-07-27",
+    publishDate: "2026-02-15",
+    modifiedDate: "2026-07-27",
     author: "Дмитрий Малышев",
 
     toc: [
@@ -235,8 +235,8 @@ SMS: дополнительные SMS-напоминания для клиент
         "telegram-bot-dlya-zapisi-klientov",
         "Telegram бот для записи клиентов — онлайн-запись 24/7",
         "Telegram-бот для онлайн-записи клиентов: салоны красоты, клиники, фитнес, автосервис. Заменяет звонки и формы. Работает 24/7.",
-        "2025-02-15",
-        "2025-07-27",
+        "2026-02-15",
+        "2026-07-27",
         [
             { name: "Клиенты будут пользоваться записью через Telegram?", text: "Да. 80% клиентов уже используют Telegram. 60-70% переходят на онлайн-запись в первый месяц." },
             { name: "Что если клиент не использует Telegram?", text: "Телефонная запись остаётся как резервный канал. Большинство постепенно переходит на бота." },

@@ -59,7 +59,7 @@ export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
 
             <div className={styles['logo-group']}>
                 <Link className={styles['logo']} href={`#`}>Портфолио</Link>
-                <span className={styles['guarantee-badge']}>
+                <span className={styles['guarantee-badge']} title="30 дней поддержки">
                     <i className='bx bx-shield-quarter' />
                     30 дней поддержки
                 </span>

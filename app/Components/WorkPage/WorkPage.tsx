@@ -28,7 +28,7 @@ export const WorkPage = ({ className, ...props }: WorkPageProps): JSX.Element =>
     return (
         <>
             <Head>
-                {work?.title && <title>{work.title} | Портфолио Дмитрия Малышева</title>}
+                {work?.title && <title>{`${work.title} | Портфолио Дмитрия Малышева`}</title>}
                 {work?.title && <meta name="description" content={work.title} />}
                 {work?.title && <meta property="og:title" content={work.title} />}
                 {work?.title && <meta property="og:description" content={work.title} />}

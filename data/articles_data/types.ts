@@ -31,6 +31,12 @@ export interface InternalLink {
     context: string;
 }
 
+export interface HowToStep {
+    name: string;
+    text: string;
+    image?: string;
+}
+
 export interface Article {
     slug: string;
     title: string;
@@ -55,6 +61,7 @@ export interface Article {
     ctaSource: string;
     structuredData: object;
     internalLinks?: InternalLink[];
+    howToSteps?: HowToStep[];
 }
 
 const author = {
@@ -73,68 +80,88 @@ export const makeArticleSchema = (
     dateModified: string,
     faqEntities: { name: string; text: string }[],
     wordCount: number,
+    howToSteps?: HowToStep[],
 ) => {
     const url = `${SITE_URL}/blog/${slug}`;
+    const graph: object[] = [
+        {
+            "@type": "Article",
+            "@id": `${url}#article`,
+            "mainEntityOfPage": { "@id": `${url}#webpage` },
+            "headline": title,
+            "description": description,
+            "image": OG_IMAGE,
+            "author": author,
+            "publisher": {
+                "@type": "Organization",
+                "name": "DimaRazrab",
+                "logo": { "@type": "ImageObject", "url": `${SITE_URL}/home.png` }
+            },
+            "datePublished": datePublished,
+            "dateModified": dateModified,
+            "wordCount": wordCount,
+            "inLanguage": "ru-RU",
+            "about": { "@type": "Thing", "name": "Telegram боты" },
+            "articleSection": "Технологии",
+        },
+        {
+            "@type": "WebPage",
+            "@id": `${url}#webpage`,
+            "url": url,
+            "name": title,
+            "description": description,
+            "inLanguage": "ru-RU",
+            "isPartOf": { "@id": `${SITE_URL}#website` },
+            "datePublished": datePublished,
+            "dateModified": dateModified,
+            "breadcrumb": { "@id": `${url}#breadcrumb` },
+        },
+        {
+            "@type": "WebSite",
+            "@id": `${SITE_URL}#website`,
+            "url": SITE_URL,
+            "name": "DimaRazrab — Разработка Telegram-ботов",
+            "inLanguage": "ru-RU",
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": `${url}#breadcrumb`,
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Главная", "item": SITE_URL },
+                { "@type": "ListItem", "position": 2, "name": "Блог", "item": `${SITE_URL}/blog` },
+                { "@type": "ListItem", "position": 3, "name": title, "item": url },
+            ],
+        },
+        {
+            "@type": "FAQPage",
+            "@id": `${url}#faq`,
+            "mainEntity": faqEntities.map(q => ({
+                "@type": "Question",
+                "name": q.name,
+                "acceptedAnswer": { "@type": "Answer", "text": q.text },
+            })),
+        },
+    ];
+
+    // HowTo schema — добавляется если переданы шаги
+    if (howToSteps && howToSteps.length > 0) {
+        graph.push({
+            "@type": "HowTo",
+            "name": title,
+            "description": description,
+            "totalTime": "P30D",
+            "step": howToSteps.map((step, idx) => ({
+                "@type": "HowToStep",
+                "position": idx + 1,
+                "name": step.name,
+                "text": step.text,
+                ...(step.image ? { "image": step.image } : {}),
+            })),
+        });
+    }
+
     return {
         "@context": "https://schema.org",
-        "@graph": [
-            {
-                "@type": "Article",
-                "@id": `${url}#article`,
-                "mainEntityOfPage": { "@id": `${url}#webpage` },
-                "headline": title,
-                "description": description,
-                "image": OG_IMAGE,
-                "author": author,
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "DimaRazrab",
-                    "logo": { "@type": "ImageObject", "url": `${SITE_URL}/home.png` }
-                },
-                "datePublished": datePublished,
-                "dateModified": dateModified,
-                "wordCount": wordCount,
-                "inLanguage": "ru-RU",
-                "about": { "@type": "Thing", "name": "Telegram боты" },
-                "articleSection": "Технологии",
-            },
-            {
-                "@type": "WebPage",
-                "@id": `${url}#webpage`,
-                "url": url,
-                "name": title,
-                "description": description,
-                "inLanguage": "ru-RU",
-                "isPartOf": { "@id": `${SITE_URL}#website` },
-                "datePublished": datePublished,
-                "dateModified": dateModified,
-                "breadcrumb": { "@id": `${url}#breadcrumb` },
-            },
-            {
-                "@type": "WebSite",
-                "@id": `${SITE_URL}#website`,
-                "url": SITE_URL,
-                "name": "DimaRazrab — Разработка Telegram-ботов",
-                "inLanguage": "ru-RU",
-            },
-            {
-                "@type": "BreadcrumbList",
-                "@id": `${url}#breadcrumb`,
-                "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Главная", "item": SITE_URL },
-                    { "@type": "ListItem", "position": 2, "name": "Блог", "item": `${SITE_URL}/blog` },
-                    { "@type": "ListItem", "position": 3, "name": title, "item": url },
-                ],
-            },
-            {
-                "@type": "FAQPage",
-                "@id": `${url}#faq`,
-                "mainEntity": faqEntities.map(q => ({
-                    "@type": "Question",
-                    "name": q.name,
-                    "acceptedAnswer": { "@type": "Answer", "text": q.text },
-                })),
-            },
-        ],
+        "@graph": graph,
     };
 };

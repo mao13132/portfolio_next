@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 
 export const articleInternetMagazin: Article = {
     slug: "telegram-bot-dlya-internet-magazina",
@@ -9,12 +9,12 @@ export const articleInternetMagazin: Article = {
     ogTitle: "Telegram бот для интернет-магазина — магазин в Telegram",
     ogDescription: "Как создать интернет-магазин в Telegram: каталог, корзина, оплата, доставка. Пошаговое руководство с примерами и расчётами ROI.",
     canonical: "https://dima-razrab.com/blog/telegram-bot-dlya-internet-magazina",
-    heroBadge: "🛒 Полный гайд • 2025",
+    heroBadge: "🛒 Полный гайд • 2026",
     heroSubtitle: "Как превратить Telegram в полноценный интернет-магазин с каталогом, корзиной, оплатой и доставкой. Реальные кейсы и цифры.",
     readingTime: "15 мин чтения",
     wordCount: "~4200 слов",
-    publishDate: "2025-02-01",
-    modifiedDate: "2025-07-27",
+    publishDate: "2026-02-01",
+    modifiedDate: "2026-07-27",
     author: "Дмитрий Малышев",
 
     toc: [
@@ -34,7 +34,7 @@ export const articleInternetMagazin: Article = {
     sections: [
         {
             id: "why-shop-in-telegram",
-            title: "Почему магазин в Telegram — это тренд 2025 года",
+            title: "Почему магазин в Telegram — это тренд 2026 года",
             content: `Интернет-торговля в мессенджерах — это не будущее, а настоящее. В Китае WeChat Mini Programs генерирует продажи на триллионы юаней. В России Telegram становится аналогичной платформой для бизнеса.
 
 Почему именно Telegram? Всё просто: 90+ миллионов пользователей в России и СНГ уже проводят в Telegram 2-4 часа в день. Они читают каналы, общаются в группах, слушают музыку. Логичный следующий шаг — покупки.
@@ -221,8 +221,8 @@ Backend: Python (aiogram 3, FastAPI) или Node.js (telegraf, grammY, NestJS). 
         "telegram-bot-dlya-internet-magazina",
         "Telegram бот для интернет-магазина — каталог, заказы, оплата",
         "Telegram-бот как интернет-магазин: каталог товаров, корзина, оплата, доставка, уведомления. Полное руководство по созданию магазина в Telegram.",
-        "2025-02-01",
-        "2025-07-27",
+        "2026-02-01",
+        "2026-07-27",
         [
             { name: "Можно ли продавать физические товары через Telegram-бот?", text: "Да. Telegram-бот полноценно заменяет интернет-магазин: каталог, корзина, оплата, доставка." },
             { name: "Как принимать оплату в Telegram?", text: "Через интеграцию с ЮKassa, Stripe, Robokassa, Тинькофф." },

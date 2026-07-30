@@ -236,6 +236,67 @@
     border-left-color: var(--lp-cyan);
 }
 
+.tocLinkActive {
+    color: var(--lp-cyan);
+    background: var(--lp-surface-hover);
+    border-left-color: var(--lp-cyan);
+    font-weight: 600;
+}
+
+/* ============================================================
+   SHARE BUTTONS
+   ============================================================ */
+.shareButtons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.shareBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--lp-radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.shareBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.shareBtnTelegram {
+    background: #0088cc;
+}
+
+.shareBtnVk {
+    background: #4a76a8;
+}
+
+.shareBtnWhatsApp {
+    background: #25d366;
+}
+
+.shareBtnCopy {
+    background: var(--lp-surface);
+    color: var(--lp-text-muted);
+    border: 1px solid var(--lp-glass-border);
+}
+
+.shareBtnCopy:hover {
+    color: var(--lp-cyan);
+    border-color: var(--lp-cyan);
+}
+
 /* ============================================================
    ARTICLE SECTIONS
    ============================================================ */

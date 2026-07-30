@@ -2147,7 +2147,7 @@
 .grandSlamSection {
     padding: 100px 0;
     position: relative;
-    background: var(--lp-bg);
+    background: var(--second-bg-color, var(--lp-bg));
 }
 
 /* ─── Value Stack ─── */
@@ -2267,7 +2267,7 @@
     margin: 0 auto 60px;
     border: 1px solid var(--lp-glass-border);
     border-radius: var(--lp-radius-lg);
-    overflow: hidden;
+    overflow-x: auto;
     background: var(--lp-glass-bg);
     backdrop-filter: blur(var(--lp-glass-blur));
     -webkit-backdrop-filter: blur(var(--lp-glass-blur));
@@ -2275,7 +2275,7 @@
 
 .comparisonHeader {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     border-bottom: 1px solid var(--lp-border);
 }
 
@@ -2327,7 +2327,7 @@
 
 .comparisonRow {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
     border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
@@ -2338,7 +2338,8 @@
 .comparisonRow .comparisonLabel {
     font-size: 13px;
     color: var(--lp-text);
-    border-right: 1px solid var(--lp-border);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .comparisonCell {
@@ -2487,20 +2488,73 @@
 @media (max-width: 768px) {
     .comparisonHeader,
     .comparisonRow {
-        grid-template-columns: 1fr 0.7fr 0.7fr;
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr) minmax(0, 0.8fr);
     }
     .comparisonLabel {
         font-size: 11px;
         padding: 10px 12px;
     }
+    .comparisonCol {
+        font-size: 12px;
+        padding: 12px 8px;
+    }
+    .comparisonColPopular span:last-child {
+        font-size: 12px;
+    }
+    .popularBadgeSmall {
+        font-size: 9px;
+        padding: 2px 8px;
+    }
     .comparisonCell,
     .comparisonCellHighlight {
         padding: 10px 6px;
+    }
+    .comparisonCell i,
+    .comparisonCellHighlight i {
+        font-size: 16px;
+    }
+    .comparisonTextMuted {
+        font-size: 11px;
+    }
+    .comparisonCellHighlight span {
+        font-size: 11px;
     }
     .guaranteeSeal {
         flex-direction: column;
         text-align: center;
         padding: 28px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .comparisonHeader,
+    .comparisonRow {
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr) minmax(0, 0.7fr);
+    }
+    .comparisonLabel {
+        font-size: 10px;
+        padding: 8px 8px;
+    }
+    .comparisonRow .comparisonLabel {
+        font-size: 10px;
+    }
+    .comparisonCol {
+        font-size: 11px;
+        padding: 10px 4px;
+    }
+    .comparisonCell,
+    .comparisonCellHighlight {
+        padding: 8px 4px;
+    }
+    .comparisonCell i,
+    .comparisonCellHighlight i {
+        font-size: 14px;
+    }
+    .comparisonTextMuted {
+        font-size: 10px;
+    }
+    .comparisonCellHighlight span {
+        font-size: 10px;
     }
 }
 
