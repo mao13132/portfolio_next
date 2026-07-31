@@ -11,6 +11,13 @@ import { articleRazrabotkaPodKlyuch } from './razrabotka-pod-klyuch';
 import { articleBotProdazhi } from './bot-prodazhi';
 import { articleAiBotSozdanie } from './ai-bot-sozdanie';
 
+/* Новые статьи (июль 2026) */
+import { articleTelegramWebApp } from './telegram-webapp';
+import { articleBotIliPrilozhenie } from './bot-ili-prilozhenie';
+import { articleRazrabotkaSNulya } from './razrabotka-s-nulya';
+import { articleZakazatBota } from './zakazat-bota';
+import { articleBotPriyomZakazov } from './bot-priyom-zakazov';
+
 /* Cluster 2: Автоматизация бизнеса */
 import { cluster2Articles } from './cluster2/registry';
 
@@ -26,6 +33,12 @@ export const articles: Article[] = [
     articleRazrabotkaPodKlyuch,
     articleBotProdazhi,
     articleAiBotSozdanie,
+    /* Новые статьи (июль 2026) */
+    articleTelegramWebApp,
+    articleBotIliPrilozhenie,
+    articleRazrabotkaSNulya,
+    articleZakazatBota,
+    articleBotPriyomZakazov,
     /* Cluster 2: Автоматизация бизнеса */
     ...cluster2Articles,
 ];

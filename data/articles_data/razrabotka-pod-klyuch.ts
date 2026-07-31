@@ -236,5 +236,7 @@ UX-тестирование: 5-10 реальных пользователей и
         { anchor: "заказать разработку бота", url: "/razrabotka-botov", context: "Начните с бесплатной консультации" },
         { anchor: "сколько стоит разработка бота", url: "/blog/skolko-stoit-razrabotka-telegram-bota", context: "Рассчитайте стоимость вашего проекта" },
         { anchor: "AI Telegram бот", url: "/blog/ai-telegram-bot-dlya-biznesa", context: "Добавьте искусственный интеллект в бота" },
+        { anchor: "разработка Telegram-бота с нуля", url: "/blog/razrabotka-telegram-bota-s-nulya", context: "Пошаговое руководство по созданию бота" },
+        { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "Создайте WebApp для сложных задач" },
     ],
 };

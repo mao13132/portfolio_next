@@ -235,5 +235,7 @@ AI-бот загружает вашу базу знаний: FAQ, докумен
         { anchor: "заказать AI-бота на заказ", url: "/razrabotka-botov", context: "Доверьте разработку профессионалам" },
         { anchor: "как создать AI бота в Telegram", url: "/blog/kak-sozdat-ai-bot-telegram", context: "Пошаговое руководство по созданию AI-бота" },
         { anchor: "Telegram бот для продаж с AI", url: "/blog/telegram-bot-dlya-prodazh", context: "Как AI увеличивает продажи" },
+        { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "AI-бот с визуальным интерфейсом" },
+        { anchor: "заказать Telegram-бота", url: "/blog/zakazat-telegram-bota", context: "Как выбрать разработчика" },
     ],
 };

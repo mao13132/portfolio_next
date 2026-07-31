@@ -250,5 +250,7 @@ SMS: дополнительные SMS-напоминания для клиент
         { anchor: "заказать разработку бота для записи", url: "/razrabotka-botov", context: "Хотите автоматизировать запись клиентов?" },
         { anchor: "Telegram бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Все возможности Telegram-ботов для бизнеса" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл создания бота" },
+        { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "Визуальный календарь записи" },
+        { anchor: "Telegram бот для приёма заказов", url: "/blog/telegram-bot-dlya-priyoma-zakazov", context: "Автоматизация приёма заказов" },
     ],
 };

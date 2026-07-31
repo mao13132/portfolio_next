@@ -420,7 +420,7 @@ Fine-tuning + RAG — мощная комбинация. Fine-tuning задаё�
                     title: "Шаг 5: Протестируйте и запустите",
                     content: `Тестируйте на реальных пользователях: 10-20 человек. Соберите feedback. Исправьте проблемы. Запустите на продакшн-сервере.
 
-Настройте мониторинг: логи, стоимость API, качество ответов,满意度 пользователей.`,
+Настройте мониторинг: логи, стоимость API, качество ответов, удовлетворённость пользователей.`,
                 },
             ],
         },
@@ -646,5 +646,7 @@ Webhook: Telegram отправляет сообщения на ваш серве
         { anchor: "заказать разработку AI-бота", url: "/razrabotka-botov", context: "Доверьте создание AI-бота профессионалам" },
         { anchor: "как сделать Telegram бота на Python", url: "/blog/kak-sdelat-telegram-bota-na-python", context: "Начните с основ разработки ботов" },
         { anchor: "Telegram бот для продаж", url: "/blog/telegram-bot-dlya-prodazh", context: "Используйте AI для увеличения продаж" },
+        { anchor: "разработка Telegram-бота с нуля", url: "/blog/razrabotka-telegram-bota-s-nulya", context: "Пошаговое руководство по созданию бота" },
+        { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "AI-бот с визуальным интерфейсом" },
     ],
 };
