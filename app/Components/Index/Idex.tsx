@@ -9,11 +9,17 @@ import { ServicesWrapp } from "../ServicesWrapp/ServicesWrapp";
 import { GrandSlamOffer } from "../Landing/GrandSlamOffer";
 import { GuaranteeBlock } from "../GuaranteeBlock/GuaranteeBlock";
 import { PortfolioWrapper } from "../PortfolioWrapper/PortfolioWrapper";
+import { ReviewsSlider } from "../ReviewsSlider/ReviewsSlider";
 import { Contacts } from "../Contacts/Contacts";
 import { Footer } from "../Footer/Footer";
 import { TelegramFloat } from "../Landing/TelegramFloat";
+import { useContext } from "react";
+import { AppContext } from "@/app/Context/app.context";
 
 export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
+
+    const { reviews } = useContext(AppContext);
+
     return (
         <div className={styles['index-wrapper']} {...props}>
             <Header />
@@ -39,10 +45,15 @@ export const Index = ({ className, ...props }: IdexProps): JSX.Element => {
             {/* 7. Навыки */}
             <ServicesWrapp className={styles['section']} />
 
-            {/* 8. Портфолио */}
+            {/* 8. Отзывы клиентов (ДО кейсов — социальное доказательство → якорь доверия) */}
+            {reviews && reviews.length > 0 && (
+                <ReviewsSlider reviews={reviews} className={styles['section']} />
+            )}
+
+            {/* 9. Портфолио / Кейсы */}
             <PortfolioWrapper className={styles['section']} />
 
-            {/* 9. Контакты */}
+            {/* 10. Контакты */}
             <Contacts className={styles['section']} />
 
             <Footer />

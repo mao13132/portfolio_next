@@ -10,6 +10,8 @@ class MyDocument extends Document {
     }
 
     render(): JSX.Element {
+        const webmasterId = process.env.NEXT_PUBLIC_YANDEX_WEBMASTER_ID;
+
         return (
             <Html lang="ru">
                 <Head>
@@ -23,6 +25,11 @@ class MyDocument extends Document {
                     {/* Google Fonts — Inter */}
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+                    {/* Яндекс.Вебмастер — верификация сайта */}
+                    {webmasterId && webmasterId !== 'ВАШ_ID_ВЕБМАСТЕРА' && (
+                        <meta name="yandex-verification" content={webmasterId} />
+                    )}
                 </Head>
 
                 <body>

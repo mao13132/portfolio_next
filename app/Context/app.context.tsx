@@ -8,10 +8,12 @@ export interface IAppContext {
     current_category?: ICategory,
     works?: IWorks[],
     work?: IWorks,
+    reviews?: string[],
 }
 
 export const AppContext = createContext<IAppContext>({
     category: [],
+    reviews: [],
 })
 
 

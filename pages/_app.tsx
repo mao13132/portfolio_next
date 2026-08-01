@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 
 import '@/app/styles/globals.css';
+import YandexMetrika from '@/app/Components/YandexMetrika/YandexMetrika';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
     return (
@@ -23,6 +24,8 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 
             <Component {...pageProps} />
 
+            {/* Яндекс.Метрика — загружается после интерактивности страницы */}
+            <YandexMetrika />
         </>
     );
 };
