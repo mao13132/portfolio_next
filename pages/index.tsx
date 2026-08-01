@@ -12,6 +12,36 @@ import { category_no_backend } from '../app/utils/category_no_backend'
 
 const SITE_URL = 'https://dima-razrab.com';
 
+const professionalServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "DimaRazrab",
+    "description": "Фриланс-разработчик: Telegram-боты, Python, Next.js, автоматизация бизнеса",
+    "url": SITE_URL,
+    "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "RU"
+    },
+    "priceRange": "от 25000 RUB",
+    "openingHours": "Mo-Su 09:00-21:00",
+    "areaServed": { "@type": "Country", "name": "Россия" },
+    "knowsAbout": [
+        "Telegram боты", "Python", "Next.js", "React",
+        "Автоматизация бизнеса", "Разработка ботов", "SaaS", "CRM"
+    ],
+    "sameAs": [
+        "https://t.me/developer_telegrams"
+    ]
+};
+
+const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": SITE_URL }
+    ]
+};
+
 /** Расширения изображений, которые мы считаем отзывами */
 const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp', '.gif'];
 
@@ -58,6 +88,16 @@ function IndexPage({ }: IIndexPage): JSX.Element {
                 <meta name="twitter:title" content="DimaRazrab — Разработка Telegram-ботов и автоматизация бизнеса" />
                 <meta name="twitter:description" content="Профессиональная разработка Telegram-ботов, сервисов и автоматизация бизнеса. Бесплатная консультация." />
                 <meta name="twitter:image" content={`${SITE_URL}/media/og_desc.jpg`} />
+
+                {/* Schema.org */}
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
+                />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+                />
             </Head>
             <Index />
         </>

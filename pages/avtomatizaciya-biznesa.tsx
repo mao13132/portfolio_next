@@ -44,13 +44,22 @@ const structuredData = {
             "description": "Комплексная автоматизация бизнеса на заказ: CRM, склад, финансы, маркетинг, HR, производство. Внедрение под ключ с гарантией. Для малого, среднего и крупного бизнеса.",
             "inLanguage": "ru-RU",
             "isPartOf": { "@id": `${SITE_URL}#website` },
+            "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
         },
         {
             "@type": "WebSite",
             "@id": `${SITE_URL}#website`,
             "url": SITE_URL,
             "name": "Портфолио Дмитрия Малышева",
-            "inLanguage": "ru_RU"
+            "inLanguage": "ru-RU"
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": `${PAGE_URL}#breadcrumb`,
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Главная", "item": SITE_URL },
+                { "@type": "ListItem", "position": 2, "name": "Автоматизация бизнеса", "item": PAGE_URL }
+            ]
         },
         {
             "@type": "Service",
@@ -108,23 +117,23 @@ export default function AvtomatizaciyaBiznesaPage() {
     return (
         <>
             <Head>
-                <title>Автоматизация бизнеса на заказ — CRM, склад, финансы, маркетинг | Дмитрий Малышев</title>
-                <meta name="description" content="Комплексная автоматизация бизнеса на заказ: CRM, склад, финансы, маркетинг, HR, производство. Внедрение под ключ. Для малого и среднего бизнеса. Бесплатный аудит. Гарантия." />
+                <title>Автоматизация бизнеса на заказ — боты, CRM, процессы | DimaRazrab</title>
+                <meta name="description" content="Автоматизация бизнес-процессов с помощью ботов и скриптов. Экономия времени и денег. Обсудите задачу!" />
                 <meta name="keywords" content="автоматизация бизнеса, автоматизация бизнес процессов, автоматизация бизнеса под ключ, система автоматизации бизнеса, автоматизация малого бизнеса, автоматизация управления бизнесом, комплексная автоматизация бизнеса, услуги автоматизации бизнеса, агентство автоматизации бизнеса, разработка автоматизации бизнес процессов, внедрение автоматизации бизнес процессов, автоматизация внутренних бизнес процессов, автоматизация корпоративных бизнес процессов, системы автоматизации бизнеса, компания по автоматизации бизнеса, автоматизация малого и среднего бизнеса, автоматизация бизнеса разработка" />
                 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
                 <link rel="canonical" href={PAGE_URL} />
                 <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="Дмитрий Малышев — Автоматизация бизнеса" />
-                <meta property="og:title" content="Автоматизация бизнеса на заказ — CRM, склад, финансы, маркетинг" />
-                <meta property="og:description" content="Комплексная автоматизация бизнес-процессов. Внедрение под ключ. Для малого и среднего бизнеса. Бесплатный аудит." />
+                <meta property="og:site_name" content="DimaRazrab" />
+                <meta property="og:title" content="Автоматизация бизнеса на заказ — боты, CRM, процессы | DimaRazrab" />
+                <meta property="og:description" content="Автоматизация бизнес-процессов с помощью ботов и скриптов. Экономия времени и денег. Обсудите задачу!" />
                 <meta property="og:url" content={PAGE_URL} />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:image" content={OG_IMAGE} />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Автоматизация бизнеса на заказ — CRM, склад, финансы" />
-                <meta name="twitter:description" content="Комплексная автоматизация бизнес-процессов. Внедрение под ключ. Бесплатный аудит." />
+                <meta name="twitter:title" content="Автоматизация бизнеса на заказ — боты, CRM, процессы | DimaRazrab" />
+                <meta name="twitter:description" content="Автоматизация бизнес-процессов с помощью ботов и скриптов. Экономия времени и денег." />
                 <meta name="twitter:image" content={OG_IMAGE} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
             </Head>

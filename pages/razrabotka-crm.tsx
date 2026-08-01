@@ -46,6 +46,7 @@ const structuredData = {
             "description": "Разработка CRM-систем на заказ для бизнеса. Автоматизация продаж, воронки, аналитика, интеграции. Гарантия результата.",
             "inLanguage": "ru-RU",
             "isPartOf": { "@id": `${SITE_URL}#website` },
+            "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
         },
         {
             "@type": "WebSite",
@@ -69,6 +70,14 @@ const structuredData = {
             },
             "serviceType": "Разработка CRM-систем",
             "areaServed": { "@type": "Country", "name": "Россия" },
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": `${PAGE_URL}#breadcrumb`,
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Главная", "item": SITE_URL },
+                { "@type": "ListItem", "position": 2, "name": "Разработка CRM", "item": PAGE_URL }
+            ]
         },
         {
             "@type": "FAQPage",
@@ -119,23 +128,23 @@ export default function RazrabotkaCrmPage() {
     return (
         <>
             <Head>
-                <title>Разработка CRM на заказ — автоматизация продаж | Дмитрий Малышев</title>
-                <meta name="description" content="Разработка CRM-систем на заказ: автоматизация продаж, воронки, аналитика, интеграции с 1С и телефонией. От 2 недель. Бесплатная поддержка. Гарантия." />
+                <title>Разработка CRM-системы на заказ — кастомная CRM для бизнеса | DimaRazrab</title>
+                <meta name="description" content="Создаю CRM-системы под ваш бизнес. Интеграция с Telegram, 1С. Бесплатная поддержка 30 дней. Закажите CRM!" />
                 <meta name="keywords" content="разработка CRM, создать CRM, CRM на заказ, разработка crm системы, автоматизация продаж, crm для бизнеса, кастомная crm, разработка crm для бизнеса, разработка crm систем для бизнеса, разработка crm системы на заказ, разработка crm erp, разработка crm стоимость, заказы на разработку crm, разработка сайтов и crm" />
                 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
                 <link rel="canonical" href={PAGE_URL} />
                 <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="Дмитрий Малышев — Разработка CRM" />
-                <meta property="og:title" content="Разработка CRM на заказ — автоматизация продаж" />
-                <meta property="og:description" content="Разработка CRM-систем на заказ. Автоматизация продаж, воронки, аналитика. От 2 недель. Гарантия." />
+                <meta property="og:site_name" content="DimaRazrab" />
+                <meta property="og:title" content="Разработка CRM-системы на заказ — кастомная CRM для бизнеса | DimaRazrab" />
+                <meta property="og:description" content="Создаю CRM-системы под ваш бизнес. Интеграция с Telegram, 1С. Бесплатная поддержка 30 дней. Закажите CRM!" />
                 <meta property="og:url" content={PAGE_URL} />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:image" content={OG_IMAGE} />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Разработка CRM на заказ — автоматизация продаж" />
-                <meta name="twitter:description" content="Разработка CRM-систем на заказ. От 2 недель. Гарантия." />
+                <meta name="twitter:title" content="Разработка CRM-системы на заказ — кастомная CRM для бизнеса | DimaRazrab" />
+                <meta name="twitter:description" content="Создаю CRM-системы под ваш бизнес. Интеграция с Telegram, 1С. Бесплатная поддержка 30 дней." />
                 <meta name="twitter:image" content={OG_IMAGE} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
             </Head>

@@ -1,7 +1,7 @@
 import { WorkPageProps } from "./WorkPage.props";
 import { AppContext } from "@/app/Context/app.context";
 import Head from "next/head";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 
 import styles from './WorkPage.module.css';
 
@@ -16,22 +16,102 @@ import { Contacts } from "../Contacts/Contacts";
 import { motion } from 'framer-motion';
 import { descriptionsAnimation } from "./animationsDescriptions";
 
+const SITE_URL = 'https://dima-razrab.com';
+
 export const WorkPage = ({ className, ...props }: WorkPageProps): JSX.Element => {
     const { work } = useContext(AppContext);
 
+    const pageTitle = work?.title ? `${work.title} | DimaRazrab` : 'Работа | DimaRazrab';
+    const pageDescription = work?.short_text || work?.title || 'Проект из портфолио DimaRazrab';
+    const pageUrl = work?.slug ? `${SITE_URL}/work/${work.slug}` : SITE_URL;
+    const pageImage = work?.image ? `${SITE_URL}${work.image}` : `${SITE_URL}/media/og_desc.jpg`;
+
+    const structuredData = useMemo(() => {
+        if (!work) return null;
+        return {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "WebPage",
+                    "@id": `${pageUrl}#webpage`,
+                    "url": pageUrl,
+                    "name": pageTitle,
+                    "description": pageDescription,
+                    "inLanguage": "ru-RU",
+                    "isPartOf": { "@id": `${SITE_URL}#website` },
+                    "breadcrumb": { "@id": `${pageUrl}#breadcrumb` },
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": `${SITE_URL}#website`,
+                    "url": SITE_URL,
+                    "name": "DimaRazrab",
+                    "inLanguage": "ru-RU",
+                },
+                {
+                    "@type": "BreadcrumbList",
+                    "@id": `${pageUrl}#breadcrumb`,
+                    "itemListElement": [
+                        { "@type": "ListItem", "position": 1, "name": "Главная", "item": SITE_URL },
+                        { "@type": "ListItem", "position": 2, "name": "Портфолио", "item": `${SITE_URL}/#portfolio` },
+                        { "@type": "ListItem", "position": 3, "name": work.title, "item": pageUrl },
+                    ],
+                },
+                {
+                    "@type": "CreativeWork",
+                    "@id": `${pageUrl}#creativework`,
+                    "name": work.title,
+                    "description": pageDescription,
+                    "url": pageUrl,
+                    "image": pageImage,
+                    "creator": {
+                        "@type": "Person",
+                        "name": "Дмитрий Малышев",
+                        "url": SITE_URL,
+                    },
+                },
+            ],
+        };
+    }, [work, pageTitle, pageDescription, pageUrl, pageImage]);
+
     useEffect(() => {
         if (work?.title) {
-            document.title = `${work.title} | Портфолио Дмитрия Малышева`;
+            document.title = pageTitle;
         }
-    }, [work]);
+    }, [work, pageTitle]);
 
     return (
         <>
             <Head>
-                {work?.title && <title>{`${work.title} | Портфолио Дмитрия Малышева`}</title>}
-                {work?.title && <meta name="description" content={work.title} />}
-                {work?.title && <meta property="og:title" content={work.title} />}
-                {work?.title && <meta property="og:description" content={work.title} />}
+                <title>{pageTitle}</title>
+                <meta name="description" content={pageDescription} />
+                <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+                <link rel="canonical" href={pageUrl} />
+
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="DimaRazrab" />
+                <meta property="og:title" content={pageTitle} />
+                <meta property="og:description" content={pageDescription} />
+                <meta property="og:url" content={pageUrl} />
+                <meta property="og:locale" content="ru_RU" />
+                <meta property="og:image" content={pageImage} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+
+                {/* Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={pageTitle} />
+                <meta name="twitter:description" content={pageDescription} />
+                <meta name="twitter:image" content={pageImage} />
+
+                {/* Schema.org */}
+                {structuredData && (
+                    <script
+                        type="application/ld+json"
+                        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                    />
+                )}
             </Head>
 
             <div className={cn(className, styles['wrapper'])} {...props}>

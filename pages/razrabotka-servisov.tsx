@@ -46,6 +46,7 @@ const structuredData = {
             "description": "Профессиональная разработка сервисов: SaaS-платформы, API, веб-сервисы, автоматизация бизнес-процессов. Гарантия результата.",
             "inLanguage": "ru-RU",
             "isPartOf": { "@id": `${SITE_URL}#website` },
+            "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
             "datePublished": "2024-01-01",
             "dateModified": new Date().toISOString().split('T')[0],
         },
@@ -71,6 +72,14 @@ const structuredData = {
             },
             "serviceType": "Разработка сервисов",
             "areaServed": { "@type": "Country", "name": "Россия" },
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": `${PAGE_URL}#breadcrumb`,
+            "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Главная", "item": SITE_URL },
+                { "@type": "ListItem", "position": 2, "name": "Разработка сервисов", "item": PAGE_URL }
+            ]
         },
         {
             "@type": "FAQPage",
@@ -118,23 +127,23 @@ export default function RazrabotkaServisovPage() {
     return (
         <>
             <Head>
-                <title>Разработка сервисов на заказ — SaaS, API, Web-сервисы | Дмитрий Малышев</title>
-                <meta name="description" content="Профессиональная разработка сервисов: SaaS-платформы, REST API, веб-сервисы, микросервисы. От 2 недель. Бесплатная поддержка. Гарантия результата." />
+                <title>Разработка веб-сервисов на заказ — SaaS, дашборды, API | DimaRazrab</title>
+                <meta name="description" content="Разработка веб-приложений и сервисов на Next.js и Python. Бесплатная поддержка 30 дней. Обсудите проект!" />
                 <meta name="keywords" content="разработка сервисов, создание сервиса, SaaS разработка, разработка API, веб-сервис на заказ, автоматизация бизнеса, микросервисы" />
                 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
                 <link rel="canonical" href={PAGE_URL} />
                 <meta property="og:type" content="website" />
-                <meta property="og:site_name" content="Дмитрий Малышев — Разработка сервисов" />
-                <meta property="og:title" content="Разработка сервисов на заказ — SaaS, API, Web" />
-                <meta property="og:description" content="Профессиональная разработка сервисов для бизнеса. SaaS, API, микросервисы. От 2 недель. Гарантия." />
+                <meta property="og:site_name" content="DimaRazrab" />
+                <meta property="og:title" content="Разработка веб-сервисов на заказ — SaaS, дашборды, API | DimaRazrab" />
+                <meta property="og:description" content="Разработка веб-приложений и сервисов на Next.js и Python. Бесплатная поддержка 30 дней. Обсудите проект!" />
                 <meta property="og:url" content={PAGE_URL} />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:image" content={OG_IMAGE} />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Разработка сервисов на заказ — SaaS, API, Web" />
-                <meta name="twitter:description" content="Профессиональная разработка сервисов для бизнеса. От 2 недель. Гарантия." />
+                <meta name="twitter:title" content="Разработка веб-сервисов на заказ — SaaS, дашборды, API | DimaRazrab" />
+                <meta name="twitter:description" content="Разработка веб-приложений и сервисов на Next.js и Python. Бесплатная поддержка 30 дней." />
                 <meta name="twitter:image" content={OG_IMAGE} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
             </Head>

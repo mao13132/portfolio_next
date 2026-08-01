@@ -540,10 +540,10 @@ export default function RazrabotkaBotovPage() {
         <>
             <ClickComponent />
             <Head>
-                <title>Разработка ботов на заказ — Telegram, WhatsApp, Viber | Дмитрий Малышев</title>
+                <title>Разработка Telegram-ботов на заказ — боты для бизнеса | DimaRazrab</title>
                 <meta
                     name="description"
-                    content="Профессиональная разработка ботов на заказ: Telegram, WhatsApp, Viber. Автоматизация продаж, поддержки и маркетинга. От 3 дней. Бесплатная поддержка 30-90 дней. Гарантия результата."
+                    content="Создаю Telegram-ботов для бизнеса. Бесплатная поддержка 30 дней. Быстрые сроки, доступные цены от 25 000 ₽. Обсудите проект в Telegram!"
                 />
                 <meta name="keywords" content="разработка ботов, заказать бота, telegram бот на заказ, чат бот разработка, бот для бизнеса, автоматизация, whatsapp бот, создание ботов, разработка telegram бота, разработка телеграм бота, разработка бота для telegram, разработка бота telegram python, telegram бот на python, разработка ботов telegram python, разработка тг ботов, разработка чат ботов, разработка чат ботов telegram, разработчик telegram бота, заказать разработку телеграм бота, заказать разработку чат бота, телеграм бот заказать, сделать телеграм бота, создание бота telegram python, создание чат бота telegram python, чат бот telegram python" />
                 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
@@ -552,8 +552,8 @@ export default function RazrabotkaBotovPage() {
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Дмитрий Малышев — Разработка ботов" />
-                <meta property="og:title" content="Разработка ботов на заказ — Telegram, WhatsApp, Viber" />
-                <meta property="og:description" content="Профессиональная разработка ботов для бизнеса. Автоматизация продаж, поддержки и маркетинга. От 3 дней. Гарантия результата." />
+                <meta property="og:title" content="Разработка Telegram-ботов на заказ — боты для бизнеса | DimaRazrab" />
+                <meta property="og:description" content="Создаю Telegram-ботов для бизнеса. Бесплатная поддержка 30 дней. Быстрые сроки, доступные цены от 25 000 ₽. Обсудите проект в Telegram!" />
                 <meta property="og:url" content={PAGE_URL} />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:image" content={OG_IMAGE} />
@@ -562,8 +562,8 @@ export default function RazrabotkaBotovPage() {
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Разработка ботов на заказ — Telegram, WhatsApp, Viber" />
-                <meta name="twitter:description" content="Профессиональная разработка ботов для бизнеса. От 3 дней. Гарантия." />
+                <meta name="twitter:title" content="Разработка Telegram-ботов на заказ — боты для бизнеса | DimaRazrab" />
+                <meta name="twitter:description" content="Создаю Telegram-ботов для бизнеса. Бесплатная поддержка 30 дней. Быстрые сроки, доступные цены от 25 000 ₽." />
                 <meta name="twitter:image" content={OG_IMAGE} />
 
                 {/* Structured Data */}

@@ -5,9 +5,10 @@ export default function PrivacyPage() {
     return (
         <>
             <Head>
-                <title>Политика обработки персональных данных — Дмитрий Малышев</title>
+                <title>Политика обработки персональных данных | DimaRazrab</title>
                 <meta name="description" content="Политика обработки персональных данных в соответствии с ФЗ-152. Информация о сборе, хранении и защите ваших данных." />
                 <meta name="robots" content="noindex, follow" />
+                <link rel="canonical" href="https://dima-razrab.com/privacy" />
             </Head>
 
             <div className={styles.root}>
