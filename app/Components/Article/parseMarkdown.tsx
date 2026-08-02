@@ -101,27 +101,12 @@ export const renderTable = (text: string, key: number): React.ReactElement => {
     const rows = dataLines.slice(1).map(parseRow);
 
     return (
-        <div key={key} style={{ overflowX: 'auto', margin: '20px 0' }}>
-            <table style={{
-                width: '100%',
-                borderCollapse: 'collapse',
-                fontSize: '15px',
-                lineHeight: 1.6,
-            }}>
+        <div key={key} className="articleTableWrapper">
+            <table>
                 <thead>
                     <tr>
                         {headers.map((h, idx) => (
-                            <th key={idx} style={{
-                                padding: '12px 16px',
-                                textAlign: 'left',
-                                borderBottom: '2px solid var(--lp-cyan)',
-                                color: 'var(--lp-text)',
-                                fontWeight: 700,
-                                fontSize: '14px',
-                                textTransform: 'uppercase',
-                                letterSpacing: '0.5px',
-                                background: 'rgba(0, 200, 255, 0.04)',
-                            }}>
+                            <th key={idx}>
                                 {parseInlineMarkdown(h)}
                             </th>
                         ))}
@@ -129,15 +114,9 @@ export const renderTable = (text: string, key: number): React.ReactElement => {
                 </thead>
                 <tbody>
                     {rows.map((row, rowIdx) => (
-                        <tr key={rowIdx} style={{
-                            borderBottom: '1px solid var(--lp-glass-border)',
-                        }}>
+                        <tr key={rowIdx}>
                             {row.map((cell, cellIdx) => (
-                                <td key={cellIdx} style={{
-                                    padding: '10px 16px',
-                                    color: 'var(--lp-text-muted)',
-                                    fontSize: '15px',
-                                }}>
+                                <td key={cellIdx}>
                                     {parseInlineMarkdown(cell)}
                                 </td>
                             ))}

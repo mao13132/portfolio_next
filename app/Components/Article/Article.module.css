@@ -1061,6 +1061,70 @@
 }
 
 /* ============================================================
+   TABLE STYLES
+   ============================================================ */
+.articleContent :global(.articleTableWrapper) {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+    border-radius: var(--lp-radius-md);
+    border: 1px solid var(--lp-glass-border);
+    background: var(--lp-glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.articleContent :global(.articleTableWrapper) table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.articleContent :global(.articleTableWrapper) th {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 2px solid var(--lp-cyan);
+    color: var(--lp-text);
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(0, 200, 255, 0.04);
+    white-space: nowrap;
+}
+
+.articleContent :global(.articleTableWrapper) td {
+    padding: 10px 16px;
+    color: var(--lp-text-muted);
+    font-size: 15px;
+    border-bottom: 1px solid var(--lp-glass-border);
+}
+
+.articleContent :global(.articleTableWrapper) tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+/* Mobile scroll indicator */
+@media (max-width: 768px) {
+    .articleContent :global(.articleTableWrapper) {
+        position: relative;
+    }
+
+    .articleContent :global(.articleTableWrapper)::after {
+        content: '← Листайте →';
+        display: block;
+        text-align: center;
+        padding: 8px;
+        font-size: 12px;
+        color: rgba(255, 255, 255, 0.4);
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 calc(var(--lp-radius-md) - 1px) calc(var(--lp-radius-md) - 1px);
+    }
+}
+
+/* ============================================================
    MOBILE RESPONSIVE
    ============================================================ */
 @media (max-width: 900px) {
