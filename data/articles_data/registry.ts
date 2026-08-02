@@ -17,6 +17,16 @@ import { articleBotIliPrilozhenie } from './bot-ili-prilozhenie';
 import { articleRazrabotkaSNulya } from './razrabotka-s-nulya';
 import { articleZakazatBota } from './zakazat-bota';
 import { articleBotPriyomZakazov } from './bot-priyom-zakazov';
+import { articleTelegramBotDlyaPriyomaZakazov2 } from './telegram-bot-dlya-priyoma-zakazov-2';
+
+/* Новые статьи (август 2026) */
+import { articleStoimostTelegramBota } from './stoimost-telegram-bota';
+import { articleTelegramBotDlyaMagazina } from './telegram-bot-dlya-magazina';
+import { articleBotDlyaZapisiKlientov } from './bot-dlya-zapisi-klientov';
+import { articleTelegramBotIliPrilozhenieDlyaBiznesa } from './telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa';
+import { articleKakTelegramBotUvelichivaetProdazhi } from './kak-telegram-bot-uvelichivaet-prodazhi';
+import { articleTelegramMiniAppChtoEto } from './telegram-mini-app-chto-eto';
+import { articleAiogramVsPyrogram } from './aiogram-vs-pyrogram';
 
 /* Cluster 2: Автоматизация бизнеса */
 import { cluster2Articles } from './cluster2/registry';
@@ -39,6 +49,16 @@ export const articles: Article[] = [
     articleRazrabotkaSNulya,
     articleZakazatBota,
     articleBotPriyomZakazov,
+    /* Новые статьи (август 2026) */
+    articleStoimostTelegramBota,
+    articleTelegramBotDlyaMagazina,
+    articleBotDlyaZapisiKlientov,
+    articleTelegramBotIliPrilozhenieDlyaBiznesa,
+    articleKakTelegramBotUvelichivaetProdazhi,
+    /* Новые статьи (август 2026 — продолжение) */
+    articleTelegramMiniAppChtoEto,
+    articleAiogramVsPyrogram,
+    articleTelegramBotDlyaPriyomaZakazov2,
     /* Cluster 2: Автоматизация бизнеса */
     ...cluster2Articles,
 ];

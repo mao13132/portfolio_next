@@ -48,7 +48,15 @@ export const articlePythonBot: Article = {
 
 В-четвёртых, интеграции. Python легко интегрируется с базами данных (PostgreSQL, MongoDB, SQLite), платёжными системами, CRM, API внешних сервисов. Это позволяет создавать не просто ботов, а полноценные бизнес-инструменты.
 
-По данным GitHub, более 60% всех Telegram-ботов написаны на Python. Это значит, что вам доступны готовые решения для практически любой задачи.`,
+По данным GitHub, более 60% всех Telegram-ботов написаны на Python. Это значит, что вам доступны готовые решения для практически любой задачи.
+
+Вот сводная таблица стоимости разработки бота на Python:
+
+| Тип бота | Функции | Цена | Сроки |
+|----------|---------|------|-------|
+| Простой | Приветствие, FAQ, кнопки, сбор контактов | 15 000 — 40 000 ₽ | 3-5 дней |
+| Средний | + база данных, CRM, калькуляция | 40 000 — 100 000 ₽ | 1-2 недели |
+| Сложный | + магазин, оплата, WebApp, AI | 100 000 — 300 000 ₽ | 2-4 недели |`,
         },
         {
             id: "preparation",
@@ -95,7 +103,10 @@ export const articlePythonBot: Article = {
             subsections: [
                 {
                     title: "Минимальный код бота",
-                    content: `import asyncio\nfrom aiogram import Bot, Dispatcher, Router, F\nfrom aiogram.types import Message\n\nBOT_TOKEN = \"ВАШ_ТОКЕН\"\n\nbot = Bot(token=BOT_TOKEN)\ndp = Dispatcher()\nrouter = Router()\n\n@router.message(F.text == \"/start\")\nasync def cmd_start(message: Message):\n    await message.answer(\"Привет! Я ваш первый бот! 🤖\")\n\ndp.include_router(router)\n\nasync def main():\n    await dp.start_polling(bot)\n\nif __name__ == \"__main__\":\n    asyncio.run(main())\n\nЗапустите: python main.py. Откройте Telegram, найдите своего бота и отправьте /start. Бот ответит!`,
+                    content: `import asyncio\nfrom aiogram import Bot, Dispatcher, Router, F\nfrom aiogram.types import Message\n\nBOT_TOKEN = \"ВАШ_ТОКЕН\"\n\nbot = Bot(token=BOT_TOKEN)\ndp = Dispatcher()\nrouter = Router()\n\n@router.message(F.text == \"/start\")\nasync def cmd_start(message: Message):\n    await message.answer(\"Привет! Я ваш первый бот! 🤖\")\n\ndp.include_router(router)\n\nasync def main():\n    await dp.start_polling(bot)\n\nif __name__ == \"__main__\":\n    asyncio.run(main())\n\nЗапустите: python main.py. Откройте Telegram, найдите своего бота и отправьте /start. Бот ответит!\n\n:::compare\n❌ Без бота\n• Ручные ответы на сообщения 24/7\n• Теряете клиентов в нерабочее время\n• Тратите часы на рутину\n\n✅ С Telegram-ботом\n• Автоматические ответы 24/7\n• Ни один клиент не потерян\n• Вы занимаетесь бизнесом, а не перепиской\n:::\n\n:::conversion\n**Хотите бота, но не хотите разбираться сами?**
+Я разработаю бота на Python под ваш бизнес с бесплатной поддержкой 30 дней.
+Стоимость от 15 000 ₽. Сроки от 3 дней.
+[Обсудить проект →](https://t.me/dima_razrab)\n:::`,
                 },
                 {
                     title: "Разбор кода",
@@ -132,7 +143,14 @@ export const articlePythonBot: Article = {
         {
             id: "handlers",
             title: "Хендлеры: обработка команд и сообщений",
-            content: `Хендлеры — это функции, которые реагируют на действия пользователя. В Aiogram 3 хендлеры регистрируются через роутеры.`,
+            content: `Хендлеры — это функции, которые реагируют на действия пользователя. В Aiogram 3 хендлеры регистрируются через роутеры.
+
+:::conversion
+**Не хотите разбираться в коде?**
+Я разработаю профессионального Telegram-бота на Python с полным исходным кодом.
+Стоимость от 15 000 ₽. Сроки от 3 дней.
+[Обсудить проект →](https://t.me/dima_razrab)
+:::`,
             subsections: [
                 {
                     title: "Обработка команд",
@@ -218,7 +236,7 @@ export const articlePythonBot: Article = {
             title: "Обработка ошибок и логирование",
             content: `Продакшен-бот должен gracefully обрабатывать ошибки. Вот основные практики.
 
-Логирование: используйте модуль logging вместо print(). Логи записываются в файл и помогают отладить проблемы в продакшене.\n\nimport logging\nlogging.basicConfig(level=logging.INFO, filename=\"bot.log\")\nlogger = logging.getLogger(__name__)\n\n@router.message()\nasync def handle_all(message: Message):\n    try:\n        # Логика обработки\n        pass\n    except Exception as e:\n        logger.error(f\"Ошибка: {e}\", exc_info=True)\n        await message.answer(\"Произошла ошибка. Попробуйте позже.\")\n\nГлобальный обработчик ошибок:\n\n@dp.error()\nasync def error_handler(event: ErrorEvent):\n    logger.critical(f\"Критическая ошибка: {event.exception}\")\n    return True  # Подавить ошибку\n\nRetry при сетевых ошибках: используйте aiohttp с автоматическим retry для запросов к внешним API. Не позволяйте временному сбою сети сломать весь диалог.`,
+Логирование: используйте модуль logging вместо print(). Логи записываются в файл и помогают отладить проблемы в продакшене.\n\nimport logging\nlogging.basicConfig(level=logging.INFO, filename=\"bot.log\")\nlogger = logging.getLogger(__name__)\n\n@router.message()\nasync def handle_all(message: Message):\n    try:\n        # Логика обработки\n        pass\n    except Exception as e:\n        logger.error(f\"Ошибка: {e}\", exc_info=True)\n        await message.answer(\"Произошла ошибка. Попробуйте позже.\")\n\nГлобальный обработчик ошибок:\n\n@dp.error()\nasync def error_handler(event: ErrorEvent):\n    logger.critical(f\"Критическая ошибка: {event.exception}\")\n    return True  # Подавить ошибку\n\nRetry при сетевых ошибках: используйте aiohttp с автоматическим retry для запросов к внешним API. Не позволяйте временному сбою сети сломать весь диалог.\n\n:::readmore\nЧитать дальше\n• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)\n• [Стоимость разработки Telegram бота](/blog/stoimost-telegram-bota)\n• [AI Telegram бот для бизнеса](/blog/ai-telegram-bot-dlya-biznesa)\n• [Заказать Telegram-бота →](/razrabotka-botov)\n:::\n\n:::conversion\n**Готовы заказать Telegram-бота?**\n✅ Бесплатная консультация\n✅ Бесплатная поддержка 30 дней\n✅ Полный исходный код на Python\n[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)\n:::`,
         },
     ],
 

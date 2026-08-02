@@ -38,24 +38,235 @@ const NAV_LINKS = [
 ];
 
 /* ============================================================
-   RENDER CONTENT WITH PARAGRAPHS
+   RENDER SPECIAL BLOCKS (:::compare, :::conversion, :::readmore, :::roi)
+   ============================================================ */
+
+const renderCompareBlock = (content: string, key: number) => {
+    // Split by "✅" or "✅" marker — first part is "before", second is "after"
+    const parts = content.split(/(?=✅)/);
+    const beforeText = parts[0] || '';
+    const afterText = parts[1] || '';
+
+    const extractItems = (text: string) =>
+        text.split('\n')
+            .map(l => l.trim())
+            .filter(l => l.startsWith('•') || l.startsWith('-'))
+            .map(l => l.replace(/^[•\-]\s*/, ''));
+
+    const beforeTitle = beforeText.split('\n').find(l => l.includes('❌'))?.trim() || '❌ До';
+    const afterTitle = afterText.split('\n').find(l => l.includes('✅'))?.trim() || '✅ После';
+    const beforeItems = extractItems(beforeText);
+    const afterItems = extractItems(afterText);
+
+    return (
+        <div key={key} className="compareBlock" style={{
+            display: 'flex', gap: '20px', margin: '24px 0',
+        }}>
+            <div className="compareItem compareBefore" style={{
+                flex: 1, padding: '24px', borderRadius: '12px',
+                background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.2)',
+            }}>
+                <h4 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '12px', color: '#ef4444' }}>{beforeTitle}</h4>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {beforeItems.map((item, j) => (
+                        <li key={j} style={{ padding: '4px 0', fontSize: '15px', color: 'var(--lp-text-muted)' }}>{item}</li>
+                    ))}
+                </ul>
+            </div>
+            <div className="compareItem compareAfter" style={{
+                flex: 1, padding: '24px', borderRadius: '12px',
+                background: 'rgba(34,197,94,0.06)', border: '1px solid rgba(34,197,94,0.2)',
+            }}>
+                <h4 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '12px', color: '#22c55e' }}>{afterTitle}</h4>
+                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                    {afterItems.map((item, j) => (
+                        <li key={j} style={{ padding: '4px 0', fontSize: '15px', color: 'var(--lp-text-muted)' }}>{item}</li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
+};
+
+const renderConversionBlock = (content: string, key: number) => {
+    const lines = content.split('\n').filter(l => l.trim());
+    return (
+        <div key={key} className="conversionBlock" style={{
+            background: 'linear-gradient(135deg, rgba(99,102,241,0.08), rgba(168,85,247,0.08))',
+            border: '1px solid rgba(99,102,241,0.25)',
+            borderRadius: '12px',
+            padding: '28px 32px',
+            margin: '28px 0',
+            textAlign: 'center',
+            position: 'relative',
+            overflow: 'hidden',
+        }}>
+            {lines.map((line, j) => {
+                const trimmed = line.trim();
+                if (trimmed.startsWith('[') && trimmed.includes('](')) {
+                    // Link line: [text](url)
+                    const match = trimmed.match(/\[(.+?)\]\((.+?)\)/);
+                    if (match) {
+                        return (
+                            <p key={j} style={{ margin: '8px 0 0' }}>
+                                <a href={match[2]} target="_blank" rel="noopener noreferrer" style={{
+                                    display: 'inline-flex', alignItems: 'center', gap: '6px',
+                                    marginTop: '8px', padding: '10px 24px',
+                                    background: 'linear-gradient(135deg, var(--lp-cyan), var(--lp-purple))',
+                                    borderRadius: '8px', color: '#fff', fontWeight: 700,
+                                    fontSize: '15px', textDecoration: 'none',
+                                    transition: 'all 0.3s ease',
+                                }}>{match[1]}</a>
+                            </p>
+                        );
+                    }
+                }
+                if (trimmed.startsWith('**') || trimmed.startsWith('•')) {
+                    const text = trimmed.replace(/^\*\*/, '').replace(/\*\*$/, '');
+                    return <p key={j} style={{ marginBottom: '8px', fontSize: '20px', color: 'var(--lp-text)', fontWeight: 700 }}>{parseInlineMarkdown(trimmed)}</p>;
+                }
+                return <p key={j} style={{ marginBottom: '8px', fontSize: '16px', color: 'var(--lp-text-muted)', lineHeight: 1.6 }}>{parseInlineMarkdown(trimmed)}</p>;
+            })}
+        </div>
+    );
+};
+
+const renderReadMoreBlock = (content: string, key: number) => {
+    const lines = content.split('\n').filter(l => l.trim());
+    const linkLines = lines.filter(l => l.trim().startsWith('•') || l.trim().startsWith('-') || (l.trim().startsWith('[') && l.trim().includes('](')));
+    const titleLine = lines.find(l => l.trim().startsWith('#'))?.replace(/^#+\s*/, '') || 'Читать дальше';
+
+    return (
+        <div key={key} className="readMoreBlock" style={{
+            margin: '32px 0', padding: '24px 28px',
+            background: 'var(--lp-glass-bg)', border: '1px solid var(--lp-glass-border)',
+            borderRadius: '12px',
+        }}>
+            <h3 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '16px', color: 'var(--lp-text)' }}>
+                📚 {titleLine}
+            </h3>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                {linkLines.map((line, j) => {
+                    const clean = line.replace(/^[•\-]\s*/, '').trim();
+                    const match = clean.match(/\[(.+?)\]\((.+?)\)/);
+                    if (match) {
+                        return (
+                            <li key={j}>
+                                <a href={match[2]} style={{
+                                    color: 'var(--lp-cyan)', fontSize: '15px', fontWeight: 500,
+                                    textDecoration: 'none', transition: 'all 0.3s ease',
+                                }}>{match[1]}</a>
+                            </li>
+                        );
+                    }
+                    return <li key={j}>{parseInlineMarkdown(clean)}</li>;
+                })}
+            </ul>
+        </div>
+    );
+};
+
+const renderRoiBlock = (content: string, key: number) => {
+    // Parse: "ROI: 300%" or "label: value" lines
+    const lines = content.split('\n').filter(l => l.trim());
+    const items = lines.map(line => {
+        const parts = line.split(':').map(s => s.trim());
+        return { label: parts[0] || '', value: parts[1] || '' };
+    });
+
+    return (
+        <div key={key} className="roiBlock" style={{
+            margin: '20px 0', padding: '20px 24px',
+            background: 'var(--lp-glass-bg)', border: '1px solid var(--lp-glass-border)',
+            borderRadius: '12px',
+        }}>
+            {items.map((item, j) => {
+                const pct = parseInt(item.value) || 0;
+                const barWidth = Math.min(pct / 5, 100); // 500% ROI = 100% bar
+                return (
+                    <div key={j} style={{ marginBottom: j < items.length - 1 ? '12px' : 0 }}>
+                        <div className="roiLabel" style={{
+                            display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                            marginBottom: '8px', fontSize: '14px', fontWeight: 600,
+                        }}>
+                            <span style={{ color: 'var(--lp-text-muted)' }}>{item.label}</span>
+                            <span style={{ color: 'var(--lp-cyan)', fontWeight: 700 }}>{item.value}</span>
+                        </div>
+                        <div className="roiBar" style={{
+                            height: '8px', borderRadius: '4px', background: 'var(--lp-surface)', overflow: 'hidden',
+                        }}>
+                            <div className="roiBarFill" style={{
+                                height: '100%', borderRadius: '4px',
+                                background: 'linear-gradient(90deg, var(--lp-cyan), var(--lp-purple))',
+                                width: `${barWidth}%`, transition: 'width 0.8s ease',
+                            }} />
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    );
+};
+
+/**
+ * Renders a special block (compare, conversion, readmore, roi)
+ */
+const renderSpecialBlock = (blockType: string, content: string, key: number): React.ReactElement | null => {
+    switch (blockType) {
+        case 'compare': return renderCompareBlock(content, key);
+        case 'conversion': return renderConversionBlock(content, key);
+        case 'readmore': return renderReadMoreBlock(content, key);
+        case 'roi': return renderRoiBlock(content, key);
+        default: return null;
+    }
+};
+
+/* ============================================================
+   RENDER CONTENT WITH PARAGRAPHS (supports :::blocks)
    ============================================================ */
 
 const renderContent = (text: string) => {
-    return text.split('\n\n').map((paragraph, i) => {
+    // Step 1: Extract all :::blocktype ... ::: blocks and replace with placeholders
+    const blocks: { type: string; content: string }[] = [];
+    const blockRegex = /:::(compare|conversion|readmore|roi)\n([\s\S]*?):::/g;
+
+    // Use replace to both collect blocks AND replace them with placeholders
+    let processedText = text.replace(blockRegex, (_fullMatch, blockType, blockContent) => {
+        const idx = blocks.length;
+        blocks.push({ type: blockType, content: blockContent.trim() });
+        return `\n\n__BLOCK_${idx}__\n\n`;
+    });
+
+    // Step 2: Split by \n\n and render each paragraph
+    const segments = processedText.split('\n\n');
+
+    return segments.map((paragraph, i) => {
+        const trimmed = paragraph.trim();
+
+        // Check for block placeholder
+        const blockMatch = trimmed.match(/^__(\w+)_(\d+)__$/);
+        if (blockMatch) {
+            const bIdx = parseInt(blockMatch[2]);
+            if (blocks[bIdx]) {
+                return renderSpecialBlock(blocks[bIdx].type, blocks[bIdx].content, i);
+            }
+        }
+
+        if (!trimmed) return null;
+
         // Handle horizontal rule
-        if (isHr(paragraph)) {
+        if (isHr(trimmed)) {
             return <hr key={i} style={{ border: 'none', borderTop: '1px solid var(--lp-glass-border)', margin: '24px 0' }} />;
         }
 
         // Handle tables
-        if (isTable(paragraph)) {
-            return renderTable(paragraph, i);
+        if (isTable(trimmed)) {
+            return renderTable(trimmed, i);
         }
 
         // Handle bullet lists
-        if (paragraph.trim().startsWith('•') || paragraph.trim().startsWith('-')) {
-            const items = paragraph.split('\n').filter(l => l.trim().startsWith('•') || l.trim().startsWith('-'));
+        if (trimmed.startsWith('•') || trimmed.startsWith('-')) {
+            const items = trimmed.split('\n').filter(l => l.trim().startsWith('•') || l.trim().startsWith('-'));
             return (
                 <ul key={i} style={{ listStyle: 'none', padding: 0, margin: '12px 0' }}>
                     {items.map((item, j) => (
@@ -78,8 +289,8 @@ const renderContent = (text: string) => {
             );
         }
         // Handle numbered lists (like "1. text\n2. text")
-        if (/^\d+\./.test(paragraph.trim())) {
-            const items = paragraph.split('\n').filter(l => /^\d+\./.test(l.trim()));
+        if (/^\d+\./.test(trimmed)) {
+            const items = trimmed.split('\n').filter(l => /^\d+\./.test(l.trim()));
             return (
                 <ol key={i} style={{ listStyle: 'none', padding: 0, margin: '12px 0', counterReset: 'item' }}>
                     {items.map((item, j) => (
@@ -103,8 +314,8 @@ const renderContent = (text: string) => {
                 </ol>
             );
         }
-        return <p key={i}>{parseInlineMarkdown(paragraph)}</p>;
-    });
+        return <p key={i}>{parseInlineMarkdown(trimmed)}</p>;
+    }).filter(Boolean);
 };
 
 /* ============================================================
