@@ -93,7 +93,7 @@ export const articleTelegramWebApp: Article = {
     internalLinks: [
         { anchor: "заказать разработку WebApp", url: "/razrabotka-botov", context: "Готовы создать WebApp для вашего бизнеса?" },
         { anchor: "Telegram-бот для приёма заявок", url: "/blog/telegram-bot-dlya-priyoma-zayavok", context: "Если задача простая — начните с обычного бота" },
-        { anchor: "стоимость разработки Telegram-бота", url: "/blog/skolko-stoit-razrabotka-telegram-bota", context: "Узнайте цены на разработку" },
+        { anchor: "стоимость разработки Telegram-бота", url: "/blog/stoimost-razrabotki", context: "Узнайте цены на разработку" },
         { anchor: "Telegram-бот для интернет-магазина", url: "/blog/telegram-bot-dlya-internet-magazina", context: "WebApp — идеальное решение для магазина в Telegram" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл разработки от идеи до запуска" },
     ],

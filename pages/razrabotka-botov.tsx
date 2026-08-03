@@ -1242,7 +1242,7 @@ export default function RazrabotkaBotovPage() {
                             <h3>Полезные статьи из блога</h3>
                             <div className={styles.seoLinksGrid}>
                                 <a href="/blog/telegram-bot-dlya-biznesa">Telegram бот для бизнеса: руководство</a>
-                                <a href="/blog/skolko-stoit-razrabotka-telegram-bota">Сколько стоит разработка бота</a>
+                                <a href="/blog/stoimost-razrabotki">Сколько стоит разработка бота</a>
                                 <a href="/blog/telegram-bot-dlya-priyoma-zayavok">Бот для приёма заявок</a>
                                 <a href="/blog/telegram-bot-dlya-prodazh">Бот для продаж: увеличьте выручку</a>
                                 <a href="/blog/ai-telegram-bot-dlya-biznesa">AI Telegram бот для бизнеса</a>

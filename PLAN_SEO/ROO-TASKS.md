@@ -76,15 +76,39 @@
 - [x] Прогон статьи: nejroseti-dlya-biznesa (data/articles_data/cluster2/) ✅ 02.08.2026: доменный файл рефакторен на импорт из text parts (nejroseti-part1.ts + nejroseti-part2.ts), добавлены 3 таблицы (выбор технологии, стоимость внедрения по уровням, модели для бизнеса), 2 :::conversion + 1 :::readmore, новая секция "conclusion" (заключение), итого 8 H2 секций, обновлены внутренние ссылки до 8 (/avtomatizaciya-biznesа, /razrabotka-botov, /blog/kak-vnedrit-chatgpt-v-biznes, /blog/ai-avtomatizaciya-biznesa, /blog/ai-agenty-dlya-biznesa, /blog/avtomatizaciya-otdela-prodazh, /blog/primery-avtomatizacii-biznesa, /blog/crm-dlya-malogo-biznesa), metaDescription расширена до 160 символов с CTA, modifiedDate 2026-08-02
 - [x] Прогон статьи: ai-agenty-dlya-biznesa (data/articles_data/cluster2/) ✅ 02.08.2026: доменный файл рефакторен на импорт из text parts (ai-agenty-part1.ts + ai-agenty-part2.ts), добавлены 3 таблицы (бот vs AI-агент, типы агентов, стоимость разработки, выбор модели, этапы внедрения), 2 :::conversion + 1 :::readmore, новая секция "faq" (6 вопросов в sections) + "conclusion" (заключение), итого 9 H2 секций, обновлены внутренние ссылки до 8 (/razrabotka-botov, /avtomatizaciya-biznesа, /blog/ai-avtomatizaciya-biznesa, /blog/nejroseti-dlya-biznesa, /blog/kak-vnedrit-chatgpt-v-biznes, /blog/avtomatizaciya-otdela-prodazh, /blog/primery-avtomatizacii-biznesa, /blog/crm-dlya-malogo-biznesa), metaDescription расширена до 160 символов с CTA, modifiedDate 2026-08-02
 
-### Статьи: Telegram-боты (кластер A, ★★★) — ✅ Wordstat (51 запрос, 18 353 показов/мес)
-- [ ] Статья: Сколько стоит разработка Telegram бота в 2025 году
-- [ ] Статья: Telegram бот для магазина: полное руководство
-- [ ] Статья: Telegram бот для записи клиентов: салон, клиника, сервис
-- [ ] Статья: Telegram бот для приёма заказов: доставка, еда, товары
-- [ ] Статья: Telegram бот vs мобильное приложение: что выбрать
-- [ ] Статья: Как Telegram бот увеличивает продажи: кейсы и примеры
-- [ ] Статья: Telegram Mini App: что это и когда нужно
-- [ ] Статья: Aiogram vs pyrogram: какой фреймворк выбрать
+### Статьи: Telegram-боты (кластер A, ★★★) — ✅ Wordstat (57 запросов, ~18 590 показов/мес)
+
+**Статус кластера:** 23 статьи опубликованы, text parts обновлены 03.08.2026, перелинковка обновлена 03.08.2026
+
+- [x] Статья: Telegram бот для приёма заявок — полное руководство → slug: `telegram-bot-dlya-priyoma-zayavok` (файл: `data/articles_data/priyom-zayavok.ts`)
+- [x] Статья: Telegram бот для интернет-магазина — каталог, заказы, оплата → slug: `telegram-bot-dlya-internet-magazina` (файл: `data/articles_data/internet-magazin.ts`)
+- [x] Статья: Telegram бот для записи клиентов — онлайн-запись 24/7 → slug: `telegram-bot-dlya-zapisi-klientov` (файл: `data/articles_data/zapis-klientov.ts`)
+- [x] Статья: Как сделать Telegram бота на Python — пошаговое руководство → slug: `kak-sdelat-telegram-bota-na-python` (файл: `data/articles_data/python-bot.ts`)
+- [x] Статья: AI Telegram бот для бизнеса — разработка ИИ ботов → slug: `ai-telegram-bot-dlya-biznesa` (файл: `data/articles_data/ai-bot.ts`)
+- [x] Статья: Telegram бот для бизнеса: возможности и примеры → slug: `telegram-bot-dlya-biznesa` (файл: `data/articles_data/bot-dlya-biznesa.ts`)
+- [x] Статья: Сколько стоит разработка Telegram бота — реальные цены 2026 → slug: `skolko-stoit-razrabotka-telegram-bota` (файл: `data/articles_data/stoimost-razrabotki.ts`)
+- [x] Статья: Разработка Telegram бота под ключ — от идеи до запуска → slug: `razrabotka-telegram-bota-pod-klyuch` (файл: `data/articles_data/razrabotka-pod-klyuch.ts`)
+- [x] Статья: Telegram бот для продаж: увеличьте выручку на 40-70% → slug: `telegram-bot-dlya-prodazh` (файл: `data/articles_data/bot-prodazhi.ts`)
+- [x] Статья: Как создать AI бота в Telegram — пошаговое руководство → slug: `kak-sozdat-ai-bot-telegram` (файл: `data/articles_data/ai-bot-sozdanie.ts`)
+- [x] Статья: Telegram WebApp разработка — полное руководство 2026 → slug: `telegram-webapp-razrabotka` (файл: `data/articles_data/telegram-webapp.ts`)
+- [x] Статья: Telegram бот или мобильное приложение — что выбрать в 2026 → slug: `telegram-bot-ili-mobilnoe-prilozhenie` (файл: `data/articles_data/bot-ili-prilozhenie.ts`)
+- [x] Статья: Разработка Telegram-бота с нуля — пошаговое руководство → slug: `razrabotka-telegram-bota-s-nulya` (файл: `data/articles_data/razrabotka-s-nulya.ts`)
+- [x] Статья: Заказать Telegram бота — как выбрать разработчика → slug: `zakazat-telegram-bota` (файл: `data/articles_data/zakazat-bota.ts`)
+- [x] Статья: Telegram бот для приёма заказов — автоматизация продаж → slug: `telegram-bot-dlya-priyoma-zakazov` (файл: `data/articles_data/bot-priyom-zakazov.ts`)
+- [x] Статья: Стоимость разработки Telegram бота: реальные цены 2026 → slug: `stoimost-telegram-bota` (файл: `data/articles_data/stoimost-telegram-bota.ts`)
+- [x] Статья: Telegram бот для магазина: приём заказов и продажи → slug: `telegram-bot-dlya-magazina` (файл: `data/articles_data/telegram-bot-dlya-magazina.ts`)
+- [x] Статья: Telegram бот для записи клиентов: салон, клиника, сервис → slug: `bot-dlya-zapisi-klientov` (файл: `data/articles_data/bot-dlya-zapisi-klientov.ts`)
+- [x] Статья: Telegram бот или мобильное приложение: что выбрать для бизнеса → slug: `telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa` (файл: `data/articles_data/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa.ts`)
+- [x] Статья: Как Telegram бот увеличивает продажи: кейсы и примеры → slug: `kak-telegram-bot-uvelichivaet-prodazhi` (файл: `data/articles_data/kak-telegram-bot-uvelichivaet-prodazhi.ts`)
+- [x] Статья: Telegram Mini App: что это и когда нужно бизнесу → slug: `telegram-mini-app-chto-eto` (файл: `data/articles_data/telegram-mini-app-chto-eto.ts`)
+- [x] Статья: Aiogram vs Pyrogram: какой фреймворк выбрать для Telegram бота → slug: `aiogram-vs-pyrogram` (файл: `data/articles_data/aiogram-vs-pyrogram.ts`)
+- [x] Статья: Telegram бот для приёма заказов: доставка, еда, товары → slug: `telegram-bot-dlya-priyoma-zakazov-2` (файл: `data/articles_data/telegram-bot-dlya-priyoma-zakazov-2.ts`)
+
+**Непокрытые запросы ★★★ (требуют новых статей):**
+- [ ] Статья: Разработка бота для Telegram: как выбрать подрядчика (запрос: «разработка бота для telegram» 58, «разработчик telegram бота» 28, «написать бота для telegram» 74)
+- [ ] Статья: Telegram бот с оплатой: приём платежей в боте (запрос: «бот оплаты telegram» 119)
+- [ ] Статья: Telegram бот рассылка: настройка автоматических сообщений (запрос: «telegram бот рассылка» 41)
+- [ ] Статья: Бот для автоматизации продаж в Telegram (запрос: «бот для автоматизации продаж» 22)
 
 ### Статьи: Парсинг маркетплейсов (кластер B, ★★★) — ⚠️ Мало данных Wordstat (3 запроса, 170 показов) — нужны доп. запросы
 - [ ] Статья: Парсер Wildberries: что можно собирать и зачем
@@ -227,7 +251,7 @@
 ## 🟢 Фаза 3: Оптимизация и рост (Месяц 2-3)
 
 ### Перелинковка
-- [ ] Проставить внутренние ссылки между всеми статьями Telegram-ботов
+- [x] ~~Проставить внутренние ссылки между всеми статьями Telegram-ботов~~ ✅ 03.08.2026: перелинковка 23 статей кластера A, 36 text part файлов обновлено
 - [ ] Проставить внутренние ссылки между статьями парсинга
 - [ ] Проставить внутренние ссылки между статьями лидогенерации
 - [ ] Связать все статьи с коммерческими страницами
@@ -283,3 +307,7 @@
 | 02.08.2026 | Прогон статьи: kak-vnedrit-chatgpt-v-biznes | ✅ | Рефакторинг на импорт text parts. 3 таблицы. 2 :::conversion + 1 :::readmore. 9 H2 секций. 8 внутренних ссылок. metaDescription 160 символов |
 | 02.08.2026 | Прогон статьи: nejroseti-dlya-biznesa | ✅ | Рефакторинг на импорт text parts. 3 таблицы. 2 :::conversion + 1 :::readmore. 8 H2 секций. 8 внутренних ссылок. metaDescription 160 символов |
 | 02.08.2026 | Прогон статьи: ai-agenty-dlya-biznesa | ✅ | Рефакторинг на импорт text parts. 5 таблиц. 2 :::conversion + 1 :::readmore. 9 H2 секций. 8 внутренних ссылок. metaDescription 160 символов |
+| 03.08.2026 | Text parts для 23 статей кластера A | ✅ | Создано 46 text part файлов в data/articles_data/texts/ |
+| 03.08.2026 | Перелинковка кластера A (23 статьи) | ✅ | 36 text part файлов обновлено, добавлены ссылки на money page, соседние статьи, кросс-кластерные ссылки, readmore и conversion блоки |
+| 03.08.2026 | Проверка на CJK символы | ✅ | 225 файлов проверено, проблемы не найдены |
+| 03.08.2026 | Актуализация ROO-TASKS.md — кластер A | ✅ | 23 статьи кластера A отмечены как выполненные, добавлены 4 задачи на непокрытые запросы ★★★, обновлена перелинковка, добавлен лог |

@@ -98,7 +98,7 @@ export const articleRazrabotkaSNulya: Article = {
     ),
     internalLinks: [
         { anchor: "заказать разработку бота", url: "/razrabotka-botov", context: "Не хотите разбираться сами? Закажите разработку" },
-        { anchor: "стоимость разработки Telegram-бота", url: "/blog/skolko-stoit-razrabotka-telegram-bota", context: "Узнайте подробные цены" },
+        { anchor: "стоимость разработки Telegram-бота", url: "/blog/stoimost-razrabotki", context: "Узнайте подробные цены" },
         { anchor: "Telegram-бот на Python", url: "/blog/kak-sdelat-telegram-bota-na-python", context: "Техническое руководство по Python" },
         { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "Если нужен сложный интерфейс — создайте WebApp" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл: от идеи до запуска и продвижения" },

@@ -6,14 +6,14 @@ import { stoimostRazrabotkiPart2 } from './texts/stoimost-razrabotki-part2';
 const SITE_URL = 'https://dima-razrab.com';
 
 export const articleStoimostRazrabotki: Article = {
-    slug: "skolko-stoit-razrabotka-telegram-bota",
+    slug: "stoimost-razrabotki",
     title: "Сколько стоит разработка Telegram бота — реальные цены 2026 | DimaRazrab",
     metaDescription: "Сколько стоит разработка Telegram бота: от простого до сложного. Реальные цены, от чего зависит стоимость, как сэкономить. Калькулятор и примеры.",
     keywords: "сколько стоит разработка бота, стоимость разработки telegram бота, цена telegram бота, заказать бота telegram цена, разработка бота стоимость, telegram бот цена 2026, сколько стоит создать бота",
     h1: "Сколько стоит разработка Telegram бота: реальные цены и от чего они зависят",
     ogTitle: "Сколько стоит разработка Telegram бота — реальные цены 2026",
     ogDescription: "Полный разбор стоимости разработки Telegram-бота: от простого до enterprise. Реальные цены, факторы стоимости, как сэкономить.",
-    canonical: `${SITE_URL}/blog/skolko-stoit-razrabotka-telegram-bota`,
+    canonical: `${SITE_URL}/blog/stoimost-razrabotki`,
     heroBadge: "💰 Цены • Полный разбор • 2026",
     heroSubtitle: "Честный разбор стоимости разработки Telegram-бота: от 15 000₽ до 500 000₽. От чего зависит цена, что входит в стоимость и как не переплатить.",
     readingTime: "18 мин чтения",
@@ -72,7 +72,7 @@ export const articleStoimostRazrabotki: Article = {
     ctaSource: "article-price-cta",
 
     structuredData: makeArticleSchema(
-        "skolko-stoit-razrabotka-telegram-bota",
+        "stoimost-razrabotki",
         "Сколько стоит разработка Telegram бота: реальные цены и от чего они зависят",
         "Полный разбор стоимости разработки Telegram-бота: от простого до enterprise. Реальные цены, факторы стоимости, как сэкономить.",
         "2026-04-15", "2026-08-03",

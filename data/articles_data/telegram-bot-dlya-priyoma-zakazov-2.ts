@@ -92,7 +92,7 @@ export const articleTelegramBotDlyaPriyomaZakazov2: Article = {
         { anchor: "заказать бота для приёма заказов", url: "/razrabotka-botov", context: "Готовы автоматизировать приём заказов?" },
         { anchor: "Telegram-бот для приёма заявок", url: "/blog/telegram-bot-dlya-priyoma-zayavok", context: "Если задача — сбор заявок, а не заказов" },
         { anchor: "Telegram-бот для интернет-магазина", url: "/blog/telegram-bot-dlya-magazina", context: "Подробнее о магазине в Telegram" },
-        { anchor: "стоимость разработки бота", url: "/blog/skolko-stoit-razrabotka-telegram-bota", context: "Узнайте подробные цены" },
+        { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Узнайте подробные цены" },
         { anchor: "Telegram-бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Для салонов и студий" },
         { anchor: "Telegram-бот для продаж", url: "/blog/telegram-bot-dlya-prodazh", context: "Как бот увеличивает продажи" },
         { anchor: "автоматизация бизнеса", url: "/blog/avtomatizaciya-biznesa", context: "Комплексная автоматизация" },
