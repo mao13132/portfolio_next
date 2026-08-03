@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleAiAvtomatizaciyaBiznesa: Article = {
     slug: "ai-avtomatizaciya-biznesa",
     title: "AI автоматизация бизнеса: руководство по внедрению 2026 | DimaRazrab",
-    metaDescription: "AI автоматизация бизнеса: ChatGPT для продаж, AI-боты поддержки, генерация контента, аналитика. Инструменты, стоимость, пошаговый план внедрения.",
+    metaDescription: "AI автоматизация бизнеса: ChatGPT для продаж и поддержки, генерация контента, аналитика. Пошаговый план, реальные кейсы, стоимость. Обсудите проект →",
     keywords: "ai автоматизация бизнеса, автоматизация бизнеса с помощью ai, chatgpt для бизнеса, ai бот для бизнеса, нейросети для бизнеса, искусственный интеллект автоматизация, ai автоматизация продаж, ai для малого бизнеса, автоматизация с помощью нейросетей, ai инструменты для бизнеса",
     h1: "AI автоматизация бизнеса: как внедрить искусственный интеллект и увеличить прибыль",
     ogTitle: "AI автоматизация бизнеса — внедрение и инструменты 2026",
@@ -18,7 +18,7 @@ export const articleAiAvtomatizaciyaBiznesa: Article = {
     readingTime: "25 мин чтения",
     wordCount: "~8000 слов",
     publishDate: "2026-07-30",
-    modifiedDate: "2026-07-30",
+    modifiedDate: "2026-08-02",
     author: "Дмитрий Малышев",
 
     toc: [
@@ -81,7 +81,7 @@ export const articleAiAvtomatizaciyaBiznesa: Article = {
         "ai-avtomatizaciya-biznesa",
         "AI автоматизация бизнеса: как внедрить искусственный интеллект и увеличить прибыль",
         "AI автоматизация бизнеса: ChatGPT для продаж, AI-боты, генерация контента, аналитика.",
-        "2026-07-30", "2026-07-30",
+        "2026-07-30", "2026-08-02",
         [
             { name: "Сколько стоит внедрить AI?", text: "От 0₽ до 150 000₽, средний бюджет 30 000-60 000₽." },
             { name: "Нужно ли знать программирование?", text: "Для базового использования — нет." },
@@ -98,10 +98,10 @@ export const articleAiAvtomatizaciyaBiznesa: Article = {
     ),
 
     internalLinks: [
-        { anchor: "заказать AI-автоматизацию", url: "/avtomatizaciya-biznesa", context: "Нужна помощь с AI-внедрением?" },
+        { anchor: "заказать автоматизацию бизнеса", url: "/avtomatizaciya-biznesa", context: "Нужна помощь с AI-внедрением?" },
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Полное руководство по автоматизации" },
-        { anchor: "автоматизация отдела продаж", url: "/blog/avtomatizaciya-otdela-prodazh", context: "Как автоматизировать продажи" },
-        { anchor: "Telegram бот с AI", url: "/blog/kak-sozdat-ai-bot-telegram", context: "Как создать AI-бота в Telegram" },
-        { anchor: "разработка AI-бота", url: "/razrabotka-botov", context: "Заказать разработку AI-бота" },
+        { anchor: "нейросети для бизнеса", url: "/blog/nejroseti-dlya-biznesa", context: "Реальные примеры использования нейросетей" },
+        { anchor: "как внедрить ChatGPT в бизнес", url: "/blog/kak-vnedrit-chatgpt-v-biznes", context: "Пошаговое руководство по внедрению ChatGPT" },
+        { anchor: "разработка Telegram-бота", url: "/razrabotka-botov", context: "Заказать разработку AI-бота" },
     ],
 };

@@ -31,6 +31,24 @@ import { articleAiogramVsPyrogram } from './aiogram-vs-pyrogram';
 /* Cluster 2: Автоматизация бизнеса */
 import { cluster2Articles } from './cluster2/registry';
 
+/* Cluster B: Парсинг маркетплейсов */
+import { parseryArticles } from './parsery/registry';
+
+/* Cluster C: Лидогенерация в Telegram */
+import { lidogeneraciyaArticles } from './lidogeneraciya/registry';
+
+/* Cluster H2: API интеграции */
+import { apiArticles } from './api/registry';
+
+/* Cluster G: AI интеграции */
+import { aiArticles } from './ai/registry';
+
+/* Cluster E: Python разработка */
+import { pythonArticles } from './python/registry';
+
+/* Cluster F: Next.js разработка */
+import { nextjsArticles } from './nextjs/registry';
+
 export const articles: Article[] = [
     /* Cluster 1: Telegram боты */
     articlePriyomZayavok,
@@ -61,6 +79,18 @@ export const articles: Article[] = [
     articleTelegramBotDlyaPriyomaZakazov2,
     /* Cluster 2: Автоматизация бизнеса */
     ...cluster2Articles,
+    /* Cluster B: Парсинг маркетплейсов */
+    ...parseryArticles,
+    /* Cluster C: Лидогенерация в Telegram */
+    ...lidogeneraciyaArticles,
+    /* Cluster H2: API интеграции */
+    ...apiArticles,
+    /* Cluster G: AI интеграции */
+    ...aiArticles,
+    /* Cluster E: Python разработка */
+    ...pythonArticles,
+    /* Cluster F: Next.js разработка */
+    ...nextjsArticles,
 ];
 
 export const getArticleBySlug = (slug: string): Article | undefined =>
