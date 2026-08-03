@@ -2,6 +2,7 @@ import { WorkPageProps } from "./WorkPage.props";
 import { AppContext } from "@/app/Context/app.context";
 import Head from "next/head";
 import { useEffect, useMemo } from "react";
+import { Breadcrumbs } from "@/app/Components/Landing/Breadcrumbs/Breadcrumbs";
 
 import styles from './WorkPage.module.css';
 
@@ -117,6 +118,14 @@ export const WorkPage = ({ className, ...props }: WorkPageProps): JSX.Element =>
             <div className={cn(className, styles['wrapper'])} {...props}>
 
             <HeaderCategory />
+
+            <div style={{ maxWidth: 1200, margin: '0 auto', padding: '16px 24px 0' }}>
+                <Breadcrumbs items={[
+                    { label: 'Главная', href: '/' },
+                    { label: 'Портфолио', href: '/#portfolio' },
+                    { label: work?.title || 'Работа' },
+                ]} />
+            </div>
 
             <div className={cn(index_styles['section'], styles['main'])}>
 

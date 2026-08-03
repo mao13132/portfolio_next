@@ -1,10 +1,17 @@
+import Head from 'next/head';
 import { Login } from "@/app/Components/Auth/Login/Login";
 import { Register } from "@/app/Components/Auth/Register/Register";
 import { withLayout } from "@/app/Layout/Layout"
 
 function RegisterPage({ }: ILoginPage): JSX.Element {
     return (
-        <Register />
+        <>
+            <Head>
+                <title>Регистрация | DimaRazrab</title>
+                <meta name="robots" content="noindex, nofollow" />
+            </Head>
+            <Register />
+        </>
     );
 };
 

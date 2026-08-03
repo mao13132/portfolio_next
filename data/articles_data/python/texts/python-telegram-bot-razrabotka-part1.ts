@@ -9,7 +9,7 @@ export const pythonTelegramBotRazrabotkaPart1: ArticleSection[] = [
     {
         id: "why-python-telegram",
         title: "Почему Python — лучший выбор для Telegram-ботов",
-        content: `По данным Statista, в 2025 году Telegram использовали 900M+ человек. В России Telegram — мессенджер №1. Запрос «telegram бот на python» набирает тысячи показов в месяц, а «заказать telegram бота» растёт на 35% ежегодно.
+        content: `По данным Statista, в 2025 году Telegram использовали 900M+ человек. В России Telegram — мессенджер №1. Спрос на разработку Telegram-ботов на Python стабильно растёт каждый год.
 
 **Почему Python для Telegram-ботов:**
 

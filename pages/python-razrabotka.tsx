@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { axiosClassic } from '@/app/Components/utils/interceptor';
 import { getContact } from '@/app/Components/utils/url.config';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
+import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
 import styles from './python-razrabotka.module.css';
 
 /* ============================================================
@@ -571,6 +572,13 @@ export default function PythonRazrabotkaPage() {
                     </button>
                 </div>
             </header>
+
+            <div className={styles.container} style={{ paddingTop: 16 }}>
+                <Breadcrumbs items={[
+                    { label: 'Главная', href: '/' },
+                    { label: 'Python разработка' },
+                ]} />
+            </div>
 
             {/* ============ HERO ============ */}
             <section className={styles.hero}>

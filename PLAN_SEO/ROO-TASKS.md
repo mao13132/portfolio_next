@@ -23,15 +23,15 @@
 ### Техническая оптимизация
 - [x] ~~Проверить что robots.txt существует и корректен~~ **НЕ НУЖНО — на бекенде (FastAPI)**
 - [x] ~~Проверить что sitemap.xml динамический и содержит все страницы~~ **НЕ НУЖНО — на бекенде (FastAPI)**
-- [ ] Проверить мета-теги (title, description) на ВСЕХ существующих страницах
-- [ ] Добавить Open Graph теги на все страницы
-- [ ] Проверить canonical URLs
-- [ ] Добавить Schema.org разметку (Organization, Service, BreadcrumbList)
+- [x] Проверить мета-теги (title, description) на ВСЕХ существующих страницах ✅ 03.08.2026: title+description на ВСЕХ 25+ страницах (главная, 10 лендингов, 9 hub-страниц, blog/index, [slug], work/[slug], category/[slug], 404, privacy)
+- [x] Добавить Open Graph теги на все страницы ✅ 03.08.26: og:type, og:title, og:description, og:url, og:image + Twitter card на ВСЕХ страницах
+- [x] Проверить canonical URLs ✅ 03.08.2026: `<link rel="canonical">` на ВСЕХ страницах
+- [x] Добавить Schema.org разметку (Organization, Service, BreadcrumbList) ✅ 03.08.2026: JSON-LD на ВСЕХ страницах (ProfessionalService, WebPage, Service, BreadcrumbList, CollectionPage, Article, FAQPage, CreativeWork)
 - [ ] Проверить скорость загрузки (LCP, FID, CLS)
 - [ ] Проверить мобильную адаптацию всех страниц
-- [ ] Добавить alt теги ко всем изображениям
-- [ ] Проверить 404 страницу
-- [ ] Добавить хлебные крошки на все страницы
+- [x] Добавить alt теги ко всем изображениям ✅ 03.08.2026: все `<img>` в компонентах имеют alt
+- [x] Проверить 404 страницу ✅ 03.08.2026: красивая 404 с noindex,nofollow, canonical
+- [x] Добавить хлебные крошки на все страницы ✅ 03.08.2026: создан Breadcrumbs компонент, добавлен на 10 коммерческих лендингов + WorkPage + Category + login/register noindex
 
 ### Коммерческие страницы (приоритетные)
 - [ ] Создать страницу /parsery-marketplejsov (Парсеры маркетплейсов)
@@ -311,3 +311,6 @@
 | 03.08.2026 | Перелинковка кластера A (23 статьи) | ✅ | 36 text part файлов обновлено, добавлены ссылки на money page, соседние статьи, кросс-кластерные ссылки, readmore и conversion блоки |
 | 03.08.2026 | Проверка на CJK символы | ✅ | 225 файлов проверено, проблемы не найдены |
 | 03.08.2026 | Актуализация ROO-TASKS.md — кластер A | ✅ | 23 статьи кластера A отмечены как выполненные, добавлены 4 задачи на непокрытые запросы ★★★, обновлена перелинковка, добавлен лог |
+| 03.08.2026 | Аудит Фазы 1: Техническая оптимизация | ✅ | Проверены ВСЕ мета-теги, OG, canonical, Schema.org, alt, 404 — всё уже есть. Найдены 2 проблемы: login/register без noindex, нет визуальных breadcrumbs на коммерческих лендингах |
+| 03.08.2026 | noindex на /login и /register | ✅ | Добавлен `<meta name="robots" content="noindex, nofollow">` + title на обе страницы |
+| 03.08.2026 | Визуальные breadcrumbs на коммерческих лендингах | ✅ | Создан компонент `Breadcrumbs` (app/Components/Landing/Breadcrumbs/), добавлен на 10 лендингов: razrabotka-botov, razrabotka-crm, razrabotka-servisov, avtomatizaciya-biznesa, parsery-marketplejsov, lidogeneraciya-telegram, razrabotka-api, python-razrabotka, nextjs-razrabotka, ai-integracii. Плюс WorkPage и Category |

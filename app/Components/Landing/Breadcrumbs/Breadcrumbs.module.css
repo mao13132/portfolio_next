@@ -1,0 +1,33 @@
+/* ─── BREADCRUMBS — reusable component ─── */
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: var(--lp-text-muted, #888);
+    padding: 16px 0 0;
+    margin-bottom: 0;
+}
+
+.link {
+    color: var(--lp-text-muted, #888);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: var(--lp-cyan, #00c8ff);
+}
+
+.sep {
+    color: var(--lp-text-dim, #555);
+    font-size: 12px;
+    user-select: none;
+}
+
+.current {
+    color: var(--lp-cyan, #00c8ff);
+    font-weight: 500;
+}

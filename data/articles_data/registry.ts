@@ -28,6 +28,12 @@ import { articleKakTelegramBotUvelichivaetProdazhi } from './kak-telegram-bot-uv
 import { articleTelegramMiniAppChtoEto } from './telegram-mini-app-chto-eto';
 import { articleAiogramVsPyrogram } from './aiogram-vs-pyrogram';
 
+/* Новые статьи (август 2026 — финальные) */
+import { articleRazrabotkaBDlyaTelegram } from './razrabotka-bota-dlya-telegram';
+import { articleTelegramBotSOplatoj } from './telegram-bot-s-oplatoj';
+import { articleTelegramBotRassylka } from './telegram-bot-rassylka';
+import { articleBotDlyaAvtomatizaciiProdazh } from './bot-dlya-avtomatizacii-prodazh';
+
 /* Cluster 2: Автоматизация бизнеса */
 import { cluster2Articles } from './cluster2/registry';
 
@@ -77,6 +83,11 @@ export const articles: Article[] = [
     articleTelegramMiniAppChtoEto,
     articleAiogramVsPyrogram,
     articleTelegramBotDlyaPriyomaZakazov2,
+    /* Новые статьи (август 2026 — финальные) */
+    articleRazrabotkaBDlyaTelegram,
+    articleTelegramBotSOplatoj,
+    articleTelegramBotRassylka,
+    articleBotDlyaAvtomatizaciiProdazh,
     /* Cluster 2: Автоматизация бизнеса */
     ...cluster2Articles,
     /* Cluster B: Парсинг маркетплейсов */

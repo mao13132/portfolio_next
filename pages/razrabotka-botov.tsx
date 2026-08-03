@@ -9,6 +9,7 @@ import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
 import { ExitIntentPopup } from '@/app/Components/Landing/ExitIntentPopup';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
+import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
 import styles from './razrabotka-botov.module.css';
 
 /* ============================================================
@@ -606,6 +607,13 @@ export default function RazrabotkaBotovPage() {
                     </button>
                 </div>
             </header>
+
+            <div className={styles.container} style={{ paddingTop: 16 }}>
+                <Breadcrumbs items={[
+                    { label: 'Главная', href: '/' },
+                    { label: 'Разработка ботов' },
+                ]} />
+            </div>
 
             {/* ============ HERO ============ */}
             <section className={styles.hero}>

@@ -7,6 +7,7 @@ import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
 import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { ExitIntentPopup } from '@/app/Components/Landing/ExitIntentPopup';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
+import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
 import styles from './parsery-marketplejsov.module.css';
 
 /* ============================================================
@@ -575,6 +576,13 @@ export default function ParseryMarketplejsovPage() {
                     </button>
                 </div>
             </header>
+
+            <div className={styles.container} style={{ paddingTop: 16 }}>
+                <Breadcrumbs items={[
+                    { label: 'Главная', href: '/' },
+                    { label: 'Парсеры маркетплейсов' },
+                ]} />
+            </div>
 
             {/* ============ HERO ============ */}
             <section className={styles.hero}>

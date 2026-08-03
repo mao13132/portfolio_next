@@ -17,6 +17,7 @@ import { ExitIntentPopup } from '@/app/Components/Landing/ExitIntentPopup';
 import { GrandSlamOffer } from '@/app/Components/Landing/GrandSlamOffer';
 import { LandingQuiz } from '@/app/Components/Landing/LandingQuiz';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
+import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
 
 import s from './razrabotka-servisov.module.css';
 import ls from '@/app/Components/Landing/landing.module.css';
@@ -150,6 +151,13 @@ export default function RazrabotkaServisovPage() {
 
             <ClickComponent />
             <LandingHeader navLinks={NAV_LINKS} />
+
+            <div className={ls.container} style={{ paddingTop: 16 }}>
+                <Breadcrumbs items={[
+                    { label: 'Главная', href: '/' },
+                    { label: 'Разработка сервисов' },
+                ]} />
+            </div>
 
             {/* ═══════ HERO ═══════ */}
             <section className={ls.hero}>

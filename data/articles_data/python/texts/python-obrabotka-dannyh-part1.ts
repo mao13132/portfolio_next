@@ -9,7 +9,7 @@ export const pythonObrabotkaDannyhPart1: ArticleSection[] = [
     {
         id: "why-python-data",
         title: "Почему Python — стандарт для обработки данных",
-        content: `Python — абсолютный лидер в сфере Data Science и обработки данных. По данным Kaggle Survey 2025, 87% специалистов по данным используют Python. Запросы «python обработка данных», «python аналитика данных» стабильно набирают сотни показов в месяц.
+        content: `Python — абсолютный лидер в сфере Data Science и обработки данных. По данным Kaggle Survey 2025, 87% специалистов по данным используют Python. Спрос на Python-разработку в сфере обработки данных стабильно растёт.
 
 **Почему именно Python:**
 

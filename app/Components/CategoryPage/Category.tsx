@@ -8,6 +8,7 @@ import index_styles from '@/app/Components/Index/Idex.module.css';
 
 import cn from 'classnames';
 import { useContext, useMemo } from "react";
+import { Breadcrumbs } from "@/app/Components/Landing/Breadcrumbs/Breadcrumbs";
 import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
 import { WorkItem } from "../WorkItem/WorkItem";
 import { HeaderCategory } from "../HeaderCategory/HeaderCategory";
@@ -99,6 +100,14 @@ export const Category = ({ className, ...props }: CategoryPageProps): JSX.Elemen
         <div className={cn(className, styles['wrapper'])} {...props}>
 
             <HeaderCategory />
+
+            <div style={{ maxWidth: 1200, margin: '0 auto', padding: '16px 24px 0' }}>
+                <Breadcrumbs items={[
+                    { label: 'Главная', href: '/' },
+                    { label: 'Портфолио', href: '/#portfolio' },
+                    { label: current_category?.title || 'Категория' },
+                ]} />
+            </div>
 
             <div className={cn(index_styles['section'], styles['main'])}>
 

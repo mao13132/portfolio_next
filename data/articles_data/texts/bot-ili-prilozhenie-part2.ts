@@ -9,7 +9,7 @@ export const botIliPrilozheniePart2: ArticleSection[] = [
 {
             id: "mini-apps",
             title: "Telegram Mini Apps — золотая середина",
-            content: `Telegram Mini Apps (WebApp) — это веб-приложения, которые открываются внутри Telegram. По данным Wordstat, запрос «mini apps telegram бот» показывается 24 раза в месяц и растёт. Это технология, которая объединяет лучшее от обоих миров.
+            content: `Telegram Mini Apps (WebApp) — это веб-приложения, которые открываются внутри Telegram. Это технология, которая объединяет лучшее от обоих миров и стремительно набирает популярность.
 
 :::conversion
 **Не хотите разбираться сами?**

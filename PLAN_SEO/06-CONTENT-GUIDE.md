@@ -48,8 +48,28 @@
 - Выдуманная статистика без источника
 - Выдуманные кейсы
 - Общие фразы без основы
+- **Вставлять в текст статьи данные о частотности запросов** — «по данным Wordstat, запрос ищут X раз в месяц» и подобное. Wordstat используется ТОЛЬКО для планирования статьи (выбор заголовков, ключевых слов), но НЕ для текста, который видит читатель.
 
 **Подробнее:** `PLAN_SEO/WORDSTAT-RULES.md`
+
+### 1.5. Чего НЕ должно быть в тексте статьи
+
+⚠️ **ЗАПРЕЩЕНО вставлять в текст статьи для читателя:**
+
+- Упоминания Wordstat: «по данным Wordstat», «запрос ищут X раз в месяц», «частотность запроса»
+- Цифры показов/месяц: «показов/мес», «X показов в месяц»
+- SEO-термины: «ключевой запрос», «поисковая выдача», «семантическое ядро»
+- Внутренние метрики: «конкурентность запроса», «НЧ/СЧ/ВЧ запрос»
+
+**Почему:** Читатель статьи — предприниматель, которому нужна автоматизация. Ему не интересна частотность запросов. Эти данные нужны только нам для SEO-планирования и размещаются в документах PLAN_SEO/.
+
+**Правильно:** Ключевые слова вплетаются ЕСТЕСТВЕННО в текст:
+- ✅ «Предприниматели ищут, кому доверить разработку бота для Telegram»
+- ✅ «Многие задаются вопросом, сколько стоит Telegram-бот»
+
+**Неправильно:**
+- ❌ «По данным Wordstat, запрос «разработка бота для telegram» показывается 58 раз в месяц»
+- ❌ «Запрос «Telegram бот» имеет частотность 13 637 показов/мес»
 
 ---
 
@@ -234,6 +254,147 @@ Cross-link:
 1. "Для автоматизации можно использовать [Telegram-бота](/blog/telegram-bot-dlya-biznesa)"
 2. "Парсер легко написать на [Python](/blog/python-razrabotka-pod-klyuch)"
 ```
+
+### 4.5. Техническая реализация перелинковки в text parts
+
+#### Где хранятся ссылки
+
+Внутренние ссылки добавляются **прямо в текст секций** в text part файлах:
+- Text part 1: `data/articles_data/{folder}/texts/{slug}-part1.ts`
+- Text part 2: `data/articles_data/{folder}/texts/{slug}-part2.ts`
+
+#### Формат inline-ссылок
+
+Ссылки вставляются как Markdown в поле `content` секции:
+
+```typescript
+{
+    id: 'section-id',
+    title: 'Заголовок секции',
+    content: `Текст с [ссылкой на бота для магазина](/blog/telegram-bot-dlya-magazina) и далее по тексту.
+    Рекомендую [заказать разработку Telegram-бота](/razrabotka-botov) у специалиста.`,
+}
+```
+
+**Правила:**
+- Анкоры — ключевые фразы, НЕ «тут»/«здесь»/«подробнее»
+- Ссылки должны быть контекстуальными — вписаны в смысл абзаца
+- Минимум 5-8 внутренних ссылок на статью суммарно
+
+#### Формат `:::readmore` блока
+
+Блок «Читайте также» размещается в **доменном файле** статьи (НЕ в text parts), в массиве `sections`:
+
+```typescript
+{
+    id: 'readmore',
+    title: 'Читайте также',
+    content: '',
+    type: 'readmore' as const,
+    links: [
+        { text: 'Сколько стоит Telegram-бот', url: '/blog/stoimost-razrabotki' },
+        { text: 'Telegram-бот для магазина', url: '/blog/telegram-bot-dlya-magazina' },
+        { text: 'Автоматизация бизнеса', url: '/blog/avtomatizaciya-malogo-biznesa' },
+        { text: 'Заказать разработку Telegram-бота', url: '/razrabotka-botov' },
+    ]
+}
+```
+
+**Правила:**
+- 4-6 ссылок в readmore блоке
+- 3-4 на соседние статьи кластера + 1-2 на другие кластеры + 1 на money page
+- Размещать ПЕРЕД FAQ секцией
+
+#### Формат `:::conversion` блока
+
+CTA-блок размещается в **доменном файле** статьи:
+
+```typescript
+{
+    id: 'conversion-1',
+    title: 'Готовы заказать Telegram-бота?',
+    content: 'Бесплатная консультация — разберём вашу задачу и предложим решение.',
+    type: 'conversion' as const,
+    link: {
+        text: 'Обсудить проект в Telegram',
+        url: '/razrabotka-botov'
+    }
+}
+```
+
+**Правила:**
+- 2-3 conversion блока на статью
+- Один в середине (после ключевого блока), один перед FAQ
+- Ссылка ведёт на money page кластера
+
+#### Пример полной структуры доменного файла с перелинковкой
+
+```typescript
+import { Article } from './types';
+import { part1 } from './texts/my-article-part1';
+import { part2 } from './texts/my-article-part2';
+
+export const myArticle: Article = {
+    slug: 'my-article',
+    title: 'Заголовок | DimaRazrab',
+    metaDescription: 'Описание 150-160 символов с CTA',
+    publishDate: '2026-08-03',
+    modifiedDate: '2026-08-03',
+    cluster: 'telegram',
+    hubSlug: 'telegram-boty',
+    moneyPage: '/razrabotka-botov',
+    internalLinks: [
+        { anchor: 'заказать Telegram-бота', url: '/razrabotka-botov' },
+        { anchor: 'бот для магазина', url: '/blog/telegram-bot-dlya-magazina' },
+    ],
+    faq: [
+        { question: 'Вопрос 1?', answer: 'Ответ 1' },
+        { question: 'Вопрос 2?', answer: 'Ответ 2' },
+    ],
+    sections: [
+        ...part1,
+        // Conversion блок в середине
+        {
+            id: 'conversion-1',
+            title: 'Готовы заказать?',
+            content: 'Напишите мне в Telegram.',
+            type: 'conversion' as const,
+            link: { text: 'Обсудить проект', url: '/razrabotka-botov' }
+        },
+        ...part2,
+        // Readmore блок перед FAQ
+        {
+            id: 'readmore',
+            title: 'Читайте также',
+            content: '',
+            type: 'readmore' as const,
+            links: [
+                { text: 'Связанная статья 1', url: '/blog/slug-1' },
+                { text: 'Связанная статья 2', url: '/blog/slug-2' },
+                { text: 'Заказать бота', url: '/razrabotka-botov' },
+            ]
+        },
+        // FAQ секция
+        {
+            id: 'faq',
+            title: 'Часто задаваемые вопросы',
+            content: '...',
+            type: 'faq' as const,
+        },
+    ],
+    // ... остальные поля
+};
+```
+
+#### Чеклист перелинковки перед публикацией
+
+- [ ] 2-3 ссылки на money page (`/razrabotka-botov` для кластера A) — в text parts
+- [ ] 2-3 ссылки на соседние статьи кластера — в text parts
+- [ ] 1-2 кросс-ссылки на другие кластеры — в text parts
+- [ ] 1 `:::readmore` блок с 4-6 ссылками — в доменном файле
+- [ ] 2-3 `:::conversion` блока — в доменном файле
+- [ ] Все анкоры — ключевые фразы (не «тут»/«здесь»)
+- [ ] Ссылки контекстуальны — вписаны в смысл абзаца
 
 ---
 
