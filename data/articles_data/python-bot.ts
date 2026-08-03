@@ -42,7 +42,7 @@ export const articlePythonBot: Article = {
 
 Во-первых, простота синтаксиса. Python читается почти как английский текст. Даже если вы новичок в программировании, вы сможете написать работающего бота за несколько часов.
 
-Во-вторых, богатая экосистема. Для Telegram есть несколько成熟 фреймворков: aiogram, python-telegram-bot, telebot (pyTelegramBotAPI). Каждый решает разные задачи — от простых ботов до сложных систем с middleware и FSM.
+Во-вторых, богатая экосистема. Для Telegram есть несколько зрелых фреймворков: aiogram, python-telegram-bot, telebot (pyTelegramBotAPI). Каждый решает разные задачи — от простых ботов до сложных систем с middleware и FSM.
 
 В-третьих, огромное сообщество. Тысячи готовых примеров, туториалов и библиотек. Если у вас возникнет проблема — ответ уже есть на Stack Overflow или в Telegram-каналах разработчиков.
 
@@ -188,7 +188,7 @@ export const articlePythonBot: Article = {
 
 Для работы с БД используем SQLAlchemy — самый популярный ORM для Python. Он позволяет работать с таблицами через Python-объекты, без написания SQL-запросов.
 
-Установка: pip install sqlalchemy asyncpg\n\nМодель пользователя:\n\nfrom sqlalchemy import Column, Integer, BigInteger, String, DateTime\nfrom sqlalchemy.ext.declarative import declarative_base\nfrom datetime import datetime\n\nBase = declarative_base()\n\nclass User(Base):\n    __tablename__ = \"users\"\n    \n    id = Column(Integer, primary_key=True)\n    telegram_id = Column(BigInteger, unique=True, nullable=False)\n    username = Column(String, nullable=True)\n    full_name = Column(String, nullable=True)\n    created_at = Column(DateTime, default=datetime.utcnow)\n\nПодключение к базе:\n\nfrom sqlalchemy.ext.asyncio import create_async_engine, AsyncSession\nfrom sqlalchemy.orm import sessionmaker\n\nDATABASE_URL = \"postgresql+asyncpg://user:password@localhost:5432/bot_db\"\n\nengine = create_async_engine(DATABASE_URL)\nasync_session = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)\n\nВ middleware создаём сессию для каждого сообщения и передаём её в хендлер.这样 хендлер может обращаться к базе данных без глобальных переменных.`,
+Установка: pip install sqlalchemy asyncpg\n\nМодель пользователя:\n\nfrom sqlalchemy import Column, Integer, BigInteger, String, DateTime\nfrom sqlalchemy.ext.declarative import declarative_base\nfrom datetime import datetime\n\nBase = declarative_base()\n\nclass User(Base):\n    __tablename__ = \"users\"\n    \n    id = Column(Integer, primary_key=True)\n    telegram_id = Column(BigInteger, unique=True, nullable=False)\n    username = Column(String, nullable=True)\n    full_name = Column(String, nullable=True)\n    created_at = Column(DateTime, default=datetime.utcnow)\n\nПодключение к базе:\n\nfrom sqlalchemy.ext.asyncio import create_async_engine, AsyncSession\nfrom sqlalchemy.orm import sessionmaker\n\nDATABASE_URL = \"postgresql+asyncpg://user:password@localhost:5432/bot_db\"\n\nengine = create_async_engine(DATABASE_URL)\nasync_session = sessionmaker(engine, class_=AsyncSession, expire_on_commit=False)\n\nВ middleware создаём сессию для каждого сообщения и передаём её в хендлер. Таким образом хендлер может обращаться к базе данных без глобальных переменных.`,
         },
         {
             id: "states",
