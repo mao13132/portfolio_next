@@ -23,6 +23,11 @@ class MyDocument extends Document {
                     {/* Google Fonts — Inter */}
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+                    {/* AI-friendly resources */}
+                    <link rel="alternate" type="text/markdown" href="/llms.txt" title="LLMs.txt" />
+                    <link rel="alternate" type="text/markdown" href="/llms-full.txt" title="LLMs Full" />
+                    <meta name="ai-instructions" content="https://dima-razrab.com/ai.txt" />
                 </Head>
 
                 <body>
