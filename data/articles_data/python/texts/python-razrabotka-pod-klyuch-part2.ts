@@ -165,7 +165,7 @@ export const pythonRazrabotkaPodKlyuchPart2: ArticleSection[] = [
 | [Python-разработка](/python-razrabotka) | Backend, API, автоматизация | от 1 недели | от 30 000₽ |
 | [Разработка API](/razrabotka-api) | REST API, микросервисы | от 2 недель | от 60 000₽ |
 | [Парсеры маркетплейсов](/parsery-marketplejsov) | WB, Ozon, AliExpress | от 1 недели | от 30 000₽ |
-| [Telegram-боты](/razrabotka-botов) | Боты для бизнеса | от 2 недель | от 50 000₽ |
+| [Telegram-боты](/razrabotka-botov) | Боты для бизнеса | от 2 недель | от 50 000₽ |
 | [Автоматизация бизнеса](/avtomatizaciya-biznesa) | Скрипты, интеграции | от 3 дней | от 15 000₽ |
 
 **Первый шаг — бесплатная консультация.** Напишите мне в Telegram, опишите задачу — и я оценю стоимость и сроки.

@@ -97,7 +97,7 @@ export const pythonTelegramBotRazrabotkaPart1: ArticleSection[] = [
 | Рассылка | Массовая отправка сообщений | Средняя |
 | Уведомления | Напоминания, статусы заказов | Средняя |
 
-Подробнее о [разработке ботов](/razrabotka-botов) и [Telegram-ботах для бизнеса](/blog/telegram-bot-dlya-biznesa).`,
+Подробнее о [разработке ботов](/razrabotka-botov) и [Telegram-ботах для бизнеса](/blog/telegram-bot-dlya-biznesa).`,
     },
     {
         id: "case-sapis-cllientov",
@@ -219,6 +219,6 @@ export const pythonTelegramBotRazrabotkaPart1: ArticleSection[] = [
 | Оплата | ЮKassa | Подписки на премиум |
 | Очередь | Celery | Рассылки уведомлений |
 
-Подробнее о [разработке ботов](/razrabotka-botов) и [Telegram-ботах для бизнеса](/blog/telegram-bot-dlya-biznesa).`,
+Подробнее о [разработке ботов](/razrabotka-botov) и [Telegram-ботах для бизнеса](/blog/telegram-bot-dlya-biznesa).`,
     },
 ];

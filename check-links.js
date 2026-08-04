@@ -22,6 +22,7 @@ const SITEMAP_URL = process.argv[2] || 'https://dima-razrab.com/sitemap.xml';
 const CONCURRENCY = 10;
 const TIMEOUT_MS = 15000;
 const MAX_RETRIES = 1;
+let BASE_URL = 'https://dima-razrab.com'; // будет обновлён из sitemap
 
 // ─── Получаем sitemap.xml с сайта ───
 function fetchUrl(url) {
@@ -55,7 +56,7 @@ async function fetchSitemapUrls(sitemapUrl) {
 }
 
 // ─── HTTP запрос с редиректами ───
-function fetch(url, redirectCount = 0) {
+function fetchPage(url, redirectCount = 0) {
   return new Promise((resolve) => {
     if (redirectCount > 5) {
       resolve({ status: 0, body: '', error: 'Too many redirects' });
@@ -65,12 +66,12 @@ function fetch(url, redirectCount = 0) {
     const parsed = new URL(url);
     const lib = parsed.protocol === 'https:' ? https : http;
 
-    const req = lib.get(url, { timeout: TIMEOUT_MS, headers: { 'User-Agent': 'LinkChecker/1.0' } }, (res) => {
+    const req = lib.get(url, { timeout: TIMEOUT_MS, headers: { 'User-Agent': 'LinkChecker/1.0', 'Accept-Encoding': 'identity' } }, (res) => {
       // Следуем редиректам
       if ([301, 302, 303, 307, 308].includes(res.statusCode) && res.headers.location) {
         const redirectUrl = new URL(res.headers.location, url).href;
         res.resume();
-        resolve(fetch(redirectUrl, redirectCount + 1));
+        resolve(fetchPage(redirectUrl, redirectCount + 1));
         return;
       }
 
@@ -128,7 +129,7 @@ async function processBatch(urls, fn, concurrency) {
 // ─── Проверка одного URL с retry ───
 async function checkUrl(url, retries = MAX_RETRIES) {
   for (let attempt = 0; attempt <= retries; attempt++) {
-    const result = await fetch(url);
+    const result = await fetchPage(url);
     if (result.status !== 0 || attempt === retries) {
       return { url, ...result };
     }
@@ -153,7 +154,7 @@ async function main() {
     console.error(`${C.red}Ошибка загрузки sitemap: ${e.message}${C.reset}`);
     process.exit(1);
   }
-  const BASE_URL = new URL(INITIAL_URLS[0]).origin;
+  BASE_URL = new URL(INITIAL_URLS[0]).origin;
   console.log(`${C.green}✔ Загружено ${INITIAL_URLS.length} URL из sitemap${C.reset}\n`);
 
   const allChecked = new Map();

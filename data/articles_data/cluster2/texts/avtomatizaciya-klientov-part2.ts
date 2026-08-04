@@ -44,7 +44,7 @@ export const avtomatizaciyaKlientovPart2: ArticleSection[] = [
 
 Базовый пакет подходит для 80% малых бизнесов. Окупаемость — 1-2 недели.
 
-[Заказать бота →](/blog/zakazat-bota)`
+[Заказать бота →](/blog/zakazat-telegram-bota)`
 
             },
         ],
@@ -229,7 +229,7 @@ export const avtomatizaciyaKlientovPart2: ArticleSection[] = [
 • [Автоматизация отдела продаж](/blog/avtomatizaciya-otdela-prodazh)
 • [CRM для малого бизнеса](/blog/crm-dlya-malogo-biznesa)
 • [Автоматизация заявок](/blog/avtomatizaciya-zayavok)
-• [Заказать бота](/blog/zakazat-bota)
+• [Заказать бота](/blog/zakazat-telegram-bota)
 • [Автоматизация бизнеса](/avtomatizaciya-biznesa)
 :::
 

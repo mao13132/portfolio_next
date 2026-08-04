@@ -181,7 +181,7 @@ export const avtomatizaciyaVoronkiProdazhPart1: ArticleSection[] = [
 
 Идеальная связка для малого бизнеса: **Telegram-бот + amoCRM + email-серия**. Бюджет: 40 000-70 000 ₽ разово + 1 490 ₽/мес за CRM. Этого хватает для 90% бизнесов.
 
-[Подробнее о заказе бота →](/blog/zakazat-bota)`,
+[Подробнее о заказе бота →](/blog/zakazat-telegram-bota)`,
 
         subsections: [
             {

@@ -26,7 +26,7 @@ export const LandingFooter = () => {
                         <a href="/blog">Все статьи</a>
                         <a href="/blog/telegram-bot-dlya-priyoma-zayavok">Бот для приёма заявок</a>
                         <a href="/blog/telegram-bot-dlya-internet-magazina">Бот для интернет-магазина</a>
-                        <a href="/blog/telegram-bot-dlya-zapisi-klientov">Бот для записи клиентов</a>
+                        <a href="/blog/bot-dlya-zapisi-klientov">Бот для записи клиентов</a>
                         <a href="/blog/kak-sdelat-telegram-bota-na-python">Бот на Python</a>
                         <a href="/blog/ai-telegram-bot-dlya-biznesa">AI-бот для бизнеса</a>
                         <a href="/blog/telegram-bot-dlya-biznesa">Бот для бизнеса</a>

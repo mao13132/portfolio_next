@@ -182,7 +182,7 @@ export const avtomatizaciyaZayavokPart2: ArticleSection[] = [
 • [Автоматизация отдела продаж](/blog/avtomatizaciya-otdela-prodazh)
 • [Что можно автоматизировать в малом бизнесе](/blog/chto-mozhno-avtomatizirovat-v-malom-biznese)
 • [Разработка бота для Telegram](/blog/razrabotka-bota-dlya-telegram)
-• [Заказать бота](/blog/zakazat-bota)
+• [Заказать бота](/blog/zakazat-telegram-bota)
 • [Автоматизация бизнеса](/avtomatizaciya-biznesa)
 :::
 

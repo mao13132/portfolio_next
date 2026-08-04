@@ -268,7 +268,7 @@ CRM решает все эти задачи. Вот что она показыв
 • [Автоматизация клиентов](/blog/avtomatizaciya-klientov)
 • [Автоматизация отдела продаж](/blog/avtomatizaciya-otdela-prodazh)
 • [Бот для автоматизации продаж](/blog/bot-dlya-avtomatizacii-prodazh)
-• [Заказать бота](/blog/zakazat-bota)
+• [Заказать бота](/blog/zakazat-telegram-bota)
 • [Автоматизация бизнеса](/avtomatizaciya-biznesa)
 :::
 
