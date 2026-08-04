@@ -48,7 +48,7 @@ export const nextjsVsReactPart2: ArticleSection[] = [
 
 **Урок:** Не всегда нужен React или Next.js. Для контентных сайтов с массовой публикацией WordPress + Python может быть быстрее, дешевле и эффективнее. Но для SaaS, дашбордов, интерактивных приложений — Next.js однозначно лучше.
 
-Подробнее о [разработке на Next.js](/nextjs-razrabotка) для сложных проектов.`,
+Подробнее о [разработке на Next.js](/nextjs-razrabotka) для сложных проектов.`,
     },
     {
         id: "migration-guide",

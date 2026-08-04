@@ -51,7 +51,7 @@ export const pythonBackendRazrabotkaPart2: ArticleSection[] = [
 | Изменения данных | Аудит | Django signals |
 | Внешние API | Мониторинг | Prometheus |
 
-Подробнее о [backend архитектуре](/blog/python-backend-razrabotка) и [API разработке](/razrabotka-api).`,
+Подробнее о [backend архитектуре](/blog/python-backend-razrabotka) и [API разработке](/razrabotka-api).`,
     },
     {
         id: "deployment",
@@ -165,7 +165,7 @@ export const pythonBackendRazrabotkaPart2: ArticleSection[] = [
 
 | Услуга | Описание | Сроки | Стоимость |
 |--------|----------|-------|-----------|
-| [Python backend](/python-razrabotка) | API, системы, автоматизация | от 1 недели | от 30 000₽ |
+| [Python backend](/python-razrabotka) | API, системы, автоматизация | от 1 недели | от 30 000₽ |
 | [Разработка API](/razrabotka-api) | REST API, микросервисы | от 2 недель | от 60 000₽ |
 | [Разработка сервисов](/razrabotka-servisov) | Full-stack приложения | от 3 недель | от 100 000₽ |
 | [Telegram-боты](/razrabotka-botov) | Боты с backend | от 2 недель | от 50 000₽ |

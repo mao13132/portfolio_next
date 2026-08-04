@@ -162,7 +162,7 @@ export const konstruktoryTelegramBotovPart2: ArticleSection[] = [
 
 Стоимость разработки: 85 000 ₽. Окупаемость: 2 месяца.
 
-Подробнее о кастомной разработке читайте в статье [разработка бота под ключ](/blog/razrabotka-pod-klyuch).`,
+Подробнее о кастомной разработке читайте в статье [разработка бота под ключ](/blog/razrabotka-telegram-bota-pod-klyuch).`,
         },
 {
             id: "zaklyuchenie",

@@ -204,7 +204,7 @@ export const monitoringCenMarketplejsovPart2: ArticleSection[] = [
 
 **3. Один парсер — одно решение.** Для WB — [парсер Wildberries](/blog/parser-wildberries). Для Ozon — [парсер Ozon](/blog/parser-ozon). Для мультиплатформенного мониторинга — кастомная система под ваши задачи.
 
-Если хотите узнать больше — читайте статьи по парсингу конкретных площадок и [разработку на Python](/blog/python-razrabotка).
+Если хотите узнать больше — читайте статьи по парсингу конкретных площадок и [разработку на Python](/blog/python-razrabotka).
 
 :::readmore
 Читать дальше

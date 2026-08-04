@@ -1,4 +1,4 @@
-import { ArticleSection } from '../../types';
+﻿import { ArticleSection } from '../../types';
 
 /* ============================================================
    Статья: Next.js vs React: когда и что использовать
@@ -40,7 +40,7 @@ React — это только UI. Для маршрутизации нужен R
 - Блоги, контентные платформы
 - Корпоративные сайты
 
-Подробнее о [разработке на Next.js](/nextjs-razrabotка).`,
+Подробнее о [разработке на Next.js](/nextjs-razrabotka).`,
     },
     {
         id: "performance-comparison",

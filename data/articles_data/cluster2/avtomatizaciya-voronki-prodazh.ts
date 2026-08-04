@@ -89,6 +89,6 @@ export const articleAvtomatizaciyaVoronkiProdazh: Article = {
         { anchor: "автоматизация клиентов", url: "/blog/avtomatizaciya-klientov", context: "Управление клиентской базой автоматически" },
         { anchor: "автоматизация отдела продаж", url: "/blog/avtomatizaciya-otdela-prodazh", context: "Как автоматизировать отдел продаж" },
         { anchor: "бот для автоматизации продаж", url: "/blog/bot-dlya-avtomatizacii-prodazh", context: "Telegram-бот для увеличения продаж" },
-        { anchor: "заказать бота", url: "/blog/zakazat-bota", context: "Разработка Telegram-бота под ключ" },
+        { anchor: "заказать бота", url: "/blog/zakazat-telegram-bota", context: "Разработка Telegram-бота под ключ" },
     ],
 };

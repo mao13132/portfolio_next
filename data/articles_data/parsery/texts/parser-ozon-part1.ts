@@ -73,7 +73,7 @@ export const parserOzonPart1: ArticleSection[] = [
 | Остатки | Ozon API | Логистика |
 | Ассортимент конкурентов | Скрейпинг | Анализ рынка |
 
-Подробнее о том, как данные помогают бизнесу — [разработка на Python](/blog/python-razrabotка).`,
+Подробнее о том, как данные помогают бизнесу — [разработка на Python](/blog/python-razrabotka).`,
     },
     {
         id: "methods",

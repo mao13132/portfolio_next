@@ -95,7 +95,7 @@ export const articleAvtomatizaciyaKlientov: Article = {
         { anchor: "CRM для малого бизнеса", url: "/blog/crm-dlya-malogo-biznesa", context: "Обзор CRM-систем для малого бизнеса" },
         { anchor: "автоматизация заявок", url: "/blog/avtomatizaciya-zayavok", context: "Настройка приёма заявок 24/7" },
         { anchor: "интеграция CRM с Telegram", url: "/blog/integraciya-crm-s-telegram", context: "Подключение CRM к мессенджерам" },
-        { anchor: "заказать бота", url: "/blog/zakazat-bota", context: "Как выбрать разработчика ботов" },
+        { anchor: "заказать бота", url: "/blog/zakazat-telegram-bota", context: "Как выбрать разработчика ботов" },
         { anchor: "разработка бота для Telegram", url: "/blog/razrabotka-bota-dlya-telegram", context: "Технические детали создания ботов" },
     ],
 };

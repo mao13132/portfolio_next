@@ -216,7 +216,7 @@ ROI = (Экономия на рутине + Рост выручки − Стои
 • [Автоматизация клиентов](/blog/avtomatizaciya-klientov)
 • [Автоматизация документооборота](/blog/avtomatizaciya-dokumentooborota)
 • [Разработка CRM под ключ](/blog/razrabotka-crm-pod-klyuch)
-• [Разработка сервисов](/blog/razrabotka-servisov)
+• [Разработка сервисов](/razrabotka-servisov)
 :::
 
 :::conversion

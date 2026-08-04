@@ -88,7 +88,7 @@ export const articleAvtomatizaciyaZayavok: Article = {
         { anchor: "автоматизация отдела продаж", url: "/blog/avtomatizaciya-otdela-prodazh", context: "Как автоматизировать отдел продаж" },
         { anchor: "что можно автоматизировать в малом бизнесе", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "Обзор процессов для автоматизации" },
         { anchor: "разработка бота для Telegram", url: "/blog/razrabotka-bota-dlya-telegram", context: "Технические детали создания ботов" },
-        { anchor: "заказать бота", url: "/blog/zakazat-bota", context: "Как выбрать разработчика" },
+        { anchor: "заказать бота", url: "/blog/zakazat-telegram-bota", context: "Как выбрать разработчика" },
         { anchor: "интеграция CRM с Telegram", url: "/blog/integraciya-crm-s-telegram", context: "Подключение CRM к мессенджерам" },
     ],
 };
