@@ -8,6 +8,7 @@ import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { PortfolioPopup } from '@/app/Components/Landing/PortfolioPopup';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
+import { CollapsibleLinks } from '@/app/Components/CollapsibleLinks/CollapsibleLinks';
 import { articleAvtomatizaciyaMalogoBiznesa } from '@/data/articles_data/cluster2/avtomatizaciya-malogo-biznesa';
 import { articleAiAvtomatizaciyaBiznesa } from '@/data/articles_data/cluster2/ai-avtomatizaciya-biznesa';
 import { articleAvtomatizaciyaOtdelaProdazh } from '@/data/articles_data/cluster2/avtomatizaciya-otdela-prodazh';
@@ -387,11 +388,13 @@ export default function AvtomatizaciyaBiznesaHubPage() {
                             </div>
                             <div>
                                 <h4>Статьи кластера</h4>
-                                {clusterArticles.map((a) => (
-                                    <a key={a.slug} href={`/blog/${a.slug}`}>
-                                        {a.h1.split(':')[0]}
-                                    </a>
-                                ))}
+                                <CollapsibleLinks maxVisible={6}>
+                                    {clusterArticles.map((a) => (
+                                        <a key={a.slug} href={`/blog/${a.slug}`}>
+                                            {a.h1.split(':')[0]}
+                                        </a>
+                                    ))}
+                                </CollapsibleLinks>
                             </div>
                             <div>
                                 <h4>Другой кластер</h4>

@@ -28,7 +28,7 @@
     height: 80%;
     background: linear-gradient(rgba(0, 0, 0, .7), var(--main-color));
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-top: 10px;
     flex-direction: column;

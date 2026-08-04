@@ -7,6 +7,7 @@ import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
+import { CollapsibleLinks } from '@/app/Components/CollapsibleLinks/CollapsibleLinks';
 import styles from './blog.module.css';
 import ls from '@/app/Components/Landing/landing.module.css';
 
@@ -311,11 +312,13 @@ export default function TelegramBotyHubPage() {
                             </div>
                             <div>
                                 <h4>Блог</h4>
-                                {telegramBotyArticles.map((a) => (
-                                    <a key={a.slug} href={`/blog/${a.slug}`}>
-                                        {a.h1.split(':')[0]}
-                                    </a>
-                                ))}
+                                <CollapsibleLinks maxVisible={6}>
+                                    {telegramBotyArticles.map((a) => (
+                                        <a key={a.slug} href={`/blog/${a.slug}`}>
+                                            {a.h1.split(':')[0]}
+                                        </a>
+                                    ))}
+                                </CollapsibleLinks>
                             </div>
                             <div>
                                 <h4>Связаться</h4>
