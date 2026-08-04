@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { articles } from '@/data/articles';
+import { telegramBotyArticles } from '@/data/articles';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
@@ -129,7 +129,7 @@ export default function TelegramBotyHubPage() {
                             transition={{ duration: 0.7, delay: 0.2 }}
                         >
                             Всё, что нужно знать о Telegram-ботах для автоматизации бизнеса: от приёма заявок
-                            до интернет-магазина, WebApp и AI-помощников. 15 подробных руководств с примерами,
+                            до интернет-магазина, WebApp и AI-помощников. 27 подробных руководств с примерами,
                             кейсами и расчётами ROI от практикующего разработчика.
                         </motion.p>
                     </div>
@@ -185,7 +185,7 @@ export default function TelegramBotyHubPage() {
                                     составляет от 1 до 30 дней в зависимости от ниши и среднего чека.
                                 </p>
                                 <p>
-                                    Ниже — 15 подробных руководств, которые помогут разобраться в теме: от выбора технологии до расчёта
+                                    Ниже — 27 подробных руководств, которые помогут разобраться в теме: от выбора технологии до расчёта
                                     стоимости, создания WebApp и внедрения AI. Каждая статья — это 3500-4800 слов практической информации с примерами,
                                     кейсами и пошаговыми планами. А если нужна помощь — <a href="/razrabotka-botov" style={{ color: 'var(--lp-cyan)', textDecoration: 'none', fontWeight: 600 }}>закажите разработку бота</a> у профессионалов.
                                 </p>
@@ -194,7 +194,7 @@ export default function TelegramBotyHubPage() {
 
                         {/* ═══════ ARTICLES GRID ═══════ */}
                         <div className={styles.articlesGrid}>
-                            {articles.map((article, idx) => (
+                            {telegramBotyArticles.map((article, idx) => (
                                 <motion.article
                                     key={article.slug}
                                     className={styles.articleCard}
@@ -311,7 +311,7 @@ export default function TelegramBotyHubPage() {
                             </div>
                             <div>
                                 <h4>Блог</h4>
-                                {articles.map((a) => (
+                                {telegramBotyArticles.map((a) => (
                                     <a key={a.slug} href={`/blog/${a.slug}`}>
                                         {a.h1.split(':')[0]}
                                     </a>

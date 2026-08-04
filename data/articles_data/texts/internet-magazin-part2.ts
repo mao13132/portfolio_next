@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: internetMagazin
@@ -103,7 +103,7 @@ Backend: Python (aiogram 3, FastAPI) или Node.js (telegraf, grammY, NestJS). 
 Читать дальше
 • [Telegram бот для приёма заказов](/blog/telegram-bot-dlya-priyoma-zakazov)
 • [Telegram бот для продаж](/blog/telegram-bot-dlya-prodazh)
-• [Стоимость разработки Telegram бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram бота](/blog/stoimost-razrabotki)
 • [Telegram WebApp разработка](/blog/telegram-webapp-razrabotka)
 • [Парсер Wildberries](/blog/parser-wildberries)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)

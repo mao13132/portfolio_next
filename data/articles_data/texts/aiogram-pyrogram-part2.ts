@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: aiogramPyrogram
@@ -99,8 +99,8 @@ app.run()
 Читать дальше
 • [Как сделать Telegram-бота на Python](/blog/kak-sdelat-telegram-bota-na-python)
 • [Telegram Mini App — что это](/blog/telegram-mini-app-chto-eto)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Python-разработка под ключ](/blog/python-razrabotka-pod-klyuch)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)
 :::

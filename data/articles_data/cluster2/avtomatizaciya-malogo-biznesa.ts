@@ -96,7 +96,9 @@ export const articleAvtomatizaciyaMalogoBiznesa: Article = {
     ),
 
     internalLinks: [
-        { anchor: "заказать автоматизацию бизнеса", url: "/avtomatizaciya-biznesа", context: "Нужна помощь с автоматизацией?" },
+        { anchor: "заказать автоматизацию бизнеса", url: "/avtomatizaciya-biznesa", context: "Нужна помощь с автоматизацией?" },
+        { anchor: "что можно автоматизировать в бизнесе", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },
+        { anchor: "цифровизация малого бизнеса", url: "/blog/cifrovizaciya-malogo-biznesa", context: "Пошаговый план цифровизации" },
         { anchor: "автоматизация отдела продаж", url: "/blog/avtomatizaciya-otdela-prodazh", context: "Подробнее об автоматизации продаж" },
         { anchor: "AI автоматизация бизнеса", url: "/blog/ai-avtomatizaciya-biznesa", context: "Как искусственный интеллект помогает автоматизации" },
         { anchor: "примеры автоматизации бизнеса", url: "/blog/primery-avtomatizacii-biznesa", context: "Реальные кейсы автоматизации" },

@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { uvelichivaetProdazhiPart1 } from './texts/uvelichivaet-prodazhi-part1';
 import { uvelichivaetProdazhiPart2 } from './texts/uvelichivaet-prodazhi-part2';
 
@@ -82,9 +82,9 @@ export const articleKakTelegramBotUvelichivaetProdazhi: Article = {
 
     internalLinks: [
         { anchor: "заказать Telegram бота для продаж", url: "/razrabotka-botov", context: "Рассчитаем стоимость бота для вашего бизнеса" },
-        { anchor: "стоимость разработки бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор цен" },
+        { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен" },
         { anchor: "Telegram бот для магазина", url: "/blog/telegram-bot-dlya-magazina", context: "Каталог и оплата в Telegram" },
-        { anchor: "бот для записи клиентов", url: "/blog/telegram-bot-dlya-zapisi-klientov", context: "Автоматизация записи" },
+        { anchor: "бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Автоматизация записи" },
         { anchor: "бот или приложение для бизнеса", url: "/blog/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa", context: "Что выбрать для бизнеса" },
         { anchor: "что можно автоматизировать в бизнесе", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },
     ],

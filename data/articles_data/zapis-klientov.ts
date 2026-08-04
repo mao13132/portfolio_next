@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { zapisKlientovOldPart1 } from './texts/zapis-klientov-old-part1';
 import { zapisKlientovOldPart2 } from './texts/zapis-klientov-old-part2';
 
@@ -11,7 +11,7 @@ export const articleZapisKlientov: Article = {
     h1: "Telegram бот для записи клиентов: онлайн-запись 24/7 без звонков",
     ogTitle: "Telegram бот для записи клиентов — онлайн-запись 24/7",
     ogDescription: "Как Telegram-бот заменяет запись по телефону: салоны, клиники, фитнес, автосервис. Работает 24/7, не пропускает клиентов, напоминает о визите.",
-    canonical: "https://dima-razrab.com/blog/telegram-bot-dlya-zapisi-klientov",
+    canonical: "https://dima-razrab.com/blog/bot-dlya-zapisi-klientov",
     heroBadge: "📅 Онлайн-запись • 2026",
     heroSubtitle: "Замените запись по телефону на автоматический Telegram-бот. Принимает записи 24/7, напоминает клиентам, не теряет заявки.",
     readingTime: "13 мин чтения",

@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from '../types';
+﻿import { Article, makeArticleSchema } from '../types';
 import { chatgptBiznesPart1 } from './texts/chatgpt-biznes-part1';
 import { chatgptBiznesPart2 } from './texts/chatgpt-biznes-part2';
 
@@ -84,12 +84,12 @@ export const articleKakVnedritChatgptVBiznes: Article = {
 
     internalLinks: [
         { anchor: "заказать разработку AI-бота", url: "/razrabotka-botov", context: "Разработка ботов с ChatGPT" },
-        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesа", context: "Комплексная автоматизация с AI" },
+        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesa", context: "Комплексная автоматизация с AI" },
         { anchor: "AI автоматизация бизнеса", url: "/blog/ai-avtomatizaciya-biznesa", context: "Полное руководство по AI" },
         { anchor: "нейросети для бизнеса", url: "/blog/nejroseti-dlya-biznesa", context: "Реальные примеры нейросетей" },
         { anchor: "AI-агенты для бизнеса", url: "/blog/ai-agenty-dlya-biznesa", context: "Автономные AI-системы" },
         { anchor: "автоматизация отдела продаж", url: "/blog/avtomatizaciya-otdela-prodazh", context: "Пошаговый план с кейсами" },
-        { anchor: "стоимость разработки бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор цен" },
+        { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен" },
         { anchor: "примеры автоматизации", url: "/blog/primery-avtomatizacii-biznesa", context: "4 реальных кейса" },
     ],
 };

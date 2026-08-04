@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: botIliPrilozhenie
@@ -118,8 +118,8 @@ export const botIliPrilozheniePart2: ArticleSection[] = [
 Читать дальше
 • [Telegram Mini App — что это](/blog/telegram-mini-app-chto-eto)
 • [Telegram WebApp разработка](/blog/telegram-webapp-razrabotka)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)
 :::

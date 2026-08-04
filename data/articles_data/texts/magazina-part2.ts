@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: magazina
@@ -82,7 +82,7 @@ export const magazinaPart2: ArticleSection[] = [
 • [Telegram бот для приёма заказов](/blog/telegram-bot-dlya-priyoma-zakazov)
 • [Telegram бот для записи клиентов](/blog/bot-dlya-zapisi-klientov)
 • [Telegram бот для продаж](/blog/telegram-bot-dlya-prodazh)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)
 :::
@@ -130,6 +130,6 @@ export const magazinaPart2: ArticleSection[] = [
 • Комиссия платёжных систем: 2-5%
 • Поддержка: 5 000 — 15 000 ₽/мес
 
-Подробнее о [стоимости разработки Telegram-ботов](/blog/stoimost-telegram-bota) — в отдельной статье. Если нужен сложный интерфейс — рассмотрите [Telegram WebApp](/blog/telegram-webapp-razrabotka). Для AI-консультанта в магазине подойдёт [AI Telegram-бот](/blog/ai-telegram-bot-dlya-biznesa).`,
+Подробнее о [стоимости разработки Telegram-ботов](/blog/stoimost-razrabotki) — в отдельной статье. Если нужен сложный интерфейс — рассмотрите [Telegram WebApp](/blog/telegram-webapp-razrabotka). Для AI-консультанта в магазине подойдёт [AI Telegram-бот](/blog/ai-telegram-bot-dlya-biznesa).`,
         }
 ];

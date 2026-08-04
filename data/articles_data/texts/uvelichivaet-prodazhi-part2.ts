@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: uvelichivaetProdazhi
@@ -74,10 +74,10 @@ export const uvelichivaetProdazhiPart2: ArticleSection[] = [
 
 :::readmore
 Читать дальше
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Telegram бот для приёма заказов](/blog/telegram-bot-dlya-priyoma-zakazov)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)
 :::

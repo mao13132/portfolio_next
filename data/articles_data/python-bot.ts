@@ -96,5 +96,8 @@ export const articlePythonBot: Article = {
         { anchor: "заказать разработку бота на Python", url: "/razrabotka-botov", context: "Не хотите разбираться сами?" },
         { anchor: "создать AI бота в Telegram", url: "/blog/kak-sozdat-ai-bot-telegram", context: "Хотите добавить искусственный интеллект?" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл от идеи до запуска" },
+        { anchor: "настройка Telegram-бота", url: "/blog/nastrojka-telegram-bota", context: "Пошаговое руководство по настройке бота после разработки" },
+        { anchor: "разработка бота с нуля", url: "/blog/razrabotka-telegram-bota-s-nulya", context: "Полный цикл от идеи до запуска" },
+        { anchor: "Aiogram vs Pyrogram", url: "/blog/aiogram-vs-pyrogram", context: "Сравнение Python-фреймворков для Telegram-ботов" },
     ],
 };

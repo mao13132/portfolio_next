@@ -1,4 +1,4 @@
-import { ArticleSection } from '../../types';
+﻿import { ArticleSection } from '../../types';
 
 /* ============================================================
    Статья: Python-разработка под ключ
@@ -74,7 +74,7 @@ Python выбирают для проектов, где важна скорос�
 | Backend API | Django/FastAPI + DB | 3-6 недель | 80 000-250 000₽ |
 | Полная система | Full-stack | 4-12 недель | 150 000-500 000₽ |
 
-Подробнее о [стоимости разработки Telegram-ботов](/blog/stoimost-telegram-bota) и [ценах на парсеры маркетплейсов](/parsery-marketplejsov).`,
+Подробнее о [стоимости разработки Telegram-ботов](/blog/stoimost-razrabotki) и [ценах на парсеры маркетплейсов](/parsery-marketplejsov).`,
     },
     {
         id: "case-fastapi-markets",

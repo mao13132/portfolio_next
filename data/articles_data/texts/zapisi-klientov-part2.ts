@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: zapisiKlientov
@@ -115,7 +115,7 @@ export const zapisiKlientovPart2: ArticleSection[] = [
 
 :::readmore
 Читать дальше
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Telegram бот для приёма заказов](/blog/telegram-bot-dlya-priyoma-zakazov)
 • [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)

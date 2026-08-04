@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: telegram-bot-s-oplatoj
@@ -80,7 +80,9 @@ export const telegramBotSOplatojPart2: ArticleSection[] = [
 
 **Ошибка 4: Хранение данных карт.** Никогда не храните номера карт, CVV, сроки действия. Это нарушение PCI DSS и риск утечки. Используйте токенизацию платёжной системы.
 
-**Ошибка 5: Нет чеков.** По 54-ФЗ нужно выдавать чеки. ЮKassa делает это автоматически, но если используете другой провайдер — настройте фискализацию отдельно.`,
+**Ошибка 5: Нет чеков.** По 54-ФЗ нужно выдавать чеки. ЮKassa делает это автоматически, но если используете другой провайдер — настройте фискализацию отдельно.
+
+Если вы продаёте товары через интернет-магазин в Telegram, посмотрите также руководство по [созданию Telegram-бота для магазина](/blog/telegram-bot-dlya-magazina) с каталогом и корзиной.`,
         },
 {
             id: "cost",
@@ -99,7 +101,7 @@ export const telegramBotSOplatojPart2: ArticleSection[] = [
 • Комиссия платёжной системы: 2–5% от оборота
 • ЮKassa (фискализация): включена в комиссию
 
-Узнайте точную стоимость: [калькулятор стоимости Telegram-бота](/blog/stoimost-razrabotki).`,
+Узнайте точную стоимость: [калькулятораторатор стоимости Telegram-бота](/blog/stoimost-razrabotki). Если нужна интеграция с внешними сервисами — посмотрите руководство по [разработке API и интеграциям](/razrabotka-api).`,
         },
 {
             id: "readmore-section",
@@ -108,9 +110,9 @@ export const telegramBotSOplatojPart2: ArticleSection[] = [
 Читать дальше
 • [Telegram-бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Telegram-бот для приёма заказов](/blog/telegram-bot-dlya-priyoma-zakazov-2)
-• [Сколько стоит Telegram-бот](/blog/stoimost-telegram-bota)
+• [Сколько стоит Telegram-бот](/blog/stoimost-razrabotki)
 • [Как Telegram-бот увеличивает продажи](/blog/kak-telegram-bot-uvelichivaet-prodazhi)
-• [Telegram-бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Telegram-бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Заказать бота с оплатой →](/razrabotka-botov)
 :::
 

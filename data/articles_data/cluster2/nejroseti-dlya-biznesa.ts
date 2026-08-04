@@ -82,7 +82,7 @@ export const articleNejrosetiDlyaBiznesa: Article = {
     ),
 
     internalLinks: [
-        { anchor: "автоматизация бизнеса с AI", url: "/avtomatizaciya-biznesа", context: "Комплексная автоматизация с нейросетями" },
+        { anchor: "автоматизация бизнеса с AI", url: "/avtomatizaciya-biznesa", context: "Комплексная автоматизация с нейросетями" },
         { anchor: "разработка AI-бота", url: "/razrabotka-botov", context: "Заказать AI-бота для бизнеса" },
         { anchor: "как внедрить ChatGPT в бизнес", url: "/blog/kak-vnedrit-chatgpt-v-biznes", context: "Пошаговое руководство по ChatGPT" },
         { anchor: "AI-автоматизация бизнеса", url: "/blog/ai-avtomatizaciya-biznesa", context: "Полное руководство по AI-автоматизации" },

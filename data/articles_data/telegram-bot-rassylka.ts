@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { telegramBotRassylkaPart1 } from './texts/telegram-bot-rassylka-part1';
 import { telegramBotRassylkaPart2 } from './texts/telegram-bot-rassylka-part2';
 
@@ -84,10 +84,10 @@ export const articleTelegramBotRassylka: Article = {
 
     internalLinks: [
         { anchor: "заказать Telegram-бота с рассылкой", url: "/razrabotka-botov", context: "Настройка рассылок за 5–10 дней" },
-        { anchor: "Telegram-бот для бизнеса", url: "/blog/bot-dlya-biznesa", context: "Какие задачи решают боты" },
-        { anchor: "AI-бот для Telegram с ChatGPT", url: "/blog/ai-bot-telegram-chatgpt", context: "Автогенерация контента" },
+        { anchor: "Telegram-бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Какие задачи решают боты" },
+        { anchor: "бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Автоматизация записи и напоминаний" },
+        { anchor: "бот обратной связи", url: "/blog/bot-obratnoj-svyazi-telegram", context: "Сбор отзывов и NPS через бота" },
         { anchor: "как Telegram-бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "Реальные кейсы с цифрами" },
-        { anchor: "стоимость разработки бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор цен" },
-        { anchor: "автоматизация бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "10 процессов для автоматизации" },
+        { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен" },
     ],
 };

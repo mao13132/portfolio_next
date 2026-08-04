@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { botIliPrilozheniePart1 } from './texts/bot-ili-prilozhenie-part1';
 import { botIliPrilozheniePart2 } from './texts/bot-ili-prilozhenie-part2';
 
@@ -82,8 +82,8 @@ export const articleTelegramBotIliPrilozhenieDlyaBiznesa: Article = {
     internalLinks: [
         { anchor: "заказать разработку бота", url: "/razrabotka-botov", context: "Получите расчёт стоимости бота" },
         { anchor: "разработка сервисов и платформ", url: "/razrabotka-servisov", context: "Когда нужна полноценная платформа" },
-        { anchor: "стоимость разработки Telegram бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор цен на ботов" },
-        { anchor: "Telegram бот для записи клиентов", url: "/blog/telegram-bot-dlya-zapisi-klientov", context: "Как автоматизировать запись" },
+        { anchor: "стоимость разработки Telegram бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен на ботов" },
+        { anchor: "Telegram бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Как автоматизировать запись" },
         { anchor: "Telegram бот для интернет-магазина", url: "/blog/telegram-bot-dlya-magazina", context: "Каталог и оплата в Telegram" },
         { anchor: "как бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "Реальные примеры роста продаж" },
         { anchor: "автоматизация бизнеса", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },

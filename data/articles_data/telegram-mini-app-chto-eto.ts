@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { miniAppPart1 } from './texts/mini-app-part1';
 import { miniAppPart2 } from './texts/mini-app-part2';
 
@@ -84,7 +84,7 @@ export const articleTelegramMiniAppChtoEto: Article = {
     internalLinks: [
         { anchor: "заказать разработку Mini App", url: "/razrabotka-servisov", context: "Разработка веб-сервисов и Mini App" },
         { anchor: "заказать Telegram бота", url: "/razrabotka-botov", context: "Разработка ботов любой сложности" },
-        { anchor: "стоимость разработки Telegram бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор цен на ботов" },
+        { anchor: "стоимость разработки Telegram бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен на ботов" },
         { anchor: "Telegram бот для магазина", url: "/blog/telegram-bot-dlya-magazina", context: "Каталог и оплата в Telegram" },
         { anchor: "бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Автоматизация записи" },
         { anchor: "как бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "4 реальных кейса с цифрами" },

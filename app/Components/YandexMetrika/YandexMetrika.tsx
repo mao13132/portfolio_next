@@ -21,26 +21,35 @@ export default function YandexMetrika(): JSX.Element | null {
         };
     }, [router.events, METRIKA_ID]);
 
-    // Не загружать скрипт, если ID не задан (placeholder)
+    // Не загружать скрипт, если ID не задан
     if (!METRIKA_ID || METRIKA_ID === 'ВАШ_ID_МЕТРИКИ') {
         return null;
     }
 
     return (
         <>
-            {/* Загрузка скрипта Яндекс.Метрики после интерактивности страницы */}
+            {/* Шаг 1: Создаём очередь ym() до загрузки tag.js */}
             <Script
-                id="yandex-metrika"
+                id="ym-queue"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
-                    __html: `
-                        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-                        m[i].l=1*new Date();
-                        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-                        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-                        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-                        ym(${METRIKA_ID}, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-                    `,
+                    __html: `window.ym=window.ym||function(){(window.ym.a=window.ym.a||[]).push(arguments)};window.ym.l=Date.now();`,
+                }}
+            />
+
+            {/* Шаг 2: Загружаем tag.js напрямую — Next.js сам создаст <script src="..."> */}
+            <Script
+                id="ym-tag"
+                src="https://mc.yandex.ru/metrika/tag.js"
+                strategy="afterInteractive"
+            />
+
+            {/* Шаг 3: Инициализация счётчика (ym — уже очередь, вызов встанет в очередь) */}
+            <Script
+                id="ym-init"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: `ym(${METRIKA_ID},"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",accurateTrackBounce:true,trackLinks:true});`,
                 }}
             />
 

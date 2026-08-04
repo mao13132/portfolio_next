@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: zapisKlientovOld
@@ -87,7 +87,7 @@ SMS: дополнительные SMS-напоминания для клиент
 
 :::readmore
 Читать дальше
-• [Стоимость разработки Telegram бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram бота](/blog/stoimost-razrabotki)
 • [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Telegram бот для приёма заявок](/blog/telegram-bot-dlya-priyoma-zayavok)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)

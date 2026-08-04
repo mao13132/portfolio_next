@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: telegram-bot-rassylka
@@ -89,7 +89,9 @@ export const telegramBotRassylkaPart2: ArticleSection[] = [
 
 **6. Ограниченные предложения.** «Скидка 30% только сегодня» работает лучше, чем «Скидка 30%». Дедлайн создаёт urgency.
 
-**7. Сегментация по поведению.** Не отправляйте промо тем, кто купил вчера. Не отправляйте «Скучаем» тем, кто заходил сегодня. Релевантность — ключ к низким отпискам и высокой конверсии.`,
+**7. Сегментация по поведению.** Не отправляйте промо тем, кто купил вчера. Не отправляйте «Скучаем» тем, кто заходил сегодня. Релевантность — ключ к низким отпискам и высокой конверсии.
+
+Хотите узнать, как рассылки помогают находить клиентов? Читайте руководство по [поиску клиентов в Telegram](/blog/kak-najti-klientov-v-telegram) — 10 рабочих методов лидогенерации.`,
         },
 {
             id: "cost",
@@ -113,10 +115,10 @@ export const telegramBotRassylkaPart2: ArticleSection[] = [
             title: "Читайте также",
             content: `:::readmore
 Читать дальше
-• [Telegram-бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Telegram-бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Как Telegram-бот увеличивает продажи](/blog/kak-telegram-bot-uvelichivaet-prodazhi)
 • [AI-бот для Telegram с ChatGPT](/blog/ai-bot-telegram-chatgpt)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [Telegram-бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Заказать бота с рассылкой →](/razrabotka-botov)
 :::

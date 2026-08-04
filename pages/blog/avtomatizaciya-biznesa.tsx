@@ -13,6 +13,20 @@ import { articleAiAvtomatizaciyaBiznesa } from '@/data/articles_data/cluster2/ai
 import { articleAvtomatizaciyaOtdelaProdazh } from '@/data/articles_data/cluster2/avtomatizaciya-otdela-prodazh';
 import { articlePrimeryAvtomatizacii } from '@/data/articles_data/cluster2/primery-avtomatizacii-biznesa';
 import { articleAvtomatizaciyaPodKlyuch } from '@/data/articles_data/cluster2/avtomatizaciya-biznesa-pod-klyuch';
+import { articleAvtomatizaciyaZayavok } from '@/data/articles_data/cluster2/avtomatizaciya-zayavok';
+import { articleAvtomatizaciyaKlientov } from '@/data/articles_data/cluster2/avtomatizaciya-klientov';
+import { articleSistemaAvtomatizaciiBiznesProcessov } from '@/data/articles_data/cluster2/sistema-avtomatizacii-biznes-processov';
+import { articleAvtomatizaciyaVoronkiProdazh } from '@/data/articles_data/cluster2/avtomatizaciya-voronki-prodazh';
+import { articleCifrovizaciyaMalogoBiznesa } from '@/data/articles_data/cluster2/cifrovizaciya-malogo-biznesa';
+import { articleChtoMozhnoAvtomatizirovatVMalomBiznese } from '@/data/articles_data/cluster2/chto-mozhno-avtomatizirovat-v-malom-biznese';
+import { articleKakVnedritChatgptVBiznes } from '@/data/articles_data/cluster2/kak-vnedrit-chatgpt-v-biznes';
+import { articleIntegraciyaCRMSTelegram } from '@/data/articles_data/cluster2/integraciya-crm-s-telegram';
+import { articleAiAgentyDlyaBiznesa } from '@/data/articles_data/cluster2/ai-agenty-dlya-biznesa';
+import { articleRazrabotkaCrmPodKlyuch } from '@/data/articles_data/cluster2/razrabotka-crm-pod-klyuch';
+import { articleAvtomatizaciyaDokumentooborota } from '@/data/articles_data/cluster2/avtomatizaciya-dokumentooborota';
+import { articleNejrosetiDlyaBiznesa } from '@/data/articles_data/cluster2/nejroseti-dlya-biznesa';
+import { articleCrmDlyaMalogoBiznesa } from '@/data/articles_data/cluster2/crm-dlya-malogo-biznesa';
+import { articleAnalizAvtomatizaciiBiznesProcessov } from '@/data/articles_data/cluster2/analiz-avtomatizacii-biznes-processov';
 import styles from './blog.module.css';
 import ls from '@/app/Components/Landing/landing.module.css';
 
@@ -38,6 +52,20 @@ const clusterArticles = [
     articleAvtomatizaciyaOtdelaProdazh,
     articlePrimeryAvtomatizacii,
     articleAvtomatizaciyaPodKlyuch,
+    articleAvtomatizaciyaZayavok,
+    articleAvtomatizaciyaKlientov,
+    articleSistemaAvtomatizaciiBiznesProcessov,
+    articleAvtomatizaciyaVoronkiProdazh,
+    articleCifrovizaciyaMalogoBiznesa,
+    articleChtoMozhnoAvtomatizirovatVMalomBiznese,
+    articleKakVnedritChatgptVBiznes,
+    articleIntegraciyaCRMSTelegram,
+    articleAiAgentyDlyaBiznesa,
+    articleRazrabotkaCrmPodKlyuch,
+    articleAvtomatizaciyaDokumentooborota,
+    articleNejrosetiDlyaBiznesa,
+    articleCrmDlyaMalogoBiznesa,
+    articleAnalizAvtomatizaciiBiznesProcessov,
 ];
 
 const structuredData = {
@@ -48,7 +76,7 @@ const structuredData = {
             "@id": `${PAGE_URL}#webpage`,
             "url": PAGE_URL,
             "name": "Автоматизация бизнеса: полное руководство | DimaRazrab",
-            "description": "Всё об автоматизации бизнеса: малый бизнес, отдел продаж, AI-автоматизация, реальные кейсы, внедрение под ключ. 5 подробных руководств от практикующего разработчика.",
+            "description": "Всё об автоматизации бизнеса: малый бизнес, отдел продаж, AI-автоматизация, реальные кейсы, внедрение под ключ. 19 подробных руководств от практикующего разработчика.",
             "inLanguage": "ru-RU",
             "isPartOf": { "@id": `${SITE_URL}#website` },
             "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
@@ -83,7 +111,7 @@ export default function AvtomatizaciyaBiznesaHubPage() {
         <>
             <Head>
                 <title>Автоматизация бизнеса: полное руководство | DimaRazrab</title>
-                <meta name="description" content="Всё об автоматизации бизнеса: малый бизнес, отдел продаж, AI-автоматизация, реальные кейсы, внедрение под ключ. 5 подробных руководств с примерами и расчётами ROI от практикующего разработчика." />
+                <meta name="description" content="Всё об автоматизации бизнеса: малый бизнес, отдел продаж, AI-автоматизация, реальные кейсы, внедрение под ключ. 19 подробных руководств с примерами и расчётами ROI от практикующего разработчика." />
                 <meta name="keywords" content="автоматизация бизнеса, автоматизация малого бизнеса, автоматизация продаж, ai автоматизация, автоматизация бизнеса под ключ, примеры автоматизации, crm автоматизация, бот для бизнеса, автоматизация бизнес процессов" />
                 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
                 <link rel="canonical" href={PAGE_URL} />
@@ -91,7 +119,7 @@ export default function AvtomatizaciyaBiznesaHubPage() {
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="DimaRazrab" />
                 <meta property="og:title" content="Автоматизация бизнеса: полное руководство" />
-                <meta property="og:description" content="5 подробных руководств об автоматизации бизнеса: малый бизнес, продажи, AI, кейсы, внедрение под ключ. Примеры, расчёты ROI." />
+                <meta property="og:description" content="19 подробных руководств об автоматизации бизнеса: малый бизнес, продажи, AI, кейсы, внедрение под ключ. Примеры, расчёты ROI." />
                 <meta property="og:url" content={PAGE_URL} />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:image" content={`${SITE_URL}/media/og_desc.jpg`} />
@@ -99,7 +127,7 @@ export default function AvtomatizaciyaBiznesaHubPage() {
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Автоматизация бизнеса: полное руководство" />
-                <meta name="twitter:description" content="5 подробных руководств об автоматизации бизнеса: малый бизнес, продажи, AI, кейсы, внедрение под ключ." />
+                <meta name="twitter:description" content="19 подробных руководств об автоматизации бизнеса: малый бизнес, продажи, AI, кейсы, внедрение под ключ." />
                 <meta name="twitter:image" content={`${SITE_URL}/media/og_desc.jpg`} />
 
                 <script
@@ -146,7 +174,7 @@ export default function AvtomatizaciyaBiznesaHubPage() {
                             transition={{ duration: 0.7, delay: 0.2 }}
                         >
                             Всё, что нужно знать об автоматизации бизнеса: от малого бизнеса до AI-решений.
-                            5 подробных руководств с примерами, кейсами и расчётами ROI от практикующего разработчика.
+                            19 подробных руководств с примерами, кейсами и расчётами ROI от практикующего разработчика.
                         </motion.p>
                     </div>
 
@@ -195,7 +223,7 @@ export default function AvtomatizaciyaBiznesaHubPage() {
                                     Это одна из самых выгодных инвестиций, которые может сделать предприниматель.
                                 </p>
                                 <p style={{ marginBottom: '16px' }}>
-                                    Ниже — 5 подробных руководств, которые помогут разобраться в теме: от выбора инструментов для
+                                    Ниже — 19 подробных руководств, которые помогут разобраться в теме: от выбора инструментов для
                                     малого бизнеса до заказа комплексной автоматизации под ключ. Каждая статья — это 7000-8000 слов
                                     практической информации с примерами, кейсами и пошаговыми планами.
                                 </p>

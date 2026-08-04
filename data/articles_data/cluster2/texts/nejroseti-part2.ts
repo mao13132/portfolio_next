@@ -138,7 +138,7 @@ export const nejrosetiPart2: ArticleSection[] = [
 • [AI автоматизация бизнеса](/blog/ai-avtomatizaciya-biznesa)
 • [AI-агенты для бизнеса](/blog/ai-agenty-dlya-biznesa)
 • [Заказать разработку AI-бота](/razrabotka-botov)
-• [Автоматизация бизнеса](/avtomatizaciya-biznesа)
+• [Автоматизация бизнеса](/avtomatizaciya-biznesa)
 :::
 
 :::conversion

@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: razrabotkaSNulya
@@ -224,8 +224,8 @@ Stripe: международная. Если клиенты за рубежом.
 :::readmore
 Читать дальше
 • [Разработка бота под ключ](/blog/razrabotka-telegram-bota-pod-klyuch)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Telegram WebApp разработка](/blog/telegram-webapp-razrabotka)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)

@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from '../types';
+﻿import { Article, makeArticleSchema } from '../types';
 import { pythonTelegramBotRazrabotkaPart1 } from './texts/python-telegram-bot-razrabotka-part1';
 import { pythonTelegramBotRazrabotkaPart2 } from './texts/python-telegram-bot-razrabotka-part2';
 
@@ -81,7 +81,7 @@ export const articlePythonTelegramBotRazrabotka: Article = {
         { anchor: "заказать разработку ботов", url: "/razrabotka-botov", context: "Коммерческая страница" },
         { anchor: "Python-разработка под ключ", url: "/blog/python-razrabotka-pod-klyuch", context: "Полный цикл разработки" },
         { anchor: "Telegram-бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Боты для бизнеса" },
-        { anchor: "стоимость разработки бота", url: "/blog/stoimost-telegram-bota", context: "Цены на ботов" },
+        { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Цены на ботов" },
         { anchor: "лидогенерация в Telegram", url: "/blog/kak-najti-klientov-v-telegram", context: "Поиск клиентов" },
     ],
 };

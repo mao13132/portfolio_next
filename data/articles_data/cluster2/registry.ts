@@ -13,6 +13,12 @@ import { articleRazrabotkaCrmPodKlyuch } from './razrabotka-crm-pod-klyuch';
 import { articleAvtomatizaciyaDokumentooborota } from './avtomatizaciya-dokumentooborota';
 import { articleNejrosetiDlyaBiznesa } from './nejroseti-dlya-biznesa';
 import { articleCrmDlyaMalogoBiznesa } from './crm-dlya-malogo-biznesa';
+import { articleAvtomatizaciyaZayavok } from './avtomatizaciya-zayavok';
+import { articleAvtomatizaciyaKlientov } from './avtomatizaciya-klientov';
+import { articleSistemaAvtomatizaciiBiznesProcessov } from './sistema-avtomatizacii-biznes-processov';
+import { articleAvtomatizaciyaVoronkiProdazh } from './avtomatizaciya-voronki-prodazh';
+import { articleCifrovizaciyaMalogoBiznesa } from './cifrovizaciya-malogo-biznesa';
+import { articleAnalizAvtomatizaciiBiznesProcessov } from './analiz-avtomatizacii-biznes-processov';
 
 export const cluster2Articles: Article[] = [
     articleAvtomatizaciyaMalogoBiznesa,
@@ -28,4 +34,10 @@ export const cluster2Articles: Article[] = [
     articleAvtomatizaciyaDokumentooborota,
     articleNejrosetiDlyaBiznesa,
     articleCrmDlyaMalogoBiznesa,
+    articleAvtomatizaciyaZayavok,
+    articleAvtomatizaciyaKlientov,
+    articleSistemaAvtomatizaciiBiznesProcessov,
+    articleAvtomatizaciyaVoronkiProdazh,
+    articleCifrovizaciyaMalogoBiznesa,
+    articleAnalizAvtomatizaciiBiznesProcessov,
 ];

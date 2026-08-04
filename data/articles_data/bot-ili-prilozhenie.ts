@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { botIliPrilozhenieOldPart1 } from './texts/bot-ili-prilozhenie-old-part1';
 import { botIliPrilozhenieOldPart2 } from './texts/bot-ili-prilozhenie-old-part2';
 
@@ -13,7 +13,7 @@ export const articleBotIliPrilozhenie: Article = {
     h1: "Telegram бот или мобильное приложение: честное сравнение для бизнеса",
     ogTitle: "Telegram бот или мобильное приложение — что выбрать для бизнеса",
     ogDescription: "Честное сравнение Telegram-бота и мобильного приложения: стоимость, сроки, конверсия, удобство. Помогаем принять правильное решение.",
-    canonical: `${SITE_URL}/blog/telegram-bot-ili-mobilnoe-prilozhenie`,
+    canonical: `${SITE_URL}/blog/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa`,
     heroBadge: "⚖️ Сравнение • 2026",
     heroSubtitle: "Честное сравнение Telegram-бота и мобильного приложения для бизнеса. Цифры, факты, примеры — чтобы вы приняли правильное решение и не потратили лишнего.",
     readingTime: "15 мин чтения",

@@ -180,7 +180,7 @@ export const aiAgentyPart2: ArticleSection[] = [
 • [Нейросети для бизнеса](/blog/nejroseti-dlya-biznesa)
 • [AI автоматизация бизнеса](/blog/ai-avtomatizaciya-biznesa)
 • [Заказать разработку бота](/razrabotka-botov)
-• [Автоматизация бизнеса](/avtomatizaciya-biznesа)
+• [Автоматизация бизнеса](/avtomatizaciya-biznesa)
 :::
 
 :::conversion

@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: bot-dlya-avtomatizacii-prodazh
@@ -113,7 +113,9 @@ export const botDlyaAvtomatizaciiProdazhPart2: ArticleSection[] = [
 • Более 20 заявок в день — бот справляется лучше команды
 • Круглосуточный спрос — бот не спит
 • Типовые вопросы — 80% вопросов одинаковые
-• Нужна скорость — ответ за секунды, не часы`,
+• Нужна скорость — ответ за секунды, не часы
+
+Для бизнеса, который хочет не только автоматизировать продажи, но и наладить регулярные коммуникации с клиентами, рекомендую также изучить [Telegram-бота с рассылкой](/blog/telegram-bot-rassylka) — триггерные и промо-рассылки увеличивают повторные покупки на 30–50%.`,
         },
 {
             id: "vs-managers",
@@ -135,7 +137,9 @@ export const botDlyaAvtomatizaciiProdazhPart2: ArticleSection[] = [
 
 **Оптимальная формула:** 1 менеджер + бот = работа команды из 4–5 менеджеров. Бот обрабатывает 70–90% типовых задач. Менеджер — сложные сделки, VIP-клиентов, переговоры.
 
-В проекте для Avito-бизнеса бот заменил 3 менеджеров и увеличил оборот на 280%. Стоимость бота: 95 000 ₽. Экономия на ФОТ: 150 000 ₽/мес.`,
+В проекте для Avito-бизнеса бот заменил 3 менеджеров и увеличил оборот на 280%. Стоимость бота: 95 000 ₽. Экономия на ФОТ: 150 000 ₽/мес.
+
+Автоматизация продаж тесно связана с лидогенерацией — узнайте, [как найти клиентов в Telegram](/lidogeneraciya-telegram) с помощью ботов и парсинга.`,
         },
 {
             id: "readmore-section",
@@ -143,10 +147,10 @@ export const botDlyaAvtomatizaciiProdazhPart2: ArticleSection[] = [
             content: `:::readmore
 Читать дальше
 • [Как Telegram-бот увеличивает продажи](/blog/kak-telegram-bot-uvelichivaet-prodazhi)
-• [Telegram-бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Telegram-бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Telegram-бот с оплатой](/blog/telegram-bot-s-oplatoj)
 • [Telegram-бот для магазина](/blog/telegram-bot-dlya-magazina)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [Заказать бота для автоматизации продаж →](/razrabotka-botov)
 :::
 

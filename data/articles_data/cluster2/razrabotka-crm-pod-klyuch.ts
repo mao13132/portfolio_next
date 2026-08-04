@@ -84,8 +84,9 @@ export const articleRazrabotkaCrmPodKlyuch: Article = {
 
     internalLinks: [
         { anchor: "заказать разработку CRM", url: "/razrabotka-crm", context: "Разработка CRM-систем на заказ" },
-        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesа", context: "Комплексная автоматизация" },
+        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesa", context: "Комплексная автоматизация" },
         { anchor: "CRM для малого бизнеса", url: "/blog/crm-dlya-malogo-biznesa", context: "Готовые vs кастомные решения" },
+        { anchor: "автоматизация клиентов", url: "/blog/avtomatizaciya-klientov", context: "Как не терять клиентов и увеличить базу" },
         { anchor: "интеграция CRM с Telegram", url: "/blog/integraciya-crm-s-telegram", context: "Уведомления и управление из мессенджера" },
         { anchor: "разработка веб-сервисов", url: "/razrabotka-servisov", context: "Кастомные веб-приложения" },
         { anchor: "автоматизация документооборота", url: "/blog/avtomatizaciya-dokumentooborota", context: "Электронный документооборот" },

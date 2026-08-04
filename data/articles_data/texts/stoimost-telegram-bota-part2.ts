@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: stoimostTelegramBota
@@ -149,7 +149,7 @@ ROI: 500%
 
 :::readmore
 Читать дальше
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Telegram бот для записи клиентов](/blog/bot-dlya-zapisi-klientov)
 • [Разработка бота под ключ](/blog/razrabotka-telegram-bota-pod-klyuch)

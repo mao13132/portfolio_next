@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: miniApp
@@ -79,7 +79,7 @@ export const miniAppPart2: ArticleSection[] = [
 • [Telegram бот или мобильное приложение](/blog/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa)
 • [Telegram WebApp разработка](/blog/telegram-webapp-razrabotka)
 • [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)
 • [Заказать разработку Mini App →](/razrabotka-botov)
 :::

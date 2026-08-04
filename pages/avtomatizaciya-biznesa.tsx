@@ -34,6 +34,15 @@ const NAV_LINKS = [
     { href: '#faq', label: 'FAQ' },
 ];
 
+const ARTICLES = [
+    { href: '/blog/avtomatizaciya-zayavok', icon: 'bx-file', title: 'Автоматизация заявок', desc: 'Как автоматизировать обработку заявок и увеличить конверсию' },
+    { href: '/blog/avtomatizaciya-klientov', icon: 'bx-user-check', title: 'Автоматизация клиентов', desc: 'Управление клиентской базой и автоматическая сегментация' },
+    { href: '/blog/sistema-avtomatizacii-biznes-processov', icon: 'bx-cog', title: 'Системы автоматизации БП', desc: 'Обзор систем автоматизации бизнес-процессов' },
+    { href: '/blog/avtomatizaciya-voronki-prodazh', icon: 'bx-line-chart', title: 'Автоматизация воронки продаж', desc: 'Настройка автоматической воронки от лида до сделки' },
+    { href: '/blog/cifrovizaciya-malogo-biznesa', icon: 'bx-rocket', title: 'Цифровизация малого бизнеса', desc: 'Пошаговое руководство по цифровой трансформации' },
+    { href: '/blog/avtomatizaciya-malogo-biznesa', icon: 'bx-store', title: 'Автоматизация малого бизнеса', desc: 'Практические решения для малого бизнеса' },
+];
+
 const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -46,6 +55,8 @@ const structuredData = {
             "inLanguage": "ru-RU",
             "isPartOf": { "@id": `${SITE_URL}#website` },
             "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
+            "relatedLink": ARTICLES.map(a => `${SITE_URL}${a.href}`),
+            "hasPart": ARTICLES.map(a => `${SITE_URL}${a.href}`),
         },
         {
             "@type": "WebSite",
@@ -464,6 +475,33 @@ export default function AvtomatizaciyaBiznesaPage() {
                             { question: 'Что используете сейчас?', options: ['Excel и тетрадки', 'amoCRM / Битрикс', '1С', 'Ничего системного'] },
                         ]}
                     />
+                </div>
+            </section>
+
+            {/* ═══════ USEFUL ARTICLES ═══════ */}
+            <section className={ls.section} id="articles">
+                <div className={ls.container}>
+                    <motion.div className={ls.sectionHeader} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                        <h2 className={ls.sectionTitle}>Полезные статьи об <span className={ls.textAccent}>автоматизации бизнеса</span></h2>
+                        <p className={ls.sectionSubtitle}>Читайте наши подробные руководства по автоматизации бизнес-процессов</p>
+                    </motion.div>
+
+                    <div className={s.articlesGrid}>
+                        {ARTICLES.map((a, i) => (
+                            <motion.a key={i} href={a.href} className={s.articleCard} variants={fadeUp} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                                <i className={`bx ${a.icon} ${s.articleCardIcon}`} />
+                                <h3>{a.title}</h3>
+                                <p>{a.desc}</p>
+                            </motion.a>
+                        ))}
+                    </div>
+
+                    <motion.div style={{ textAlign: 'center' }} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                        <a href="/blog/avtomatizaciya-biznesa" className={s.articleHubLink}>
+                            <i className='bx bx-book-open' />
+                            Все статьи об автоматизации →
+                        </a>
+                    </motion.div>
                 </div>
             </section>
 

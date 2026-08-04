@@ -104,6 +104,8 @@ export const articleAvtomatizaciyaOtdelaProdazh: Article = {
         { anchor: "заказать автоматизацию продаж", url: "/avtomatizaciya-biznesa", context: "Комплексная автоматизация бизнеса" },
         { anchor: "разработка CRM на заказ", url: "/razrabotka-crm", context: "Создание CRM под ваши процессы" },
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Полное руководство по автоматизации" },
+        { anchor: "автоматизация воронки продаж", url: "/blog/avtomatizaciya-voronki-prodazh", context: "Как увеличить конверсию в 2-3 раза" },
+        { anchor: "автоматизация заявок", url: "/blog/avtomatizaciya-zayavok", context: "Настройка приёма заявок 24/7" },
         { anchor: "CRM для малого бизнеса", url: "/blog/crm-dlya-malogo-biznesa", context: "Обзор CRM-систем для малого бизнеса" },
         { anchor: "интеграция CRM с Telegram", url: "/blog/integraciya-crm-s-telegram", context: "Как подключить Telegram к CRM" },
         { anchor: "примеры автоматизации бизнеса", url: "/blog/primery-avtomatizacii-biznesa", context: "10 реальных примеров" },

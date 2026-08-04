@@ -82,6 +82,7 @@ export const articlePrimeryAvtomatizacii: Article = {
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Полное руководство по автоматизации" },
         { anchor: "автоматизация отдела продаж", url: "/blog/avtomatizaciya-otdela-prodazh", context: "Пошаговый план с кейсами" },
         { anchor: "автоматизация бизнеса под ключ", url: "/blog/avtomatizaciya-biznesa-pod-klyuch", context: "От аудита до запуска" },
+        { anchor: "система автоматизации бизнес-процессов", url: "/blog/sistema-avtomatizacii-biznes-processov", context: "Обзор систем автоматизации" },
         { anchor: "разработка Telegram-бота", url: "/razrabotka-botov", context: "Заказать разработку бота" },
         { anchor: "CRM для малого бизнеса", url: "/blog/crm-dlya-malogo-biznesa", context: "Обзор CRM-систем" },
         { anchor: "интеграция CRM с Telegram", url: "/blog/integraciya-crm-s-telegram", context: "Подключение Telegram к CRM" },

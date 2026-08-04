@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: telegram-bot-s-oplatoj
@@ -78,7 +78,7 @@ export const telegramBotSOplatojPart1: ArticleSection[] = [
 {
             id: "how-to-integrate",
             title: "Пошаговая инструкция: интеграция оплаты в бота",
-            content: `Разберём процесс на примере ЮKassa + Python + aiogram — самый популярный стек для российских Telegram-ботов.`,
+            content: `Разберём процесс на примере ЮKassa + Python + aiogram — самый популярный стек для российских Telegram-ботов. Если хотите [заказать Telegram-бота с оплатой](/razrabotka-botov) под ключ — я интегрирую ЮKassa, СБП или Stripe за 5–10 дней.`,
             subsections: [
                 {
                     title: "Шаг 1: Регистрация в ЮKassa",
@@ -215,6 +215,6 @@ async def payment_webhook(request):
 
 **Мой совет:** для российского бизнеса — ЮKassa + СБП. Минимум комиссии на СБП (0,4%), максимум удобства через ЮKassa. Для международных проектов — Stripe.
 
-Подробнее о [стоимости разработки Telegram-бота](/blog/stoimost-telegram-bota) с интеграцией оплаты.`,
+Подробнее о [стоимости разработки Telegram-бота](/blog/stoimost-razrabotki) с интеграцией оплаты.`,
         },
 ];

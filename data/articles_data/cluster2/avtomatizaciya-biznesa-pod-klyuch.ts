@@ -104,6 +104,8 @@ export const articleAvtomatizaciyaPodKlyuch: Article = {
         { anchor: "заказать автоматизацию бизнеса под ключ", url: "/avtomatizaciya-biznesa", context: "Бесплатный аудит и точная смета" },
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Полное руководство по автоматизации" },
         { anchor: "примеры автоматизации бизнеса", url: "/blog/primery-avtomatizacii-biznesa", context: "4 реальных кейса с ROI 300-520%" },
+        { anchor: "система автоматизации бизнес-процессов", url: "/blog/sistema-avtomatizacii-biznes-processov", context: "Обзор систем автоматизации" },
+        { anchor: "автоматизация документооборота", url: "/blog/avtomatizaciya-dokumentooborota", context: "Электронный документооборот и согласование" },
         { anchor: "разработка Telegram-бота", url: "/razrabotka-botov", context: "Заказать разработку бота" },
         { anchor: "салон красоты — ROI 300%", url: "/work/sapis_cllientov", context: "Кейс: автоматизация записи" },
         { anchor: "Avito бизнес — ROI 520%", url: "/work/avito_payments", context: "Кейс: автоматизация продаж" },

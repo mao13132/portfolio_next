@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: zakazatBota
@@ -201,9 +201,9 @@ Enterprise (AI, мультиканальность): 250 000 — 500 000₽+
 
 :::readmore
 Читать дальше
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [Разработка бота под ключ](/blog/razrabotka-telegram-bota-pod-klyuch)
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Разработка бота с нуля](/blog/razrabotka-telegram-bota-s-nulya)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)

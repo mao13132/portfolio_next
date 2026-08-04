@@ -167,7 +167,7 @@ Telegram-бот с интеграцией ChatGPT API. Что нужно:
 • [Нейросети для бизнеса](/blog/nejroseti-dlya-biznesa)
 • [AI-агенты для бизнеса](/blog/ai-agenty-dlya-biznesa)
 • [Заказать разработку AI-бота](/razrabotka-botov)
-• [Автоматизация бизнеса](/avtomatizaciya-biznesа)
+• [Автоматизация бизнеса](/avtomatizaciya-biznesa)
 :::
 
 :::conversion

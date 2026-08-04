@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: aiBotSozdanie
@@ -234,7 +234,7 @@ Webhook: Telegram отправляет сообщения на ваш серве
 • [AI Telegram бот для бизнеса](/blog/ai-telegram-bot-dlya-biznesa)
 • [Telegram бот для продаж](/blog/telegram-bot-dlya-prodazh)
 • [Разработка бота с нуля](/blog/razrabotka-telegram-bota-s-nulya)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [ChatGPT для бизнеса](/blog/chatgpt-dlya-biznesa)
 • [Заказать разработку AI-бота →](/razrabotka-botov)
 :::

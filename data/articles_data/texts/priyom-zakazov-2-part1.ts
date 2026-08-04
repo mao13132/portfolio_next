@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: priyomZakazov2
@@ -200,7 +200,7 @@ Telegram-бот решает эту проблему кардинально. О�
 Читать дальше
 • [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Telegram бот для записи клиентов](/blog/bot-dlya-zapisi-klientov)
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
 • [Telegram WebApp разработка](/blog/telegram-webapp-razrabotka)
 • [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)
 • [Заказать разработку Telegram-бота →](/razrabotka-botov)

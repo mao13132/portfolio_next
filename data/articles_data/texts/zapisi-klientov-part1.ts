@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: zapisiKlientov
@@ -93,8 +93,8 @@ Telegram-бот решает все эти проблемы одновремен
 
 :::readmore
 Читать дальше
-• [Стоимость разработки Telegram-бота](/blog/stoimost-telegram-bota)
-• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)
+• [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki)
+• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)
 • [Как бот увеличивает продажи](/blog/kak-telegram-bot-uvelichivaet-prodazhi)
 • [ChatGPT для бизнеса](/blog/chatgpt-dlya-biznesa)

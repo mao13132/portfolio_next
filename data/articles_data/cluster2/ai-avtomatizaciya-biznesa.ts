@@ -102,6 +102,7 @@ export const articleAiAvtomatizaciyaBiznesa: Article = {
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Полное руководство по автоматизации" },
         { anchor: "нейросети для бизнеса", url: "/blog/nejroseti-dlya-biznesa", context: "Реальные примеры использования нейросетей" },
         { anchor: "как внедрить ChatGPT в бизнес", url: "/blog/kak-vnedrit-chatgpt-v-biznes", context: "Пошаговое руководство по внедрению ChatGPT" },
+        { anchor: "AI-агенты для бизнеса", url: "/blog/ai-agenty-dlya-biznesa", context: "Автономные AI-системы для бизнеса" },
         { anchor: "разработка Telegram-бота", url: "/razrabotka-botov", context: "Заказать разработку AI-бота" },
     ],
 };

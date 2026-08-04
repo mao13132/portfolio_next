@@ -83,7 +83,7 @@ export const articleAvtomatizaciyaDokumentooborota: Article = {
 
     internalLinks: [
         { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesa", context: "Комплексная автоматизация бизнес-процессов" },
-        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesa", context: "Полное руководство по автоматизации" },
+        { anchor: "система автоматизации бизнес-процессов", url: "/blog/sistema-avtomatizacii-biznes-processov", context: "Обзор систем автоматизации" },
         { anchor: "CRM для малого бизнеса", url: "/blog/crm-dlya-malogo-biznesa", context: "Обзор CRM-систем для малого бизнеса" },
         { anchor: "разработка CRM под ключ", url: "/razrabotka-crm", context: "CRM с модулем документооборота" },
         { anchor: "разработка веб-сервисов", url: "/razrabotka-servisov", context: "Создание сервисов с документооборотом" },

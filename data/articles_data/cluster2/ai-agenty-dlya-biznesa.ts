@@ -84,7 +84,7 @@ export const articleAiAgentyDlyaBiznesa: Article = {
 
     internalLinks: [
         { anchor: "заказать разработку бота", url: "/razrabotka-botov", context: "Разработка Telegram ботов на Python" },
-        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesа", context: "Комплексная автоматизация процессов" },
+        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesa", context: "Комплексная автоматизация процессов" },
         { anchor: "AI-автоматизация бизнеса", url: "/blog/ai-avtomatizaciya-biznesa", context: "Полное руководство по AI" },
         { anchor: "нейросети для бизнеса", url: "/blog/nejroseti-dlya-biznesa", context: "Реальные примеры нейросетей" },
         { anchor: "как внедрить ChatGPT в бизнес", url: "/blog/kak-vnedrit-chatgpt-v-biznes", context: "Пошаговое руководство по ChatGPT" },

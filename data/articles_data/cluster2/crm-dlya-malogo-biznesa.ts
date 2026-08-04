@@ -85,7 +85,7 @@ export const articleCrmDlyaMalogoBiznesa: Article = {
         { anchor: "разработка CRM под ключ", url: "/blog/razrabotka-crm-pod-klyuch", context: "Полное руководство по разработке CRM" },
         { anchor: "заказать разработку CRM", url: "/razrabotka-crm", context: "Коммерческая страница CRM" },
         { anchor: "интеграция CRM с Telegram", url: "/blog/integraciya-crm-s-telegram", context: "Как связать CRM и Telegram" },
-        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesа", context: "Комплексная автоматизация" },
+        { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesa", context: "Комплексная автоматизация" },
         { anchor: "разработка Telegram-ботов", url: "/razrabotka-botov", context: "Заказать бота для бизнеса" },
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Комплексная автоматизация малого бизнеса" },
         { anchor: "что можно автоматизировать", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },

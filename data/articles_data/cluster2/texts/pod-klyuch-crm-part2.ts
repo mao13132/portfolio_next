@@ -125,7 +125,7 @@ export const podKlyuchCrmPart2: ArticleSection[] = [
 
 **3. Считайте TCO на 3 года.** Готовая CRM кажется дешевле, но абонентская плата растёт. Для команды 5+ человек кастомная CRM выгоднее через 1-2 года.
 
-Если нужна [CRM для малого бизнеса](/blog/crm-dlya-malogo-biznesа) — начните с этой статьи, чтобы определиться с выбором.
+Если нужна [CRM для малого бизнеса](/blog/crm-dlya-malogo-biznesa) — начните с этой статьи, чтобы определиться с выбором.
 
 :::readmore
 Читать дальше
@@ -133,7 +133,7 @@ export const podKlyuchCrmPart2: ArticleSection[] = [
 • [Интеграция CRM с Telegram](/blog/integraciya-crm-s-telegram)
 • [Заказать разработку CRM](/razrabotka-crm)
 • [Разработка веб-сервисов](/razrabotka-servisov)
-• [Автоматизация бизнеса](/avtomatizaciya-biznesа)
+• [Автоматизация бизнеса](/avtomatizaciya-biznesa)
 :::
 
 :::conversion

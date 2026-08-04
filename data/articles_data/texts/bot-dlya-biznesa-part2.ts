@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: botDlyaBiznesa
@@ -135,7 +135,7 @@ ROI за 6 месяцев: ((2 100 000 × 6) - 100 000) / 100 000 × 100% = 12 5
                 },
                 {
                     title: "Ошибка 5: Не продвигать бота",
-                    content: `Сделали бота, запустили — тишина. Клиенты сами не придут. Нужна ссылка на сайте, в соцсетях, QR-код, реклама.\n\n:::readmore\nЧитать дальше\n• [Стоимость разработки Telegram бота](/blog/stoimost-telegram-bota)\n• [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)\n• [Telegram бот для приёма заказов](/blog/telegram-bot-dlya-priyoma-zakazov)\n• [Telegram бот для записи клиентов](/blog/bot-dlya-zapisi-klientov)\n• [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)\n• [Заказать разработку Telegram-бота →](/razrabotka-botov)\n:::\n\n:::conversion\n**Готовы заказать Telegram-бота?**\n✅ Бесплатная консультация\n✅ Бесплатная поддержка 30 дней\n✅ Быстрые сроки — от 3 дней\n[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)\n:::`,
+                    content: `Сделали бота, запустили — тишина. Клиенты сами не придут. Нужна ссылка на сайте, в соцсетях, QR-код, реклама.\n\n:::readmore\nЧитать дальше\n• [Стоимость разработки Telegram бота](/blog/stoimost-razrabotki)\n• [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)\n• [Telegram бот для приёма заказов](/blog/telegram-bot-dlya-priyoma-zakazov)\n• [Telegram бот для записи клиентов](/blog/bot-dlya-zapisi-klientov)\n• [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)\n• [Заказать разработку Telegram-бота →](/razrabotka-botov)\n:::\n\n:::conversion\n**Готовы заказать Telegram-бота?**\n✅ Бесплатная консультация\n✅ Бесплатная поддержка 30 дней\n✅ Быстрые сроки — от 3 дней\n[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)\n:::`,
                 },
             ],
         }

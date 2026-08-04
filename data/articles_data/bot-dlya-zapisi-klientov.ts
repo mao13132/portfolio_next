@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { zapisiKlientovPart1 } from './texts/zapisi-klientov-part1';
 import { zapisiKlientovPart2 } from './texts/zapisi-klientov-part2';
 
@@ -87,10 +87,10 @@ export const articleBotDlyaZapisiKlientov: Article = {
     ),
     internalLinks: [
         { anchor: "заказать бота для записи", url: "/razrabotka-botov", context: "Получите расчёт стоимости" },
-        { anchor: "стоимость разработки Telegram-бота", url: "/blog/stoimost-telegram-bota", context: "Узнайте цены на разработку" },
+        { anchor: "стоимость разработки Telegram-бота", url: "/blog/stoimost-razrabotki", context: "Узнайте цены на разработку" },
         { anchor: "Telegram бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Какие задачи решают боты" },
-        { anchor: "Telegram бот для записи клиентов", url: "/blog/telegram-bot-dlya-zapisi-klientov", context: "Полное руководство по записи" },
-        { anchor: "Telegram бот для магазина", url: "/blog/telegram-bot-dlya-magazina", context: "Как создать магазин в Telegram" },
+        { anchor: "бот обратной связи", url: "/blog/bot-obratnoj-svyazi-telegram", context: "Настройка сбора отзывов и NPS" },
+        { anchor: "Telegram-бот рассылка", url: "/blog/telegram-bot-rassylka", context: "Автоматические напоминания и промо-рассылки" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл создания бота" },
     ],
 };

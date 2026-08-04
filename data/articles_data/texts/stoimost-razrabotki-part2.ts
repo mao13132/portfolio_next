@@ -1,4 +1,4 @@
-import { ArticleSection } from '../types';
+﻿import { ArticleSection } from '../types';
 
 /* ============================================================
    Статья: stoimostRazrabotki
@@ -187,7 +187,7 @@ export const stoimostRazrabotkiPart2: ArticleSection[] = [
                 },
                 {
                     title: "Ошибка 5: Не получить фиксированную цену",
-                    content: `«Ориентировочно 50 000₽, но посмотрим» — это значит «будет 100 000₽». Требуйте фиксированную цену в договоре с описанием работ. Если объём вырос — согласование допработ до начала.\n\n:::readmore\nЧитать дальше\n• [Telegram бот для бизнеса](/blog/bot-dlya-biznesa)\n• [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)\n• [Telegram бот для записи клиентов](/blog/bot-dlya-zapisi-klientov)\n• [Разработка бота под ключ](/blog/razrabotka-telegram-bota-pod-klyuch)\n• [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)\n• [Заказать разработку Telegram-бота →](/razrabotka-botov)\n:::\n\n:::conversion\n**Готовы заказать Telegram-бота?**\n✅ Бесплатная консультация\n✅ Бесплатная поддержка 30 дней\n✅ Быстрые сроки — от 3 дней\n[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)\n:::`,
+                    content: `«Ориентировочно 50 000₽, но посмотрим» — это значит «будет 100 000₽». Требуйте фиксированную цену в договоре с описанием работ. Если объём вырос — согласование допработ до начала.\n\n:::readmore\nЧитать дальше\n• [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)\n• [Telegram бот для магазина](/blog/telegram-bot-dlya-magazina)\n• [Telegram бот для записи клиентов](/blog/bot-dlya-zapisi-klientov)\n• [Разработка бота под ключ](/blog/razrabotka-telegram-bota-pod-klyuch)\n• [Автоматизация малого бизнеса](/blog/avtomatizaciya-malogo-biznesa)\n• [Заказать разработку Telegram-бота →](/razrabotka-botov)\n:::\n\n:::conversion\n**Готовы заказать Telegram-бота?**\n✅ Бесплатная консультация\n✅ Бесплатная поддержка 30 дней\n✅ Быстрые сроки — от 3 дней\n[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)\n:::`,
                 },
             ],
         }

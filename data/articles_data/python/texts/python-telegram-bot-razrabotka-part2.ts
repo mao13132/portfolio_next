@@ -1,4 +1,4 @@
-import { ArticleSection } from '../../types';
+﻿import { ArticleSection } from '../../types';
 
 /* ============================================================
    Статья: Разработка Telegram-бота на Python
@@ -137,12 +137,12 @@ export const pythonTelegramBotRazrabotkaPart2: ArticleSection[] = [
 
 Если вы хотите Telegram-бота для вашего бизнеса — начните с бесплатной консультации.
 
-Читайте также [Telegram-ботов для бизнеса](/blog/telegram-bot-dlya-biznesa), [стоимость разработки](/blog/stoimost-telegram-bota) и [Python-разработку под ключ](/blog/python-razrabotka-pod-klyuch).
+Читайте также [Telegram-ботов для бизнеса](/blog/telegram-bot-dlya-biznesa), [стоимость разработки](/blog/stoimost-razrabotki) и [Python-разработку под ключ](/blog/python-razrabotka-pod-klyuch).
 
 :::readmore
 Читать дальше
 • [Telegram-бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
-• [Стоимость Telegram-бота](/blog/stoimost-telegram-bota)
+• [Стоимость Telegram-бота](/blog/stoimost-razrabotki)
 • [Python-разработка под ключ](/blog/python-razrabotka-pod-klyuch)
 • [Разработка ботов](/razrabotka-botov)
 • [Лидогенерация в Telegram](/blog/kak-najti-klientov-v-telegram)

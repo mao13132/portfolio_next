@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { aiogramPyrogramPart1 } from './texts/aiogram-pyrogram-part1';
 import { aiogramPyrogramPart2 } from './texts/aiogram-pyrogram-part2';
 
@@ -84,7 +84,7 @@ export const articleAiogramVsPyrogram: Article = {
     internalLinks: [
         { anchor: "заказать разработку Telegram бота", url: "/razrabotka-botov", context: "Разработка ботов на Python" },
         { anchor: "бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Пошаговая запись через бота" },
-        { anchor: "стоимость разработки Telegram бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор цен" },
+        { anchor: "стоимость разработки Telegram бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен" },
         { anchor: "как бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "4 кейса с цифрами" },
         { anchor: "Telegram Mini App", url: "/blog/telegram-mini-app-chto-eto", context: "Веб-приложение внутри Telegram" },
         { anchor: "автоматизация бизнеса", url: "/blog/avtomatizaciya-biznesa-pod-klyuch", context: "Комплексная автоматизация" },

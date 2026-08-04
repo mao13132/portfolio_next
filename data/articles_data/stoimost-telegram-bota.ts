@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { stoimostTelegramBotaPart1 } from './texts/stoimost-telegram-bota-part1';
 import { stoimostTelegramBotaPart2 } from './texts/stoimost-telegram-bota-part2';
 
@@ -13,7 +13,7 @@ export const articleStoimostTelegramBota: Article = {
     h1: "Стоимость разработки Telegram бота: реальные цены и что на них влияет",
     ogTitle: "Стоимость разработки Telegram бота — реальные цены 2026",
     ogDescription: "Полный разбор стоимости Telegram-бота: от простого до сложного. Реальные цены, сроки, факторы. Кейсы с ROI.",
-    canonical: `${SITE_URL}/blog/stoimost-telegram-bota`,
+    canonical: `${SITE_URL}/blog/stoimost-razrabotki`,
     heroBadge: "💰 Реальные цены • 2026",
     heroSubtitle: "Сколько стоит Telegram-бот на самом деле? Разбираем три уровня сложности, реальные кейсы и способы сэкономить.",
     readingTime: "16 мин чтения",
@@ -93,7 +93,7 @@ export const articleStoimostTelegramBota: Article = {
         { anchor: "Telegram бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Какие задачи решают боты" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл создания бота" },
         { anchor: "Telegram бот для интернет-магазина", url: "/blog/telegram-bot-dlya-internet-magazina", context: "Как создать магазин в Telegram" },
-        { anchor: "Telegram бот для записи клиентов", url: "/blog/telegram-bot-dlya-zapisi-klientov", context: "Автоматизация записи" },
+        { anchor: "Telegram бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Автоматизация записи" },
         { anchor: "заказать Telegram-бота", url: "/blog/zakazat-telegram-bota", context: "Полное руководство по заказу бота" },
     ],
 };

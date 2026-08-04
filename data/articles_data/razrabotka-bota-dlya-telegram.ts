@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema } from './types';
+﻿import { Article, makeArticleSchema } from './types';
 import { razrabotkaBotaDlyaTelegramPart1 } from './texts/razrabotka-bota-dlya-telegram-part1';
 import { razrabotkaBotaDlyaTelegramPart2 } from './texts/razrabotka-bota-dlya-telegram-part2';
 
@@ -93,10 +93,10 @@ export const articleRazrabotkaBDlyaTelegram: Article = {
 
     internalLinks: [
         { anchor: "заказать разработку Telegram-бота", url: "/razrabotka-botov", context: "Получите точную смету бесплатно" },
-        { anchor: "стоимость разработки бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор цен" },
-        { anchor: "разработка ботов под ключ", url: "/blog/razrabotka-pod-klyuch", context: "Полный цикл разработки" },
-        { anchor: "разработка бота с нуля", url: "/blog/razrabotka-s-nulya", context: "Если нет ничего" },
-        { anchor: "Telegram-бот для бизнеса", url: "/blog/bot-dlya-biznesa", context: "Какие задачи решают боты" },
+        { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен" },
+        { anchor: "разработка ботов под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл разработки" },
+        { anchor: "разработка бота с нуля", url: "/blog/razrabotka-telegram-bota-s-nulya", context: "Если нет ничего" },
+        { anchor: "Telegram-бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Какие задачи решают боты" },
         { anchor: "как Telegram-бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "Реальные кейсы с цифрами" },
     ],
 };
