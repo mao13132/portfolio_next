@@ -12,6 +12,7 @@ import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
 import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
+import { CollapsibleLinks } from '@/app/Components/CollapsibleLinks/CollapsibleLinks';
 import { PortfolioPopup } from '@/app/Components/Landing/PortfolioPopup';
 import { useActiveToc } from './useActiveToc';
 import styles from './Article.module.css';
@@ -857,11 +858,13 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
                             </div>
                             <div>
                                 <h4>Блог</h4>
-                                {articles.map((a) => (
-                                    <a key={a.slug} href={`/blog/${a.slug}`}>
-                                        {a.h1.split(':')[0]}
-                                    </a>
-                                ))}
+                                <CollapsibleLinks maxVisible={6}>
+                                    {articles.map((a) => (
+                                        <a key={a.slug} href={`/blog/${a.slug}`}>
+                                            {a.h1.split(':')[0]}
+                                        </a>
+                                    ))}
+                                </CollapsibleLinks>
                             </div>
                             <div>
                                 <h4>Связаться</h4>

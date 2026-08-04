@@ -73,7 +73,19 @@ export const getStaticProps: GetStaticProps<ICategoryPage> = async ({ params }: 
 
         const works_reponse =  await axios.post(API.works.get_by_category_id, {id_category: current_category.id});
 
-        const works = works_reponse.data;
+        // Обрезаем тяжёлые поля — на странице категории нужны только карточки
+        const works = (works_reponse.data as IWorks[]).map((w: IWorks) => ({
+            id: w.id,
+            title: w.title || '',
+            short_text: w.short_text || '',
+            image: w.image || '',
+            slug: w.slug || '',
+            icon: w.icon || '',
+            sort_id: w.sort_id ?? 0,
+            text: '',
+            descriptions: '',
+            video: '',
+        }));
 
         return {
             props: {
