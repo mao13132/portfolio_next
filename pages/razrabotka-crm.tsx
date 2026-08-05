@@ -35,6 +35,7 @@ const NAV_LINKS = [
     { href: '#process', label: 'Как работаем' },
     { href: '#portfolio', label: 'Портфолио' },
     { href: '#faq', label: 'FAQ' },
+    { href: '/kalkulyator-stoimosti', label: 'Калькулятор' },
 ];
 
 /* ── JSON-LD ── */

@@ -593,6 +593,7 @@ export default function RazrabotkaBotovPage() {
                         <a href="#process" onClick={() => setMobileMenu(false)}>Как работаем</a>
                         <a href="#portfolio" onClick={() => setMobileMenu(false)}>Портфолио</a>
                         <a href="#faq" onClick={() => setMobileMenu(false)}>FAQ</a>
+                        <a href="/kalkulyator-stoimosti" onClick={() => setMobileMenu(false)}>Калькулятор</a>
                     </nav>
 
                     <a href="tel:+79648325336" className={styles.headerPhone}>

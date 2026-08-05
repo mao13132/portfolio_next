@@ -32,6 +32,7 @@ const NAV_LINKS = [
     { href: '#offers', label: 'Пакеты' },
     { href: '#process', label: 'Как работаем' },
     { href: '#faq', label: 'FAQ' },
+    { href: '/kalkulyator-stoimosti', label: 'Калькулятор' },
 ];
 
 const ARTICLES = [

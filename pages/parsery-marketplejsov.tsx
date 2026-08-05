@@ -562,6 +562,7 @@ export default function ParseryMarketplejsovPage() {
                         <a href="#portfolio" onClick={() => setMobileMenu(false)}>Кейсы</a>
                         <a href="#pricing" onClick={() => setMobileMenu(false)}>Стоимость</a>
                         <a href="#faq" onClick={() => setMobileMenu(false)}>FAQ</a>
+                        <a href="/kalkulyator-stoimosti" onClick={() => setMobileMenu(false)}>Калькулятор</a>
                     </nav>
 
                     <a href="tel:+79648325336" className={styles.headerPhone}>

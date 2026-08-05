@@ -36,7 +36,7 @@ export const botCalculator: CalculatorConfig = {
     tiers: [
         { id: 'basic', label: 'Базовый', description: 'Меню, FAQ, квиз, заявка в Telegram', basePrice: 7000, minDays: 3, maxDays: 5, icon: '🤖' },
         { id: 'medium', label: 'Средний', description: '+ запись, напоминания, валидация', basePrice: 15000, minDays: 7, maxDays: 10, icon: '⚡' },
-        { id: 'complex', label: 'Сложной', description: '+ CRM, AI, аналитика, админка', basePrice: 40000, minDays: 14, maxDays: 21, icon: '🚀' },
+        { id: 'complex', label: 'Сложный', description: '+ CRM, AI, аналитика, админка', basePrice: 40000, minDays: 14, maxDays: 21, icon: '🚀' },
     ],
     options: [
         { id: 'payment', label: 'Оплата (ЮKassa/СБП)', description: 'Приём платежей прямо в боте', price: 5000, icon: '💳' },
@@ -79,7 +79,7 @@ export const parserCalculator: CalculatorConfig = {
     tiers: [
         { id: 'basic', label: 'Простой', description: '1 источник, CSV/Excel', basePrice: 10000, minDays: 3, maxDays: 5, icon: '📊' },
         { id: 'medium', label: 'Средний', description: 'Несколько источников, БД, расписание', basePrice: 20000, minDays: 7, maxDays: 10, icon: '⚡' },
-        { id: 'complex', label: 'Сложной', description: 'API, аналитика, дашборд, repricer', basePrice: 35000, minDays: 14, maxDays: 21, icon: '🚀' },
+        { id: 'complex', label: 'Сложный', description: 'API, аналитика, дашборд, repricer', basePrice: 35000, minDays: 14, maxDays: 21, icon: '🚀' },
     ],
     options: [
         { id: 'bot', label: 'Telegram-бот для отчётов', description: 'Автоматические отчёты в TG', price: 5000, icon: '🤖' },

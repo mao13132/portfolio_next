@@ -1,9 +1,10 @@
 // check-sitemap.js
-// Сравнивает slug'и из PLAN_SEO/sitemap.xml с зарегистрированными статьями
-// в data/articles_data
+// Сравнивает slug'и из онлайн sitemap (https://dima-razrab.com/sitemap.xml)
+// с зарегистрированными статьями в data/articles_data
 // Запуск: node check-sitemap.js
 
 const fs = require('fs');
+const https = require('https');
 const path = require('path');
 
 // ─── ANSI colors ───
@@ -31,17 +32,40 @@ const CATEGORY_SLUGS = new Set([
   'ai-integracii',
   'razrabotka-api',
   'avtomatizaciya-biznesa',
+  'veb-razrabotka',
+  'mobilnye-prilozheniya',
 ]);
 
-// ─── 1. Читаем sitemap.xml ───
-const sitemapPath = path.join(__dirname, 'PLAN_SEO', 'sitemap.xml');
-let sitemapContent;
-try {
-  sitemapContent = fs.readFileSync(sitemapPath, 'utf-8');
-} catch (e) {
-  console.error(`${C.red}Ошибка чтения sitemap.xml: ${e.message}${C.reset}`);
-  process.exit(1);
+// ─── 1. Получаем sitemap.xml онлайн ───
+const SITEMAP_URL = 'https://dima-razrab.com/sitemap.xml';
+
+function fetchSitemap(url) {
+  return new Promise((resolve, reject) => {
+    console.log(`${C.dim}Загрузка sitemap: ${url}${C.reset}`);
+    https.get(url, (res) => {
+      let data = '';
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => {
+        if (res.statusCode === 200) {
+          resolve(data);
+        } else {
+          reject(new Error(`HTTP ${res.statusCode}`));
+        }
+      });
+    }).on('error', reject);
+  });
 }
+
+async function main() {
+  let sitemapContent;
+  try {
+    sitemapContent = await fetchSitemap(SITEMAP_URL);
+    console.log(`${C.green}✔ Sitemap загружен (${sitemapContent.length} байт)${C.reset}\n`);
+  } catch (e) {
+    console.error(`${C.red}Ошибка загрузки sitemap: ${e.message}${C.reset}`);
+    console.log(`${C.yellow}Попробуйте локальный файл: PLAN_SEO/sitemap.xml${C.reset}`);
+    process.exit(1);
+  }
 
 // Извлекаем все <loc> URL
 const locRegex = /<loc>([^<]+)<\/loc>/g;
@@ -207,3 +231,10 @@ if (missingInSitemap.length === 0 && missingInRegistry.length === 0) {
   }
 }
 console.log(`${C.bold}${C.cyan}${line}${C.reset}\n`);
+
+} // end main
+
+main().catch(err => {
+  console.error(`${C.red}Критическая ошибка: ${err.message}${C.reset}`);
+  process.exit(1);
+});
