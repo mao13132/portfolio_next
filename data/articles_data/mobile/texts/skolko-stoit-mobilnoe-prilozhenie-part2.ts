@@ -139,7 +139,7 @@ export const skolkoStoitMobilnoePart2: ArticleSection[] = [
 4. Снижение рисков (не вкладывать всё сразу)
 5. Точное понимание, какие функции нужны пользователям
 
-О [разработке под ключ](/blog/razrabotka-pod-klyuch) и [автоматизации бизнеса](/blog/avtomatizaciya-malogo-biznesa).`,
+О [разработке под ключ](/blog/razrabotka-sajta-pod-klyuch-veb) и [автоматизации бизнеса](/blog/avtomatizaciya-malogo-biznesa).`,
     },
     {
         id: "roi",

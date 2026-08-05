@@ -209,7 +209,7 @@ export const razrabotkaMobilnihPart1: ArticleSection[] = [
 | Тестирование | 2-4 нед. | 50 000-150 000 ₽ | Стабильная работа |
 | Публикация | 1-2 нед. | 20 000-50 000 ₽ | В магазинах приложений |
 
-О [создании сервисов](/razrabotka-servisov) и [разработке под ключ](/blog/razrabotka-pod-klyuch).
+О [создании сервисов](/razrabotka-servisov) и [разработке под ключ](/blog/razrabotka-sajta-pod-klyuch-veb).
 
 > 🔧 **Не хотите разбираться в мобильной разработке?** Доверьте создание приложения профессионалу — [напишите мне](/razrabotka-servisov).`,
     },

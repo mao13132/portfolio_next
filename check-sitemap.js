@@ -112,6 +112,33 @@ async function main() {
     sitemapUrls.add(match[1]);
   }
 
+  // 2.5. Загружаем slug'и из domain файлов (парсим, т.к. TypeScript нельзя require)
+  const registrySlugs = new Set();
+  const slugRegex = /slug:\s*["']([^"']+)["']/g;
+  const articlesDir = path.join(__dirname, 'data', 'articles_data');
+  
+  function scanForSlugs(dir) {
+    try {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      for (const entry of entries) {
+        const fullPath = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+          scanForSlugs(fullPath);
+        } else if (entry.isFile() && entry.name.endsWith('.ts') && entry.name !== 'registry.ts' && entry.name !== 'types.ts' && !entry.name.includes('-part')) {
+          const content = fs.readFileSync(fullPath, 'utf-8');
+          let m;
+          slugRegex.lastIndex = 0;
+          while ((m = slugRegex.exec(content)) !== null) {
+            registrySlugs.add(m[1]);
+          }
+        }
+      }
+    } catch (e) { /* игнорируем ошибки */ }
+  }
+  
+  scanForSlugs(articlesDir);
+  console.log(`${C.dim}Найдено ${registrySlugs.size} slug'ов в domain файлах${C.reset}`);
+
   // 3. Сканируем pages/ директорию
   const pagesDir = path.join(__dirname, 'pages');
   const localRoutes = scanPages(pagesDir);
@@ -140,13 +167,18 @@ async function main() {
 
   for (const url of sitemapUrls) {
     if (!localUrls.has(url)) {
-      // Проверяем — может это blog статья (dynamic [slug])
-      if (url.includes('/blog/') && !url.includes('/blog/') === false) {
-        // Blog статьи — проверяем через registry
-        missingInPages.push({ url, note: 'blog статья — проверить в registry' });
-      } else if (url.includes('/work/') || url.includes('/category/')) {
-        // Динамические страницы — нормально
+      if (url.includes('/work/') || url.includes('/category/')) {
+        // Динамические страницы — пропускаем
         continue;
+      } else if (url.includes('/blog/')) {
+        // Blog статьи — проверяем через registry
+        const slug = url.replace(`${siteUrl}/blog/`, '');
+        if (registrySlugs.has(slug)) {
+          // Статья есть в registry — OK (рендерится через [slug].tsx)
+          ok.push({ url, filePath: `dynamic [slug].tsx → ${slug}` });
+        } else {
+          missingInPages.push({ url, note: 'blog статья — НЕТ в registry!' });
+        }
       } else {
         missingInPages.push({ url, note: 'нет в pages/' });
       }
