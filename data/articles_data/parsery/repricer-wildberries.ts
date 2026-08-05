@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleRepricerWildberries: Article = {
     slug: "repricer-wildberries",
-    title: "Repricer для Wildberries: автоматическое изменение цен | DimaRazrab",
-    metaDescription: "Repricer для Wildberries: автоматическое ценообразование, мониторинг конкурентов. Реальные кейсы с ROI 380-420%. Разработка от 50 000 ₽. Консультация →",
+    title: "Мониторинг цен конкурентов: всё что нужно знать о разработке",
+    metaDescription: "Мониторинг цен конкурентов от 10 000 ₽. Сбор данных с маркетплейсов, мониторинг цен конкурентов, аналитика продаж, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "repricer wildberries, автоматическое изменение цен, ценообразование wildberries, мониторинг цен конкурентов, repricer для маркетплейсов",
     h1: "Repricer для Wildberries: полное руководство",
     ogTitle: "Repricer для Wildberries — автоматическое ценообразование с ROI 380%",

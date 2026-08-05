@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleBotDlyaBiznesa: Article = {
     slug: "telegram-bot-dlya-biznesa",
-    title: "Telegram бот для бизнеса: возможности и примеры 2026 | DimaRazrab",
-    metaDescription: "Telegram бот для бизнеса: автоматизация продаж, поддержки, маркетинга. Реальные примеры по отраслям. Руководство по внедрению и расчёт ROI.",
+    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
+    metaDescription: "Разработка бота для Telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "бот для бизнеса в telegram, telegram бот для бизнеса, чат бот для бизнеса, бот telegram бизнес, автоматизация бизнеса telegram, бот для малого бизнеса, telegram бот возможности",
     h1: "Telegram бот для бизнеса: полное руководство по возможностям и примерам",
     ogTitle: "Telegram бот для бизнеса — возможности и примеры",
@@ -66,7 +66,7 @@ export const articleBotDlyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать бизнес с помощью Telegram-бота?",
+    ctaTitle: "Хотите бота для бизнеса от 7 000 ₽ — срок от 3 дней?",
     ctaSubtitle: "Бесплатная консультация — покажу, как бот увеличит ваши продажи и сократит расходы",
     ctaSource: "article-biznes-cta",
 

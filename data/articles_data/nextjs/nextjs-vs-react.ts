@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleNextjsVsReact: Article = {
     slug: "nextjs-vs-react",
-    title: "Next.js vs React: когда и что использовать | DimaRazrab",
-    metaDescription: "Next.js vs React: сравнение производительности, SEO, стоимости. Реальные кейсы миграции с ROI 480-520%. Консультация бесплатно →",
+    title: "Next js и figma разработке code сайта: что лучше выбрать в 2026",
+    metaDescription: "Сравнение: next js и figma разработке code сайта от 80 000 ₽. SSR, SSG, высокая производительность и встроенная SEO-оптимизация. Бесплатная оценка за 24 часа →",
     keywords: "next.js vs react, next.js или react, что лучше next.js react, сравнение next.js react, миграция react на next.js, react vs nextjs",
     h1: "Next.js vs React: когда и что использовать",
     ogTitle: "Next.js vs React — полное сравнение с кейсами | DimaRazrab",

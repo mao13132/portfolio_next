@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleChatgptDlyaBiznesa: Article = {
     slug: "chatgpt-dlya-biznesa",
-    title: "ChatGPT для бизнеса: 10 способов применения с реальными кейсами | DimaRazrab",
-    metaDescription: "ChatGPT для бизнеса: 10 способов применения с кейсами ROI 400-520%. Автоматизация контента, поддержки, продаж. Внедрение от 30 000 ₽. Консультация →",
+    title: "Интеграция ChatGPT: стоимость, этапы и реальные кейсы",
+    metaDescription: "Интеграция ChatGPT от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация контента и поддержки клиентов, от 7 дней. Бесплатная оценка за 24 часа →",
     keywords: "chatgpt для бизнеса, chatgpt бизнес, как использовать chatgpt, chatgpt автоматизация, внедрение chatgpt, chatgpt api бизнес",
     h1: "ChatGPT для бизнеса: 10 способов применения с реальными кейсами",
     ogTitle: "ChatGPT для бизнеса — 10 способов применения с ROI 400-520%",

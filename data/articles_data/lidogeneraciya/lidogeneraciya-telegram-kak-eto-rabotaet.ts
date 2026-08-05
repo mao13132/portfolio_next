@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleLidogeneraciyaTelegramKakEtoRabotaet: Article = {
     slug: "lidogeneraciya-telegram-kak-eto-rabotaet",
-    title: "Лидогенерация в Telegram: как работает автоматический поиск лидов | DimaRazrab",
-    metaDescription: "Лидогенерация в Telegram: как работает автоматический поиск лидов. Этапы, технологии, реальные кейсы с ROI 300-500%. От 30 000 ₽.",
+    title: "Автоматический поиск клиентов: полное руководство — кейсы",
+    metaDescription: "Автоматический поиск клиентов от 30 000 ₽. Автоматический поиск клиентов в Telegram, парсинг каналов и рассылки, от 5 дней. Бесплатная оценка за 24 часа →",
     keywords: "лидогенерация telegram, как работает лидогенерация, поиск лидов telegram, автоматический поиск клиентов, лидогенерация как работает",
     h1: "Лидогенерация в Telegram: как работает автоматический поиск",
     ogTitle: "Лидогенерация в Telegram — как работает автоматический поиск лидов",

@@ -129,16 +129,33 @@ function extractSlug(content) {
 }
 
 /**
- * Извлекает title из domain-файла
+ * Извлекает title из domain-файла.
+ * Ищет title ПОСЛЕ slug, чтобы не захватить section title из inline sections.
  */
 function extractTitle(content) {
+    // Сначала ищем позицию slug
+    const slugPos = content.search(/slug\s*:\s*["'`]/);
+    if (slugPos === -1) return extractString(content, 'title');
+    
+    // Ищем title после slug
+    const afterSlug = content.substring(slugPos);
+    const match = afterSlug.match(/title\s*:\s*"([^"]*)"/);
+    if (match) return match[1];
+    
+    // Fallback
     return extractString(content, 'title');
 }
 
 /**
- * Извлекает metaDescription
+ * Извлекает metaDescription.
+ * Ищет ПОСЛЕ slug, чтобы не захватить из inline sections.
  */
 function extractMetaDescription(content) {
+    const slugPos = content.search(/slug\s*:\s*["'`]/);
+    if (slugPos === -1) return extractString(content, 'metaDescription');
+    const afterSlug = content.substring(slugPos);
+    const match = afterSlug.match(/metaDescription\s*:\s*"([^"]*)"/);
+    if (match) return match[1];
     return extractString(content, 'metaDescription');
 }
 

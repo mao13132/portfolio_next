@@ -255,8 +255,8 @@ const sections: ArticleSection[] = [
 
 export const articleKrossplatformennayaRazrabotka: Article = {
     slug: "krossplatformennaya-razrabotka-prilozhenij",
-    title: "Кроссплатформенная разработка приложений: Flutter, React Native | DimaRazrab",
-    metaDescription: "Кроссплатформенная разработка на Flutter и React Native. iOS + Android от 300 000 ₽. Экономия 30-50%. Кейсы. Оценка бесплатно →",
+    title: "Технологии разработки мобильного приложения: цена от 50 000 ₽, от 30",
+    metaDescription: "Разработка технологии разработки мобильного приложения от 50 000 ₽. iOS и Android, кроссплатформенная разработка на Flutter и. Бесплатная оценка за 24 часа →",
     keywords: "разработка мобильных приложений flutter, разработка кроссплатформенного мобильного приложения, технологии разработки мобильного приложения, flutter разработка, react native разработка",
     h1: "Кроссплатформенная разработка приложений: Flutter vs React Native — полное руководство",
     ogTitle: "Кроссплатформенная разработка приложений — Flutter vs React Native",

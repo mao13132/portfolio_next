@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleKorporativnyjTelegramBot: Article = {
     slug: "korporativnyj-telegram-bot",
-    title: "Корпоративный Telegram бот: внутренние процессы и коммуникация | DimaRazrab",
-    metaDescription: "Корпоративный Telegram бот: отчёты, задачи, согласования, HR-процессы. Автоматизация внутренних процессов компании. Примеры и кейсы →",
+    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
+    metaDescription: "Разработка бота для Telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "корпоративный telegram бот, корпоративный бот telegram, внутренний telegram бот, бот для компании telegram, корпоративный чат бот, telegram бот для сотрудников",
     h1: "Корпоративный Telegram бот: внутренние процессы и коммуникация",
     ogTitle: "Корпоративный Telegram бот — автоматизация внутренних процессов",

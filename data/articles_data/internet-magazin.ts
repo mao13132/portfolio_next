@@ -5,8 +5,8 @@ import { internetMagazinPart2 } from './texts/internet-magazin-part2';
 
 export const articleInternetMagazin: Article = {
     slug: "telegram-bot-dlya-internet-magazina",
-    title: "Telegram бот для интернет-магазина — каталог, заказы, оплата | DimaRazrab",
-    metaDescription: "Telegram-бот как интернет-магазин: каталог товаров, корзина, оплата, доставка, уведомления. Полное руководство по созданию магазина в Telegram.",
+    title: "Telegram боты на заказ: стоимость, этапы и реальные кейсы",
+    metaDescription: "Telegram боты на заказ от 50 000 ₽. Каталог товаров, корзина, оплата, интеграция с 1С и складом, от 14 дней разработки. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для интернет магазина, магазин в telegram, бот магазин telegram, создать магазин в telegram, telegram бот каталог товаров, бот для продаж в telegram, интернет магазин в телеграм",
     h1: "Telegram бот для интернет-магазина: полный гайд по созданию магазина в мессенджере",
     ogTitle: "Telegram бот для интернет-магазина — магазин в Telegram",

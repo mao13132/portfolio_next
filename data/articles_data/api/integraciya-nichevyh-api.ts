@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleIntegraciyaNichevyhApi: Article = {
     slug: "integraciya-nichevyh-api",
-    title: "Интеграция нишевых API: банки, Контур, Честный знак, WhatsApp | DimaRazrab",
-    metaDescription: "Интеграция нишевых API от 15 000 ₽. Банковские API, Контур, Честный знак, WhatsApp Business. Автоматизация бизнес-процессов. Оценка бесплатно →",
+    title: "Честный знак интеграция API: заказать от 15 000 ₽, от 5 дней",
+    metaDescription: "Интеграция честный знак интеграция api от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в реальном. Бесплатная оценка за 24 часа →",
     keywords: "банк интеграция api, интеграция api контур, честный знак интеграция api, whatsapp api интеграция, tilda api интеграция, api заказать, api разработать приложение, разработать api, разработать api сервиса",
     h1: "Интеграция нишевых API: банки, Контур, Честный знак, WhatsApp",
     ogTitle: "Интеграция нишевых API — банки, Контур, Честный знак, WhatsApp",

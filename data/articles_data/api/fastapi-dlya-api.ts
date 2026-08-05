@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleFastapiDlyaApi: Article = {
     slug: "fastapi-dlya-api",
-    title: "FastAPI для разработки API: почему и как | DimaRazrab",
-    metaDescription: "FastAPI для разработки API: высокая производительность, автодокументация, асинхронность. Реальные кейсы с ROI 420-680%. От 50 000 ₽.",
+    title: "API как искусство разработка поддержка интеграция: полное руководство",
+    metaDescription: "Api как искусство разработка поддержка интеграция от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в. Бесплатная оценка за 24 часа →",
     keywords: "fastapi для api, разработка на fastapi, fastapi python, fastapi tutorial, fastapi api, создать api на fastapi",
     h1: "FastAPI для разработки API: полное руководство",
     ogTitle: "FastAPI для разработки API — высокопроизводительные API с ROI 680%",

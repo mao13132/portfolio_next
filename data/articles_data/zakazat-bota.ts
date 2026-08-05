@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleZakazatBota: Article = {
     slug: "zakazat-telegram-bota",
-    title: "Заказать Telegram бота — как выбрать разработчика и не переплатить 2026 | DimaRazrab",
-    metaDescription: "Заказать Telegram бота: как выбрать разработчика, сколько стоит, что спрашивать, как не попасть на мошенников. Чек-лист и советы от разработчика.",
+    title: "Telegram боты на заказ: разработка от 7 000 ₽, от 3 дней",
+    metaDescription: "Заказать telegram боты на заказ от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
     keywords: "заказать telegram бота, заказать бота telegram, заказать бота цена, заказать создание telegram бота, купить telegram бота, заказать чат бота telegram, разработка бота на заказ",
     h1: "Заказать Telegram бота: полное руководство по выбору разработчика",
     ogTitle: "Заказать Telegram бота — как выбрать и не переплатить",
@@ -69,7 +69,7 @@ export const articleZakazatBota: Article = {
         },
     ],
 
-    ctaTitle: "Готовы заказать Telegram-бота для вашего бизнеса?",
+    ctaTitle: "Хотите заказать Telegram-бота от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём вашу задачу и подготовим коммерческое предложение",
     ctaSource: "article-zakazat-cta",
 

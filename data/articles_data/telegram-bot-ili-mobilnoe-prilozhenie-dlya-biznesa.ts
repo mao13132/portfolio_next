@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramBotIliPrilozhenieDlyaBiznesa: Article = {
     slug: "telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa",
-    title: "Telegram бот или мобильное приложение: что выбрать для бизнеса | DimaRazrab",
-    metaDescription: "Telegram бот vs мобильное приложение: сравнение стоимости, сроков, функциональности. Что лучше для малого бизнеса. Реальные примеры.",
+    title: "Разработка бота для Telegram: что лучше выбрать в 2026",
+    metaDescription: "Разработка бота для Telegram от 50 000 ₽. iOS и Android, кроссплатформенная разработка на Flutter и React Native, от 30 дней. Бесплатная оценка за 24 часа →",
     keywords: "telegram webapp, mini apps telegram бот, telegram бот или приложение, бот или мобильное приложение для бизнеса, telegram mini apps, заказать бота или приложение",
     h1: "Telegram бот или мобильное приложение: что выбрать для бизнеса в 2026 году",
     ogTitle: "Telegram бот или мобильное приложение — что выбрать для бизнеса",

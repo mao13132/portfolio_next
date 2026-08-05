@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramWebApp: Article = {
     slug: "telegram-webapp-razrabotka",
-    title: "Telegram WebApp разработка — полное руководство 2026 | DimaRazrab",
-    metaDescription: "Telegram WebApp разработка: что это, когда нужен, сколько стоит. Пошаговое руководство по созданию WebApp в Telegram-боте. Примеры, кейсы, стоимость.",
+    title: "Telegram бот для онлайн записи клиентов: полное руководство — кейсы",
+    metaDescription: "Разработка telegram бот для онлайн записи клиентов от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7,. Бесплатная оценка за 24 часа →",
     keywords: "telegram webapp разработка, telegram web app, webapp telegram бот, создание webapp telegram, mini app telegram, telegram mini apps, разработка webapp для telegram",
     h1: "Telegram WebApp разработка: полное руководство по созданию Mini App",
     ogTitle: "Telegram WebApp разработка — создание Mini App в Telegram",

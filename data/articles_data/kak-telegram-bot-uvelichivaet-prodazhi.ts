@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleKakTelegramBotUvelichivaetProdazhi: Article = {
     slug: "kak-telegram-bot-uvelichivaet-prodazhi",
-    title: "Как Telegram бот увеличивает продажи: кейсы и примеры | DimaRazrab",
-    metaDescription: "Реальные примеры как Telegram бот увеличивает продажи на 380-500%. Кейсы из портфолио. ROI, цифры, результаты. Заказать бота.",
+    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
+    metaDescription: "Разработка бота для Telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "telegram бизнес бот, telegram бот клиенты, бот для бизнеса в telegram, как бот увеличивает продажи, telegram бот продажи, автоматизация продаж telegram",
     h1: "Как Telegram бот увеличивает продажи: 4 реальных кейса с цифрами",
     ogTitle: "Как Telegram бот увеличивает продажи — реальные кейсы",

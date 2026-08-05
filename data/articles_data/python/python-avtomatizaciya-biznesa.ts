@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articlePythonAvtomatizaciyaBiznesa: Article = {
     slug: "python-avtomatizaciya-biznesa",
-    title: "Python для автоматизации бизнеса: скрипты и инструменты | DimaRazrab",
-    metaDescription: "Python для автоматизации бизнеса: скрипты, парсинг, интеграции. Кейсы с ROI 280-520%. Экономия 6-16 часов/день. Бесплатная консультация.",
+    title: "Фриланс для программистов на Python: полное руководство — кейсы",
+    metaDescription: "Фриланс для программистов на python от 30 000 ₽. Backend, API, парсеры, автоматизация бизнес-процессов и обработка данных. Бесплатная оценка за 24 часа →",
     keywords: "python автоматизация бизнеса, python скрипты для бизнеса, автоматизация на python, python бизнес процессы",
     h1: "Python для автоматизации бизнеса: скрипты и инструменты",
     ogTitle: "Python для автоматизации бизнеса — кейсы с ROI 280-520%",

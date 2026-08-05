@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articlePythonParsingNaZakaz: Article = {
     slug: "python-parsing-na-zakaz",
-    title: "Python-парсинг на заказ: сбор данных с любых сайтов | DimaRazrab",
-    metaDescription: "Python-парсинг на заказ: сбор данных, мониторинг цен, обход защиты. Кейсы с ROI 280-320%. От 15 000₽. Бесплатная консультация.",
+    title: "Заказы для программистов Python: полное руководство — кейсы",
+    metaDescription: "Заказы для программистов python от 30 000 ₽. Backend, API, парсеры, автоматизация бизнес-процессов и обработка данных, от 5. Бесплатная оценка за 24 часа →",
     keywords: "python парсинг на заказ, заказать парсер python, сбор данных python, парсинг сайтов python",
     h1: "Python-парсинг на заказ: сбор данных с любых сайтов",
     ogTitle: "Python-парсинг на заказ — сбор данных с ROI 280-320%",

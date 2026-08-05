@@ -5,8 +5,8 @@ import { razrabotkaPodKlyuchPart2 } from './texts/razrabotka-pod-klyuch-part2';
 
 export const articleRazrabotkaPodKlyuch: Article = {
     slug: "razrabotka-telegram-bota-pod-klyuch",
-    title: "Разработка Telegram бота под ключ — от идеи до запуска | DimaRazrab",
-    metaDescription: "Разработка Telegram бота под ключ: анализ, проектирование, разработка, тестирование, запуск, поддержка. Полный цикл. Гарантия результата.",
+    title: "Разработка ботов Telegram Python: цена от 7 000 ₽, от 3 дней",
+    metaDescription: "Разработка ботов Telegram Python от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
     keywords: "разработка ботов под ключ, telegram бот под ключ, создание бота под ключ, заказать telegram бота под ключ, разработка telegram бота на заказ, бот под ключ цена",
     h1: "Разработка Telegram бота под ключ: от идеи до работающего продукта",
     ogTitle: "Разработка Telegram бота под ключ — полный цикл",
@@ -63,7 +63,7 @@ export const articleRazrabotkaPodKlyuch: Article = {
         },
     ],
 
-    ctaTitle: "Готовы заказать бота под ключ?",
+    ctaTitle: "Хотите бота под ключ от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — обсудим вашу задачу и я рассчитаю сроки и стоимость",
     ctaSource: "article-turnkey-cta",
 

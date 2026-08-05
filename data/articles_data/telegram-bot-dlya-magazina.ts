@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramBotDlyaMagazina: Article = {
     slug: "telegram-bot-dlya-magazina",
-    title: "Telegram бот для магазина: приём заказов и продажи | DimaRazrab",
-    metaDescription: "Telegram бот для интернет-магазина: приём заказов, каталог товаров, оплата, уведомления. Заказать бота для магазина от 30 000 ₽.",
+    title: "Telegram боты на заказ: стоимость, этапы и реальные кейсы",
+    metaDescription: "Telegram боты на заказ от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот магазин, бот каталог telegram, telegram бот приём заказов, бот для интернет магазина telegram, магазин в telegram, создать магазин в телеграм",
     h1: "Telegram бот для магазина: как принимать заказы и продавать прямо в мессенджере",
     ogTitle: "Telegram бот для магазина — приём заказов и продажи",

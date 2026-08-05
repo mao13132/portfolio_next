@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleParserTelegramKanalov: Article = {
     slug: "parser-telegram-kanalov",
-    title: "Парсер Telegram-каналов: сбор участников и контактов | DimaRazrab",
-    metaDescription: "Парсер Telegram-каналов: сбор участников, контактов, сообщений. Реальные кейсы с ROI 500-780%. Разработка от 50 000 ₽. Консультация →",
+    title: "Парсер Telegram аудитории: стоимость, этапы и реальные кейсы",
+    metaDescription: "Парсер telegram аудитории от 10 000 ₽. Сбор данных с маркетплейсов, мониторинг цен конкурентов, аналитика продаж, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "парсер telegram каналов, сбор участников telegram, парсинг telegram, сбор контактов telegram, парсер телеграм",
     h1: "Парсер Telegram-каналов: полное руководство",
     ogTitle: "Парсер Telegram-каналов — сбор участников и контактов с ROI 780%",

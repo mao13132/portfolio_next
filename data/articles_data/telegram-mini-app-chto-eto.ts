@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramMiniAppChtoEto: Article = {
     slug: "telegram-mini-app-chto-eto",
-    title: "Telegram Mini App: что это и когда нужно бизнесу | DimaRazrab",
-    metaDescription: "Telegram Mini App — веб-приложение внутри Telegram. Когда нужно, сколько стоит, примеры. Разработка Mini App от 50 000 ₽.",
+    title: "Разработка Telegram mini apps: полное руководство — кейсы",
+    metaDescription: "Разработка Telegram mini apps от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3. Бесплатная оценка за 24 часа →",
     keywords: "telegram mini app, mini apps telegram бот, telegram webapp разработка, веб-приложение telegram, mini app разработка, telegram web app бизнес",
     h1: "Telegram Mini App: что это, когда нужно бизнесу и сколько стоит",
     ogTitle: "Telegram Mini App — веб-приложение внутри Telegram для бизнеса",

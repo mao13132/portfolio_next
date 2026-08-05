@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleSborBazyKlientovTelegram: Article = {
     slug: "sbor-bazy-klientov-telegram",
-    title: "Как собрать базу клиентов в Telegram | DimaRazrab",
-    metaDescription: "Сбор базы клиентов в Telegram: автоматический парсинг каналов, ML-фильтрация, экспорт в CRM. Реальные кейсы с ROI 500-780%. От 30 000 ₽.",
+    title: "Сайты на заказ ростов на дону: полное руководство — кейсы",
+    metaDescription: "Сайты на заказ ростов на дону от 30 000 ₽. Автоматический поиск клиентов в Telegram, парсинг каналов и рассылки, от 5 дней. Бесплатная оценка за 24 часа →",
     keywords: "сбор базы клиентов telegram, база клиентов telegram, парсинг каналов telegram, сбор контактов telegram, база данных telegram",
     h1: "Как собрать базу клиентов в Telegram: пошаговое руководство",
     ogTitle: "Сбор базы клиентов в Telegram — автоматический парсинг с ROI 780%",

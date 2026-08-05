@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramBotRassylka: Article = {
     slug: "telegram-bot-rassylka",
-    title: "Telegram бот рассылка: настройка автоматических сообщений | DimaRazrab",
-    metaDescription: "Telegram бот рассылка: виды рассылок, настройка, сегментация, как не попасть под бан. Реальные кейсы с ROI 380-450%. Заказать.",
+    title: "Создание и настройка Telegram каналов и ботов: полное руководство —",
+    metaDescription: "Создание и настройка Telegram каналов и ботов от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7,. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот рассылка, рассылка telegram бот, автоматическая рассылка telegram, бот рассылка сообщений, массовая рассылка telegram, настройка рассылки telegram бот",
     h1: "Telegram бот рассылка: настройка автоматических сообщений для бизнеса",
     ogTitle: "Telegram бот рассылка — полное руководство",

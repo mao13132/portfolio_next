@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleAiBotDlyaVedeniyaTelegramKanala: Article = {
     slug: "ai-bot-dlya-vedeniya-telegram-kanala",
-    title: "AI-бот для ведения Telegram-канала: автопостинг и модерация | DimaRazrab",
-    metaDescription: "AI-бот для Telegram-канала: генерация контента, автопостинг, модерация комментариев, ответы на вопросы. Автоматизация ведения канала с помощью ИИ →",
+    title: "Ии бот для ведения Telegram канала: полное руководство — кейсы",
+    metaDescription: "Ии бот для ведения telegram канала от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация контента и поддержки клиентов. Бесплатная оценка за 24 часа →",
     keywords: "ии бот для ведения telegram канала, ai бот telegram канал, автопостинг telegram, ai генерация контента telegram, модерация комментариев telegram, автоматизация telegram канала",
     h1: "AI-бот для ведения Telegram-канала: автопостинг и модерация",
     ogTitle: "AI-бот для Telegram-канала — автопостинг, модерация, аналитика",
@@ -60,7 +60,7 @@ export const articleAiBotDlyaVedeniyaTelegramKanala: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать ведение Telegram-канала?",
+    ctaTitle: "Хотите AI-бота для канала от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём вашу задачу и подготовим коммерческое предложение",
     ctaSource: "article-ai-channel-cta",
 

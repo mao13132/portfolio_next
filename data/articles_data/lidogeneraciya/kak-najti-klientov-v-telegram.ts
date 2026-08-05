@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleKakNajtiKlientovVTelegram: Article = {
     slug: "kak-najti-klientov-v-telegram",
-    title: "Как найти клиентов в Telegram: полное руководство | DimaRazrab",
-    metaDescription: "Как найти клиентов в Telegram: автоматический поиск лидов, мониторинг чатов, сбор контактов. Реальные кейсы с ROI 500-780%. От 30 000 ₽.",
+    title: "Автоматический поиск клиентов: полное руководство — кейсы",
+    metaDescription: "Автоматический поиск клиентов от 30 000 ₽. Автоматический поиск клиентов в Telegram, парсинг каналов и рассылки, от 5 дней. Бесплатная оценка за 24 часа →",
     keywords: "как найти клиентов в telegram, поиск клиентов telegram, лидогенерация telegram, сбор контактов telegram, мониторинг чатов telegram",
     h1: "Как найти клиентов в Telegram: автоматический поиск лидов",
     ogTitle: "Как найти клиентов в Telegram — автоматический поиск лидов с ROI 500%",

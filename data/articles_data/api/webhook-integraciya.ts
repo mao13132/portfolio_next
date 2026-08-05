@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleWebhookIntegraciya: Article = {
     slug: "webhook-integraciya",
-    title: "Webhook-интеграция: автоматизация событий | DimaRazrab",
-    metaDescription: "Webhook-интеграция: автоматизация событий, мгновенные уведомления, обработка данных. Реальные кейсы с ROI 300-420%. От 30 000 ₽.",
+    title: "Интеграция через API что это: заказать от 15 000 ₽, от 5 дней",
+    metaDescription: "Интеграция через API что это от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в реальном времени. Бесплатная оценка за 24 часа →",
     keywords: "webhook интеграция, webhook что это, настройка webhook, webhook автоматизация, webhook api, webhook обработка",
     h1: "Webhook-интеграция: как настроить автоматизацию",
     ogTitle: "Webhook-интеграция — мгновенная автоматизация событий с ROI 420%",

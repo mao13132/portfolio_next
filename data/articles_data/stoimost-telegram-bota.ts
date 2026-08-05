@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleStoimostTelegramBota: Article = {
     slug: "stoimost-telegram-bota",
-    title: "Стоимость разработки Telegram бота: реальные цены 2026 | DimaRazrab",
-    metaDescription: "Сколько стоит разработка Telegram бота: от простого до сложного. Реальные цены, сроки, факторы стоимости. Заказать бота от 25 000 ₽.",
+    title: "Сколько стоит telegram боты на заказ: реальные цены 2026",
+    metaDescription: "Стоимость: telegram боты на заказ от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот цена, telegram бот стоимость, стоимость разработки telegram бота, сколько стоит telegram бот, заказать telegram бот цена, разработка telegram бота стоимость",
     h1: "Стоимость разработки Telegram бота: реальные цены и что на них влияет",
     ogTitle: "Стоимость разработки Telegram бота — реальные цены 2026",

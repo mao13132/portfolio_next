@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleBotPriyomZakazov: Article = {
     slug: "telegram-bot-dlya-priyoma-zakazov",
-    title: "Telegram бот для приёма заказов — автоматизация продаж 2026 | DimaRazrab",
-    metaDescription: "Telegram бот для приёма заказов: как автоматизировать продажи, увеличить конверсию и не терять клиентов. Пошаговое руководство с примерами и расчётом ROI.",
+    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
+    metaDescription: "Разработка бота для Telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для заказов, бот для приёма заказов, telegram бот заказ товара, автоматизация заказов telegram, бот для продаж telegram, telegram бот оформление заказа, заказать бота для заказов",
     h1: "Telegram бот для приёма заказов: полное руководство по автоматизации продаж",
     ogTitle: "Telegram бот для приёма заказов — автоматизация продаж",
@@ -64,7 +64,7 @@ export const articleBotPriyomZakazov: Article = {
         },
     ],
 
-    ctaTitle: "Готовы принимать заказы через Telegram-бота?",
+    ctaTitle: "Хотите принимать заказы через бота от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — покажу, как бот увеличит количество заказов на 40-70%",
     ctaSource: "article-zakazy-cta",
 

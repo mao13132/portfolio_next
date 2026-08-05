@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleBotObratnojSvyazi: Article = {
     slug: "bot-obratnoj-svyazi-telegram",
-    title: "Telegram бот обратной связи: как настроить сбор отзывов | DimaRazrab",
-    metaDescription: "Telegram бот обратной связи: сбор отзывов, опросы, NPS, жалобы. Как настроить автоматический сбор обратной связи от клиентов. Примеры и кейсы →",
+    title: "Бот обратной связи Telegram: всё что нужно знать о разработке",
+    metaDescription: "Бот обратной связи telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "бот обратной связи telegram, бот для отзывов, сбор отзывов в telegram, nps в telegram боте, опросы в telegram боте, бот для жалоб, обратная связь бот",
     h1: "Telegram бот обратной связи: как настроить сбор отзывов",
     ogTitle: "Telegram бот обратной связи: сбор отзывов и NPS",
@@ -60,7 +60,7 @@ export const articleBotObratnojSvyazi: Article = {
         },
     ],
 
-    ctaTitle: "Хотите настроить сбор отзывов в Telegram?",
+    ctaTitle: "Хотите бота для отзывов от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём вашу задачу и подготовим предложение",
     ctaSource: "article-feedback-cta",
 

@@ -326,8 +326,8 @@ const sections: ArticleSection[] = [
 
 export const articleRazrabotkaPrilozhenijAndroidIos: Article = {
     slug: "razrabotka-prilozhenij-android-ios",
-    title: "Разработка приложений для Android и iOS: нативная vs кроссплатформа | DimaRazrab",
-    metaDescription: "Разработка приложений для Android и iOS. Kotlin, Swift, Flutter, React Native. Нативная vs кроссплатформа. Кейсы. Оценка бесплатно →",
+    title: "Разработка мобильных приложений ios android: цена от 50 000 ₽, от 30",
+    metaDescription: "Разработка мобильных приложений ios android от 50 000 ₽. iOS и Android, кроссплатформенная разработка на Flutter и React Native. Бесплатная оценка за 24 часа →",
     keywords: "android мобильный приложение разработка, разработка мобильный приложений ios, разработка мобильных приложений kotlin, разработка мобильных приложений ios android, нативная разработка приложений",
     h1: "Разработка приложений для Android и iOS: нативная разработка vs кроссплатформа",
     ogTitle: "Разработка приложений для Android и iOS — нативная vs кроссплатформа",

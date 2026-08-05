@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleIntegraciyaApiMarketplejsov: Article = {
     slug: "integraciya-api-marketplejsov",
-    title: "Интеграция API маркетплейсов: Ozon, Wildberries, Avito, Яндекс.Маркет | DimaRazrab",
-    metaDescription: "Интеграция API маркетплейсов от 15 000 ₽. Ozon, WB, Avito, Яндекс.Маркет. Автоматизация заказов, остатков, цен. Реальные кейсы. Оценка бесплатно →",
+    title: "Яндекс маркет интеграция API: заказать от 15 000 ₽, от 5 дней",
+    metaDescription: "Интеграция яндекс маркет интеграция api от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в реальном. Бесплатная оценка за 24 часа →",
     keywords: "интеграция озон api, интеграция маркетплейсов api, ozon интеграция api, wb api интеграция, wildberries api интеграция, api интеграция авито, яндекс маркет интеграция api, api интеграция с wildberries",
     h1: "Интеграция API маркетплейсов: полное руководство по Ozon, Wildberries, Avito",
     ogTitle: "Интеграция API маркетплейсов — Ozon, WB, Avito с ROI 680%",

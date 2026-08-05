@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleAiogramVsPyrogram: Article = {
     slug: "aiogram-vs-pyrogram",
-    title: "Aiogram vs Pyrogram: какой фреймворк выбрать для Telegram бота | DimaRazrab",
-    metaDescription: "Сравнение Aiogram и Pyrogram для разработки Telegram ботов. Плюсы, минусы, примеры кода. Какой фреймворк лучше для бизнеса.",
+    title: "Создание чат-бота Telegram Python: что лучше выбрать в 2026",
+    metaDescription: "Создание чат-бота Telegram Python от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
     keywords: "aiogram, pyrogram, telegram бот python, разработка telegram бота python, создание бота telegram python, фреймворк telegram бот, aiogram vs pyrogram, python telegram bot",
     h1: "Aiogram vs Pyrogram: какой фреймворк выбрать для Telegram бота",
     ogTitle: "Aiogram vs Pyrogram — подробное сравнение фреймворков для Telegram ботов",

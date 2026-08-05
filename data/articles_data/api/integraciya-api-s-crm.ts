@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleIntegraciyaApiSCrm: Article = {
     slug: "integraciya-api-s-crm",
-    title: "Интеграция API с CRM: amoCRM, Битrix24, Яндекс | DimaRazrab",
-    metaDescription: "Интеграция API с CRM от 20 000 ₽. amoCRM, Битrix24, Яндекс.Коннект. Автоматическая передача лидов. Реальные кейсы. Оценка бесплатно →",
+    title: "Яндекс маркет интеграция API: заказать от 80 000 ₽, от 21 дня",
+    metaDescription: "Интеграция яндекс маркет интеграция api от 80 000 ₽. Кастомная CRM для вашего бизнеса, интеграция с 1С, Telegram и amoCRM. Бесплатная оценка за 24 часа →",
     keywords: "интеграция api crm, битрикс интеграция api, api интеграция яндекс, amoCRM api интеграция, интеграция crm api, crm api интеграция",
     h1: "Интеграция API с CRM-системами: amoCRM, Битrix24, Яндекс",
     ogTitle: "Интеграция API с CRM — amoCRM, Битrix24 с ROI 680%",

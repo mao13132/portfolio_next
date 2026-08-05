@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleParserWildberries: Article = {
     slug: "parser-wildberries",
-    title: "Парсер Wildberries: как собрать данные о товарах и ценах | DimaRazrab",
-    metaDescription: "Парсер Wildberries: сбор данных о товарах, ценах, позициях. Реальные кейсы с ROI 380-420%. Разработка парсера от 30 000 ₽. Консультация →",
+    title: "Парсер цен на маркетплейсах: всё что нужно знать о разработке",
+    metaDescription: "Парсер цен на маркетплейсах от 10 000 ₽. Сбор данных с маркетплейсов, мониторинг цен конкурентов, аналитика продаж, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "парсер wildberries, парсер товаров wildberries, сбор данных wildberries, парсинг wildberries, мониторинг цен wildberries, seo wildberries",
     h1: "Парсер Wildberries: полное руководство по сбору данных",
     ogTitle: "Парсер Wildberries — сбор данных о товарах и ценах с реальными кейсами",

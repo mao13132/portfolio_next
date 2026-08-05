@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleIntegraciyaOpenaiApi: Article = {
     slug: "integraciya-openai-api",
-    title: "Интеграция OpenAI API: практическое руководство с кейсами | DimaRazrab",
-    metaDescription: "Интеграция OpenAI API: пошаговое руководство с кейсами ROI 400-520%. GPT-4o, DALL-E, Whisper. Разработка от 30 000 ₽. Консультация →",
+    title: "Интеграция ChatGPT: разработка от 30 000 ₽, от 7 дней",
+    metaDescription: "Интеграция ChatGPT от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация контента и поддержки клиентов, от 7 дней. Бесплатная оценка за 24 часа →",
     keywords: "интеграция openai api, openai api, chatgpt api, gpt api интеграция, openai api python, разработка chatgpt",
     h1: "Интеграция OpenAI API: практическое руководство с реальными кейсами",
     ogTitle: "Интеграция OpenAI API — руководство с кейсами ROI 400-520%",

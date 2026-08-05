@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleKonstruktoryTelegramBotov: Article = {
     slug: "konstruktory-telegram-botov",
-    title: "Конструкторы Telegram-ботов: обзор платформ и когда они нужны | DimaRazrab",
-    metaDescription: "Обзор конструкторов Telegram-ботов: BotHelp, Chatfuel, SendPulse, ManyChat, Aimylogic. Сравнение цен и функций. Когда лучше заказать разработку. Консультация →",
+    title: "Сайт для создания чат-ботов: всё что нужно знать о разработке",
+    metaDescription: "Сайт для создания чат-ботов от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "конструктор telegram ботов, конструктор ботов, создать бота без кода, bot help конструктор, chatfuel telegram, конструктор чат ботов, платформа для создания ботов",
     h1: "Конструкторы Telegram-ботов: обзор платформ и когда они нужны",
     ogTitle: "Конструкторы Telegram-ботов: обзор платформ и сравнение",

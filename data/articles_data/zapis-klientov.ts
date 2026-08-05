@@ -5,8 +5,8 @@ import { zapisKlientovOldPart2 } from './texts/zapis-klientov-old-part2';
 
 export const articleZapisKlientov: Article = {
     slug: "telegram-bot-dlya-zapisi-klientov",
-    title: "Telegram бот для записи клиентов — онлайн-запись 24/7 | DimaRazrab",
-    metaDescription: "Telegram-бот для онлайн-записи клиентов: салоны красоты, клиники, фитнес, автосервис. Заменяет звонки и формы. Работает 24/7. Подробное руководство.",
+    title: "Telegram бот для онлайн записи клиентов: полное руководство — кейсы",
+    metaDescription: "Telegram бот для онлайн записи клиентов от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в реальном. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для записи клиентов, онлайн запись telegram, бот запись салон красоты, telegram бот бронирование, бот для записи на приём, автоматизация записи клиентов, telegram бот для клиники",
     h1: "Telegram бот для записи клиентов: онлайн-запись 24/7 без звонков",
     ogTitle: "Telegram бот для записи клиентов — онлайн-запись 24/7",
@@ -59,7 +59,7 @@ export const articleZapisKlientov: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать запись клиентов?",
+    ctaTitle: "Хотите бота для записи от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Создам Telegram-бота для записи, который работает 24/7 и не теряет клиентов",
     ctaSource: "article-booking-cta",
 

@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleNextjsSeoOptimizaciya: Article = {
     slug: "nextjs-seo-optimizaciya",
-    title: "SEO-оптимизация на Next.js: полное руководство | DimaRazrab",
-    metaDescription: "SEO-оптимизация на Next.js: SSR, Core Web Vitals, structured data, мета-теги. Кейсы с +520% трафика. SEO-аудит бесплатно. Консультация →",
+    title: "Next js и figma разработке code сайта: полное руководство — кейсы",
+    metaDescription: "Next js и figma разработке code сайта от 80 000 ₽. SSR, SSG, высокая производительность и встроенная SEO-оптимизация, от 10. Бесплатная оценка за 24 часа →",
     keywords: "seo next.js, seo оптимизация next.js, next.js seo, core web vitals next.js, ssr seo, next.js мета теги, seo nextjs",
     h1: "SEO-оптимизация на Next.js: полное руководство",
     ogTitle: "SEO-оптимизация на Next.js — руководство с кейсами | DimaRazrab",

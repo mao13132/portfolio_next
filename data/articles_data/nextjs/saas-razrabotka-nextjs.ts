@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleSaasRazrabotkaNextjs: Article = {
     slug: "saas-razrabotka-nextjs",
-    title: "SaaS-разработка на Next.js: архитектура и стек | DimaRazrab",
-    metaDescription: "SaaS-разработка на Next.js: архитектура, стек, мультитенантность, биллинг. Кейсы с ROI 480-680%. Создание SaaS от 200 000 ₽. Консультация →",
+    title: "Next js разработка: разработка от 80 000 ₽, от 10 дней",
+    metaDescription: "Разработка next js разработка от 80 000 ₽. SSR, SSG, высокая производительность и встроенная SEO-оптимизация, от 10 дней. Бесплатная оценка за 24 часа →",
     keywords: "saas разработка next.js, создание saas next.js, saas архитектура, next.js saas, saas подписки, мультитенантность next.js",
     h1: "SaaS-разработка на Next.js: архитектура и стек",
     ogTitle: "SaaS-разработка на Next.js — архитектура, стек, кейсы | DimaRazrab",

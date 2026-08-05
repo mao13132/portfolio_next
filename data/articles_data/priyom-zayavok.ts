@@ -5,8 +5,8 @@ import { priyomZayavokPart2 } from './texts/priyom-zayavok-part2';
 
 export const articlePriyomZayavok: Article = {
     slug: "telegram-bot-dlya-priyoma-zayavok",
-    title: "Telegram бот для приёма заявок — полное руководство 2026 | DimaRazrab",
-    metaDescription: "Как создать Telegram бот для приёма заявок: пошаговое руководство, примеры, стоимость, интеграция с CRM. Автоматизируйте обработку заявок уже сегодня.",
+    title: "Боты для приема заявок: стоимость, этапы и реальные кейсы",
+    metaDescription: "Боты для приема заявок от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для приёма заявок, бот для заявок telegram, автоматизация заявок telegram, telegram бот заказ, бот приём заявок, создать бот для заявок, telegram бот для бизнеса",
     h1: "Telegram бот для приёма заявок: полное руководство по автоматизации",
     ogTitle: "Telegram бот для приёма заявок — автоматизация бизнеса",

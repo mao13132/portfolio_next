@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleRazrabotkaRestApi: Article = {
     slug: "razrabotka-rest-api",
-    title: "Разработка REST API: от проектирования до деплоя | DimaRazrab",
-    metaDescription: "Разработка REST API: проектирование, разработка, деплой. FastAPI, Django, PostgreSQL. Реальные кейсы с ROI 420-680%. От 50 000 ₽.",
+    title: "Разработка API на Python: разработка от 15 000 ₽, от 5 дней",
+    metaDescription: "Разработка API на Python от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в реальном времени. Бесплатная оценка за 24 часа →",
     keywords: "разработка rest api, создание api, rest api разработка, api для бизнеса, заказать api, разработка api на python",
     h1: "Разработка REST API: полное руководство",
     ogTitle: "Разработка REST API — от проектирования до деплоя с ROI 680%",

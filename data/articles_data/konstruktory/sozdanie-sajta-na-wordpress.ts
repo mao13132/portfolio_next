@@ -302,8 +302,8 @@ Elementor — это плагин для WordPress с drag-and-drop интерф
 
 export const articleSozdanieSajtaNaWordpress: Article = {
     slug: "sozdanie-sajta-na-wordpress",
-    title: "Создание сайта на WordPress: стоимость, сроки, примеры | DimaRazrab",
-    metaDescription: "Создание сайтов на WordPress от 15 000 ₽. Elementor, WooCommerce, SEO. Сроки от 3 дней. Кейсы. Оценка бесплатно →",
+    title: "Создание сайта на WordPress с нуля: цена от 10 000 ₽, от 1 дня",
+    metaDescription: "Создание сайта на WordPress с нуля от 10 000 ₽. Tilda, WordPress, 1С-Битрикс — быстрый запуск без программирования, от 1 дня. Бесплатная оценка за 24 часа →",
     keywords: "создание сайтов на wordpress, создание сайта на wordpress с нуля, wordpress создание лендинга, создание сайта на wordpress elementor, разработка веб приложений на wordpress",
     h1: "Создание сайта на WordPress: полное руководство по стоимости, срокам и технологиям",
     ogTitle: "Создание сайта на WordPress — стоимость, сроки, примеры",

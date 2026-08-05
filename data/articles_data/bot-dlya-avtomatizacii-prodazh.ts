@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleBotDlyaAvtomatizaciiProdazh: Article = {
     slug: "bot-dlya-avtomatizacii-prodazh",
-    title: "Бот для автоматизации продаж в Telegram | DimaRazrab",
-    metaDescription: "Бот для автоматизации продаж в Telegram: воронка, квалификация лидов, приём заказов 24/7. Реальные кейсы с ROI 300-520%. Заказать.",
+    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
+    metaDescription: "Разработка бота для Telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "бот для автоматизации продаж, автоматизация продаж telegram, telegram бот продажи, бот продажи автоматизация, автоматизация воронки продаж telegram",
     h1: "Бот для автоматизации продаж в Telegram: увеличьте выручку на 40–70%",
     ogTitle: "Бот для автоматизации продаж — увеличьте выручку на 40–70%",
@@ -63,7 +63,7 @@ export const articleBotDlyaAvtomatizaciiProdazh: Article = {
         },
     ],
 
-    ctaTitle: "Увеличьте выручку с помощью Telegram-бота",
+    ctaTitle: "Увеличьте выручку с помощью бота от 7 000 ₽ — срок от 3 дней",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и покажем, какой бот даст максимальный ROI",
     ctaSource: "article-avtomatizacia-cta",
 

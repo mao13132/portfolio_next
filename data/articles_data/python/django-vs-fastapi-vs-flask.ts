@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleDjangoVsFastapiVsFlask: Article = {
     slug: "django-vs-fastapi-vs-flask",
-    title: "Django vs FastAPI vs Flask: какой фреймворк выбрать | DimaRazrab",
-    metaDescription: "Django vs FastAPI vs Flask: подробное сравнение с примерами. Кейсы с ROI 380-680%. Какой фреймворк выбрать для вашего проекта.",
+    title: "API как искусство разработка поддержка интеграция: что лучше выбрать",
+    metaDescription: "Сравнение: api как искусство разработка поддержка интеграция от 15 000 ₽. Интеграция с внешними сервисами, автоматизация. Бесплатная оценка за 24 часа →",
     keywords: "django vs fastapi, fastapi vs flask, django vs flask, python фреймворки сравнение, какой python фреймворк выбрать",
     h1: "Django vs FastAPI vs Flask: какой фреймворк выбрать",
     ogTitle: "Django vs FastAPI vs Flask — честное сравнение с кейсами",

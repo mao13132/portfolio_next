@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articlePythonTelegramBotRazrabotka: Article = {
     slug: "python-telegram-bot-razrabotka",
-    title: "Разработка Telegram-бота на Python: полное руководство | DimaRazrab",
-    metaDescription: "Разработка Telegram-бота на Python: aiogram, архитектура, кейсы. ROI 300-500%. Запись клиентов, лидогенерация, уведомления. От 30 000₽.",
+    title: "Найти разработчика Python: стоимость, этапы и реальные кейсы",
+    metaDescription: "Разработка найти разработчика python от 30 000 ₽. Backend, API, парсеры, автоматизация бизнес-процессов и обработка данных. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот на python, разработка telegram бота python, aiogram бот, python telegram bot, заказать telegram бота",
     h1: "Разработка Telegram-бота на Python: полное руководство",
     ogTitle: "Telegram-бот на Python — разработка с ROI 300-500%",

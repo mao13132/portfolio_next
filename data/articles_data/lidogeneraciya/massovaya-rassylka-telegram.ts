@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleMassovayaRassylkaTelegram: Article = {
     slug: "massovaya-rassylka-telegram",
-    title: "Массовая рассылка в Telegram: как делать правильно | DimaRazrab",
-    metaDescription: "Массовая рассылка в Telegram: автоматические рассылки, сегментация, A/B тестирование. Реальные кейсы с ROI 400-780%. От 30 000 ₽.",
+    title: "Массовая рассылка Telegram: всё что нужно знать о разработке",
+    metaDescription: "Массовая рассылка telegram от 30 000 ₽. Автоматический поиск клиентов в Telegram, парсинг каналов и рассылки, от 5 дней. Бесплатная оценка за 24 часа →",
     keywords: "массовая рассылка telegram, рассылка в telegram, telegram рассылка, автоматическая рассылка telegram, бот рассылка telegram",
     h1: "Массовая рассылка в Telegram: полное руководство",
     ogTitle: "Массовая рассылка в Telegram — автоматизация с ROI 520%",

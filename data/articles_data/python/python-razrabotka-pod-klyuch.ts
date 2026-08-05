@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articlePythonRazrabotkaPodKlyuch: Article = {
     slug: "python-razrabotka-pod-klyuch",
-    title: "Python-разработка под ключ: от идеи до запуска | DimaRazrab",
-    metaDescription: "Python-разработка под ключ: backend, API, парсеры, автоматизация. Реальные кейсы с ROI 320-680%. Бесплатная консультация. От 30 000₽.",
+    title: "Заказы для программистов Python: цена от 30 000 ₽, от 5 дней",
+    metaDescription: "Разработка заказы для программистов python от 30 000 ₽. Backend, API, парсеры, автоматизация бизнес-процессов и обработка данных. Бесплатная оценка за 24 часа →",
     keywords: "python разработка под ключ, заказать python разработку, python backend, python разработка на заказ, python автоматизация",
     h1: "Python-разработка под ключ: от идеи до запуска",
     ogTitle: "Python-разработка под ключ — реальные кейсы с ROI 320-680%",

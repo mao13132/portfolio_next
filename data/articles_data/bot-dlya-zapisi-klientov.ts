@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleBotDlyaZapisiKlientov: Article = {
     slug: "bot-dlya-zapisi-klientov",
-    title: "Telegram бот для записи клиентов: салон, клиника, сервис | DimaRazrab",
-    metaDescription: "Telegram бот для онлайн-записи клиентов. Автоматизация записи в салон красоты, клинику, сервис. Заказать бота от 25 000 ₽.",
+    title: "Telegram бот для онлайн записи клиентов: полное руководство — кейсы",
+    metaDescription: "Telegram бот для онлайн записи клиентов от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в реальном. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для записи, telegram бот для онлайн записи клиентов, бот запись салон красоты, telegram бот бронирование, автоматизация записи клиентов",
     h1: "Telegram бот для записи клиентов: автоматизация 24/7 без пропущенных заявок",
     ogTitle: "Telegram бот для записи клиентов — автоматизация 24/7",
@@ -61,7 +61,7 @@ export const articleBotDlyaZapisiKlientov: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать запись клиентов?",
+    ctaTitle: "Хотите автоматизировать запись от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — покажу, как бот для записи увеличит ваши продажи и сократит no-show",
     ctaSource: "article-zapisi-cta",
 

@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleAiBotTelegramChatgpt: Article = {
     slug: "ai-bot-telegram-chatgpt",
-    title: "AI-бот в Telegram на базе ChatGPT: создание и кейсы | DimaRazrab",
-    metaDescription: "AI-бот в Telegram на базе ChatGPT: создание, кейсы ROI 400-520%. Автоматизация поддержки, продаж, контента. Разработка от 30 000 ₽. Консультация →",
+    title: "Разработка AI бота: стоимость, этапы и реальные кейсы",
+    metaDescription: "Разработка AI бота от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация контента и поддержки клиентов, от 7 дней. Бесплатная оценка за 24 часа →",
     keywords: "ai бот telegram chatgpt, телеграм бот chatgpt, chatgpt бот, ai бот телеграм, создать бота chatgpt, бот на gpt",
     h1: "AI-бот в Telegram на базе ChatGPT: создание и реальные кейсы",
     ogTitle: "AI-бот в Telegram на ChatGPT — кейсы с ROI 400-520%",

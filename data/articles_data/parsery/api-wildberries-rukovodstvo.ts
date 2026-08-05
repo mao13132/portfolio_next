@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleApiWildberriesRukovodstvo: Article = {
     slug: "api-wildberries-rukovodstvo",
-    title: "API Wildberries: полное руководство для разработчиков | DimaRazrab",
-    metaDescription: "API Wildberries: полное руководство по интеграции. Endpoints, авторизация, примеры кода. Реальные кейсы. Разработка от 30 000 ₽. Консультация →",
+    title: "Бот для анализа позиций Wildberries: полное руководство — кейсы",
+    metaDescription: "Бот для анализа позиций wildberries от 10 000 ₽. Сбор данных с маркетплейсов, мониторинг цен конкурентов, аналитика продаж. Бесплатная оценка за 24 часа →",
     keywords: "api wildberries, api wildberries документация, интеграция wildberries api, разработка под wildberries, автоматизация wildberries api",
     h1: "API Wildberries: полное руководство по интеграции",
     ogTitle: "API Wildberries — полное руководство по интеграции для разработчиков",

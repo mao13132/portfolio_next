@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleRazrabotkaSNulya: Article = {
     slug: "razrabotka-telegram-bota-s-nulya",
-    title: "Разработка Telegram-бота с нуля — пошаговое руководство 2026 | DimaRazrab",
-    metaDescription: "Разработка Telegram-бота с нуля: пошаговое руководство. От идеи до запуска. Какие технологии выбрать, сколько стоит, как избежать ошибок.",
+    title: "Как сделать бот для бизнеса: стоимость от 7 000 ₽, от 3 дней",
+    metaDescription: "Разработка как сделать бот для бизнеса от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
     keywords: "разработка telegram бота с нуля, как создать telegram бота для бизнеса, создание telegram бота с нуля, разработка бота telegram пошагово, telegram бот с нуля, как разработать telegram бота",
     h1: "Разработка Telegram-бота с нуля: пошаговое руководство от разработчика",
     ogTitle: "Разработка Telegram-бота с нуля — пошаговое руководство",
@@ -67,7 +67,7 @@ export const articleRazrabotkaSNulya: Article = {
         },
     ],
 
-    ctaTitle: "Хотите Telegram-бота, но не знаете с чего начать?",
+    ctaTitle: "Хотите Telegram-бота с нуля от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и предложим оптимальное решение за 24 часа",
     ctaSource: "article-s-nulya-cta",
 

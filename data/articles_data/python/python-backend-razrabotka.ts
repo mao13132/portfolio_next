@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articlePythonBackendRazrabotka: Article = {
     slug: "python-backend-razrabotka",
-    title: "Python backend разработка: архитектура и лучшие практики | DimaRazrab",
-    metaDescription: "Python backend разработка: архитектура, Django, FastAPI, деплой. Кейсы с ROI 320-680%. Бесплатная консультация. От 40 000₽.",
+    title: "Разработка веб приложений на языке Python: полное руководство — кейсы",
+    metaDescription: "Разработка веб приложений на языке Python от 30 000 ₽. Backend, API, парсеры, автоматизация бизнес-процессов и обработка данных. Бесплатная оценка за 24 часа →",
     keywords: "python backend разработка, python backend, python api разработка, backend архитектура python",
     h1: "Python backend разработка: архитектура и лучшие практики",
     ogTitle: "Python backend разработка — архитектура, кейсы, лучшие практики",

@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleAiBotSozdanie: Article = {
     slug: "kak-sozdat-ai-bot-telegram",
-    title: "Как создать AI бота в Telegram — пошаговое руководство 2026 | DimaRazrab",
-    metaDescription: "Как создать AI бота в Telegram с ChatGPT: пошаговое руководство, интеграция GPT, промпт-инжиниринг, RAG, база знаний, код и деплой. 2026.",
+    title: "Создать AI бот Telegram: стоимость, этапы и реальные кейсы",
+    metaDescription: "Создать ai бот telegram от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация контента и поддержки клиентов, от 7 дней. Бесплатная оценка за 24 часа →",
     keywords: "создать ai бот telegram, ai бот телеграм, chatgpt бот telegram, telegram бот с искусственным интеллектом, как сделать ai бота, gpt бот telegram, ai chatbot telegram python",
     h1: "Как создать AI бота в Telegram: от идеи до запуска с ChatGPT",
     ogTitle: "Как создать AI бота в Telegram — пошаговое руководство 2026",

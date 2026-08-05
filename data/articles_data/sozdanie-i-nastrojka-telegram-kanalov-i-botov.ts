@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleSozdanieINastrojkaTelegramKanalovIBotov: Article = {
     slug: "sozdanie-i-nastrojka-telegram-kanalov-i-botov",
-    title: "Создание и настройка Telegram-каналов и ботов для бизнеса | DimaRazrab",
-    metaDescription: "Как создать Telegram-канал и бота для бизнеса: пошаговое руководство, интеграция канала с ботом, автоматизация постов. Примеры и кейсы. Напишите нам →",
+    title: "Создание и настройка Telegram каналов и ботов: цена от 7 000 ₽, от 3",
+    metaDescription: "Создание и настройка Telegram каналов и ботов от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7,. Бесплатная оценка за 24 часа →",
     keywords: "создание telegram канала, настройка telegram бота, создание и настройка telegram каналов и ботов, бот для telegram канала, интеграция бота с каналом, автопостинг в telegram",
     h1: "Создание и настройка Telegram-каналов и ботов для бизнеса",
     ogTitle: "Создание и настройка Telegram-каналов и ботов для бизнеса",

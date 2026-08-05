@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramBotDlyaPriyomaZakazov2: Article = {
     slug: "telegram-bot-dlya-priyoma-zakazov-2",
-    title: "Telegram бот для приёма заказов: доставка, еда, товары | DimaRazrab",
-    metaDescription: "Telegram бот для автоматического приёма заказов. Каталог, корзина, оплата, уведомления. Заказать бота от 30 000 ₽.",
+    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
+    metaDescription: "Разработка бота для Telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот заказ, telegram бот приём заказов, бот для бизнеса в telegram, бот для приёма заказов, автоматизация заказов telegram, заказать бота для заказов, telegram бот доставка",
     h1: "Telegram бот для приёма заказов: доставка, еда, товары — полное руководство",
     ogTitle: "Telegram бот для приёма заказов: доставка, еда, товары",
