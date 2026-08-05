@@ -23,7 +23,7 @@ import { articleCifrovizaciyaMalogoBiznesa } from '@/data/articles_data/cluster2
 import { articleChtoMozhnoAvtomatizirovatVMalomBiznese } from '@/data/articles_data/cluster2/chto-mozhno-avtomatizirovat-v-malom-biznese';
 import { articleKakVnedritChatgptVBiznes } from '@/data/articles_data/cluster2/kak-vnedrit-chatgpt-v-biznes';
 import { articleIntegraciyaCRMSTelegram } from '@/data/articles_data/cluster2/integraciya-crm-s-telegram';
-import { articleAiAgentyDlyaBiznesa } from '@/data/articles_data/cluster2/ai-agenty-dlya-biznesa';
+import { articleAiAgentyDlyaBiznesa } from '@/data/articles_data/ai/ai-agenty-dlya-biznesa';
 import { articleRazrabotkaCrmPodKlyuch } from '@/data/articles_data/cluster2/razrabotka-crm-pod-klyuch';
 import { articleAvtomatizaciyaDokumentooborota } from '@/data/articles_data/cluster2/avtomatizaciya-dokumentooborota';
 import { articleNejrosetiDlyaBiznesa } from '@/data/articles_data/cluster2/nejroseti-dlya-biznesa';

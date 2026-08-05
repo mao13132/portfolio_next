@@ -52,6 +52,11 @@ import { articleTelegramBotDlyaAvito } from './telegram-bot-dlya-avito';
 import { articleAiBotDlyaVedeniyaTelegramKanala } from './ai-bot-dlya-vedeniya-telegram-kanala';
 import { articleBotMenedzherPoProdazham } from './bot-menedzher-po-prodazham';
 
+/* Статьи без регистрации (были пропущены) */
+import { articleStoimostTelegramBota } from './stoimost-telegram-bota';
+import { articleZapisKlientov } from './zapis-klientov';
+import { articleBotIliPrilozhenie } from './bot-ili-prilozhenie';
+
 /* Cluster 2: Автоматизация бизнеса */
 import { cluster2Articles } from './cluster2/registry';
 
@@ -132,6 +137,10 @@ export const telegramBotyArticles: Article[] = [
     articleTelegramBotDlyaAvito,
     articleAiBotDlyaVedeniyaTelegramKanala,
     articleBotMenedzherPoProdazham,
+    /* Статьи без регистрации (были пропущены) */
+    articleStoimostTelegramBota,
+    articleZapisKlientov,
+    articleBotIliPrilozhenie,
 ];
 
 export const articles: Article[] = [
