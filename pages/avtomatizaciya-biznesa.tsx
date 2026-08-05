@@ -1,4 +1,4 @@
-import Head from 'next/head';
+﻿import Head from 'next/head';
 import { useCallback, useState } from 'react';
 import { motion } from 'framer-motion';
 
@@ -155,7 +155,7 @@ export default function AvtomatizaciyaBiznesaPage() {
             <LandingHeader navLinks={NAV_LINKS} />
             <ScrollProgressBar />
 
-            <div className={ls.container} style={{ paddingTop: 16 }}>
+            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '80px 24px 0' }}>
                 <Breadcrumbs items={[
                     { label: 'Главная', href: '/' },
                     { label: 'Автоматизация бизнеса' },

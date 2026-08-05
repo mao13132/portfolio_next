@@ -78,16 +78,18 @@
 /* ─── STEP INDICATOR ─── */
 .step-indicator {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 0;
+    gap: 68px;
     margin-bottom: 48px;
 }
 
 .step-dot-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 0;
+    position: relative;
+    min-width: 44px;
 }
 
 .step-dot {
@@ -124,21 +126,16 @@
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.3);
     text-align: center;
-    margin-top: 8px;
     transition: color 0.4s ease;
 }
 
 .step-dot-wrapper .step-label {
-    display: block;
     position: absolute;
-    bottom: -24px;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 8px;
     white-space: nowrap;
-}
-
-.step-dot-wrapper {
-    position: relative;
 }
 
 .step-dot.active + .step-label,
@@ -147,11 +144,14 @@
 }
 
 .step-connector {
-    width: 60px;
+    position: absolute;
+    right: calc(50% + 22px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 68px;
     height: 2px;
     background: rgba(255, 255, 255, 0.08);
-    margin: 0 8px;
-    flex-shrink: 0;
+    z-index: 1;
 }
 
 .step-connector.completed {

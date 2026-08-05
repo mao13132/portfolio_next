@@ -1,4 +1,4 @@
-import Head from 'next/head';
+﻿import Head from 'next/head';
 import { useState, useEffect, useRef, useCallback, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { axiosClassic } from '@/app/Components/utils/interceptor';
@@ -578,7 +578,7 @@ export default function LidogeneraciyaTelegramPage() {
                 </div>
             </header>
 
-            <div className={styles.container} style={{ paddingTop: 16 }}>
+            <div style={{ maxWidth: 1100, margin: '0 auto', padding: '80px 24px 0' }}>
                 <Breadcrumbs items={[
                     { label: 'Главная', href: '/' },
                     { label: 'Лидогенерация в Telegram' },
