@@ -1,6 +1,5 @@
 // check-sitemap.js
-// Сравнивает slug'и из онлайн sitemap (https://dima-razrab.com/sitemap.xml)
-// с зарегистрированными статьями в data/articles_data
+// Сравнивает ВСЕ страницы сайта (pages/) с онлайн sitemap
 // Запуск: node check-sitemap.js
 
 const fs = require('fs');
@@ -22,23 +21,23 @@ const C = {
   bgYellow: '\x1b[43m',
 };
 
-// ─── Категории блога (НЕ статьи) ───
-const CATEGORY_SLUGS = new Set([
-  'telegram-boty',
-  'parsery-marketplejsov',
-  'lidogeneraciya-telegram',
-  'python-razrabotka',
-  'nextjs-razrabotka',
-  'ai-integracii',
-  'razrabotka-api',
-  'avtomatizaciya-biznesa',
-  'veb-razrabotka',
-  'mobilnye-prilozheniya',
+// ─── Страницы, которые НЕ должны быть в sitemap ───
+const EXCLUDED_PAGES = new Set([
+  '_app',
+  '_document',
+  '404',
+  'login',
+  'register',
 ]);
 
-// ─── 1. Получаем sitemap.xml онлайн ───
+// ─── Динамические роуты (пропускаем) ───
+const DYNAMIC_ROUTES = new Set([
+  '[slug]',
+]);
+
 const SITEMAP_URL = 'https://dima-razrab.com/sitemap.xml';
 
+// ─── Функция загрузки sitemap ───
 function fetchSitemap(url) {
   return new Promise((resolve, reject) => {
     console.log(`${C.dim}Загрузка sitemap: ${url}${C.reset}`);
@@ -56,183 +55,174 @@ function fetchSitemap(url) {
   });
 }
 
+// ─── Сканирование pages/ директории ───
+function scanPages(dir, basePath = '') {
+  const routes = [];
+  let entries;
+  try {
+    entries = fs.readdirSync(dir, { withFileTypes: true });
+  } catch (e) {
+    return routes;
+  }
+
+  for (const entry of entries) {
+    const name = entry.name;
+
+    // Пропускаем .module.css, не .tsx файлы
+    if (entry.isFile()) {
+      if (!name.endsWith('.tsx')) continue;
+      const slug = name.replace('.tsx', '');
+
+      // Пропускаем исключённые и динамические
+      if (EXCLUDED_PAGES.has(slug)) continue;
+      if (DYNAMIC_ROUTES.has(slug)) continue;
+
+      const route = basePath ? `${basePath}/${slug}` : `/${slug}`;
+      // index → родительский путь
+      const finalRoute = slug === 'index' ? (basePath || '/') : route;
+      routes.push(finalRoute);
+    }
+
+    if (entry.isDirectory()) {
+      const subPath = basePath ? `${basePath}/${name}` : `/${name}`;
+      routes.push(...scanPages(path.join(dir, name), subPath));
+    }
+  }
+
+  return routes;
+}
+
+// ─── Основная логика ───
 async function main() {
+  // 1. Загружаем онлайн sitemap
   let sitemapContent;
   try {
     sitemapContent = await fetchSitemap(SITEMAP_URL);
     console.log(`${C.green}✔ Sitemap загружен (${sitemapContent.length} байт)${C.reset}\n`);
   } catch (e) {
     console.error(`${C.red}Ошибка загрузки sitemap: ${e.message}${C.reset}`);
-    console.log(`${C.yellow}Попробуйте локальный файл: PLAN_SEO/sitemap.xml${C.reset}`);
     process.exit(1);
   }
 
-// Извлекаем все <loc> URL
-const locRegex = /<loc>([^<]+)<\/loc>/g;
-const allUrls = [];
-let match;
-while ((match = locRegex.exec(sitemapContent)) !== null) {
-  allUrls.push(match[1]);
-}
+  // 2. Извлекаем URL из sitemap
+  const locRegex = /<loc>([^<]+)<\/loc>/g;
+  const sitemapUrls = new Set();
+  let match;
+  while ((match = locRegex.exec(sitemapContent)) !== null) {
+    sitemapUrls.add(match[1]);
+  }
 
-// Фильтруем blog-URL и извлекаем slug, исключая категории
-const sitemapSlugs = new Set();
-const blogUrlBySlug = {};
+  // 3. Сканируем pages/ директорию
+  const pagesDir = path.join(__dirname, 'pages');
+  const localRoutes = scanPages(pagesDir);
 
-for (const url of allUrls) {
-  const blogMatch = url.match(/\/blog\/([^\/\?#]+)/);
-  if (blogMatch) {
-    const slug = blogMatch[1];
-    if (!CATEGORY_SLUGS.has(slug)) {
-      sitemapSlugs.add(slug);
-      blogUrlBySlug[slug] = url;
+  // Преобразуем routes в полные URL
+  const siteUrl = 'https://dima-razrab.com';
+  const localUrls = new Map(); // url → file path
+  for (const route of localRoutes) {
+    const url = `${siteUrl}${route}`;
+    const filePath = route === '/' ? 'pages/index.tsx' : `pages${route}.tsx`;
+    localUrls.set(url, filePath);
+  }
+
+  // 4. Сравнение
+  const ok = [];
+  const missingInSitemap = [];
+  const missingInPages = [];
+
+  for (const [url, filePath] of localUrls) {
+    if (sitemapUrls.has(url)) {
+      ok.push({ url, filePath });
+    } else {
+      missingInSitemap.push({ url, filePath });
     }
   }
-}
 
-// ─── 2. Сканируем реестры статей ───
-const articlesDir = path.join(__dirname, 'data', 'articles_data');
-
-/**
- * Рекурсивно находит все .ts файлы в директории
- */
-function findTsFiles(dir) {
-  let results = [];
-  let entries;
-  try {
-    entries = fs.readdirSync(dir, { withFileTypes: true });
-  } catch (e) {
-    return results;
-  }
-  for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      // Пропускаем подпапку texts — там части статей, не определения
-      if (entry.name === 'texts') continue;
-      results = results.concat(findTsFiles(fullPath));
-    } else if (entry.isFile() && entry.name.endsWith('.ts')) {
-      results.push(fullPath);
+  for (const url of sitemapUrls) {
+    if (!localUrls.has(url)) {
+      // Проверяем — может это blog статья (dynamic [slug])
+      if (url.includes('/blog/') && !url.includes('/blog/') === false) {
+        // Blog статьи — проверяем через registry
+        missingInPages.push({ url, note: 'blog статья — проверить в registry' });
+      } else if (url.includes('/work/') || url.includes('/category/')) {
+        // Динамические страницы — нормально
+        continue;
+      } else {
+        missingInPages.push({ url, note: 'нет в pages/' });
+      }
     }
   }
-  return results;
-}
 
-const tsFiles = findTsFiles(articlesDir);
-const registrySlugs = new Set();
-const slugToFile = {};
+  // Сортируем
+  ok.sort((a, b) => a.url.localeCompare(b.url));
+  missingInSitemap.sort((a, b) => a.url.localeCompare(b.url));
+  missingInPages.sort((a, b) => a.url.localeCompare(b.url));
 
-const slugRegex = /slug:\s*["']([^"']+)["']/g;
+  // 5. Вывод
+  const line = '─'.repeat(80);
 
-for (const filePath of tsFiles) {
-  const content = fs.readFileSync(filePath, 'utf-8');
-  let m;
-  while ((m = slugRegex.exec(content)) !== null) {
-    const slug = m[1];
-    registrySlugs.add(slug);
-    slugToFile[slug] = path.relative(__dirname, filePath);
-  }
-}
+  console.log(`${C.bold}${C.cyan}${line}${C.reset}`);
+  console.log(`${C.bold}${C.cyan}  🔍  SITEMAP vs PAGES — Полная проверка сайта${C.reset}`);
+  console.log(`${C.bold}${C.cyan}${line}${C.reset}\n`);
 
-// ─── 3. Сравнение ───
-const ok = [];             // В sitemap + в реестре
-const missingInSitemap = [];  // В реестре, но НЕТ в sitemap
-const missingInRegistry = []; // В sitemap, но НЕТ в реестре
+  // Статистика
+  console.log(`${C.bold}📊 Общая статистика:${C.reset}`);
+  console.log(`   Всего URL в онлайн sitemap:  ${C.bold}${sitemapUrls.size}${C.reset}`);
+  console.log(`   Страниц в pages/:            ${C.bold}${localUrls.size}${C.reset}`);
+  console.log(`   Совпадений (OK):             ${C.green}${C.bold}${ok.length}${C.reset}`);
+  console.log(`   Нет в sitemap:               ${missingInSitemap.length > 0 ? C.red : C.green}${C.bold}${missingInSitemap.length}${C.reset}`);
+  console.log(`   Нет в pages (blog/work):     ${missingInPages.length > 0 ? C.yellow : C.green}${C.bold}${missingInPages.length}${C.reset}`);
+  console.log();
 
-for (const slug of registrySlugs) {
-  if (sitemapSlugs.has(slug)) {
-    ok.push(slug);
-  } else {
-    missingInSitemap.push(slug);
-  }
-}
-
-for (const slug of sitemapSlugs) {
-  if (!registrySlugs.has(slug)) {
-    missingInRegistry.push(slug);
-  }
-}
-
-// Сортируем для удобства
-ok.sort();
-missingInSitemap.sort();
-missingInRegistry.sort();
-
-// ─── 4. Вывод ───
-const line = '─'.repeat(72);
-
-console.log(`\n${C.bold}${C.cyan}${line}${C.reset}`);
-console.log(`${C.bold}${C.cyan}  🔍  SITEMAP vs REGISTRY — Сравнение slug'ей${C.reset}`);
-console.log(`${C.bold}${C.cyan}${line}${C.reset}\n`);
-
-// Общая статистика
-console.log(`${C.bold}📊 Общая статистика:${C.reset}`);
-console.log(`   Всего URL в sitemap:         ${C.bold}${allUrls.length}${C.reset}`);
-console.log(`   Blog-URL (не категории):     ${C.bold}${sitemapSlugs.size}${C.reset}`);
-console.log(`   Статей в реестре:            ${C.bold}${registrySlugs.size}${C.reset}`);
-console.log(`   Совпадений (OK):             ${C.green}${C.bold}${ok.length}${C.reset}`);
-console.log(`   Нет в sitemap:               ${missingInSitemap.length > 0 ? C.red : C.green}${C.bold}${missingInSitemap.length}${C.reset}`);
-console.log(`   Нет в реестре:               ${missingInRegistry.length > 0 ? C.yellow : C.green}${C.bold}${missingInRegistry.length}${C.reset}`);
-console.log();
-
-// OK — совпадения
-console.log(`${C.bold}${C.bgGreen}${C.white} ✅ OK — зарегистрированы + в sitemap (${ok.length}) ${C.reset}\n`);
-if (ok.length === 0) {
-  console.log(`   ${C.dim}(нет совпадений)${C.reset}`);
-} else {
+  // OK
+  console.log(`${C.bold}${C.bgGreen}${C.white} ✅ OK — в pages/ и в sitemap (${ok.length}) ${C.reset}\n`);
   for (let i = 0; i < ok.length; i++) {
-    const slug = ok[i];
-    const num = String(i + 1).padStart(3);
-    console.log(`   ${C.dim}${num}.${C.reset} ${C.green}✔${C.reset} ${C.bold}${slug}${C.reset}`);
+    const { url, filePath } = ok[i];
+    console.log(`   ${C.dim}${String(i + 1).padStart(3)}.${C.reset} ${C.green}✔${C.reset} ${C.bold}${url}${C.reset} ${C.dim}(${filePath})${C.reset}`);
   }
-}
-console.log();
+  console.log();
 
-// MISSING IN SITEMAP
-console.log(`${C.bold}${C.bgRed}${C.white} ❌ MISSING IN SITEMAP — в реестре, но НЕТ в sitemap (${missingInSitemap.length}) ${C.reset}\n`);
-if (missingInSitemap.length === 0) {
-  console.log(`   ${C.dim}(все статьи из реестра есть в sitemap)${C.reset}`);
-} else {
-  for (let i = 0; i < missingInSitemap.length; i++) {
-    const slug = missingInSitemap[i];
-    const num = String(i + 1).padStart(3);
-    const file = slugToFile[slug] || '?';
-    console.log(`   ${C.dim}${num}.${C.reset} ${C.red}✘${C.reset} ${C.bold}${slug}${C.reset}`);
-    console.log(`        ${C.dim}файл: ${file}${C.reset}`);
-    console.log(`        ${C.dim}нужно добавить: https://dima-razrab.com/blog/${slug}${C.reset}`);
+  // MISSING IN SITEMAP
+  console.log(`${C.bold}${C.bgRed}${C.white} ❌ НЕТ В SITEMAP — страница есть, но не в sitemap (${missingInSitemap.length}) ${C.reset}\n`);
+  if (missingInSitemap.length === 0) {
+    console.log(`   ${C.dim}(все страницы из pages/ есть в sitemap)${C.reset}`);
+  } else {
+    for (let i = 0; i < missingInSitemap.length; i++) {
+      const { url, filePath } = missingInSitemap[i];
+      console.log(`   ${C.dim}${String(i + 1).padStart(3)}.${C.reset} ${C.red}✘${C.reset} ${C.bold}${url}${C.reset}`);
+      console.log(`        ${C.dim}файл: ${filePath}${C.reset}`);
+    }
   }
-}
-console.log();
+  console.log();
 
-// MISSING IN REGISTRY
-console.log(`${C.bold}${C.bgYellow}${C.white} ⚠️  MISSING IN REGISTRY — в sitemap, но НЕТ в реестре (${missingInRegistry.length}) ${C.reset}\n`);
-if (missingInRegistry.length === 0) {
-  console.log(`   ${C.dim}(все URL из sitemap зарегистрированы)${C.reset}`);
-} else {
-  for (let i = 0; i < missingInRegistry.length; i++) {
-    const slug = missingInRegistry[i];
-    const num = String(i + 1).padStart(3);
-    const url = blogUrlBySlug[slug] || `https://dima-razrab.com/blog/${slug}`;
-    console.log(`   ${C.dim}${num}.${C.reset} ${C.yellow}⚠${C.reset} ${C.bold}${slug}${C.reset}`);
-    console.log(`        ${C.dim}url: ${url}${C.reset}`);
+  // MISSING IN PAGES
+  if (missingInPages.length > 0) {
+    console.log(`${C.bold}${C.bgYellow}${C.white} ⚠️  В SITEMAP, НО НЕ В pages/ (${missingInPages.length}) ${C.reset}\n`);
+    for (let i = 0; i < missingInPages.length; i++) {
+      const { url, note } = missingInPages[i];
+      console.log(`   ${C.dim}${String(i + 1).padStart(3)}.${C.reset} ${C.yellow}⚠${C.reset} ${C.bold}${url}${C.reset} ${C.dim}(${note})${C.reset}`);
+    }
+    console.log();
   }
-}
-console.log();
 
-// Итог
-console.log(`${C.bold}${C.cyan}${line}${C.reset}`);
-if (missingInSitemap.length === 0 && missingInRegistry.length === 0) {
-  console.log(`${C.green}${C.bold}  🎉 Всё синхронизировано!${C.reset}`);
-} else {
+  // Итог
+  console.log(`${C.bold}${C.cyan}${line}${C.reset}`);
+  if (missingInSitemap.length === 0) {
+    console.log(`${C.green}${C.bold}  🎉 Все страницы из pages/ есть в sitemap!${C.reset}`);
+  } else {
+    console.log(`${C.red}${C.bold}  ⛔ ${missingInSitemap.length} страниц нужно добавить в sitemap${C.reset}`);
+  }
+  console.log(`${C.bold}${C.cyan}${line}${C.reset}\n`);
+
+  // Простой список всех пропущенных URL (для копирования)
   if (missingInSitemap.length > 0) {
-    console.log(`${C.red}${C.bold}  ⛔ ${missingInSitemap.length} статей нужно добавить в sitemap${C.reset}`);
-  }
-  if (missingInRegistry.length > 0) {
-    console.log(`${C.yellow}${C.bold}  ⚠️  ${missingInRegistry.length} URL в sitemap не зарегистрированы в реестре${C.reset}`);
+    console.log(`${C.bold}${C.white}📋 СПИСОК ДЛЯ ДОБАВЛЕНИЯ В SITEMAP:${C.reset}\n`);
+    for (const { url } of missingInSitemap) {
+      console.log(`  ${url}`);
+    }
+    console.log(`\n${C.dim}Всего: ${missingInSitemap.length} URL${C.reset}\n`);
   }
 }
-console.log(`${C.bold}${C.cyan}${line}${C.reset}\n`);
-
-} // end main
 
 main().catch(err => {
   console.error(`${C.red}Критическая ошибка: ${err.message}${C.reset}`);
