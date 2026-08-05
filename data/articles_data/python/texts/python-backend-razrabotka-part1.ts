@@ -139,7 +139,9 @@ export const pythonBackendRazrabotkaPart1: ArticleSection[] = [
 | Статистика | 15 минут | Write-behind |
 | Сессии | 24 часа | В Redis |
 
-Подробнее о [backend архитектуре](/blog/python-backend-razrabotka) и [API разработке](/razrabotka-api).`,
+Подробнее о [backend архитектуре](/blog/python-backend-razrabotka) и [API разработке](/razrabotka-api).
+
+> 🔧 **Хотите проект на Python?** Доверьте разработку профессионалу — [напишите мне](/python-razrabotka).`,
     },
     {
         id: "case-fastapi-backend",

@@ -102,5 +102,6 @@ export const articleTelegramBotDlyaWildberries: Article = {
         { anchor: "Telegram-бот для курьерской доставки", url: "/blog/bot-telegram-dlya-kurerov", context: "Автоматизация логистики и доставки" },
         { anchor: "парсер Wildberries", url: "/blog/parser-wildberries", context: "Парсинг данных маркетплейсов для аналитики" },
         { anchor: "автоматизация бизнеса", url: "/blog/avtomatizaciya-biznesa", context: "Полная автоматизация бизнес-процессов" },
+        { anchor: "руководство по API Wildberries", url: "/blog/api-wildberries-rukovodstvo", context: "Полное руководство по API Wildberries" },
     ],
 };

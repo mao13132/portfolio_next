@@ -63,7 +63,9 @@ export const aiBotTelegramChatgptPart1: ArticleSection[] = [
 - Рост аудитории на 180% — до 42,000 подписчиков
 - ROI: 400%
 
-**Технологии:** Python, OpenAI GPT API, Telegram Bot API, PostgreSQL, Celery.`,
+**Технологии:** Python, OpenAI GPT API, Telegram Bot API, PostgreSQL, Celery.
+
+> 🔧 **Не хотите разбираться в AI?** Доверьте интеграцию профессионалу — [напишите мне](/ai-integracii).`,
     },
     {
         id: "case-psyho-tg",

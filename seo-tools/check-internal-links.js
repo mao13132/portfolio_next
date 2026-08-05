@@ -64,31 +64,41 @@ function buildLinkGraph() {
     const textFiles = findTextFiles(ARTICLES_DIR);
     console.log(`${C.dim}Найдено text-файлов: ${textFiles.length}${C.reset}`);
 
+    // Строим маппинг: text part → parent domain slug
+    // Например: ai-agenty-part1.ts → ai-agenty-dlya-biznesa (slug из domain файла)
+    const partToParentSlug = new Map();
+    for (const [slug, filePath] of domainFiles) {
+        const dir = path.dirname(filePath);
+        const textDir = path.join(dir, 'texts');
+        if (!fs.existsSync(textDir)) continue;
+        const textFilesInDir = fs.readdirSync(textDir).filter(f => f.endsWith('.ts'));
+        for (const tf of textFilesInDir) {
+            const partName = tf.replace('.ts', '');
+            partToParentSlug.set(path.join(textDir, tf), slug);
+        }
+    }
+
     for (const filePath of textFiles) {
         const content = fs.readFileSync(filePath, 'utf-8');
-        const fileName = path.basename(filePath, '.ts');
+        // Используем slug родительского domain файла, а не имя text part
+        const parentSlug = partToParentSlug.get(filePath);
+        if (!parentSlug) continue;
 
-        // Определяем slug из имени файла: slug-part1 → slug
-        const partMatch = fileName.match(/^(.+)-part\d+$/);
-        if (!partMatch) continue;
-        const slug = partMatch[1];
-
-        allSlugs.add(slug);
-        if (!graph.has(slug)) graph.set(slug, new Set());
+        // Не добавляем text part slug в allSlugs — только domain файлы определяют статьи
 
         // Извлекаем все template literals и ищем markdown-ссылки
-        // Пропускаем якорные ссылки (#section) и внешние ссылки
         const templateLiterals = content.match(/content\s*:\s*`([\s\S]*?)`/g);
         if (templateLiterals) {
             for (const tpl of templateLiterals) {
                 const inner = tpl.replace(/^content\s*:\s*`/, '').replace(/`$/, '');
                 const links = extractMarkdownLinks(inner);
                 for (const link of links) {
-                    if (link.url.startsWith('#')) continue; // якорные ссылки
+                    if (link.url.startsWith('#')) continue;
                     if (link.url.startsWith('/')) {
                         const targetSlug = normalizeSlug(link.url);
-                        if (targetSlug && targetSlug !== slug) {
-                            graph.get(slug).add(targetSlug);
+                        if (targetSlug && targetSlug !== parentSlug) {
+                            if (!graph.has(parentSlug)) graph.set(parentSlug, new Set());
+                            graph.get(parentSlug).add(targetSlug);
                         }
                     }
                 }

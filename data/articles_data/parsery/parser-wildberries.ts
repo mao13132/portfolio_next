@@ -89,5 +89,7 @@ export const articleParserWildberries: Article = {
         { anchor: "мониторинг цен на маркетплейсах", url: "/blog/monitoring-cen-marketplejsov", context: "Инструменты и подходы к мониторингу" },
         { anchor: "разработка на Python", url: "/blog/python-razrabotka", context: "Python для автоматизации и парсинга" },
         { anchor: "разработка ботов", url: "/razrabotka-botov", context: "Telegram-боты для бизнеса" },
+        { anchor: "руководство по API Wildberries", url: "/blog/api-wildberries-rukovodstvo", context: "Полное руководство по API Wildberries" },
+        { anchor: "парсер отзывов", url: "/blog/parser-otzyvov", context: "Сбор и анализ отзывов с маркетплейсов" },
     ],
 };

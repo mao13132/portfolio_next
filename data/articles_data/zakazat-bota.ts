@@ -103,5 +103,8 @@ export const articleZakazatBota: Article = {
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл от идеи до запуска" },
         { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "Если нужен сложный интерфейс — создайте WebApp" },
         { anchor: "Telegram-бот или мобильное приложение", url: "/blog/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa", context: "Не уверены? Сравните бот и приложение" },
+        { anchor: "конструкторы Telegram-ботов", url: "/blog/konstruktory-telegram-botov", context: "Конструкторы vs кастомная разработка ботов" },
+        { anchor: "личный Telegram-бот", url: "/blog/lichnyj-telegram-bot", context: "Примеры личных ботов для бизнеса" },
+        { anchor: "стоимость Telegram-бота", url: "/blog/stoimost-telegram-bota", context: "Сколько стоит разработка бота" },
     ],
 };

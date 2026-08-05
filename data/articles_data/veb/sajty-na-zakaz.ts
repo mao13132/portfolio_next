@@ -94,5 +94,6 @@ export const articleSajtyNaZakaz: Article = {
         { anchor: "разработка ботов", url: "/razrabotka-botov", context: "Telegram-боты для автоматизации" },
         { anchor: "разработка CRM", url: "/razrabotka-crm", context: "CRM-системы для бизнеса" },
         { anchor: "Python-разработка под ключ", url: "/blog/python-razrabotka-pod-klyuch", context: "Python для веб-разработки" },
+        { anchor: "Telegram-бот или мобильное приложение", url: "/blog/telegram-bot-ili-mobilnoe-prilozhenie", context: "Сравнение бота и приложения для бизнеса" },
     ],
 };

@@ -48,9 +48,10 @@ function checkArticleQuality(parsed) {
     const textDir = path.join(path.dirname(parsed.filePath), 'texts');
     let hasDelegation = false;
     let textContent = '';
-    if (fs.existsSync(textDir) && parsed.slug) {
+    if (fs.existsSync(textDir)) {
+        // Читаем ВСЕ part-файлы в texts/ (имена не всегда совпадают со slug)
         const textFiles = fs.readdirSync(textDir)
-            .filter(f => f.startsWith(parsed.slug + '-part') && f.endsWith('.ts'));
+            .filter(f => f.includes('-part') && f.endsWith('.ts'));
         for (const tf of textFiles) {
             const tc = fs.readFileSync(path.join(textDir, tf), 'utf-8');
             textContent += tc;
@@ -157,7 +158,7 @@ function checkArticleQuality(parsed) {
     }
 
     // 15. Нет упоминаний Wordstat (критерий 17.1)
-    const wordstatPatterns = /по данным Wordstat|запрос ищут|частотность|показов\/мес/i;
+    const wordstatPatterns = /по данным\s+Wordstat|запрос ищут\s+\d|показов\/мес|SEO-термин/i;
     if (wordstatPatterns.test(allContent)) {
         issues.push('Есть упоминания Wordstat в тексте (критерий 17.1)');
     }

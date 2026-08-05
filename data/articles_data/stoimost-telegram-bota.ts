@@ -13,7 +13,7 @@ export const articleStoimostTelegramBota: Article = {
     h1: "Стоимость разработки Telegram бота: реальные цены и что на них влияет",
     ogTitle: "Стоимость разработки Telegram бота — реальные цены 2026",
     ogDescription: "Полный разбор стоимости Telegram-бота: от простого до сложного. Реальные цены, сроки, факторы. Кейсы с ROI.",
-    canonical: `${SITE_URL}/blog/stoimost-razrabotki`,
+    canonical: `${SITE_URL}/blog/stoimost-telegram-bota`,
     heroBadge: "💰 Реальные цены • 2026",
     heroSubtitle: "Сколько стоит Telegram-бот на самом деле? Разбираем три уровня сложности, реальные кейсы и способы сэкономить.",
     readingTime: "16 мин чтения",

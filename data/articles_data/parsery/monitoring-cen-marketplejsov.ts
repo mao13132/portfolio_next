@@ -88,5 +88,6 @@ export const articleMonitoringCenMarketplejsov: Article = {
         { anchor: "парсер Wildberries", url: "/blog/parser-wildberries", context: "Полное руководство по парсингу WB" },
         { anchor: "парсер Ozon", url: "/blog/parser-ozon", context: "Полное руководство по парсингу Ozon" },
         { anchor: "repricer для Wildberries", url: "/blog/repricer-wildberries", context: "Автоматическое ценообразование на WB" },
+        { anchor: "парсер отзывов", url: "/blog/parser-otzyvov", context: "Мониторинг и анализ отзывов на маркетплейсах" },
     ],
 };

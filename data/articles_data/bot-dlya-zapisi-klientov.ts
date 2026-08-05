@@ -92,5 +92,6 @@ export const articleBotDlyaZapisiKlientov: Article = {
         { anchor: "бот обратной связи", url: "/blog/bot-obratnoj-svyazi-telegram", context: "Настройка сбора отзывов и NPS" },
         { anchor: "Telegram-бот рассылка", url: "/blog/telegram-bot-rassylka", context: "Автоматические напоминания и промо-рассылки" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл создания бота" },
+        { anchor: "Telegram-бот для записи клиентов", url: "/blog/telegram-bot-dlya-zapisi-klientov", context: "Полное руководство по записи клиентов через бота" },
     ],
 };

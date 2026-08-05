@@ -92,5 +92,6 @@ export const articleRazrabotkaCrmPodKlyuch: Article = {
         { anchor: "автоматизация документооборота", url: "/blog/avtomatizaciya-dokumentooborota", context: "Электронный документооборот" },
         { anchor: "примеры автоматизации", url: "/blog/primery-avtomatizacii-biznesa", context: "4 реальных кейса автоматизации" },
         { anchor: "Telegram Mini App", url: "/blog/telegram-mini-app-chto-eto", context: "Веб-приложение внутри Telegram" },
+        { anchor: "разработка CRM и ERP", url: "/blog/razrabotka-crm-erp", context: "Полное руководство по разработке CRM и ERP систем" },
     ],
 };

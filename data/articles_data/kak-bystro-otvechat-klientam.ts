@@ -91,5 +91,6 @@ export const articleKakBystroOtvechatKlientam: Article = {
         { anchor: "Telegram-бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Какие задачи решает бот для бизнеса" },
         { anchor: "Telegram-бот рассылка", url: "/blog/telegram-bot-rassylka", context: "Автоматические рассылки через бота" },
         { anchor: "автоматизация заявок", url: "/blog/avtomatizaciya-zayavok", context: "Как автоматизировать приём заявок" },
+        { anchor: "Telegram-бот для записи клиентов", url: "/blog/telegram-bot-dlya-zapisi-klientov", context: "Как бот записывает клиентов 24/7" },
     ],
 };

@@ -130,6 +130,8 @@ export const magazinaPart2: ArticleSection[] = [
 • Комиссия платёжных систем: 2-5%
 • Поддержка: 5 000 — 15 000 ₽/мес
 
-Подробнее о [стоимости разработки Telegram-ботов](/blog/stoimost-razrabotki) — в отдельной статье. Если нужен сложный интерфейс — рассмотрите [Telegram WebApp](/blog/telegram-webapp-razrabotka). Для AI-консультанта в магазине подойдёт [AI Telegram-бот](/blog/ai-telegram-bot-dlya-biznesa).`,
+Подробнее о [стоимости разработки Telegram-ботов](/blog/stoimost-razrabotki) — в отдельной статье. Если нужен сложный интерфейс — рассмотрите [Telegram WebApp](/blog/telegram-webapp-razrabotka). Для AI-консультанта в магазине подойдёт [AI Telegram-бот](/blog/ai-telegram-bot-dlya-biznesa).
+
+> 💰 **Хотите точную смету?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-botov).`,
         }
 ];

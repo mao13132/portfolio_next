@@ -94,7 +94,9 @@ export const razrabotkaRestApiPart1: ArticleSection[] = [
 | Мониторинг | Prometheus, Grafana | Метрики и алерты |
 | CI/CD | GitHub Actions | Автоматический деплой |
 
-**Рекомендуемый стек для большинства проектов:** FastAPI + PostgreSQL + Redis + Docker + Nginx. Этот стек обеспечивает высокую производительность, простоту разработки и лёгкость деплоя.`,
+**Рекомендуемый стек для большинства проектов:** FastAPI + PostgreSQL + Redis + Docker + Nginx. Этот стек обеспечивает высокую производительность, простоту разработки и лёгкость деплоя.
+
+> 🔧 **Нужна API-интеграция?** Доверьте это профессионалу — [напишите мне](/razrabotka-api).`,
     },
     {
         id: "case-fastapi-markets",

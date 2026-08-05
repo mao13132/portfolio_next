@@ -133,7 +133,9 @@ export const pythonObrabotkaDannyhPart1: ArticleSection[] = [
 **Хотите автоматическую аналитику для вашего бизнеса?**
 Бесплатная консультация — разберём ваши данные и предложим решение.
 [Обсудить проект →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 🔧 **Хотите проект на Python?** Доверьте разработку профессионалу — [напишите мне](/python-razrabotka).`,
     },
     {
         id: "case-bankless-data",

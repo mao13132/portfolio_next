@@ -112,5 +112,6 @@ export const articleAvtomatizaciyaOtdelaProdazh: Article = {
         { anchor: "заказать Telegram бота для продаж", url: "/razrabotka-botov", context: "Разработка ботов для автоматизации" },
         { anchor: "что можно автоматизировать в бизнесе", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },
         { anchor: "как бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "4 реальных кейса с цифрами" },
+        { anchor: "корпоративный Telegram-бот", url: "/blog/korporativnyj-telegram-bot", context: "Корпоративный бот для отдела продаж" },
     ],
 };

@@ -85,7 +85,9 @@ export const priyomZakazov2Part2: ArticleSection[] = [
 
 Стоимость бота: 80 000₽. Окупаемость: 80 000 / 650 000 = 0,12 месяца = **3-4 дня**.
 
-ROI за 6 месяцев: 1000-3000%. Бот для приёма заказов — один из самых доходных инструментов для бизнеса. Если нужен сложный интерфейс — рассмотрите [Telegram WebApp](/blog/telegram-webapp-razrabotka). Для AI-консультанта подойдёт [AI Telegram-бот](/blog/ai-telegram-bot-dlya-biznesa).`,
+ROI за 6 месяцев: 1000-3000%. Бот для приёма заказов — один из самых доходных инструментов для бизнеса. Если нужен сложный интерфейс — рассмотрите [Telegram WebApp](/blog/telegram-webapp-razrabotka). Для AI-консультанта подойдёт [AI Telegram-бот](/blog/ai-telegram-bot-dlya-biznesa).
+
+> 💰 **Хотите узнать стоимость?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-botov).`,
         },
 {
             id: "faq",

@@ -98,5 +98,6 @@ export const articleRazrabotkaBDlyaTelegram: Article = {
         { anchor: "разработка бота с нуля", url: "/blog/razrabotka-telegram-bota-s-nulya", context: "Если нет ничего" },
         { anchor: "Telegram-бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Какие задачи решают боты" },
         { anchor: "как Telegram-бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "Реальные кейсы с цифрами" },
+        { anchor: "конструкторы Telegram-ботов", url: "/blog/konstruktory-telegram-botov", context: "Обзор конструкторов ботов без кода" },
     ],
 };

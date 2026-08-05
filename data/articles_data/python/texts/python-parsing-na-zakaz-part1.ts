@@ -137,7 +137,9 @@ export const pythonParsingNaZakazPart1: ArticleSection[] = [
 **Нужен парсер для вашего сайта или сервиса?**
 Бесплатная консультация — оценим сложность и стоимость. От 15 000₽.
 [Обсудить проект →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 🔧 **Хотите проект на Python?** Доверьте разработку профессионалу — [напишите мне](/python-razrabotka).`,
     },
     {
         id: "case-aliexpress",

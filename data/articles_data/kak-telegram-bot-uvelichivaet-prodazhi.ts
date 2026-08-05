@@ -87,5 +87,6 @@ export const articleKakTelegramBotUvelichivaetProdazhi: Article = {
         { anchor: "бот для записи клиентов", url: "/blog/bot-dlya-zapisi-klientov", context: "Автоматизация записи" },
         { anchor: "бот или приложение для бизнеса", url: "/blog/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa", context: "Что выбрать для бизнеса" },
         { anchor: "что можно автоматизировать в бизнесе", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },
+        { anchor: "бот-менеджер по продажам", url: "/blog/bot-menedzher-po-prodazham", context: "Кейс: бот-менеджер увеличивает конверсию на 35%" },
     ],
 };

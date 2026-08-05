@@ -65,7 +65,9 @@ export const pythonBotPart1: ArticleSection[] = [
 
 Шаг 4: BotFather выдаст токен — длинную строку вида 123456789:ABCdefGHIjklMNOpqrsTUVwxyz. Это ключ доступа к вашему боту. НИКОМУ его не показывайте и не публикуйте в открытом доступе.
 
-Шаг 5: Сохраните токен в файл .env в корне проекта:\nBOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz\n\nЧерез BotFather также можно: установить аватар (/setuserpic), описание (/setdescription), команды бота (/setcommands), включить inline-режим (/setinline).`,
+Шаг 5: Сохраните токен в файл .env в корне проекта:\nBOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz\n\nЧерез BotFather также можно: установить аватар (/setuserpic), описание (/setdescription), команды бота (/setcommands), включить inline-режим (/setinline).
+
+> 🔧 **Хотите бота, который работает?** Доверьте разработку профессионалу — [напишите мне](/razrabotka-botov).`,
         },
 {
             id: "first-bot",

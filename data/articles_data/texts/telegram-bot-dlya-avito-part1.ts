@@ -122,7 +122,9 @@ async def check_new_messages(bot: Bot, avito: AvitoClient, chat_id: int):
 **Не хотите терять клиентов?**
 Настрою уведомления о сообщениях с Авито в Telegram за 1-2 дня.
 [Заказать настройку →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 🔧 **Сложная задача? Доверьте разработку бота профессионалу** — [напишите мне](/razrabotka-botov), и я сделаю всё под ключ.`,
         },
 {
             id: "avtootvety",

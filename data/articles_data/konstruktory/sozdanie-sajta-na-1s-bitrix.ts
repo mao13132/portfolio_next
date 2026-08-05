@@ -44,7 +44,7 @@ const sections: ArticleSection[] = [
 - Стартап с ограниченным бюджетом
 - Проект, требующий высокой скорости
 
-О [создании сайтов под ключ](/blog/razrabotka-sajta-pod-klyuch) и [интеграции с 1С](/blog/api-integraciya-1s).`,
+О [создании сайтов под ключ](/blog/razrabotka-sajta-pod-klyuch-veb) и [интеграции с 1С](/blog/api-integraciya-1s).`,
     },
     {
         id: "development-process",
@@ -331,7 +331,7 @@ export const articleSozdanieSajtaNa1sBitrix: Article = {
     ),
 
     internalLinks: [
-        { anchor: "создание сайтов под ключ", url: "/blog/razrabotka-sajta-pod-klyuch", context: "Разработка сайтов" },
+        { anchor: "создание сайтов под ключ", url: "/blog/razrabotka-sajta-pod-klyuch-veb", context: "Разработка сайтов" },
         { anchor: "интеграция с 1С", url: "/blog/api-integraciya-1s", context: "API-интеграция" },
         { anchor: "создание интернет-магазина", url: "/blog/sozdanie-internet-magazina", context: "E-commerce" },
         { anchor: "сайт на WordPress", url: "/blog/sozdanie-sajta-na-wordpress", context: "Альтернатива" },

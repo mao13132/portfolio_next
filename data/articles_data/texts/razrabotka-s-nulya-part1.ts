@@ -63,7 +63,7 @@ export const razrabotkaSNulyaPart1: ArticleSection[] = [
 {
             id: "step-2-tech",
             title: "Шаг 2: Выбор технологий",
-            content: `Telegram-бот — это программа, которая общается с серверами Telegram через API. Для написания бота нужен язык программирования и библиотека для работы с Telegram API.`,
+            content: `Telegram-бот — это программа, которая общается с серверами Telegram через API. Для написания бота нужен язык программирования и библиотека для работы с Telegram API.\n\n> 🔧 **Нужен профессиональный Telegram-бот?** Доверьте разработку профессионалу — [напишите мне](/razrabotka-botov).`,
             subsections: [
                 {
                     title: "Python (рекомендую для большинства задач)",

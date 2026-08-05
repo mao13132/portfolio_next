@@ -84,5 +84,6 @@ export const articleLichnyjKabinetVBote: Article = {
         { anchor: "Telegram-бот с оплатой", url: "/blog/telegram-bot-s-oplatoj", context: "Приём платежей в Telegram-боте" },
         { anchor: "настройка Telegram-бота", url: "/blog/nastrojka-telegram-bota", context: "Пошаговое руководство по настройке бота" },
         { anchor: "автоматизация клиентов", url: "/blog/avtomatizaciya-klientov", context: "Автоматизация работы с клиентами" },
+        { anchor: "личный Telegram-бот", url: "/blog/lichnyj-telegram-bot", context: "Как создать персонального Telegram-бота" },
     ],
 };

@@ -91,5 +91,6 @@ export const articleRazrabotkaMobilnihPrilozhenij: Article = {
         { anchor: "разработка для бизнеса", url: "/blog/razrabotka-prilozhenij-dlya-biznesa", context: "Приложения для бизнеса" },
         { anchor: "разработка на Next.js", url: "/blog/razrabotka-na-nextjs", context: "Веб-платформы на Next.js" },
         { anchor: "автоматизация бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Автоматизация бизнес-процессов" },
+        { anchor: "Telegram-бот или мобильное приложение", url: "/blog/telegram-bot-ili-mobilnoe-prilozhenie", context: "Когда бот выгоднее мобильного приложения" },
     ],
 };

@@ -92,5 +92,6 @@ export const articleIntegraciyaCRMSTelegram: Article = {
         { anchor: "что можно автоматизировать в бизнесе", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Полное руководство по автоматизации" },
         { anchor: "разработка CRM под ключ", url: "/blog/razrabotka-crm-pod-klyuch", context: "Кастомная CRM для бизнеса" },
+        { anchor: "разработка CRM и ERP", url: "/blog/razrabotka-crm-erp", context: "Полное руководство по разработке CRM и ERP" },
     ],
 };

@@ -78,7 +78,9 @@ export const pythonParsingNaZakazPart2: ArticleSection[] = [
 
 **Важно:** Обход защиты — легальная практика при сборе открытых данных. Я не взламываю сайты и не краду персональные данные. Парсинг открытой информации (цены, товары, объявления) легален в России.
 
-Подробнее о [парсинге Wildberries](/blog/parser-wildberries) и [мониторинге цен](/blog/monitoring-cen-marketplejsov).`,
+Подробнее о [парсинге Wildberries](/blog/parser-wildberries) и [мониторинге цен](/blog/monitoring-cen-marketplejsov).
+
+> 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
     },
     {
         id: "faq",

@@ -90,5 +90,6 @@ export const articleCrmDlyaMalogoBiznesa: Article = {
         { anchor: "автоматизация малого бизнеса", url: "/blog/avtomatizaciya-malogo-biznesa", context: "Комплексная автоматизация малого бизнеса" },
         { anchor: "что можно автоматизировать", url: "/blog/chto-mozhno-avtomatizirovat-v-malom-biznese", context: "10 процессов для автоматизации" },
         { anchor: "автоматизация документооборота", url: "/blog/avtomatizaciya-dokumentooborota", context: "Электронный документооборот" },
+        { anchor: "разработка CRM и ERP", url: "/blog/razrabotka-crm-erp", context: "CRM и ERP системы для бизнеса" },
     ],
 };

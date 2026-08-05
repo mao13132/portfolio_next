@@ -92,7 +92,9 @@ export const massovayaRassylkaTelegramPart1: ArticleSection[] = [
 | Подготовить контент | 2-4 часа | Частичное |
 | Отправить | Автоматически | 100% |
 
-Подробнее о [разработке ботов](/razrabotka-botov) для рассылок.`,
+Подробнее о [разработке ботов](/razrabotka-botov) для рассылок.
+
+> 🔧 **Нужна лидогенерация в Telegram?** Доверьте это профессионалу — [напишите мне](/lidogeneraciya-telegram).`,
     },
     {
         id: "case-people-pars",

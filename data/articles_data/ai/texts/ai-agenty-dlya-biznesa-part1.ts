@@ -86,7 +86,9 @@ export const aiAgentyDlyaBiznesaPart1: ArticleSection[] = [
 **Хотите AI-агента для продвижения в Telegram?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽.
 [Обсудить проект →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 🔧 **Нужна AI-интеграция?** Доверьте это профессионалу — [напишите мне](/ai-integracii).`,
     },
     {
         id: "case-replace-content",

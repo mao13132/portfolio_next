@@ -142,7 +142,9 @@ export const pythonTelegramBotRazrabotkaPart1: ArticleSection[] = [
 **Хотите бот для записи клиентов?**
 Бесплатная консультация — обсудим вашу задачу. От 50 000₽.
 [Обсудить проект →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 🔧 **Нужен Python-разработчик?** Доверьте проект профессионалу — [напишите мне](/python-razrabotka).`,
     },
     {
         id: "case-leads-telegram",

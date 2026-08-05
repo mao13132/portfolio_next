@@ -89,5 +89,6 @@ export const articleTelegramBotRassylka: Article = {
         { anchor: "бот обратной связи", url: "/blog/bot-obratnoj-svyazi-telegram", context: "Сбор отзывов и NPS через бота" },
         { anchor: "как Telegram-бот увеличивает продажи", url: "/blog/kak-telegram-bot-uvelichivaet-prodazhi", context: "Реальные кейсы с цифрами" },
         { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен" },
+        { anchor: "AI-бот для ведения канала", url: "/blog/ai-bot-dlya-vedeniya-telegram-kanala", context: "Автоматизация контента канала с помощью ИИ" },
     ],
 };

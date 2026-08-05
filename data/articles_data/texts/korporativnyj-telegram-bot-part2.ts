@@ -218,7 +218,9 @@ async def send_weekly_summary():
 Смежные статьи:
 • [Telegram-бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Личный кабинет в Telegram-боте](/blog/lichnyj-kabinet-v-telegram-bote)
-• [Настройка Telegram-бота](/blog/nastrojka-telegram-bota)`,
+• [Настройка Telegram-бота](/blog/nastrojka-telegram-bota)
+
+> 💰 **Хотите узнать стоимость?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-botov).`,
         },
 {
             id: "zaklyuchenie",

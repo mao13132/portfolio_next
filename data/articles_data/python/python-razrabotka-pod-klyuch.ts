@@ -89,5 +89,6 @@ export const articlePythonRazrabotkaPodKlyuch: Article = {
         { anchor: "парсинг маркетплейсов на заказ", url: "/parsery-marketplejsov", context: "Парсеры для бизнеса" },
         { anchor: "разработка ботов", url: "/razrabotka-botov", context: "Telegram-боты на Python" },
         { anchor: "автоматизация бизнеса", url: "/blog/python-avtomatizaciya-biznesa", context: "Python для автоматизации" },
+        { anchor: "Python обработка данных", url: "/blog/python-obrabotka-dannyh", context: "Анализ и обработка данных" },
     ],
 };

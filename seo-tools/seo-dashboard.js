@@ -13,6 +13,7 @@ const {
 const { runCheckInternalLinks } = require('./check-internal-links');
 const { runCheckContentQuality } = require('./check-content-quality');
 const { runCheckSeoMeta } = require('./check-seo-meta');
+const { checkAnomalies } = require('./check-anomalies');
 
 // ═══════════════════════════════════════════
 //  РАСЧЁТ БАЛЛОВ
@@ -136,7 +137,7 @@ function collectPriorityFixes(linkData, contentData, metaData) {
 //  ОТРИСОВКА ДАШБОРДА
 // ═══════════════════════════════════════════
 
-function printDashboard(linkData, contentData, metaData, sitemapScore) {
+function printDashboard(linkData, contentData, metaData, sitemapScore, anomalyData) {
     console.log(`\n${C.bold}${C.cyan}═══════════════════════════════════════════${C.reset}`);
     console.log(`${C.bold}${C.cyan}  🏆 SEO DASHBOARD — dima-razrab.com${C.reset}`);
     console.log(`${C.bold}${C.cyan}═══════════════════════════════════════════${C.reset}\n`);
@@ -247,11 +248,19 @@ function main() {
         console.log(`${C.red}❌ Ошибка проверки мета-тегов: ${err.message}${C.reset}`);
     }
 
-    // 4. Sitemap (заглушка)
+    // 4. Проверка аномалий (кириллица, CJK, дубликаты slug)
+    let anomalyData = null;
+    try {
+        anomalyData = checkAnomalies();
+    } catch (err) {
+        console.log(`${C.red}❌ Ошибка проверки аномалий: ${err.message}${C.reset}`);
+    }
+
+    // 5. Sitemap (заглушка)
     const sitemapScore = calcSitemapScore();
 
     // ─── Выводим дашборд ───
-    printDashboard(linkData, contentData, metaData, sitemapScore);
+    printDashboard(linkData, contentData, metaData, sitemapScore, anomalyData);
 }
 
 main();

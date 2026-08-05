@@ -105,7 +105,9 @@ export const pythonBackendRazrabotkaPart2: ArticleSection[] = [
 | Средний | 1 500₽ | 500₽ | 300₽ | 2 000-3 000₽ |
 | Большой | 5 000₽ | 2 000₽ | 1 000₽ | 8 000-15 000₽ |
 
-Подробнее о [Python-разработке под ключ](/blog/python-razrabotka-pod-klyuch).`,
+Подробнее о [Python-разработке под ключ](/blog/python-razrabotka-pod-klyuch).
+
+> 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
     },
     {
         id: "faq",

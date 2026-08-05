@@ -65,7 +65,9 @@ export const integraciyaOpenaiApiPart1: ArticleSection[] = [
 - Сокращение промптов — меньше токенов = ниже стоимость
 - Batch API — пакетная обработка со скидкой 50%
 
-Подробнее о [разработке на Python](/python-razrabotka) для работы с API.`,
+Подробнее о [разработке на Python](/python-razrabotka) для работы с API.
+
+> 🔧 **Не хотите разбираться в AI?** Доверьте интеграцию профессионалу — [напишите мне](/ai-integracii).`,
     },
     {
         id: "case-chatgpt-goroskop",

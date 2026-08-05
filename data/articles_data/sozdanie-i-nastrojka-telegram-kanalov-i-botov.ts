@@ -91,5 +91,6 @@ export const articleSozdanieINastrojkaTelegramKanalovIBotov: Article = {
         { anchor: "Telegram-бот рассылка", url: "/blog/telegram-bot-rassylka", context: "Автоматические рассылки подписчикам" },
         { anchor: "заказать Telegram-бота", url: "/blog/zakazat-telegram-bota", context: "Полное руководство по заказу бота" },
         { anchor: "сбор базы клиентов в Telegram", url: "/blog/sbor-bazy-klientov-telegram", context: "Как собрать и использовать базу клиентов" },
+        { anchor: "AI-бот для ведения Telegram-канала", url: "/blog/ai-bot-dlya-vedeniya-telegram-kanala", context: "ИИ-автопостинг и модерация канала" },
     ],
 };

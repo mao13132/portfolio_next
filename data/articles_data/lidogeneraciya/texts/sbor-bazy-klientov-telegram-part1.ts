@@ -93,7 +93,9 @@ export const sborBazyKlientovTelegramPart1: ArticleSection[] = [
 | Дедупликация | Мгновенно | 100% |
 | Экспорт | 5-10 минут | 100% |
 
-Подробнее о технической стороне парсинга — в статье [парсер Telegram-каналов](/blog/parser-telegram-kanalov).`,
+Подробнее о технической стороне парсинга — в статье [парсер Telegram-каналов](/blog/parser-telegram-kanalov).
+
+> 🔧 **Не хотите разбираться в лидогенерации?** Доверьте это профессионалу — [напишите мне](/lidogeneraciya-telegram).`,
     },
     {
         id: "case-people-pars",

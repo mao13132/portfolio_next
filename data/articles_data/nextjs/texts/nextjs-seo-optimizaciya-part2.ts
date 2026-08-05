@@ -54,7 +54,9 @@ export const nextjsSeoOptimizaciyaPart2: ArticleSection[] = [
 **Планируете медиа-платформу с сильным SEO?**
 Бесплатная консультация — подберём архитектуру и SEO-стратегию. От 200 000₽.
 [Обсудить проект →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 💰 **Хотите точную смету на Next.js проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/nextjs-razrabotka).`,
     },
     {
         id: "case-marketplace-seo",

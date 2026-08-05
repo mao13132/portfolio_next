@@ -93,5 +93,6 @@ export const articleIntegraciyaApiMarketplejsov: Article = {
         { anchor: "интеграция API с CRM", url: "/blog/integraciya-api-s-crm", context: "Связь с CRM" },
         { anchor: "интеграция API доставки", url: "/blog/integraciya-api-dostavki", context: "Автоматизация доставки" },
         { anchor: "FastAPI для разработки API", url: "/blog/fastapi-dlya-api", context: "Почему FastAPI" },
+        { anchor: "руководство по API Wildberries", url: "/blog/api-wildberries-rukovodstvo", context: "Интеграция с API Wildberries" },
     ],
 };

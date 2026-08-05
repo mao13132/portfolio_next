@@ -100,7 +100,9 @@ export const pythonRazrabotkaPodKlyuchPart2: ArticleSection[] = [
 **Готовы обсудить ваш проект?**
 Бесплатная консультация — разберём задачу и оценим стоимость.
 [Написать в Telegram →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
     },
     {
         id: "faq",

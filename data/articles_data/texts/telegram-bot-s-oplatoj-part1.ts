@@ -78,7 +78,7 @@ export const telegramBotSOplatojPart1: ArticleSection[] = [
 {
             id: "how-to-integrate",
             title: "Пошаговая инструкция: интеграция оплаты в бота",
-            content: `Разберём процесс на примере ЮKassa + Python + aiogram — самый популярный стек для российских Telegram-ботов. Если хотите [заказать Telegram-бота с оплатой](/razrabotka-botov) под ключ — я интегрирую ЮKassa, СБП или Stripe за 5–10 дней.`,
+            content: `Разберём процесс на примере ЮKassa + Python + aiogram — самый популярный стек для российских Telegram-ботов. Если хотите [заказать Telegram-бота с оплатой](/razrabotka-botov) под ключ — я интегрирую ЮKassa, СБП или Stripe за 5–10 дней.\n\n> 🔧 **Не хотите разбираться в разработке ботов?** Доверьте это профессионалу — [напишите мне](/razrabotka-botov), и я сделаю всё под ключ.`,
             subsections: [
                 {
                     title: "Шаг 1: Регистрация в ЮKassa",

@@ -130,7 +130,9 @@ export const djangoVsFastapiVsFlaskPart1: ArticleSection[] = [
 - Высоконагруженный API
 - Real-time приложение (WebSocket)
 
-Подробнее о [FastAPI разработке](/blog/fastapi-razrabotka) и [API разработке](/razrabotka-api).`,
+Подробнее о [FastAPI разработке](/blog/fastapi-razrabotka) и [API разработке](/razrabotka-api).
+
+> 🔧 **Нужен Python-разработчик?** Доверьте проект профессионалу — [напишите мне](/python-razrabotka).`,
     },
     {
         id: "flask-deep-dive",

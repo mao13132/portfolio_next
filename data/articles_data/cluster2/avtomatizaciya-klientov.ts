@@ -97,5 +97,6 @@ export const articleAvtomatizaciyaKlientov: Article = {
         { anchor: "интеграция CRM с Telegram", url: "/blog/integraciya-crm-s-telegram", context: "Подключение CRM к мессенджерам" },
         { anchor: "заказать бота", url: "/blog/zakazat-telegram-bota", context: "Как выбрать разработчика ботов" },
         { anchor: "разработка бота для Telegram", url: "/blog/razrabotka-bota-dlya-telegram", context: "Технические детали создания ботов" },
+        { anchor: "корпоративный Telegram-бот", url: "/blog/korporativnyj-telegram-bot", context: "Корпоративный бот для автоматизации клиентского сервиса" },
     ],
 };

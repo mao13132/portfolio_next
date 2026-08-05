@@ -99,5 +99,10 @@ export const articleBotDlyaBiznesa: Article = {
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл создания бота" },
         { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "Если нужен сложный интерфейс — создайте WebApp" },
         { anchor: "заказать Telegram-бота", url: "/blog/zakazat-telegram-bota", context: "Полное руководство по заказу бота" },
+        { anchor: "Telegram-бот или мобильное приложение", url: "/blog/telegram-bot-ili-mobilnoe-prilozhenie", context: "Что лучше для бизнеса: бот или приложение" },
+        { anchor: "корпоративный Telegram-бот", url: "/blog/korporativnyj-telegram-bot", context: "Бот для внутренних процессов компании" },
+        { anchor: "личный Telegram-бот", url: "/blog/lichnyj-telegram-bot", context: "Персональный бот для бизнес-задач" },
+        { anchor: "стоимость Telegram-бота", url: "/blog/stoimost-telegram-bota", context: "Полный разбор стоимости разработки бота" },
+        { anchor: "Telegram-бот для записи клиентов", url: "/blog/telegram-bot-dlya-zapisi-klientov", context: "Автоматизация записи клиентов через бота" },
     ],
 };

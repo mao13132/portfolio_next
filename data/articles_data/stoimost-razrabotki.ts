@@ -99,5 +99,7 @@ export const articleStoimostRazrabotki: Article = {
         { anchor: "заказать Telegram-бота", url: "/blog/zakazat-telegram-bota", context: "Полное руководство по заказу бота" },
         { anchor: "Telegram-бот или мобильное приложение", url: "/blog/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa", context: "Сравните бот и приложение" },
         { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "Если нужен сложный интерфейс" },
+        { anchor: "конструкторы Telegram-ботов", url: "/blog/konstruktory-telegram-botov", context: "Сравнение конструкторов и заказной разработки" },
+        { anchor: "стоимость Telegram-бота", url: "/blog/stoimost-telegram-bota", context: "Подробный разбор цен на ботов" },
     ],
 };

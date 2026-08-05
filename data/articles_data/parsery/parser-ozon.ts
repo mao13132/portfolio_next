@@ -84,5 +84,6 @@ export const articleParserOzon: Article = {
         { anchor: "парсер Wildberries", url: "/blog/parser-wildberries", context: "Полное руководство по парсингу WB" },
         { anchor: "мониторинг цен на маркетплейсах", url: "/blog/monitoring-cen-marketplejsov", context: "Инструменты и подходы к мониторингу" },
         { anchor: "разработка на Python", url: "/blog/python-razrabotka", context: "Python для автоматизации и парсинга" },
+        { anchor: "парсер отзывов", url: "/blog/parser-otzyvov", context: "Автоматический сбор отзывов с маркетплейсов" },
     ],
 };

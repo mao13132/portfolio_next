@@ -130,7 +130,7 @@ Zero Block — это редактор, в котором можно разме�
 - Может замедлять загрузку
 - Требует навыков дизайна
 
-О [UX/UI дизайне](/blog/razrabotka-sajta-pod-klyuch) и [создании сайтов](/blog/sajty-na-zakaz).`,
+О [UX/UI дизайне](/blog/razrabotka-sajta-pod-klyuch-veb) и [создании сайтов](/blog/sajty-na-zakaz).`,
     },
     {
         id: "cost-tilda",
@@ -348,7 +348,7 @@ export const articleSozdanieSajtaNaTildaKonstruktor: Article = {
         { anchor: "создание лендингов", url: "/blog/sozdanie-lendinga", context: "Лендинги" },
         { anchor: "сайт на WordPress", url: "/blog/sozdanie-sajta-na-wordpress", context: "Альтернатива" },
         { anchor: "сайт на Битрикс", url: "/blog/sozdanie-sajta-na-1s-bitrix", context: "Альтернатива" },
-        { anchor: "создание сайтов под ключ", url: "/blog/razrabotka-sajta-pod-klyuch", context: "Разработка" },
+        { anchor: "создание сайтов под ключ", url: "/blog/razrabotka-sajta-pod-klyuch-veb", context: "Разработка" },
         { anchor: "интеграция API с CRM", url: "/blog/integraciya-api-s-crm", context: "Интеграции" },
         { anchor: "заказать сайт", url: "/razrabotka-servisov", context: "Заказать" },
     ],

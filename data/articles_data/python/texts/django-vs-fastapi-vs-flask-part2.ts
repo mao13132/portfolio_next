@@ -56,7 +56,9 @@ export const djangoVsFastapiVsFlaskPart2: ArticleSection[] = [
 **Хотите Digital-платформу для вашего бизнеса?**
 Бесплатная консультация — подберём оптимальный стек.
 [Обсудить проект →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
     },
     {
         id: "case-django-price-framework",

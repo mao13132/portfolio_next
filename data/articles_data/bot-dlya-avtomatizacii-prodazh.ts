@@ -96,5 +96,6 @@ export const articleBotDlyaAvtomatizaciiProdazh: Article = {
         { anchor: "Telegram-бот для магазина", url: "/blog/telegram-bot-dlya-magazina", context: "Каталог и корзина в Telegram" },
         { anchor: "стоимость разработки бота", url: "/blog/stoimost-razrabotki", context: "Полный разбор цен" },
         { anchor: "разработка бота для Telegram", url: "/blog/razrabotka-bota-dlya-telegram", context: "Как выбрать подрядчика" },
+        { anchor: "бот-менеджер по продажам", url: "/blog/bot-menedzher-po-prodazham", context: "Как бот-менеджер ведёт клиента по воронке" },
     ],
 };

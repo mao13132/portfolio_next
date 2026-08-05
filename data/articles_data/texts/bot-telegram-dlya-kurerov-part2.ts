@@ -170,7 +170,9 @@ Avito → Make webhook → FastAPI → PostgreSQL
 
 [Подробнее о стоимости разработки](/blog/stoimost-razrabotki)
 
-[Настройка Telegram-бота](/blog/nastrojka-telegram-bota)`,
+[Настройка Telegram-бота](/blog/nastrojka-telegram-bota)
+
+> 💰 **Интересует стоимость разработки?** Расскажите о проекте — подготовлю детальную смету за 24 часа. [Заказать оценку](/razrabotka-botov).`,
         },
 {
             id: "zaklyuchenie",

@@ -74,7 +74,9 @@ export const chatgptDlyaBiznesaPart1: ArticleSection[] = [
 **Хотите автоматизировать создание контента с ChatGPT?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
 [Обсудить проект →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 🔧 **Нужна AI-интеграция?** Доверьте это профессионалу — [напишите мне](/ai-integracii).`,
     },
     {
         id: "document-processing",

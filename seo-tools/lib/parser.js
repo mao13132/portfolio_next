@@ -273,8 +273,10 @@ function hasTables(text) {
  * Считает количество таблиц в тексте
  */
 function countTables(text) {
+    // Нормализуем переносы строк (Windows \r\n → \n)
+    const normalized = text.replace(/\r\n/g, '\n');
     // Ищем строки с | заголовок | ... | и следующую строку с |---|
-    const tableHeaders = text.match(/\|[^\n]+\|\n\|[-:\s|]+\|/g);
+    const tableHeaders = normalized.match(/\|[^\n]+\|\n\|[-:\s|]+\|/g);
     return tableHeaders ? tableHeaders.length : 0;
 }
 
@@ -306,8 +308,9 @@ function countTextContentChars(textFiles) {
  */
 function countArticleContentChars(slug, textDir) {
     if (!fs.existsSync(textDir)) return 0;
+    // Читаем ВСЕ part-файлы в texts/ (имена не всегда совпадают со slug)
     const textFiles = fs.readdirSync(textDir)
-        .filter(f => f.startsWith(slug + '-part') && f.endsWith('.ts'))
+        .filter(f => f.includes('-part') && f.endsWith('.ts'))
         .map(f => path.join(textDir, f));
 
     let total = 0;
@@ -330,7 +333,7 @@ function countArticleContentChars(slug, textDir) {
 function extractLinksFromTextFiles(slug, textDir) {
     if (!fs.existsSync(textDir)) return [];
     const textFiles = fs.readdirSync(textDir)
-        .filter(f => f.startsWith(slug + '-part') && f.endsWith('.ts'))
+        .filter(f => f.includes('-part') && f.endsWith('.ts'))
         .map(f => path.join(textDir, f));
 
     const links = [];

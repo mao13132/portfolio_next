@@ -90,5 +90,6 @@ export const articleAiBot: Article = {
         { anchor: "Telegram бот для продаж с AI", url: "/blog/telegram-bot-dlya-prodazh", context: "Как AI увеличивает продажи" },
         { anchor: "Telegram WebApp разработка", url: "/blog/telegram-webapp-razrabotka", context: "AI-бот с визуальным интерфейсом" },
         { anchor: "заказать Telegram-бота", url: "/blog/zakazat-telegram-bota", context: "Как выбрать разработчика" },
+        { anchor: "AI-бот для ведения Telegram-канала", url: "/blog/ai-bot-dlya-vedeniya-telegram-kanala", context: "Автоматизация постов и модерации канала с ИИ" },
     ],
 };

@@ -132,7 +132,9 @@ export const sozdanieSajtaNextjsPart1: ArticleSection[] = [
 
 **Практический совет:** используйте shadcn/ui для готовых UI-компонентов. Это экономит 50% времени на вёрстке. Установка: npx shadcn-ui@latest init.
 
-Подробнее о стеке технологий — в статье [SaaS-разработка на Next.js](/blog/saas-razrabotka-nextjs).`,
+Подробнее о стеке технологий — в статье [SaaS-разработка на Next.js](/blog/saas-razrabotka-nextjs).
+
+> 🔧 **Нужен разработчик на Next.js?** Доверьте проект профессионалу — [напишите мне](/nextjs-razrabotka).`,
     },
     {
         id: "building-pages",

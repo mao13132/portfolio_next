@@ -347,7 +347,9 @@ async def analyze_sentiment(client: AsyncOpenAI, comments: list[str]) -> dict:
 • 20 минут на редактирование
 • AI-модерация мгновенно
 • Ежедневные отчёты
-:::`,
+:::
+
+> 💰 **Хотите точную смету?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-botov).`,
         },
 {
             id: "zaklyuchenie",

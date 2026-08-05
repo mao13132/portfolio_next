@@ -92,5 +92,6 @@ export const articleChatgptDlyaBiznesa: Article = {
         { anchor: "автоматизация бизнеса", url: "/avtomatizaciya-biznesa", context: "Автоматизация бизнес-процессов" },
         { anchor: "разработка на Python", url: "/python-razrabotka", context: "Python для AI-интеграций" },
         { anchor: "AI-агенты для бизнеса", url: "/blog/ai-agenty-dlya-biznesa", context: "Автономные AI-агенты" },
+        { anchor: "AI для обработки документов", url: "/blog/ai-dlya-obrabotki-dokumentov", context: "Автоматизация документооборота" },
     ],
 };

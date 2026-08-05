@@ -219,7 +219,9 @@ async def daily_seller_report():
 Смежные статьи:
 • [Telegram-бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
 • [Настройка Telegram-бота](/blog/nastrojka-telegram-bota)
-• [Автоматизация бизнеса](/blog/avtomatizaciya-biznesa)`,
+• [Автоматизация бизнеса](/blog/avtomatizaciya-biznesa)
+
+> 💰 **Какова стоимость бота?** Расскажите о проекте — подготовлю точную смету. [Заказать оценку](/razrabotka-botov).`,
         },
 {
             id: "zaklyuchenie",

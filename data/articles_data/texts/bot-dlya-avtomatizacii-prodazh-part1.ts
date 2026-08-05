@@ -101,7 +101,9 @@ export const botDlyaAvtomatizaciiProdazhPart1: ArticleSection[] = [
 **Хотите такую воронку для вашего бизнеса?**
 Разработаю бота с автоматизированной воронкой продаж. Срок: 7–14 дней.
 [Обсудить проект в Telegram →](https://t.me/dima_razrab)
-:::`,
+:::
+
+> 🔧 **Нет времени разбираться в разработке?** Доверьте создание бота профессионалу — [напишите мне](/razrabotka-botov).`,
         },
 {
             id: "implementation",
