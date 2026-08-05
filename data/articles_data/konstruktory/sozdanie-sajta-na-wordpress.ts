@@ -1,4 +1,4 @@
-import { Article, makeArticleSchema, ArticleSection } from '../types';
+﻿import { Article, makeArticleSchema, ArticleSection } from '../types';
 
 const SITE_URL = 'https://dima-razrab.com';
 
@@ -41,7 +41,7 @@ const sections: ArticleSection[] = [
 - Корпоративные порталы
 - Образовательные платформы (с LMS-плагинами)
 
-О [создании сайтов под ключ](/blog/razrabotka-sajta-pod-klyuch) и [веб-разработке](/blog/sajty-na-zakaz).`,
+О [создании сайтов под ключ](/blog/razrabotka-sajta-pod-klyuch-veb) и [веб-разработке](/blog/sajty-na-zakaz).`,
     },
     {
         id: "elementor",
@@ -151,7 +151,7 @@ Elementor — это плагин для WordPress с drag-and-drop интерф
 | Тестирование | 1-3 дня | 3 000-10 000 ₽ | Стабильность |
 | Запуск | 1-2 дня | 3 000-10 000 ₽ | Сайт в сети |
 
-О [создании сайта под ключ](/blog/razrabotka-sajta-pod-klyuch) и [создании интернет-магазина](/blog/sozdanie-internet-magazina).`,
+О [создании сайта под ключ](/blog/razrabotka-sajta-pod-klyuch-veb) и [создании интернет-магазина](/blog/sozdanie-internet-magazina).`,
     },
     {
         id: "seo-wordpress",
@@ -260,7 +260,7 @@ Elementor — это плагин для WordPress с drag-and-drop интерф
 | Органический трафик | 0 | 3 500 визитов/мес. | — |
 | ROI за 3 мес. | — | 450% | — |
 
-О [создании сайтов под ключ](/blog/razrabotka-sajta-pod-klyuch) и [стоимости разработки](/blog/skolko-stoit-mobilnoe-prilozhenie).`,
+О [создании сайтов под ключ](/blog/razrabotka-sajta-pod-klyuch-veb) и [стоимости разработки](/blog/skolko-stoit-mobilnoe-prilozhenie).`,
     },
     {
         id: "faq",
@@ -360,7 +360,7 @@ export const articleSozdanieSajtaNaWordpress: Article = {
     ),
 
     internalLinks: [
-        { anchor: "создание сайтов под ключ", url: "/blog/razrabotka-sajta-pod-klyuch", context: "Разработка сайтов" },
+        { anchor: "создание сайтов под ключ", url: "/blog/razrabotka-sajta-pod-klyuch-veb", context: "Разработка сайтов" },
         { anchor: "создание лендингов", url: "/blog/sozdanie-lendinga", context: "Лендинги" },
         { anchor: "создание интернет-магазина", url: "/blog/sozdanie-internet-magazina", context: "E-commerce" },
         { anchor: "сайт на Tilda", url: "/blog/sozdanie-sajta-na-tilda-konstruktor", context: "Альтернатива" },
