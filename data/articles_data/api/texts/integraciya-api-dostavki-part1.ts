@@ -247,7 +247,7 @@ export const integraciyaApiDostavkiPart1: ArticleSection[] = [
 :::conversion
 **Нужна интеграция API доставки?**
 Бесплатная консультация — определим задачи и оценим стоимость интеграции. От 15 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

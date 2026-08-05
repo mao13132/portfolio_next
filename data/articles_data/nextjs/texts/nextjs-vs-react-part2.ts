@@ -229,7 +229,7 @@ export const nextjsVsReactPart2: ArticleSection[] = [
 :::conversion
 **Не можете определиться между React и Next.js?**
 Бесплатная консультация — поможем выбрать оптимальную технологию для вашего проекта.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

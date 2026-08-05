@@ -123,7 +123,7 @@ export const monitoringCenMarketplejsovPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматизировать ценообразование на маркетплейсах?**
 Бесплатная консультация — разберём задачи и оценим стоимость. От 60 000₽. ROI 380% за 2 месяца.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -156,7 +156,7 @@ export const monitoringCenMarketplejsovPart1: ArticleSection[] = [
 :::conversion
 **Хотите систему мониторинга цен для вашего дропшиппинг-бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

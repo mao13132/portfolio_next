@@ -111,7 +111,7 @@ export const chatgptBiznesPart1: ArticleSection[] = [
 :::conversion
 **Хотите AI-ассистента для вашего бизнеса?**
 Бесплатная консультация — разберём ваши процессы и покажем, где ChatGPT даст максимальный эффект. Стоимость интеграции от 20 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

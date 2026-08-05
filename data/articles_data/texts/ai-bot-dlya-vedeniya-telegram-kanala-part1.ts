@@ -18,7 +18,7 @@ AI-бот решает эту проблему. Он генерирует кон
 :::conversion
 **Хотите автоматизировать ведение Telegram-канала?**
 Разработаю AI-бота для вашего канала. Бесплатная консультация — разберём задачу.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -150,7 +150,7 @@ async def analyze_channel_style(posts: list[str]) -> str:
 :::conversion
 **Хотите AI-генерацию контента для вашего канала?**
 Настрою AI-бота с генерацией контента под стиль вашего канала.
-[Заказать бота →](https://t.me/dima_razrab)
+[Заказать бота →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Нужен профессиональный Telegram-бот?** Доверьте разработку профессионалу — [напишите мне](/razrabotka-botov).`,
@@ -311,7 +311,7 @@ async def moderate_comment(client: AsyncOpenAI, comment: str, post_text: str) ->
 :::conversion
 **Хотите автоматическую модерацию?**
 Настрою AI-модерацию комментариев для вашего канала за 2-3 дня.
-[Заказать настройку →](https://t.me/dima_razrab)
+[Заказать настройку →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

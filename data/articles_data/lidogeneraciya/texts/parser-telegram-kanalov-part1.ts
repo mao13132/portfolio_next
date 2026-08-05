@@ -144,7 +144,7 @@ export const parserTelegramKanalovPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматический сбор контактов из Telegram?**
 Бесплатная консультация — разберём вашу нишу и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -175,7 +175,7 @@ export const parserTelegramKanalovPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматическое привлечение подписчиков через нейрокомментинг?**
 Бесплатная консультация — обсудим стратегию. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

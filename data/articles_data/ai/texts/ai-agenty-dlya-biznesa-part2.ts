@@ -123,7 +123,7 @@ export const aiAgentyDlyaBiznesaPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость AI-агента для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на AI-интеграцию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/ai-integracii).`,
@@ -184,7 +184,7 @@ export const aiAgentyDlyaBiznesaPart2: ArticleSection[] = [
 :::conversion
 **Готовы создать AI-агента для вашего бизнеса?**
 Бесплатная консультация — определим задачи, подберём подход и оценим стоимость. От 60 000₽. Сроки от 2 недель.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

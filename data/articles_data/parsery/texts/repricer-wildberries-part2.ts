@@ -131,7 +131,7 @@ export const repricerWildberriesPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость repricer для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

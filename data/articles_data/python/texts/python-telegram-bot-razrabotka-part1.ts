@@ -141,7 +141,7 @@ export const pythonTelegramBotRazrabotkaPart1: ArticleSection[] = [
 :::conversion
 **Хотите бот для записи клиентов?**
 Бесплатная консультация — обсудим вашу задачу. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Нужен Python-разработчик?** Доверьте проект профессионалу — [напишите мне](/python-razrabotka).`,
@@ -179,7 +179,7 @@ export const pythonTelegramBotRazrabotkaPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматическую лидогенерацию из Telegram?**
 Бесплатная консультация — определим целевые чаты и настроим мониторинг.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

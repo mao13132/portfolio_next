@@ -160,7 +160,7 @@ export const lidogeneraciyaTelegramKakEtoRabotaetPart1: ArticleSection[] = [
 :::conversion
 **Хотите систему лидогенерации для вашего бизнеса?**
 Бесплатная консультация — разберём нишу и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -191,7 +191,7 @@ export const lidogeneraciyaTelegramKakEtoRabotaetPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматизировать поиск и запись клиентов?**
 Бесплатная консультация — обсудим ваш бизнес. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

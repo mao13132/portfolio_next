@@ -83,7 +83,7 @@ async def auto_bump(avito: AvitoClient, bot: Bot, chat_id: int):
 :::conversion
 **Хотите автоматическое поднятие объявлений?**
 Настрою автоподнятие на Авито в Telegram за 1-2 дня.
-[Заказать настройку →](https://t.me/dima_razrab)
+[Заказать настройку →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -219,7 +219,7 @@ async def sync_to_crm(amocrm: AmoCRM, avito: AvitoClient, message):
 :::conversion
 **Хотите такой же результат?**
 Разработаю Telegram-бота для вашего бизнеса на Авито. Бесплатная консультация.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -324,7 +324,7 @@ async def sync_to_crm(amocrm: AmoCRM, avito: AvitoClient, message):
 :::conversion
 **Готовы автоматизировать продажи на Авито?**
 Бесплатная консультация — разберём вашу задачу и предложим решение за 30 минут.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

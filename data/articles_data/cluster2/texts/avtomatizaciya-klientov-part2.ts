@@ -239,7 +239,7 @@ export const avtomatizaciyaKlientovPart2: ArticleSection[] = [
 
 :::conversion
 **Заказать автоматизацию клиентов →**
-[Написать в Telegram](https://t.me/dima_razrab) — бесплатный аудит вашей системы работы с клиентами.
+[Написать в Telegram](https://t.me/developer_telegrams) — бесплатный аудит вашей системы работы с клиентами.
 ✅ Бесплатный аудит
 ✅ Поддержка 30 дней
 ✅ Сроки от 3 дней

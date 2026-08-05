@@ -144,7 +144,7 @@ export const cifrovizaciyaMalogoBiznesaPart2: ArticleSection[] = [
 :::conversion
 **Хотите такие же результаты?**
 Бесплатный аудит ваших бизнес-процессов — покажу, что цифровизировать первым.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -251,7 +251,7 @@ ROI = (Экономия + Дополнительная выручка - Затр
 
 :::conversion
 **Заказать цифровизацию бизнеса →**
-[Написать в Telegram](https://t.me/dima_razrab) — бесплатный аудит ваших бизнес-процессов и план цифровизации.
+[Написать в Telegram](https://t.me/developer_telegrams) — бесплатный аудит ваших бизнес-процессов и план цифровизации.
 ✅ Бесплатный аудит
 ✅ Поддержка 30 дней
 ✅ Сроки от 1 недели

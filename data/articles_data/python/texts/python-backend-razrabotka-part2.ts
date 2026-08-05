@@ -172,6 +172,6 @@ export const pythonBackendRazrabotkaPart2: ArticleSection[] = [
 | [Разработка сервисов](/razrabotka-servisov) | Full-stack приложения | от 3 недель | от 100 000₽ |
 | [Telegram-боты](/razrabotka-botov) | Боты с backend | от 2 недель | от 50 000₽ |
 
-[Написать в Telegram →](https://t.me/dima_razrab)`,
+[Написать в Telegram →](https://t.me/developer_telegrams)`,
     },
 ];

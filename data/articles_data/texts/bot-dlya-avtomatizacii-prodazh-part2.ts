@@ -84,7 +84,7 @@ export const botDlyaAvtomatizaciiProdazhPart2: ArticleSection[] = [
 :::conversion
 **Хотите увеличить выручку на 40–70%?**
 Разработаю бота для автоматизации продаж под ваш бизнес. Бесплатная консультация.
-[Обсудить проект в Telegram →](https://t.me/dima_razrab)
+[Обсудить проект в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],
@@ -159,7 +159,7 @@ export const botDlyaAvtomatizaciiProdazhPart2: ArticleSection[] = [
 ✅ Бесплатная консультация и расчёт ROI
 ✅ Разработка от 7 дней
 ✅ Бесплатная поддержка 30 дней
-[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)
+[Написать мне в Telegram прямо сейчас →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

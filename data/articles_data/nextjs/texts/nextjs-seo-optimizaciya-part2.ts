@@ -53,7 +53,7 @@ export const nextjsSeoOptimizaciyaPart2: ArticleSection[] = [
 :::conversion
 **Планируете медиа-платформу с сильным SEO?**
 Бесплатная консультация — подберём архитектуру и SEO-стратегию. От 200 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Next.js проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/nextjs-razrabotka).`,
@@ -103,7 +103,7 @@ export const nextjsSeoOptimizaciyaPart2: ArticleSection[] = [
 :::conversion
 **Хотите, чтобы ваши товары были в ТОП-10 Google?**
 Бесплатный SEO-аудит каталога — найдём точки роста. От 150 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -265,7 +265,7 @@ ROI SEO-оптимизации на Next.js: 480-680% за 3-4 месяца. О�
 :::conversion
 **Хотите SEO-оптимизацию вашего сайта на Next.js?**
 Бесплатный SEO-аудит — найдём точки роста и оценим стоимость. От 80 000₽. Сроки от 2 недель.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

@@ -132,7 +132,7 @@ export const pythonObrabotkaDannyhPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматическую аналитику для вашего бизнеса?**
 Бесплатная консультация — разберём ваши данные и предложим решение.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Хотите проект на Python?** Доверьте разработку профессионалу — [напишите мне](/python-razrabotka).`,
@@ -209,7 +209,7 @@ export const pythonObrabotkaDannyhPart1: ArticleSection[] = [
 :::conversion
 **Хотите систему анализа данных с ML?**
 Бесплатная консультация — подберём технологию и оценим стоимость.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

@@ -283,7 +283,7 @@ async def analyze_sentiment(client: AsyncOpenAI, comments: list[str]) -> dict:
 :::conversion
 **Хотите такой же результат?**
 Разработаю AI-бота для вашего Telegram-канала. Бесплатная консультация.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -392,7 +392,7 @@ AI-бот для канала окупается за 2-4 недели за сч
 :::conversion
 **Готовы автоматизировать ведение Telegram-канала?**
 Бесплатная консультация — разберём вашу задачу и предложим решение за 30 минут.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

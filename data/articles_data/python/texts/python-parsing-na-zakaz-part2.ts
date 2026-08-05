@@ -47,7 +47,7 @@ export const pythonParsingNaZakazPart2: ArticleSection[] = [
 :::conversion
 **Нужен парсер для вашего бизнеса?**
 Бесплатная консультация — оценим сложность и стоимость.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -143,6 +143,6 @@ export const pythonParsingNaZakazPart2: ArticleSection[] = [
 | [Автоматизация бизнеса](/avtomatizaciya-biznesa) | Скрипты, интеграции | от 3 дней | от 15 000₽ |
 | [Telegram-боты](/razrabotka-botov) | Боты с парсингом | от 2 недель | от 50 000₽ |
 
-[Написать в Telegram →](https://t.me/dima_razrab)`,
+[Написать в Telegram →](https://t.me/developer_telegrams)`,
     },
 ];

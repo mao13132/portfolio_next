@@ -133,7 +133,7 @@ export const parserTelegramKanalovPart2: ArticleSection[] = [
 :::conversion
 **Хотите парсер Telegram-каналов для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на лидогенерацию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/lidogeneraciya-telegram).`,

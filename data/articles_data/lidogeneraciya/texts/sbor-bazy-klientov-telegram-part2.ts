@@ -35,7 +35,7 @@ export const sborBazyKlientovTelegramPart2: ArticleSection[] = [
 :::conversion
 **Хотите систему работы с базой клиентов?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -138,7 +138,7 @@ export const sborBazyKlientovTelegramPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость сбора базы для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на лидогенерацию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/lidogeneraciya-telegram).`,
@@ -198,7 +198,7 @@ export const sborBazyKlientovTelegramPart2: ArticleSection[] = [
 :::conversion
 **Готовы автоматизировать сбор базы клиентов в Telegram?**
 Бесплатная консультация — определим вашу нишу, подберём подход и оценим стоимость. От 30 000₽. Сроки от 1 недели.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

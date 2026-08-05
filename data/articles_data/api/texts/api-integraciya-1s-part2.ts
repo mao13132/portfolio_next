@@ -33,7 +33,7 @@ export const apiIntegraciya1SPart2: ArticleSection[] = [
 :::conversion
 **Хотите интегрировать 1С с Telegram и маркетплейсами?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -123,7 +123,7 @@ export const apiIntegraciya1SPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость интеграции с 1С?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на API-интеграцию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-api).`,
@@ -184,7 +184,7 @@ export const apiIntegraciya1SPart2: ArticleSection[] = [
 :::conversion
 **Готовы интегрировать 1С с вашими системами?**
 Бесплатная консультация — определим задачи, подберём подход и оценим стоимость. От 50 000₽. Сроки от 1 недели.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

@@ -140,7 +140,7 @@ export const analitikaMarketplejsovPart1: ArticleSection[] = [
 :::conversion
 **Хотите систему аналитики для вашего бизнеса на маркетплейсах?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -175,7 +175,7 @@ export const analitikaMarketplejsovPart1: ArticleSection[] = [
 :::conversion
 **Нужна аналитическая система для вашего Ozon-бизнеса?**
 Бесплатная консультация — разберём задачи. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

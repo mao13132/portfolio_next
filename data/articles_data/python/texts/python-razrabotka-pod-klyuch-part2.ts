@@ -99,7 +99,7 @@ export const pythonRazrabotkaPodKlyuchPart2: ArticleSection[] = [
 :::conversion
 **Готовы обсудить ваш проект?**
 Бесплатная консультация — разберём задачу и оценим стоимость.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
@@ -172,6 +172,6 @@ export const pythonRazrabotkaPodKlyuchPart2: ArticleSection[] = [
 
 **Первый шаг — бесплатная консультация.** Напишите мне в Telegram, опишите задачу — и я оценю стоимость и сроки.
 
-[Написать в Telegram →](https://t.me/dima_razrab)`,
+[Написать в Telegram →](https://t.me/developer_telegrams)`,
     },
 ];

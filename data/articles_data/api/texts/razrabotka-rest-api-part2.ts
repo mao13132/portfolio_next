@@ -130,7 +130,7 @@ export const razrabotkaRestApiPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость разработки API?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на API-интеграцию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-api).`,
@@ -191,7 +191,7 @@ export const razrabotkaRestApiPart2: ArticleSection[] = [
 :::conversion
 **Готовы разработать REST API для вашего бизнеса?**
 Бесплатная консультация — спроектируем архитектуру, оценим стоимость и сроки. От 50 000₽. Сроки от 1 недели.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

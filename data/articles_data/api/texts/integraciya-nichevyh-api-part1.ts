@@ -213,7 +213,7 @@ export const integraciyaNichevyhApiPart1: ArticleSection[] = [
 :::conversion
 **Нужна интеграция с Честным знаком или Контуром?**
 Бесплатная консультация — определим задачи и оценим стоимость интеграции. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

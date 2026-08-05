@@ -20,7 +20,7 @@ export const botTelegramDlyaKurerovPart1: ArticleSection[] = [
 :::conversion
 **Нужен бот для вашей службы доставки?**
 Бесплатная консультация за 30 минут — разберём вашу логистику и предложим решение.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {

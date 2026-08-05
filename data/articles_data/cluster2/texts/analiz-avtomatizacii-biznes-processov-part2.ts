@@ -200,7 +200,7 @@ export const analizAvtomatizaciiBiznesProcessovPart2: ArticleSection[] = [
 :::conversion
 **Хотите такой же результат?**
 Бесплатный аудит ваших бизнес-процессов — покажу, что автоматизировать первым.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::
 
 > 🚀 **Хотите такой же результат?** Покажу, как автоматизировать ваш бизнес — от аудита до внедрения. [Обсудим](/avtomatizaciya-biznesa).`,
@@ -237,7 +237,7 @@ export const analizAvtomatizaciiBiznesProcessovPart2: ArticleSection[] = [
 
 :::conversion
 **Заказать анализ бизнес-процессов →**
-[Написать в Telegram](https://t.me/dima_razrab) — бесплатная консультация и аудит ваших процессов.
+[Написать в Telegram](https://t.me/developer_telegrams) — бесплатная консультация и аудит ваших процессов.
 ✅ Бесплатный аудит
 ✅ Карта процессов за 5 дней
 ✅ Расчёт ROI

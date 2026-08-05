@@ -88,7 +88,7 @@ export const sozdanieINastrojkaTelegramKanalovIBotovPart2: ArticleSection[] = [
 :::conversion
 **Хотите бота для лидогенерации?**
 Разработаю бота-воронку, который собирает и квалифицирует лиды автоматически.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -319,7 +319,7 @@ export const sozdanieINastrojkaTelegramKanalovIBotovPart2: ArticleSection[] = [
 ✅ Бесплатная консультация — обсудим вашу нишу
 ✅ Создание канала + бота за 7-14 дней
 ✅ Поддержка 30 дней бесплатно
-[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)
+[Написать мне в Telegram прямо сейчас →](https://t.me/developer_telegrams)
 :::
 
 Частые ошибки при запуске:

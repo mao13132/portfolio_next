@@ -74,7 +74,7 @@ export const aiDlyaObrabotkiDokumentovPart1: ArticleSection[] = [
 :::conversion
 **Хотите AI-систему документооборота?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Не хотите разбираться в AI?** Доверьте интеграцию профессионалу — [напишите мне](/ai-integracii).`,
@@ -129,7 +129,7 @@ export const aiDlyaObrabotkiDokumentovPart1: ArticleSection[] = [
 :::conversion
 **Хотите AI для анализа документов?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

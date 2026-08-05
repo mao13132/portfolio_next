@@ -138,7 +138,7 @@ export const razrabotkaCrmErpPart2: ArticleSection[] = [
 :::conversion
 **Нужна CRM или ERP для вашего бизнеса?**
 Бесплатная консультация — разберём ваши бизнес-процессы, спроектируем систему и оценим стоимость. CRM от 80 000 ₽, CRM + ERP от 150 000 ₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
             },
             {
@@ -223,7 +223,7 @@ export const razrabotkaCrmErpPart2: ArticleSection[] = [
 :::conversion
 **Готовы заказать CRM или ERP?**
 Бесплатная консультация — разберём ваши бизнес-процессы, спроектируем систему и оценим стоимость за 24 часа. CRM от 80 000 ₽, CRM + ERP от 150 000 ₽. Бесплатная поддержка 30 дней.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

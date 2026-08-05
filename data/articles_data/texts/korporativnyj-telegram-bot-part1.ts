@@ -20,7 +20,7 @@ export const korporativnyjTelegramBotPart1: ArticleSection[] = [
 :::conversion
 **Нужен корпоративный бот для вашей компании?**
 Бесплатная консультация за 30 минут — разберём ваши процессы и предложим решение.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {

@@ -133,7 +133,7 @@ export const razrabotkaRestApiPart1: ArticleSection[] = [
 :::conversion
 **Хотите REST API для автоматизации вашего бизнеса?**
 Бесплатная консультация — разберём задачи и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

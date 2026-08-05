@@ -28,7 +28,7 @@ export const nastrojkaTelegramBotaPart1: ArticleSection[] = [
 :::conversion
 **Нет времени разбираться самому?**
 Настрою Telegram-бота под вашу задачу — от регистрации до запуска. Бесплатная консультация.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {

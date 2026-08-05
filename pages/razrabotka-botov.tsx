@@ -1195,7 +1195,6 @@ export default function RazrabotkaBotovPage() {
                         <div>
                             <h4>Информация</h4>
                             <a href="/privacy" target="_blank" rel="noopener noreferrer">Политика конфиденциальности</a>
-                            <a href="mailto:dima@example.com">dima@example.com</a>
                         </div>
                         <div>
                             <h4>Связаться</h4>

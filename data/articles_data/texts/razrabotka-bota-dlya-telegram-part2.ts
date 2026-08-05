@@ -73,7 +73,7 @@ export const razrabotkaBotaDlyaTelegramPart2: ArticleSection[] = [
 :::conversion
 **Хотите такие же результаты?**
 Опишите задачу — и я предложу решение с расчётом ROI за 24 часа.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],
@@ -167,7 +167,7 @@ export const razrabotkaBotaDlyaTelegramPart2: ArticleSection[] = [
 ✅ Бесплатная консультация
 ✅ Фиксированная цена
 ✅ Бесплатная поддержка 30 дней
-[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)
+[Написать мне в Telegram прямо сейчас →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

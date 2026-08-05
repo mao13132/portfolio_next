@@ -40,7 +40,7 @@ export const internetMagazinPart1: ArticleSection[] = [
 **Не хотите разбираться сами?**
 Я разработаю магазин в Telegram под ваш бизнес с бесплатной поддержкой 30 дней.
 Стоимость от 50 000 ₽. Сроки от 7 дней.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
             subsections: [
                 {

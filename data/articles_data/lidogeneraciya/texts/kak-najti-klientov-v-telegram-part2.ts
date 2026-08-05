@@ -129,7 +129,7 @@ export const kakNajtiKlientovVTelegramPart2: ArticleSection[] = [
 :::conversion
 **Хотите автоматический поиск клиентов в Telegram?**
 Бесплатная консультация — определим вашу нишу и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на лидогенерацию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/lidogeneraciya-telegram).`,

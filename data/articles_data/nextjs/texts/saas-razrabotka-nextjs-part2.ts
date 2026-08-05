@@ -47,7 +47,7 @@ export const saasRazrabotkaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Планируете подписочную SaaS-платформу?**
 Бесплатная консультация — спроектируем архитектуру монетизации. От 200 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Next.js проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/nextjs-razrabotka).`,
@@ -89,7 +89,7 @@ export const saasRazrabotkaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Хотите создать SaaS-платформу для вашего рынка?**
 Бесплатная консультация — определим бизнес-модель и оценим стоимость. От 300 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -176,7 +176,7 @@ export const saasRazrabotkaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость вашего SaaS на Next.js?**
 Бесплатная консультация — обсудим бизнес-модель и оценим стоимость. От 200 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -237,7 +237,7 @@ export const saasRazrabotkaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Готовы создать SaaS-продукт на Next.js?**
 Бесплатная консультация — спроектируем архитектуру и оценим стоимость. От 200 000₽. Сроки от 4 недель.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

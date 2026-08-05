@@ -104,7 +104,7 @@ export const pythonAvtomatizaciyaBiznesaPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать ROI для вашего бизнеса?**
 Бесплатная консультация — посчитаем экономию и окупаемость.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
@@ -172,6 +172,6 @@ export const pythonAvtomatizaciyaBiznesaPart2: ArticleSection[] = [
 | [Парсеры маркетплейсов](/parsery-marketplejsov) | WB, Ozon, AliExpress | от 1 недели | от 30 000₽ |
 | [Telegram-боты](/razrabotka-botov) | Боты для бизнеса | от 2 недель | от 50 000₽ |
 
-[Написать в Telegram →](https://t.me/dima_razrab)`,
+[Написать в Telegram →](https://t.me/developer_telegrams)`,
     },
 ];

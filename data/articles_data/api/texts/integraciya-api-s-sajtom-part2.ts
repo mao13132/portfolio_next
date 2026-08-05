@@ -33,7 +33,7 @@ export const integraciyaApiSSajtomPart2: ArticleSection[] = [
 :::conversion
 **Хотите интегрировать API с вашим проектом?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -123,7 +123,7 @@ export const integraciyaApiSSajtomPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость интеграции API?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на API-интеграцию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-api).`,
@@ -184,7 +184,7 @@ export const integraciyaApiSSajtomPart2: ArticleSection[] = [
 :::conversion
 **Готовы интегрировать API с вашим сайтом?**
 Бесплатная консультация — определим задачи, подберём API и оценим стоимость. От 30 000₽. Сроки от 3 дней.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

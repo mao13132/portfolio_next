@@ -52,7 +52,7 @@ export const sozdanieSajtaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Планируете медиа-платформу или контентный сайт?**
 Бесплатная консультация — спроектируем архитектуру и оценим стоимость. От 200 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Next.js проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/nextjs-razrabotka).`,
@@ -101,7 +101,7 @@ export const sozdanieSajtaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Хотите создать SaaS-платформу с аналитикой?**
 Бесплатная консультация — обсудим архитектуру и оценим стоимость. От 300 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -237,7 +237,7 @@ Next.js окупается за первые месяцы благодаря с�
 :::conversion
 **Готовы создать сайт на Next.js?**
 Бесплатная консультация — обсудим проект, спроектируем архитектуру и оценим стоимость. От 80 000₽. Сроки от 2 недель.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

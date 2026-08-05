@@ -15,7 +15,7 @@ export const botIliPrilozheniePart2: ArticleSection[] = [
 **Не хотите разбираться сами?**
 Я разработаю бота или Mini App под ваш бизнес с бесплатной поддержкой 30 дней.
 Стоимость от 25 000 ₽. Сроки от 3 дней.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 **Что умеет Mini App:**
@@ -77,7 +77,7 @@ export const botIliPrilozheniePart2: ArticleSection[] = [
 :::conversion
 **Хотите такой же результат?**
 Бесплатная консультация — разберём вашу задачу и предложим оптимальное решение.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
                 {
@@ -129,7 +129,7 @@ export const botIliPrilozheniePart2: ArticleSection[] = [
 ✅ Бесплатная консультация
 ✅ Бесплатная поддержка 30 дней
 ✅ Быстрые сроки — от 3 дней
-[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)
+[Написать мне в Telegram прямо сейчас →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],

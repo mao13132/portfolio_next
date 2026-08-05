@@ -33,7 +33,7 @@ export const webhookIntegraciyaPart2: ArticleSection[] = [
 :::conversion
 **Хотите webhook-автоматизацию для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -131,7 +131,7 @@ export const webhookIntegraciyaPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость webhook-интеграции?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на API-интеграцию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/razrabotka-api).`,
@@ -192,7 +192,7 @@ export const webhookIntegraciyaPart2: ArticleSection[] = [
 :::conversion
 **Готовы внедрить webhook-интеграцию?**
 Бесплатная консультация — определим задачи, подберём сервисы и оценим стоимость. От 30 000₽. Сроки от 3 дней.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

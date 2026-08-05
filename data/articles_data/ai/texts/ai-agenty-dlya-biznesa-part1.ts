@@ -85,7 +85,7 @@ export const aiAgentyDlyaBiznesaPart1: ArticleSection[] = [
 :::conversion
 **Хотите AI-агента для продвижения в Telegram?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Нужна AI-интеграция?** Доверьте это профессионалу — [напишите мне](/ai-integracii).`,
@@ -145,7 +145,7 @@ export const aiAgentyDlyaBiznesaPart1: ArticleSection[] = [
 :::conversion
 **Хотите AI-агента для вашей команды?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽. Сроки от 2 недель.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

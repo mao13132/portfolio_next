@@ -89,7 +89,7 @@ export const dokumentooborotaPart2: ArticleSection[] = [
 :::conversion
 **Хотите такой же результат для вашего бизнеса?**
 Бесплатная консультация — покажу, как автоматизация документооборота сэкономит 20+ часов в неделю вашей команде. Стоимость от 40 000 ₽. Сроки от 2 недель. Поддержка 30 дней бесплатно.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
             },
         ],
@@ -216,7 +216,7 @@ export const dokumentooborotaPart2: ArticleSection[] = [
 :::conversion
 **Готовы убрать хаос из документооборота?**
 Бесплатная консультация — разберём ваши процессы, покажем точки роста и предложим решение. Стоимость от 40 000 ₽. Окупаемость от 1 месяца. Поддержка 30 дней бесплатно.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::
 
 :::readmore

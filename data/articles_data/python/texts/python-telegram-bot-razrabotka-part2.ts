@@ -49,7 +49,7 @@ export const pythonTelegramBotRazrabotkaPart2: ArticleSection[] = [
 :::conversion
 **Хотите Telegram-бота для вашего бизнеса?**
 Бесплатная консультация — обсудим задачу и оценим стоимость.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -90,7 +90,7 @@ export const pythonTelegramBotRazrabotkaPart2: ArticleSection[] = [
 :::conversion
 **Хотите бота, который приносит деньги?**
 Бесплатная консультация — рассчитаем ROI для вашего бизнеса.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
@@ -164,6 +164,6 @@ export const pythonTelegramBotRazrabotkaPart2: ArticleSection[] = [
 
 **Первый шаг — бесплатная консультация.** Напишите мне в Telegram, опишите задачу — и я оценю стоимость и сроки.
 
-[Написать в Telegram →](https://t.me/dima_razrab)`,
+[Написать в Telegram →](https://t.me/developer_telegrams)`,
     },
 ];

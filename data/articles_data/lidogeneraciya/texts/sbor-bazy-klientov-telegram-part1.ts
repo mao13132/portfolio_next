@@ -126,7 +126,7 @@ export const sborBazyKlientovTelegramPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматизировать сбор базы клиентов в Telegram?**
 Бесплатная консультация — разберём вашу нишу и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

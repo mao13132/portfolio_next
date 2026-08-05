@@ -43,7 +43,7 @@ export default function PrivacyPage() {
                                 Оператор персональных данных: <strong>Малышев Дмитрий</strong>
                             </p>
                             <p>
-                                Адрес электроннойной почты: <a href="mailto:dima@example.com">dima@example.com</a>
+                                Контакт для связи: <a href="https://t.me/developer_telegrams" target="_blank" rel="noopener noreferrer">Telegram: @developer_telegrams</a>
                             </p>
                             <p>
                                 Telegram: <a href="https://t.me/developer_telegrams" target="_blank" rel="noopener noreferrer">@developer_telegrams</a>
@@ -147,7 +147,7 @@ export default function PrivacyPage() {
                                 Действующая редакция Политики находится на странице по адресу: <a href="/privacy">https://dima-razrab.com/privacy</a>
                             </p>
                             <p>
-                                По всем вопросам, связанным с обработкой персональных данных, Вы можете обратиться к Оператору по адресу электронной почты: <a href="mailto:dima@example.com">dima@example.com</a>
+                                По всем вопросам, связанным с обработкой персональных данных, Вы можете обратиться к Оператору через Telegram: <a href="https://t.me/developer_telegrams" target="_blank" rel="noopener noreferrer">@developer_telegrams</a>
                             </p>
                         </section>
 

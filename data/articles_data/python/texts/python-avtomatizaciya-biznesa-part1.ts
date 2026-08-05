@@ -77,7 +77,7 @@ export const pythonAvtomatizaciyaBiznesaPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматизировать рутину в вашем бизнесе?**
 Бесплатная консультация — разберём ваши процессы и предложим решение. ROI от 300%.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -119,7 +119,7 @@ export const pythonAvtomatizaciyaBiznesaPart1: ArticleSection[] = [
 :::conversion
 **Хотите увеличить органический трафик на 400%+?**
 Бесплатная консультация — оценим потенциал вашего сайта и предложим стратегию.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Нужен Python-разработчик?** Доверьте проект профессионалу — [напишите мне](/python-razrabotka).`,

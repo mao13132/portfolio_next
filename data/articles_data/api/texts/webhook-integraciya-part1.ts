@@ -118,7 +118,7 @@ export const webhookIntegraciyaPart1: ArticleSection[] = [
 :::conversion
 **Хотите webhook-интеграцию для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

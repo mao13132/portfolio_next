@@ -224,7 +224,7 @@ export const sozdanieSajtaNextjsPart1: ArticleSection[] = [
 :::conversion
 **Хотите создать сайт на Next.js с такими же результатами?**
 Бесплатная консультация — обсудим ваш проект и оценим стоимость. От 80 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

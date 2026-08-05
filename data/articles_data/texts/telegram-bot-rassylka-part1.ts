@@ -148,7 +148,7 @@ export const telegramBotRassylkaPart1: ArticleSection[] = [
 :::conversion
 **Нужна рассылка для вашего бизнеса?**
 Настрою автоматические рассылки с сегментацией и аналитикой. Срок: 5–10 дней.
-[Обсудить проект в Telegram →](https://t.me/dima_razrab)
+[Обсудить проект в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],

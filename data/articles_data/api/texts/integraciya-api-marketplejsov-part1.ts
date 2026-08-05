@@ -65,7 +65,7 @@ export const integraciyaApiMarketplejsovPart1: ArticleSection[] = [
 :::conversion
 **Нужна интеграция API маркетплейсов?**
 Бесплатная консультация — определим задачи и оценим стоимость интеграции. От 15 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

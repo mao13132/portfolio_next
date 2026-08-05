@@ -55,7 +55,7 @@ export const kakBystroOtvechatKlientamPart1: ArticleSection[] = [
 :::conversion
 **Хотите такую же конверсию?**
 Бесплатная консультация — разберём вашу воронку и внедрим бота-помощника.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {

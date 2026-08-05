@@ -87,7 +87,7 @@ export const avtomatizaciyaZayavokPart2: ArticleSection[] = [
 :::conversion
 **Хотите такие же результаты?**
 Бесплатный аудит вашей системы заявок — покажу, что автоматизировать первым.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -192,7 +192,7 @@ export const avtomatizaciyaZayavokPart2: ArticleSection[] = [
 
 :::conversion
 **Заказать автоматизацию заявок →**
-[Написать в Telegram](https://t.me/dima_razrab) — бесплатная консультация и аудит вашей системы заявок.
+[Написать в Telegram](https://t.me/developer_telegrams) — бесплатная консультация и аудит вашей системы заявок.
 ✅ Бесплатный аудит
 ✅ Поддержка 30 дней
 ✅ Сроки от 3 дней

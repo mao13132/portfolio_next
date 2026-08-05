@@ -55,7 +55,7 @@ export const uvelichivaetProdazhiPart2: ArticleSection[] = [
 **Не хотите разбираться сами?**
 Я разработаю бота под ваш бизнес с бесплатной поддержкой 30 дней.
 Стоимость от 25 000 ₽. Сроки от 3 дней.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
             subsections: [
                 {
@@ -89,7 +89,7 @@ export const uvelichivaetProdazhiPart2: ArticleSection[] = [
 ✅ Бесплатная консультация
 ✅ Бесплатная поддержка 30 дней
 ✅ Быстрые сроки — от 3 дней
-[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)
+[Написать мне в Telegram прямо сейчас →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],

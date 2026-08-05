@@ -62,7 +62,7 @@ export const telegramBotSOplatojPart2: ArticleSection[] = [
 :::conversion
 **Хотите принимать оплату в Telegram-боте?**
 Интегрирую ЮKassa, СБП или Stripe. Срок: 5–10 дней. Поддержка 30 дней.
-[Обсудить проект в Telegram →](https://t.me/dima_razrab)
+[Обсудить проект в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],
@@ -123,7 +123,7 @@ export const telegramBotSOplatojPart2: ArticleSection[] = [
 ✅ Интеграция ЮKassa, СБП, Stripe
 ✅ Фискализация и чеки
 ✅ Бесплатная поддержка 30 дней
-[Написать мне в Telegram →](https://t.me/dima_razrab)
+[Написать мне в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

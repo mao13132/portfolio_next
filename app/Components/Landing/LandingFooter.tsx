@@ -40,7 +40,6 @@ export const LandingFooter = () => {
                         <a href="/privacy" target="_blank" rel="noopener noreferrer">
                             Политика конфиденциальности
                         </a>
-                        <a href="mailto:dima@example.com">dima@example.com</a>
                     </div>
                     <div>
                         <h4>Связаться</h4>

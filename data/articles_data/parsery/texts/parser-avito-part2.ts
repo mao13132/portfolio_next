@@ -136,7 +136,7 @@ export const parserAvitoPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость парсера Avito для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

@@ -177,7 +177,7 @@ export const pythonBackendRazrabotkaPart1: ArticleSection[] = [
 :::conversion
 **Нужен высокопроизводительный backend?**
 Бесплатная консультация — подберём оптимальную архитектуру.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

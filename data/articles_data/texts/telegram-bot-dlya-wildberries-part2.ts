@@ -186,7 +186,7 @@ async def daily_seller_report():
 :::conversion
 **Хотите бота для работы с Wildberries?**
 Расскажите о вашем магазине — предложу решение и оценку стоимости.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -244,7 +244,7 @@ async def daily_seller_report():
 :::conversion
 **Готовы автоматизировать работу с Wildberries?**
 Бесплатная консультация — разберём ваши задачи и предложим решение.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

@@ -67,7 +67,7 @@ export const telegramBotRassylkaPart2: ArticleSection[] = [
 :::conversion
 **Хотите автоматические рассылки для вашего бизнеса?**
 Настрою промо, триггерные и транзакционные рассылки с сегментацией. Срок: 5–10 дней.
-[Обсудить проект в Telegram →](https://t.me/dima_razrab)
+[Обсудить проект в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],
@@ -130,7 +130,7 @@ export const telegramBotRassylkaPart2: ArticleSection[] = [
 ✅ Сегментация и персонализация
 ✅ Триггерные сообщения
 ✅ Аналитика и A/B тесты
-[Написать мне в Telegram →](https://t.me/dima_razrab)
+[Написать мне в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

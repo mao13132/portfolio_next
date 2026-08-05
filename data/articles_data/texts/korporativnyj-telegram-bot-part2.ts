@@ -185,7 +185,7 @@ async def send_weekly_summary():
 :::conversion
 **Хотите корпоративного бота для вашей компании?**
 Расскажите о процессах — предложу решение и оценку стоимости.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -243,7 +243,7 @@ async def send_weekly_summary():
 :::conversion
 **Готовы внедрить корпоративного бота?**
 Бесплатная консультация — разберём ваши процессы и предложим решение.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

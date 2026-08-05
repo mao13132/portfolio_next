@@ -140,7 +140,7 @@ Avito → Make webhook → FastAPI → PostgreSQL
 :::conversion
 **Хотите автоматизировать доставку?**
 Расскажите о вашем бизнесе — предложу решение и оценку стоимости за 30 минут.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -195,7 +195,7 @@ Avito → Make webhook → FastAPI → PostgreSQL
 :::conversion
 **Готовы автоматизировать доставку?**
 Бесплатная консультация — разберём вашу логистику и предложим решение.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

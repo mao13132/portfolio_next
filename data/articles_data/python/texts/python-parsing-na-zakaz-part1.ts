@@ -136,7 +136,7 @@ export const pythonParsingNaZakazPart1: ArticleSection[] = [
 :::conversion
 **Нужен парсер для вашего сайта или сервиса?**
 Бесплатная консультация — оценим сложность и стоимость. От 15 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Хотите проект на Python?** Доверьте разработку профессионалу — [напишите мне](/python-razrabotka).`,
@@ -215,7 +215,7 @@ export const pythonParsingNaZakazPart1: ArticleSection[] = [
 :::conversion
 **Нужен парсер с обходом защиты?**
 Бесплатная консультация — оценим сложность и предложим решение. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

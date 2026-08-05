@@ -42,7 +42,7 @@ export const razrabotkaNaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Хотите автоматизировать управление маркетплейсами?**
 Бесплатная консультация — определим задачи и оценим стоимость системы. От 150 000₽. Сроки от 4 недель.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -188,7 +188,7 @@ export const razrabotkaNaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость вашего проекта на Next.js?**
 Бесплатная консультация — обсудим задачи и оценим стоимость. От 80 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Next.js проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/nextjs-razrabotka).`,
@@ -251,7 +251,7 @@ export const razrabotkaNaNextjsPart2: ArticleSection[] = [
 :::conversion
 **Готовы начать разработку на Next.js?**
 Бесплатная консультация — обсудим ваш проект и оценим стоимость. От 80 000₽. Сроки от 2 недель.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

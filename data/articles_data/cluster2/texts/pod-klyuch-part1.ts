@@ -462,7 +462,7 @@ export const podKlyuchPart1: ArticleSection[] = [
 :::conversion
 **Не знаете, какой вариант выбрать?**
 Бесплатная консультация — разберём вашу задачу и подскажем, что лучше: сделать самому или заказать под ключ. Честная оценка без навязывания.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::
 
 Если хотите глубже разобраться в теме — читайте [примеры автоматизации бизнеса](/blog/primery-avtomatizacii-biznesa) с реальными кейсами и ROI. А если нужен Telegram-бот — [разработка ботов](/razrabotka-botov) от 30 000₽.`,

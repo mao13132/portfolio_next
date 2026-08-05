@@ -82,7 +82,7 @@ export const cifrovizaciyaMalogoBiznesaPart1: ArticleSection[] = [
 
 :::conversion
 **Нужна помощь с цифровизацией?**
-[Обсудите бесплатно в Telegram](https://t.me/dima_razrab) — разберём ваши процессы и предложим план.
+[Обсудите бесплатно в Telegram](https://t.me/developer_telegrams) — разберём ваши процессы и предложим план.
 :::`,
         subsections: [
             {

@@ -146,7 +146,7 @@ export const fastapiRazrabotkaPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость API для вашего проекта?**
 Бесплатная консультация — определим задачи и оценим стоимость.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,

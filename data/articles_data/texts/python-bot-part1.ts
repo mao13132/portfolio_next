@@ -79,7 +79,7 @@ export const pythonBotPart1: ArticleSection[] = [
                     content: `import asyncio\nfrom aiogram import Bot, Dispatcher, Router, F\nfrom aiogram.types import Message\n\nBOT_TOKEN = \"ВАШ_ТОКЕН\"\n\nbot = Bot(token=BOT_TOKEN)\ndp = Dispatcher()\nrouter = Router()\n\n@router.message(F.text == \"/start\")\nasync def cmd_start(message: Message):\n    await message.answer(\"Привет! Я ваш первый бот! 🤖\")\n\ndp.include_router(router)\n\nasync def main():\n    await dp.start_polling(bot)\n\nif __name__ == \"__main__\":\n    asyncio.run(main())\n\nЗапустите: python main.py. Откройте Telegram, найдите своего бота и отправьте /start. Бот ответит!\n\n:::compare\n❌ Без бота\n• Ручные ответы на сообщения 24/7\n• Теряете клиентов в нерабочее время\n• Тратите часы на рутину\n\n✅ С Telegram-ботом\n• Автоматические ответы 24/7\n• Ни один клиент не потерян\n• Вы занимаетесь бизнесом, а не перепиской\n:::\n\n:::conversion\n**Хотите бота, но не хотите разбираться сами?**
 Я разработаю бота на Python под ваш бизнес с бесплатной поддержкой 30 дней.
 Стоимость от 15 000 ₽. Сроки от 3 дней.
-[Обсудить проект →](https://t.me/dima_razrab)\n:::`,
+[Обсудить проект →](https://t.me/developer_telegrams)\n:::`,
                 },
                 {
                     title: "Разбор кода",
@@ -122,7 +122,7 @@ export const pythonBotPart1: ArticleSection[] = [
 **Не хотите разбираться в коде?**
 Я разработаю профессионального Telegram-бота на Python с полным исходным кодом.
 Стоимость от 15 000 ₽. Сроки от 3 дней.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
             subsections: [
                 {

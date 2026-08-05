@@ -251,7 +251,7 @@ export const integraciyaApiSCrmPart1: ArticleSection[] = [
 :::conversion
 **Нужна интеграция API с CRM?**
 Бесплатная консультация — определим задачи и оценим стоимость интеграции. От 20 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

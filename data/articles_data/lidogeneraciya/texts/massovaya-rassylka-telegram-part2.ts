@@ -36,7 +36,7 @@ export const massovayaRassylkaTelegramPart2: ArticleSection[] = [
 :::conversion
 **Хотите автоматизировать рассылки для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -169,7 +169,7 @@ export const massovayaRassylkaTelegramPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость системы рассылок?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на лидогенерацию?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/lidogeneraciya-telegram).`,
@@ -229,7 +229,7 @@ export const massovayaRassylkaTelegramPart2: ArticleSection[] = [
 :::conversion
 **Готовы запустить массовую рассылку в Telegram?**
 Бесплатная консультация — определим вашу аудиторию, подберём подход и оценим стоимость. От 30 000₽. Сроки от 1 недели.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

@@ -124,7 +124,7 @@ export const massovayaRassylkaTelegramPart1: ArticleSection[] = [
 :::conversion
 **Хотите автоматизировать рассылки в Telegram?**
 Бесплатная консультация — разберём вашу задачу и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

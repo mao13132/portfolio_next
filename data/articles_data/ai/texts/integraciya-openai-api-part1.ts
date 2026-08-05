@@ -102,7 +102,7 @@ export const integraciyaOpenaiApiPart1: ArticleSection[] = [
 :::conversion
 **Хотите интегрировать OpenAI API в ваш продукт?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -164,7 +164,7 @@ export const integraciyaOpenaiApiPart1: ArticleSection[] = [
 :::conversion
 **Хотите систему анализа данных на базе OpenAI API?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 60 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

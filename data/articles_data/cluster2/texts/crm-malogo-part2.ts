@@ -73,7 +73,7 @@ export const crmMalogoPart2: ArticleSection[] = [
 :::conversion
 **Нужна помощь с внедрением CRM?**
 Бесплатная консультация — проведу аудит ваших процессов, подберу оптимальное решение и рассчитаю стоимость. Кастомная CRM от 80 000₽ с бесплатной поддержкой 30 дней.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 **Типичные ошибки при внедрении CRM:**
@@ -146,7 +146,7 @@ export const crmMalogoPart2: ArticleSection[] = [
 :::conversion
 **Готовы внедрить CRM в свой бизнес?**
 Бесплатная консультация — определим, какая CRM подходит именно вам, и посчитаем ROI. Кастомная CRM от 80 000₽. Сроки от 3 недель. Бесплатная поддержка 30 дней.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

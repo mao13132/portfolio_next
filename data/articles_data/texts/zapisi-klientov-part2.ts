@@ -39,7 +39,7 @@ export const zapisiKlientovPart2: ArticleSection[] = [
 :::conversion
 **Хотите такой же результат?**
 Бесплатная консультация — разберём вашу задачу и предложим решение.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
                 {
@@ -127,7 +127,7 @@ export const zapisiKlientovPart2: ArticleSection[] = [
 ✅ Бесплатная консультация
 ✅ Бесплатная поддержка 30 дней
 ✅ Быстрые сроки — от 3 дней
-[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)
+[Написать мне в Telegram прямо сейчас →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Интересует стоимость разработки?** Расскажите о проекте — подготовлю детальную смету за 24 часа. [Заказать оценку](/razrabotka-botov).`,

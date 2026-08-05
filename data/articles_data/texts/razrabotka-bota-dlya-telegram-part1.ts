@@ -162,7 +162,7 @@ export const razrabotkaBotaDlyaTelegramPart1: ArticleSection[] = [
 :::conversion
 **Готовы начать разработку?**
 Бесплатная консультация — разберём вашу задачу и предложим решение за 24 часа.
-[Обсудить проект в Telegram →](https://t.me/dima_razrab)
+[Обсудить проект в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],

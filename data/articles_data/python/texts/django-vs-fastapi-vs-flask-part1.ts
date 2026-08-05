@@ -226,7 +226,7 @@ export const djangoVsFastapiVsFlaskPart1: ArticleSection[] = [
 :::conversion
 **Не можете выбрать фреймворк?**
 Бесплатная консультация — подберём оптимальный стек для вашего проекта.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

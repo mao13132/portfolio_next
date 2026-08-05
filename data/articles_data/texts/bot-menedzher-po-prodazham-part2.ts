@@ -204,7 +204,7 @@ async def follow_up(bot, db: Database, admin_chat_id: int):
 :::conversion
 **Хотите воронку продаж в Telegram-боте?**
 Настрою полную воронку с квалификацией, презентацией и follow-up.
-[Заказать бота →](https://t.me/dima_razrab)
+[Заказать бота →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -269,7 +269,7 @@ async def follow_up(bot, db: Database, admin_chat_id: int):
 :::conversion
 **Хотите бота-менеджера для вашего бизнеса?**
 Разработаю Telegram-бота, который продавёт за вас. Бесплатная консультация.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -379,7 +379,7 @@ async def follow_up(bot, db: Database, admin_chat_id: int):
 :::conversion
 **Готовы к боту-менеджеру?**
 Бесплатная консультация — разберём вашу воронку продаж и предложим решение за 30 минут.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

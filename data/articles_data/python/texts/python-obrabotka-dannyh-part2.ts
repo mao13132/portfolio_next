@@ -99,7 +99,7 @@ export const pythonObrabotkaDannyhPart2: ArticleSection[] = [
 :::conversion
 **Хотите дашборд для вашего бизнеса?**
 Бесплатная консультация — определим метрики и подберём инструменты.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
@@ -163,6 +163,6 @@ export const pythonObrabotkaDannyhPart2: ArticleSection[] = [
 | [Автоматизация бизнеса](/avtomatizaciya-biznesa) | ETL, отчёты | от 3 дней | от 15 000₽ |
 | [Telegram-боты](/razrabotka-botov) | Уведомления, дашборды | от 2 недель | от 50 000₽ |
 
-[Написать в Telegram →](https://t.me/dima_razrab)`,
+[Написать в Telegram →](https://t.me/developer_telegrams)`,
     },
 ];

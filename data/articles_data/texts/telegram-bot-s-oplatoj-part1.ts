@@ -160,7 +160,7 @@ async def payment_webhook(request):
 :::conversion
 **Нужен бот с оплатой для вашего бизнеса?**
 Интегрирую ЮKassa, СБП или Stripe в Telegram-бота. Срок: 5–10 дней.
-[Обсудить проект в Telegram →](https://t.me/dima_razrab)
+[Обсудить проект в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],

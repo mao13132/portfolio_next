@@ -145,7 +145,7 @@ export const parserWildberriesPart2: ArticleSection[] = [
 :::conversion
 **Хотите рассчитать стоимость парсера для вашего бизнеса?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 30 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {
@@ -206,7 +206,7 @@ export const parserWildberriesPart2: ArticleSection[] = [
 :::conversion
 **Готовы автоматизировать сбор данных с Wildberries?**
 Бесплатная консультация — определим задачи, подберём подход и оценим стоимость парсера. От 30 000₽. Сроки от 1 недели.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
     },
 ];

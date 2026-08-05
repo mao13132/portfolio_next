@@ -18,7 +18,7 @@ Telegram бот для Авито решает эту проблему. Он а�
 :::conversion
 **Хотите автоматизировать продажи на Авито?**
 Разработаю Telegram-бота для вашего бизнеса. Бесплатная консультация — разберём задачу и предложим решение.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
         },
 {
@@ -121,7 +121,7 @@ async def check_new_messages(bot: Bot, avito: AvitoClient, chat_id: int):
 :::conversion
 **Не хотите терять клиентов?**
 Настрою уведомления о сообщениях с Авито в Telegram за 1-2 дня.
-[Заказать настройку →](https://t.me/dima_razrab)
+[Заказать настройку →](https://t.me/developer_telegrams)
 :::
 
 > 🔧 **Сложная задача? Доверьте разработку бота профессионалу** — [напишите мне](/razrabotka-botov), и я сделаю всё под ключ.`,
@@ -262,7 +262,7 @@ async def monitor_competitors(avito: AvitoClient, db: Database):
 :::conversion
 **Хотите знать всё о конкурентах?**
 Настрою мониторинг конкурентов на Авито в Telegram за 2-3 дня.
-[Заказать мониторинг →](https://t.me/dima_razrab)
+[Заказать мониторинг →](https://t.me/developer_telegrams)
 :::`,
         },
 ];

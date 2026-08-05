@@ -55,7 +55,7 @@ export const djangoVsFastapiVsFlaskPart2: ArticleSection[] = [
 :::conversion
 **Хотите Digital-платформу для вашего бизнеса?**
 Бесплатная консультация — подберём оптимальный стек.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::
 
 > 💰 **Хотите точную смету на Python-проект?** Расскажите о задаче — подготовлю оценку за 24 часа. [Заказать оценку](/python-razrabotka).`,
@@ -117,7 +117,7 @@ export const djangoVsFastapiVsFlaskPart2: ArticleSection[] = [
 :::conversion
 **Не можете выбрать между Django и FastAPI?**
 Бесплатная консультация — подберём оптимальный фреймворк для вашей задачи.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

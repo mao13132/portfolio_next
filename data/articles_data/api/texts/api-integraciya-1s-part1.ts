@@ -121,7 +121,7 @@ export const apiIntegraciya1SPart1: ArticleSection[] = [
 :::conversion
 **Хотите интегрировать 1С с вашими системами?**
 Бесплатная консультация — определим задачи и оценим стоимость. От 50 000₽.
-[Обсудить проект →](https://t.me/dima_razrab)
+[Обсудить проект →](https://t.me/developer_telegrams)
 :::`,
     },
     {

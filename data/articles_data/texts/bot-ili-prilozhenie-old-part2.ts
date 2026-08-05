@@ -73,7 +73,7 @@ export const botIliPrilozhenieOldPart2: ArticleSection[] = [
 ✅ Бесплатная консультация
 ✅ Бесплатная поддержка 30 дней
 ✅ Быстрые сроки — от 3 дней
-[Написать мне в Telegram прямо сейчас →](https://t.me/dima_razrab)
+[Написать мне в Telegram прямо сейчас →](https://t.me/developer_telegrams)
 :::`,
                 },
             ],
@@ -131,7 +131,7 @@ export const botIliPrilozhenieOldPart2: ArticleSection[] = [
 :::conversion
 **Хотите такой же результат?**
 Бесплатная консультация — разберём вашу задачу и предложим решение.
-[Написать в Telegram →](https://t.me/dima_razrab)
+[Написать в Telegram →](https://t.me/developer_telegrams)
 :::`,
                 },
                 {
