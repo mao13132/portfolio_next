@@ -10,6 +10,8 @@ import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
 import { ExitIntentPopup } from '@/app/Components/Landing/ExitIntentPopup';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
+import { Calculator } from '@/app/Components/Calculator/Calculator';
+import { botCalculator } from '@/app/Components/Calculator/calculatorData';
 import styles from './razrabotka-botov.module.css';
 
 /* ============================================================
@@ -1136,6 +1138,8 @@ export default function RazrabotkaBotovPage() {
                     </div>
                 </div>
             </section>
+
+            <Calculator config={botCalculator} />
 
             {/* ============ FINAL CTA ============ */}
             <section className={styles.finalCta}>

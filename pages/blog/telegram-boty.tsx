@@ -5,6 +5,7 @@ import { telegramBotyArticles } from '@/data/articles';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
+import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
 import { CollapsibleLinks } from '@/app/Components/CollapsibleLinks/CollapsibleLinks';
@@ -337,6 +338,8 @@ export default function TelegramBotyHubPage() {
                     </div>
                 </footer>
             </div>
+
+            <TelegramFloat />
         </>
     );
 }

@@ -73,6 +73,18 @@ import { pythonArticles } from './python/registry';
 /* Cluster F: Next.js разработка */
 import { nextjsArticles } from './nextjs/registry';
 
+/* Cluster I: Веб-разработка */
+import { vebArticles } from './veb/registry';
+
+/* Cluster J: Мобильные приложения */
+import { mobileArticles } from './mobile/registry';
+
+/* Cluster K: Конструкторы (CMS) */
+import { konstruktoryArticles } from './konstruktory/registry';
+
+/* Cluster L: Автоматизация склада */
+import { skladArticles } from './sklad/registry';
+
 /* Кластер Telegram-ботов (27 статей) */
 export const telegramBotyArticles: Article[] = [
     articlePriyomZayavok,
@@ -139,6 +151,14 @@ export const articles: Article[] = [
     ...pythonArticles,
     /* Cluster F: Next.js разработка */
     ...nextjsArticles,
+    /* Cluster I: Веб-разработка */
+    ...vebArticles,
+    /* Cluster J: Мобильные приложения */
+    ...mobileArticles,
+    /* Cluster K: Конструкторы (CMS) */
+    ...konstruktoryArticles,
+    /* Cluster L: Автоматизация склада */
+    ...skladArticles,
 ];
 
 export const getArticleBySlug = (slug: string): Article | undefined =>

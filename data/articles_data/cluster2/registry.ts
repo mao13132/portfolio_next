@@ -19,6 +19,7 @@ import { articleSistemaAvtomatizaciiBiznesProcessov } from './sistema-avtomatiza
 import { articleAvtomatizaciyaVoronkiProdazh } from './avtomatizaciya-voronki-prodazh';
 import { articleCifrovizaciyaMalogoBiznesa } from './cifrovizaciya-malogo-biznesa';
 import { articleAnalizAvtomatizaciiBiznesProcessov } from './analiz-avtomatizacii-biznes-processov';
+import { articleRazrabotkaCrmErp } from './razrabotka-crm-erp';
 
 export const cluster2Articles: Article[] = [
     articleAvtomatizaciyaMalogoBiznesa,
@@ -40,4 +41,5 @@ export const cluster2Articles: Article[] = [
     articleAvtomatizaciyaVoronkiProdazh,
     articleCifrovizaciyaMalogoBiznesa,
     articleAnalizAvtomatizaciiBiznesProcessov,
+    articleRazrabotkaCrmErp,
 ];

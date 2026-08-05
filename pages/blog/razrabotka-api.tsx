@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
+import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { fadeUp } from '@/app/Components/Landing/animations';
 import styles from './blog.module.css';
@@ -57,6 +58,30 @@ const plannedArticles = [
         description: 'Преимущества FastAPI для API-разработки: автоматическая документация, валидация, асинхронность, производительность.',
         moneyPage: '/razrabotka-api',
     },
+    {
+        slug: 'integraciya-api-marketplejsov',
+        title: 'Интеграция API маркетплейсов: Ozon, Wildberries, Avito, Яндекс.Маркет',
+        description: 'Автоматизация продаж на маркетплейсах через API: управление товарами, ценами, остатками, заказами. Реальные кейсы с ROI 680%.',
+        moneyPage: '/razrabotka-api',
+    },
+    {
+        slug: 'integraciya-api-dostavki',
+        title: 'Интеграция API доставки: СДЭК, Почта России, Boxberry',
+        description: 'Автоматический расчёт стоимости, создание заказов, отслеживание посылок. Калькулятор доставки на сайте. ROI 340%.',
+        moneyPage: '/razrabotka-api',
+    },
+    {
+        slug: 'integraciya-api-s-crm',
+        title: 'Интеграция API с CRM: amoCRM, Битrix24, Яндекс',
+        description: 'Автоматическая передача лидов, автоматизация воронки продаж, интеграция с Telegram и сайтом. ROI 680%.',
+        moneyPage: '/razrabotka-api',
+    },
+    {
+        slug: 'integraciya-nichevyh-api',
+        title: 'Интеграция нишевых API: банки, Контур, Честный знак, WhatsApp',
+        description: 'Банковские API, электронный документооборот, маркировка товаров, WhatsApp Business, Tilda. ROI 500%.',
+        moneyPage: '/razrabotka-api',
+    },
 ];
 
 const structuredData = {
@@ -67,7 +92,7 @@ const structuredData = {
             "@id": `${PAGE_URL}#webpage`,
             "url": PAGE_URL,
             "name": "Разработка API: полное руководство | DimaRazrab",
-            "description": "Всё о разработке API: REST API, интеграция с сайтами, webhook, интеграция с 1С, FastAPI. 5 руководств от практикующего разработчика.",
+            "description": "Всё о разработке API: REST API, интеграция с сайтами, webhook, интеграция с 1С, FastAPI, маркетплейсы, доставка, CRM, нишевые API. 9 руководств от практикующего разработчика.",
             "inLanguage": "ru-RU",
             "isPartOf": { "@id": `${SITE_URL}#website` },
             "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
@@ -100,7 +125,7 @@ export default function RazrabotkaApiHubPage() {
         <>
             <Head>
                 <title>Разработка API: полное руководство | DimaRazrab</title>
-                <meta name="description" content="Всё о разработке API: REST API, интеграция с сайтами, webhook, интеграция 1С, FastAPI. 5 руководств от разработчика." />
+                <meta name="description" content="Всё о разработке API: REST API, интеграция с сайтами, webhook, интеграция 1С, FastAPI, маркетплейсы, доставка, CRM, нишевые API. 9 руководств от разработчика." />
                 <meta name="keywords" content="разработка api, rest api разработка, интеграция api, webhook интеграция, api 1с интеграция, fastapi api, создание api на заказ" />
                 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
                 <link rel="canonical" href={PAGE_URL} />
@@ -108,7 +133,7 @@ export default function RazrabotkaApiHubPage() {
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="DimaRazrab" />
                 <meta property="og:title" content="Разработка API: полное руководство" />
-                <meta property="og:description" content="5 руководств о разработке API: REST API, интеграция, webhook, 1С, FastAPI." />
+                <meta property="og:description" content="9 руководств о разработке API: REST API, интеграция, webhook, 1С, FastAPI, маркетплейсы, доставка, CRM, нишевые API." />
                 <meta property="og:url" content={PAGE_URL} />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:image" content={`${SITE_URL}/media/og_desc.jpg`} />
@@ -116,7 +141,7 @@ export default function RazrabotkaApiHubPage() {
                 <meta property="og:image:height" content="630" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Разработка API: полное руководство" />
-                <meta name="twitter:description" content="5 руководств о разработке API: REST API, интеграция, webhook, 1С, FastAPI." />
+                <meta name="twitter:description" content="9 руководств о разработке API: REST API, интеграция, webhook, 1С, FastAPI, маркетплейсы, доставка, CRM, нишевые API." />
                 <meta name="twitter:image" content={`${SITE_URL}/media/og_desc.jpg`} />
 
                 <script
@@ -160,8 +185,8 @@ export default function RazrabotkaApiHubPage() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.2 }}
                         >
-                            Всё, что нужно знать о разработке API: REST, интеграции с сайтами, webhook, 1С и FastAPI.
-                            5 руководств от практикующего разработчика.
+                            Всё, что нужно знать о разработке API: REST, интеграции с сайтами, webhook, 1С, FastAPI,
+                            маркетплейсы, доставка, CRM и нишевые API. 9 руководств от практикующего разработчика.
                         </motion.p>
                     </div>
 
@@ -204,8 +229,8 @@ export default function RazrabotkaApiHubPage() {
                                     асинхронная обработка и скорость работы на уровне Go и Node.js.
                                 </p>
                                 <p style={{ marginBottom: '16px' }}>
-                                    Стоимость разработки API стартует от 20 000 ₽ за простой REST API и доходит до 300 000 ₽
-                                    за комплексную систему с интеграциями. Ниже — 5 руководств, которые помогут разобраться.
+                                    Стоимость разработки API стартует от 15 000 ₽ за простую интеграцию и доходит до 300 000 ₽
+                                    за комплексную систему с интеграциями. Ниже — 9 руководств, которые помогут разобраться.
                                     А если нужна помощь — <a href="/razrabotka-api" style={{ color: 'var(--lp-cyan)', textDecoration: 'none', fontWeight: 600 }}>закажите разработку API</a> у профессионалов.
                                 </p>
                             </div>
@@ -337,6 +362,8 @@ export default function RazrabotkaApiHubPage() {
                     </div>
                 </footer>
             </div>
+
+            <TelegramFloat />
         </>
     );
 }

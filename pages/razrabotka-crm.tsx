@@ -18,6 +18,8 @@ import { GrandSlamOffer } from '@/app/Components/Landing/GrandSlamOffer';
 import { LandingQuiz } from '@/app/Components/Landing/LandingQuiz';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
 import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
+import { Calculator } from '@/app/Components/Calculator/Calculator';
+import { siteCalculator } from '@/app/Components/Calculator/calculatorData';
 
 import s from './razrabotka-crm.module.css';
 import ls from '@/app/Components/Landing/landing.module.css';
@@ -502,6 +504,8 @@ export default function RazrabotkaCrmPage() {
                     </div>
                 </div>
             </section>
+
+            <Calculator config={siteCalculator} />
 
             {/* ═══════ FINAL CTA ═══════ */}
             <section className={ls.finalCta}>

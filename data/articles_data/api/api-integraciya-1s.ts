@@ -90,5 +90,7 @@ export const articleApiIntegraciya1S: Article = {
         { anchor: "webhook-интеграция", url: "/blog/webhook-integraciya", context: "Автоматизация событий" },
         { anchor: "FastAPI для разработки API", url: "/blog/fastapi-dlya-api", context: "Почему FastAPI" },
         { anchor: "разработка на Python", url: "/blog/python-razrabotka", context: "Python для интеграций" },
+        { anchor: "интеграция API маркетплейсов", url: "/blog/integraciya-api-marketplejsov", context: "Ozon, WB, Avito" },
+        { anchor: "интеграция API с CRM", url: "/blog/integraciya-api-s-crm", context: "amoCRM, Битrix24" },
     ],
 };

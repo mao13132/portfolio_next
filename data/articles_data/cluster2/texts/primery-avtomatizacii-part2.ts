@@ -121,7 +121,9 @@ amoCRM (от 1 490₽/мес) или Битрикс24 (бесплатно до 5
 [Написать в Telegram →](https://t.me/dima_razrab)
 :::
 
-Если нужна помощь с выбором CRM — читайте [обзор CRM для малого бизнеса](/blog/crm-dlya-malogo-biznesa). А если хотите подключить Telegram к CRM — [интеграция CRM с Telegram](/blog/integraciya-crm-s-telegram) по шагам.`,
+Если нужна помощь с выбором CRM — читайте [обзор CRM для малого бизнеса](/blog/crm-dlya-malogo-biznesa). А если хотите подключить Telegram к CRM — [интеграция CRM с Telegram](/blog/integraciya-crm-s-telegram) по шагам.
+
+> 🚀 **Хотите такой же результат?** Покажу, как автоматизировать ваш бизнес — от аудита до внедрения. [Обсудим](/avtomatizaciya-biznesa).`,
     },
     {
         id: "lessons-summary",
@@ -165,7 +167,9 @@ Telegram-бот + amoCRM Mini дают больше эффекта, чем до�
 • [Автоматизация бизнеса под ключ](/blog/avtomatizaciya-biznesa-pod-klyuch)
 • [Разработка Telegram-бота](/razrabotka-botov)
 • [Заказать автоматизацию бизнеса →](/avtomatizaciya-biznesa)
-:::`,
+:::
+
+> 📊 **Слишком много рутины?** Автоматизирую бизнес-процессы — экономия от 3 часов в день. [Обсудим задачу](/avtomatizaciya-biznesa).`,
     },
     {
         id: "faq",

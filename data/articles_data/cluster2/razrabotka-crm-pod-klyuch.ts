@@ -62,8 +62,8 @@ export const articleRazrabotkaCrmPodKlyuch: Article = {
         },
     ],
 
-    ctaTitle: "Нужна кастомная CRM для вашего бизнеса?",
-    ctaSubtitle: "Бесплатная консультация — разберём ваши бизнес-процессы, спроектируем CRM и оценим стоимость разработки.",
+    ctaTitle: "Нужна CRM, которая подходит именно вам?",
+    ctaSubtitle: "Разработка CRM от 80 000 ₽, срок 30-45 дней. Бесплатная оценка вашего проекта за 24 часа.",
     ctaSource: "article-crm-pod-klyuch-cta",
 
     structuredData: makeArticleSchema(

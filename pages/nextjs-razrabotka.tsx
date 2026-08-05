@@ -5,6 +5,8 @@ import { axiosClassic } from '@/app/Components/utils/interceptor';
 import { getContact } from '@/app/Components/utils/url.config';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
+import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
+import { GuaranteeBlock } from '@/app/Components/GuaranteeBlock/GuaranteeBlock';
 import styles from './nextjs-razrabotka.module.css';
 
 /* ============================================================
@@ -1418,6 +1420,8 @@ export default function NextjsRazrabotkaPage() {
                 </div>
             </section>
 
+            <GuaranteeBlock />
+
             {/* ============ FINAL CTA (H2: Связаться со мной) ============ */}
             <section className={styles.finalCta} id="contact">
                 <div className={styles.finalCtaGlow} />
@@ -1519,6 +1523,8 @@ export default function NextjsRazrabotkaPage() {
                     Заказать сайт на Next.js
                 </button>
             </div>
+
+            <TelegramFloat />
         </>
     );
 }

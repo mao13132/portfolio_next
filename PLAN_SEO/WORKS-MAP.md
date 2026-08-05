@@ -36,6 +36,18 @@
 - [django_tan](https://dima-razrab.com/work/django_tan) — экосистема
 - [next_js_django](https://dima-razrab.com/work/next_js_django) — платформа знакомств
 - [next_js_cinema](https://dima-razrab.com/work/next_js_cinema) — стриминг
+- [fastapi_nextjs_markets](https://dima-razrab.com/work/fastapi_nextjs_markets) — маркетплейс
+- [rab_dom](https://dima-razrab.com/work/rab_dom) — недвижимость (каталог)
+
+### /blog/veb-razrabotka — Веб-разработка (7 статей)
+> ✅ Кластер I полностью покрыт: 156 запросов / 7 статей / ~65K показов/мес
+> Статьи: sajty-na-zakaz, sozdanie-lendinga, razrabotka-sajta-pod-klyuch-veb, sozdanie-internet-magazina, sozdanie-sajta-kataloga, zakazat-sajt-na-tilde, zakazat-sajt-na-bitrix
+- [next_js_django](https://dima-razrab.com/work/next_js_django) — платформа знакомств (корпоративный сайт)
+- [next_js_cinema](https://dima-razrab.com/work/next_js_cinema) — стриминг (веб-приложение)
+- [fastapi_nextjs_markets](https://dima-razrab.com/work/fastapi_nextjs_markets) — маркетплейс (интернет-магазин)
+- [django_tan](https://dima-razrab.com/work/django_tan) — экосистема студии (сайт под ключ)
+- [documents_google](https://dima-razrab.com/work/documents_google) — документооборот (веб-сервис)
+- [rab_dom](https://dima-razrab.com/work/rab_dom) — недвижимость (сайт-каталог)
 
 ### /parsery-marketplejsov — Парсеры
 - [seo_wb_tg](https://dima-razrab.com/work/seo_wb_tg) — SEO позиции WB

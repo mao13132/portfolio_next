@@ -67,8 +67,8 @@ export const articleCifrovizaciyaMalogoBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Готовы к цифровизации бизнеса?",
-    ctaSubtitle: "Бесплатный аудит ваших бизнес-процессов — покажу, что автоматизировать первым и сколько вы сэкономите",
+    ctaTitle: "Хотите экономить от 5 часов в день?",
+    ctaSubtitle: "Экономия от 5 часов/день, ROI 200-400%. Бесплатный аудит цифровизации за 24 часа.",
     ctaSource: "article-cifrovizaciya-malogo-biznesa-cta",
 
     structuredData: makeArticleSchema(

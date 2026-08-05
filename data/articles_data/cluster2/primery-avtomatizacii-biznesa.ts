@@ -59,8 +59,8 @@ export const articlePrimeryAvtomatizacii: Article = {
         },
     ],
 
-    ctaTitle: "Хотите такой же результат для своего бизнеса?",
-    ctaSubtitle: "Бесплатная консультация — разберём ваши процессы и покажем, что автоматизировать первым",
+    ctaTitle: "Хотите ROI 300-520% как в моих кейсах?",
+    ctaSubtitle: "ROI 300-520%, окупаемость за 2-4 месяца. Бесплатный аудит вашего бизнеса за 24 часа.",
     ctaSource: "article-primery-cta",
 
     structuredData: makeArticleSchema(

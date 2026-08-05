@@ -63,8 +63,8 @@ export const articleAvtomatizaciyaMalogoBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать свой малый бизнес?",
-    ctaSubtitle: "Бесплатный аудит бизнес-процессов — покажу, что автоматизировать первым и сколько вы сэкономите",
+    ctaTitle: "Хотите экономить от 3 часов в день?",
+    ctaSubtitle: "Экономия от 3 часов/день, ROI 200-400%. Бесплатный аудит малого бизнеса за 24 часа.",
     ctaSource: "article-malogo-biznesa-cta",
 
     howToSteps: [

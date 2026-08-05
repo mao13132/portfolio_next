@@ -61,8 +61,8 @@ export const articleAnalizAvtomatizaciiBiznesProcessov: Article = {
         },
     ],
 
-    ctaTitle: "Нужен аудит ваших бизнес-процессов?",
-    ctaSubtitle: "Проведу бесплатный анализ ваших процессов — покажу, что автоматизировать первым и сколько вы сэкономите",
+    ctaTitle: "Сколько времени вы теряете на рутину?",
+    ctaSubtitle: "Проведу бесплатный аудит и покажу, как сэкономить 10-20 часов/неделю на автоматизации процессов.",
     ctaSource: "article-analiz-avtomatizacii-biznes-processov-cta",
 
     structuredData: makeArticleSchema(

@@ -90,5 +90,7 @@ export const articleFastapiDlyaApi: Article = {
         { anchor: "webhook-интеграция", url: "/blog/webhook-integraciya", context: "Автоматизация событий" },
         { anchor: "API-интеграция с 1С", url: "/blog/api-integraciya-1s", context: "Обмен данными с 1С" },
         { anchor: "разработка на Python", url: "/blog/python-razrabotka", context: "Python для автоматизации" },
+        { anchor: "интеграция API маркетплейсов", url: "/blog/integraciya-api-marketplejsov", context: "Ozon, WB, Avito" },
+        { anchor: "интеграция нишевых API", url: "/blog/integraciya-nichevyh-api", context: "Банки, Контур, WhatsApp" },
     ],
 };

@@ -227,7 +227,9 @@ export const avtomatizaciyaVoronkiProdazhPart1: ArticleSection[] = [
 
 Такая воронка конвертирует 15-25% посетителей в клиентов — против 3-5% без бота.
 
-[Подробнее о разработке бота для Telegram →](/blog/razrabotka-bota-dlya-telegram)`,
+[Подробнее о разработке бота для Telegram →](/blog/razrabotka-bota-dlya-telegram)
+
+> 🔧 **Не хотите разбираться в автоматизации воронки?** Доверьте это профессионалу — [напишите мне](/avtomatizaciya-biznesa), и я сделаю всё под ключ. Бесплатная оценка за 24 часа.`,
 
         subsections: [
             {

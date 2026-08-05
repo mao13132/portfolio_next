@@ -11,6 +11,10 @@ import { apiArticles } from '@/data/articles_data/api/registry';
 import { aiArticles } from '@/data/articles_data/ai/registry';
 import { pythonArticles } from '@/data/articles_data/python/registry';
 import { nextjsArticles } from '@/data/articles_data/nextjs/registry';
+import { vebArticles } from '@/data/articles_data/veb/registry';
+import { mobileArticles } from '@/data/articles_data/mobile/registry';
+import { konstruktoryArticles } from '@/data/articles_data/konstruktory/registry';
+import { skladArticles } from '@/data/articles_data/sklad/registry';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
@@ -108,6 +112,42 @@ const clusters = [
         hubUrl: '/blog/nextjs-razrabotka',
         color: '#f97316',
         articles: nextjsArticles,
+    },
+    {
+        key: 'veb-razrabotka',
+        title: 'Веб-разработка',
+        emoji: '🌐',
+        description: 'Создание сайтов, лендингов, веб-приложений. Стоимость, платформы, этапы разработки.',
+        hubUrl: '/blog/veb-razrabotka',
+        color: '#06b6d4',
+        articles: vebArticles,
+    },
+    {
+        key: 'mobilnye-prilozheniya',
+        title: 'Мобильные приложения',
+        emoji: '📱',
+        description: 'Разработка мобильных приложений: Flutter, React Native, нативные. Стоимость, этапы, кейсы.',
+        hubUrl: '/blog/mobilnye-prilozheniya',
+        color: '#8b5cf6',
+        articles: mobileArticles,
+    },
+    {
+        key: 'konstruktory',
+        title: 'Конструкторы и CMS',
+        emoji: '🛠️',
+        description: 'Создание сайтов на WordPress, 1С-Битрикс, Tilda. Стоимость, особенности, кейсы.',
+        hubUrl: '/blog/veb-razrabotka',
+        color: '#f43f5e',
+        articles: konstruktoryArticles,
+    },
+    {
+        key: 'sklad',
+        title: 'Автоматизация склада',
+        emoji: '📦',
+        description: 'WMS-системы, штрихкоды, ТСД, интеграция с 1С и маркетплейсами. Автоматизация FBS.',
+        hubUrl: '/blog/avtomatizaciya-biznesa',
+        color: '#14b8a6',
+        articles: skladArticles,
     },
 ];
 

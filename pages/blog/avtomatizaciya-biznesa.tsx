@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
+import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { PortfolioPopup } from '@/app/Components/Landing/PortfolioPopup';
 import { fadeUp, scaleIn } from '@/app/Components/Landing/animations';
@@ -418,6 +419,8 @@ export default function AvtomatizaciyaBiznesaHubPage() {
                     </div>
                 </footer>
             </div>
+
+            <TelegramFloat />
         </>
     );
 }

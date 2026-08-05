@@ -67,8 +67,8 @@ export const articleAvtomatizaciyaKlientov: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать работу с клиентами?",
-    ctaSubtitle: "Бесплатный аудит вашей системы — покажу, как не терять клиентов и увеличить повторные продажи",
+    ctaTitle: "Хотите на 30-50% больше повторных продаж?",
+    ctaSubtitle: "Повторные продажи +30-50%, экономия 3 часа/день. Бесплатный аудит клиентской базы за 24 часа.",
     ctaSource: "article-avtomatizaciya-klientov-cta",
 
     structuredData: makeArticleSchema(

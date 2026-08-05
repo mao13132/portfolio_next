@@ -175,7 +175,9 @@ export const avtomatizaciyaZayavokPart1: ArticleSection[] = [
 :::conversion
 **Нужна помощь с автоматизацией?**
 [Обсудите бесплатно в Telegram](https://t.me/dima_razrab) — разберём вашу задачу и предложим решение.
-:::`,
+:::
+
+> 🔧 **Не хотите разбираться в автоматизации заявок?** Доверьте это профессионалу — [напишите мне](/avtomatizaciya-biznesa), и я сделаю всё под ключ. Бесплатная оценка за 24 часа.`,
 
         subsections: [
             {

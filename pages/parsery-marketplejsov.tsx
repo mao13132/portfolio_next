@@ -8,6 +8,8 @@ import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { ExitIntentPopup } from '@/app/Components/Landing/ExitIntentPopup';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { Breadcrumbs } from '@/app/Components/Landing/Breadcrumbs/Breadcrumbs';
+import { Calculator } from '@/app/Components/Calculator/Calculator';
+import { parserCalculator } from '@/app/Components/Calculator/calculatorData';
 import styles from './parsery-marketplejsov.module.css';
 
 /* ============================================================
@@ -1155,6 +1157,8 @@ export default function ParseryMarketplejsovPage() {
                     </div>
                 </div>
             </section>
+
+            <Calculator config={parserCalculator} />
 
             {/* ============ FINAL CTA ============ */}
             <section className={styles.finalCta}>

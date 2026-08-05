@@ -63,8 +63,8 @@ export const articleAvtomatizaciyaPodKlyuch: Article = {
         },
     ],
 
-    ctaTitle: "Готовы заказать автоматизацию бизнеса под ключ?",
-    ctaSubtitle: "Бесплатная консультация — аудит ваших процессов и точная смета за 24 часа",
+    ctaTitle: "Хотите автоматизацию под ключ без головной боли?",
+    ctaSubtitle: "Автоматизация от 50 000 ₽, ROI 200-400%. Бесплатный аудит и смета за 24 часа.",
     ctaSource: "article-pod-klyuch-cta",
 
     howToSteps: [

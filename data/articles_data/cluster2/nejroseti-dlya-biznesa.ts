@@ -61,8 +61,8 @@ export const articleNejrosetiDlyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Готовы внедрить нейросети в свой бизнес?",
-    ctaSubtitle: "Бесплатная консультация — определим задачу, подберём технологию и покажем, как AI увеличит вашу прибыль",
+    ctaTitle: "Хотите нейросеть, которая приносит прибыль?",
+    ctaSubtitle: "Внедрение нейросетей от 60 000 ₽ с ROI 300-450%. Бесплатная оценка за 24 часа.",
     ctaSource: "article-nejroseti-cta",
 
     structuredData: makeArticleSchema(

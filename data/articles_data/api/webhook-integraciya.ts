@@ -90,5 +90,7 @@ export const articleWebhookIntegraciya: Article = {
         { anchor: "API-интеграция с 1С", url: "/blog/api-integraciya-1s", context: "Обмен данными с 1С" },
         { anchor: "FastAPI для разработки API", url: "/blog/fastapi-dlya-api", context: "Почему FastAPI" },
         { anchor: "разработка ботов", url: "/razrabotka-botov", context: "Telegram-боты для бизнеса" },
+        { anchor: "интеграция API маркетплейсов", url: "/blog/integraciya-api-marketplejsov", context: "Ozon, WB, Avito" },
+        { anchor: "интеграция API доставки", url: "/blog/integraciya-api-dostavki", context: "СДЭК, Почта России" },
     ],
 };

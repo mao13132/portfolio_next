@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
+import { TelegramFloat } from '@/app/Components/Landing/TelegramFloat';
 import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { fadeUp } from '@/app/Components/Landing/animations';
 import styles from './blog.module.css';
@@ -349,6 +350,8 @@ export default function ParseryMarketplejsovHubPage() {
                     </div>
                 </footer>
             </div>
+
+            <TelegramFloat />
         </>
     );
 }
