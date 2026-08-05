@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
 import { axiosClassic } from '../utils/interceptor';
 import { getQuiz } from '../utils/url.config';
+import { useAttribution } from '@/app/hooks/useAttribution';
 import styles from './landing.module.css';
 
 interface QuizQuestion {
@@ -18,6 +19,7 @@ interface LandingQuizProps {
 }
 
 export const LandingQuiz = ({ title = 'Подберём решение за 30 секунд', questions, source, pageUrl }: LandingQuizProps) => {
+    const { getAttribution, trackFormSubmit } = useAttribution();
     const [step, setStep] = useState(0);
     const [answers, setAnswers] = useState<string[]>([]);
     const [contact, setContact] = useState('');
@@ -48,6 +50,7 @@ export const LandingQuiz = ({ title = 'Подберём решение за 30 �
             return;
         }
 
+        trackFormSubmit();
         setLoading(true);
         try {
             const quizData = {
@@ -58,6 +61,7 @@ export const LandingQuiz = ({ title = 'Подберём решение за 30 �
                 contact,
                 source,
                 url: pageUrl,
+                attribution: getAttribution(),
             };
 
             try {
@@ -69,6 +73,7 @@ export const LandingQuiz = ({ title = 'Подберём решение за 30 �
                     telegram: contact,
                     text: `[${source} квиз] ${answers.join(' → ')}`,
                     url: `${pageUrl}#quiz`,
+                    attribution: getAttribution(),
                 }));
             }
 

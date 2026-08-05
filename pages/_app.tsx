@@ -3,8 +3,11 @@ import Head from "next/head";
 
 import '@/app/styles/globals.css';
 import YandexMetrika from '@/app/Components/YandexMetrika/YandexMetrika';
+import { useJourneyTracker } from '@/app/hooks/useJourneyTracker';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
+    // Journey Chain — трекинг пути пользователя по сайту
+    useJourneyTracker();
     return (
         <>
             <Head>

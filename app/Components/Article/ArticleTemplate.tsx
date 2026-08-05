@@ -15,6 +15,7 @@ import { ClickComponent } from '@/app/Components/ClickComponent/ClickComponent';
 import { CollapsibleLinks } from '@/app/Components/CollapsibleLinks/CollapsibleLinks';
 import { PortfolioPopup } from '@/app/Components/Landing/PortfolioPopup';
 import { useActiveToc } from './useActiveToc';
+import { useAttribution } from '@/app/hooks/useAttribution';
 import styles from './Article.module.css';
 import ls from '@/app/Components/Landing/landing.module.css';
 
@@ -332,6 +333,7 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
     const [openFaq, setOpenFaq] = useState<number | null>(null);
     const [portfolioOpen, setPortfolioOpen] = useState(false);
     const [copied, setCopied] = useState(false);
+    const { getAttribution, trackFormStart, trackFormField, trackFormSubmit } = useAttribution();
 
     // Active ToC tracking
     const tocIds = useMemo(() => [...article.toc.map(t => t.id), 'faq'], [article.toc]);
@@ -368,6 +370,7 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
             return;
         }
 
+        trackFormSubmit();
         setLoading(true);
         try {
             await axiosClassic.post(getContact(), JSON.stringify({
@@ -377,6 +380,7 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
                 email: '',
                 text: `[${article.ctaSource}] ${formData.task || 'Заявка из статьи'}`,
                 url: `${article.canonical}#${article.ctaSource}`,
+                attribution: getAttribution(),
             }));
 
             setSuccess(true);
@@ -734,6 +738,7 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
                                         placeholder="Ваше имя"
                                         value={formData.name}
                                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                        onFocus={() => { trackFormStart(); trackFormField('name'); }}
                                     />
                                     <input
                                         type="text"
@@ -741,6 +746,7 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
                                         placeholder="Telegram или телефон *"
                                         value={formData.contact}
                                         onChange={(e) => setFormData({ ...formData, contact: e.target.value })}
+                                        onFocus={() => { trackFormStart(); trackFormField('contact'); }}
                                         required
                                     />
                                     <textarea
@@ -748,6 +754,7 @@ export const ArticleTemplate = ({ article }: ArticleTemplateProps) => {
                                         placeholder="Опишите задачу (необязательно)"
                                         value={formData.task}
                                         onChange={(e) => setFormData({ ...formData, task: e.target.value })}
+                                        onFocus={() => trackFormField('task')}
                                     />
                                     <label className={styles.ctaCheckbox}>
                                         <input

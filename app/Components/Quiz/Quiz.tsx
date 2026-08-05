@@ -8,6 +8,7 @@ import { motion, AnimatePresence, useMotionValue, useTransform } from "framer-mo
 import { HeadingTitle } from "../HeadingTitle/HeadingTitle";
 import { QuizButton } from "./QuizButton";
 import { PatternFormat } from 'react-number-format';
+import { journey } from '@/app/utils/journey';
 
 // Обновленные анимации для лучшего UX
 const fadeAnimation = {
@@ -523,7 +524,9 @@ export const Quiz = ({ className, ...props }: QuizProps): JSX.Element => {
                         referer: document.referrer || window.location.href,
                         useragent: userAgent,
                         quiz_id: Date.now().toString()
-                    }
+                    },
+                    // Journey Chain — путь пользователя по сайту
+                    attribution: journey.getAttribution()
                 })
             });
 

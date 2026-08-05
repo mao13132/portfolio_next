@@ -17,6 +17,14 @@ export function middleware(req: NextRequest) {
     }
   });
 
+  // First-touch: сохраняем первую посещённую страницу (30 дней)
+  if (!req.cookies.has('first_touch')) {
+    response.cookies.set('first_touch', url.pathname, {
+      path: '/',
+      maxAge: 60 * 60 * 24 * 30, // 30 дней
+    });
+  }
+
   return response;
 }
 

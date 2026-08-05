@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import axios from 'axios';
 import { axiosClassic } from '../utils/interceptor';
 import { getContact } from '../utils/url.config';
+import { useAttribution } from '@/app/hooks/useAttribution';
 import styles from './landing.module.css';
 
 interface LeadFormProps {
@@ -21,6 +22,7 @@ export const LeadForm = ({ source, pageUrl, title, subtitle, compact = false }: 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState('');
+    const { getAttribution, trackFormStart, trackFormField, trackFormSubmit } = useAttribution();
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
@@ -35,6 +37,7 @@ export const LeadForm = ({ source, pageUrl, title, subtitle, compact = false }: 
             return;
         }
 
+        trackFormSubmit();
         setLoading(true);
         try {
             await axiosClassic.post(getContact(), JSON.stringify({
@@ -44,6 +47,7 @@ export const LeadForm = ({ source, pageUrl, title, subtitle, compact = false }: 
                 email: '',
                 text: `[${source}] ${task || 'Заявка с лендинга'}`,
                 url: `${pageUrl}#${source}`,
+                attribution: getAttribution(),
             }));
 
             setName('');
@@ -83,6 +87,7 @@ export const LeadForm = ({ source, pageUrl, title, subtitle, compact = false }: 
                     placeholder="Ваше имя (необязательно)"
                     value={name}
                     onChange={e => setName(e.target.value)}
+                    onFocus={() => { trackFormStart(); trackFormField('name'); }}
                     className={styles.formInput}
                     autoComplete="name"
                 />
@@ -94,6 +99,7 @@ export const LeadForm = ({ source, pageUrl, title, subtitle, compact = false }: 
                     placeholder="Телефон или Telegram *"
                     value={contact}
                     onChange={e => setContact(e.target.value)}
+                    onFocus={() => { trackFormStart(); trackFormField('contact'); }}
                     className={styles.formInput}
                     required
                     autoComplete="tel"
@@ -106,6 +112,7 @@ export const LeadForm = ({ source, pageUrl, title, subtitle, compact = false }: 
                         placeholder="Опишите задачу (необязательно)"
                         value={task}
                         onChange={e => setTask(e.target.value)}
+                        onFocus={() => trackFormField('task')}
                         className={styles.formTextarea}
                         rows={3}
                     />
