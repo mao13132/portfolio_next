@@ -62,7 +62,7 @@ export const articleNastrojkaTelegramBota: Article = {
         },
     ],
 
-    ctaTitle: "Нужна помощь с настройкой Telegram-бота?",
+    ctaTitle: "Нужна настройка бота? Сделаю от 7 000 ₽ за 3 дня",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём вашу задачу и подготовим план настройки",
     ctaSource: "article-nastrojka-cta",
 

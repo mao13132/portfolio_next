@@ -63,7 +63,7 @@ export const articleIntegraciyaCRMSTelegram: Article = {
         },
     ],
 
-    ctaTitle: "Хотите CRM + Telegram без потери лидов?",
+    ctaTitle: "Хотите CRM + Telegram от 80 000 ₽?",
     ctaSubtitle: "Интеграция за 5-10 дней, от 25 000 ₽. Бесплатная оценка вашего проекта за 24 часа.",
     ctaSource: "article-crm-telegram-cta",
 

@@ -67,7 +67,7 @@ export const articleSistemaAvtomatizaciiBiznesProcessov: Article = {
         },
     ],
 
-    ctaTitle: "Готовы внедрить систему автоматизации?",
+    ctaTitle: "Хотите систему автоматизации от 30 000 ₽?",
     ctaSubtitle: "Бесплатный аудит ваших бизнес-процессов — покажу, что автоматизировать первым и сколько вы сэкономите",
     ctaSource: "article-sistema-avtomatizacii-biznes-processov-cta",
 

@@ -63,7 +63,7 @@ export const articleAnalitikaMarketplejsov: Article = {
         },
     ],
 
-    ctaTitle: "Хотите систему аналитики для вашего бизнеса на маркетплейсах?",
+    ctaTitle: "Хотите аналитику маркетплейсов от 10 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим метрики, подберём подход и оценим стоимость разработки.",
     ctaSource: "article-analytics-mp-cta",
 

@@ -63,7 +63,7 @@ export const articleKakNajtiKlientovVTelegram: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматический поиск клиентов в Telegram?",
+    ctaTitle: "Хотите поиск клиентов в Telegram от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу нишу, подберём подход и оценим стоимость бота.",
     ctaSource: "article-leads-tg-cta",
 

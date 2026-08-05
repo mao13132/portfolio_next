@@ -45,7 +45,7 @@ export const articleAiDlyaObrabotkiDokumentov: Article = {
         { question: "Можно ли интегрировать AI с 1С?", answer: "Да, через API или обмен файлами." },
     ],
 
-    ctaTitle: "Хотите AI для обработки документов?",
+    ctaTitle: "Хотите AI для документов от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи и оценим стоимость внедрения AI в документооборот.",
     ctaSource: "article-ai-documents-cta",
 

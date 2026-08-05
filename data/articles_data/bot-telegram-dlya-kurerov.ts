@@ -68,7 +68,7 @@ export const articleBotTelegramDlyaKurerov: Article = {
         },
     ],
 
-    ctaTitle: "Нужен бот для курьерской доставки?",
+    ctaTitle: "Нужен бот для доставки от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём вашу логистику и предложим решение",
     ctaSource: "article-kurerov-cta",
 

@@ -64,7 +64,7 @@ export const articleAiAvtomatizaciyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Готовы внедрить AI в свой бизнес?",
+    ctaTitle: "Хотите внедрить AI от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — покажу, как AI увеличит ваши продажи и сократит расходы",
     ctaSource: "article-ai-avtomatizaciya-cta",
 

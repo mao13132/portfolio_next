@@ -381,7 +381,7 @@ export const articleRazrabotkaPrilozhenijAndroidIos: Article = {
         },
     ],
 
-    ctaTitle: "Не можете выбрать между нативной и кроссплатформой?",
+    ctaTitle: "Нативное или кроссплатформа от 50 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим оптимальный подход для вашей задачи. Ответ в течение 48 часов.",
     ctaSource: "article-android-ios-cta",
 

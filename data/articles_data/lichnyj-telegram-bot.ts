@@ -62,7 +62,7 @@ export const articleLichnyjTelegramBot: Article = {
         },
     ],
 
-    ctaTitle: "Готовы создать личного Telegram-бота?",
+    ctaTitle: "Хотите личного бота от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём вашу задачу и подготовим предложение",
     ctaSource: "article-lichnyj-bot-cta",
 

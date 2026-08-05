@@ -310,7 +310,7 @@ export const articleKrossplatformennayaRazrabotka: Article = {
         },
     ],
 
-    ctaTitle: "Нужно кроссплатформенное приложение?",
+    ctaTitle: "Нужно приложение от 50 000 ₽ — за 14 дней?",
     ctaSubtitle: "Бесплатная консультация — определим Flutter или React Native, рассчитаем стоимость и сроки. Ответ в течение 48 часов.",
     ctaSource: "article-crossplatform-cta",
 

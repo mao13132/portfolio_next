@@ -65,7 +65,7 @@ export const articleAvtomatizaciyaOtdelaProdazh: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать отдел продаж?",
+    ctaTitle: "Хотите автоматизацию отдела продаж от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём ваш процесс продаж и покажем, как увеличить конверсию на 25–50% с помощью автоматизации",
     ctaSource: "article-otdel-prodazh-cta",
 

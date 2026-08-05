@@ -64,7 +64,7 @@ export const articleParserDannih: Article = {
         },
     ],
 
-    ctaTitle: "Нужен парсер данных для вашего бизнеса?",
+    ctaTitle: "Нужен парсер данных от 10 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём метод сбора данных и оценим стоимость разработки. Ответ в течение 24 часов.",
     ctaSource: "article-parser-dannyh-cta",
 

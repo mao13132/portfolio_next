@@ -63,7 +63,7 @@ export const articleTelegramBotRassylka: Article = {
         },
     ],
 
-    ctaTitle: "Настройте автоматические рассылки для вашего бизнеса",
+    ctaTitle: "Настройте рассылки в боте от 7 000 ₽ — за 3 дня",
     ctaSubtitle: "Бесплатная консультация — определим тип рассылки и сегментацию за 24 часа",
     ctaSource: "article-rassylka-cta",
 

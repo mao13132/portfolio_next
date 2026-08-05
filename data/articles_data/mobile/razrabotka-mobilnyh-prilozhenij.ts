@@ -64,7 +64,7 @@ export const articleRazrabotkaMobilnihPrilozhenij: Article = {
         },
     ],
 
-    ctaTitle: "Нужно мобильное приложение для вашего бизнеса?",
+    ctaTitle: "Нужно приложение от 50 000 ₽ — за 14 дней?",
     ctaSubtitle: "Бесплатная консультация — определим платформу, функциональность и рассчитаем стоимость. Ответ в течение 48 часов.",
     ctaSource: "article-mobile-dev-cta",
 

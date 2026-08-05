@@ -63,7 +63,7 @@ export const articleRepricerWildberries: Article = {
         },
     ],
 
-    ctaTitle: "Хотите repricer для вашего бизнеса на Wildberries?",
+    ctaTitle: "Хотите repricer от 10 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость разработки repricer.",
     ctaSource: "article-repricer-wb-cta",
 

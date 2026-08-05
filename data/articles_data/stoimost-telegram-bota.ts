@@ -64,7 +64,7 @@ export const articleStoimostTelegramBota: Article = {
         },
     ],
 
-    ctaTitle: "Узнайте точную стоимость вашего бота",
+    ctaTitle: "Узнайте стоимость бота — от 7 000 ₽",
     ctaSubtitle: "Бесплатная консультация — расскажите задачу, и я подготовлю точную смету за 24 часа",
     ctaSource: "article-stoimost-cta",
 

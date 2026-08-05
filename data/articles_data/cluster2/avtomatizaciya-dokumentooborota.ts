@@ -61,7 +61,7 @@ export const articleAvtomatizaciyaDokumentooborota: Article = {
         },
     ],
 
-    ctaTitle: "Готовы убрать хаос из документооборота?",
+    ctaTitle: "Хотите автоматизацию документооборота от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — покажу, как автоматизация документооборота сэкономит вашему бизнесу 20+ часов в неделю",
     ctaSource: "article-dokumentooborot-cta",
 

@@ -63,7 +63,7 @@ export const articleSborBazyKlientovTelegram: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать сбор базы клиентов в Telegram?",
+    ctaTitle: "Хотите сбор базы от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу нишу, подберём подход и оценим стоимость системы сбора.",
     ctaSource: "article-sbor-baza-cta",
 

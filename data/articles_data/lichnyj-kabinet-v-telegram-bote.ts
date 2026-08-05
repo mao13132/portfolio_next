@@ -60,7 +60,7 @@ export const articleLichnyjKabinetVBote: Article = {
         },
     ],
 
-    ctaTitle: "Хотите личный кабинет в вашем Telegram-боте?",
+    ctaTitle: "Хотите личный кабинет в боте от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и подготовим коммерческое предложение за 30 минут",
     ctaSource: "article-lk-cta",
 

@@ -63,7 +63,7 @@ export const articleRazrabotkaRestApi: Article = {
         },
     ],
 
-    ctaTitle: "Хотите разработать REST API для вашего бизнеса?",
+    ctaTitle: "Хотите REST API от 15 000 ₽ — за 5 дней?",
     ctaSubtitle: "Бесплатная консультация — спроектируем архитектуру, оценим стоимость и сроки разработки API.",
     ctaSource: "article-rest-api-cta",
 

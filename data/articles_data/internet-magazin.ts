@@ -59,7 +59,7 @@ export const articleInternetMagazin: Article = {
         },
     ],
 
-    ctaTitle: "Хотите магазин в Telegram?",
+    ctaTitle: "Хотите магазин в Telegram от 50 000 ₽?",
     ctaSubtitle: "Создам полноценный интернет-магазин в Telegram с каталогом, оплатой и доставкой",
     ctaSource: "article-shop-cta",
 

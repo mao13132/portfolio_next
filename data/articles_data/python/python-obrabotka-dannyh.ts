@@ -58,7 +58,7 @@ export const articlePythonObrabotkaDannyh: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать обработку данных?",
+    ctaTitle: "Хотите обработку данных на Python от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи и подберём инструменты.",
     ctaSource: "article-python-dannye-cta",
 

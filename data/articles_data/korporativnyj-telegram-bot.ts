@@ -68,7 +68,7 @@ export const articleKorporativnyjTelegramBot: Article = {
         },
     ],
 
-    ctaTitle: "Нужен корпоративный Telegram-бот для вашей компании?",
+    ctaTitle: "Нужен корпоративный бот от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём ваши процессы и предложим решение",
     ctaSource: "article-korporativnyj-cta",
 

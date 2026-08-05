@@ -64,7 +64,7 @@ export const articleSaasRazrabotkaNextjs: Article = {
         },
     ],
 
-    ctaTitle: "Хотите создать SaaS-продукт на Next.js?",
+    ctaTitle: "Хотите SaaS на Next.js от 100 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — спроектируем архитектуру, подберём стек и оценим стоимость SaaS-разработки.",
     ctaSource: "article-nextjs-saas-cta",
 

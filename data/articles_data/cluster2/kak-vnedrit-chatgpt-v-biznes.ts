@@ -62,7 +62,7 @@ export const articleKakVnedritChatgptVBiznes: Article = {
         },
     ],
 
-    ctaTitle: "Хотите внедрить ChatGPT в свой бизнес?",
+    ctaTitle: "Хотите ChatGPT в бизнес от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём ваши процессы и покажем, где AI даст максимальный эффект. Стоимость интеграции от 20 000 ₽",
     ctaSource: "article-chatgpt-biznes-cta",
 

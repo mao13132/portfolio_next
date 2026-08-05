@@ -64,7 +64,7 @@ export const articleRazrabotkaNaNextjs: Article = {
         },
     ],
 
-    ctaTitle: "Хотите разработку на Next.js для вашего проекта?",
+    ctaTitle: "Хотите разработку на Next.js от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём архитектуру и оценим стоимость разработки на Next.js.",
     ctaSource: "article-nextjs-dev-cta",
 

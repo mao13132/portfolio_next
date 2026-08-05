@@ -63,7 +63,7 @@ export const articleApiIntegraciya1S: Article = {
         },
     ],
 
-    ctaTitle: "Хотите интегрировать 1С с вашими системами?",
+    ctaTitle: "Хотите интеграцию 1С от 15 000 ₽ — за 5 дней?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость интеграции с 1С.",
     ctaSource: "article-1s-api-cta",
 

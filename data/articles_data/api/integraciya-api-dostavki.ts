@@ -60,7 +60,7 @@ export const articleIntegraciyaApiDostavki: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать доставку через API?",
+    ctaTitle: "Хотите интеграцию API доставки от 15 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём службы доставки и оценим стоимость интеграции. От 15 000 ₽.",
     ctaSource: "article-dostavka-cta",
 

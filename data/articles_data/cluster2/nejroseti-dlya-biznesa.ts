@@ -61,7 +61,7 @@ export const articleNejrosetiDlyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Хотите нейросеть, которая приносит прибыль?",
+    ctaTitle: "Хотите нейросеть в бизнес от 30 000 ₽?",
     ctaSubtitle: "Внедрение нейросетей от 60 000 ₽ с ROI 300-450%. Бесплатная оценка за 24 часа.",
     ctaSource: "article-nejroseti-cta",
 

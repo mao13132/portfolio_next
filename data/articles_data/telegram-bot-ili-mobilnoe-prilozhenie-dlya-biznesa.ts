@@ -60,7 +60,7 @@ export const articleTelegramBotIliPrilozhenieDlyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Не уверены, что выбрать — бот или приложение?",
+    ctaTitle: "Бот от 7 000 ₽ или приложение от 50 000 ₽ — что подойдёт?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и подберём оптимальное решение. Экономия до 500 000 ₽ на правильном выборе технологии.",
     ctaSource: "article-bot-ili-prilozhenie-biznes-cta",
 

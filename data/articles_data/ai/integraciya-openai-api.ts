@@ -64,7 +64,7 @@ export const articleIntegraciyaOpenaiApi: Article = {
         },
     ],
 
-    ctaTitle: "Хотите интегрировать OpenAI API в ваш проект?",
+    ctaTitle: "Хотите интеграцию OpenAI API от 15 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём модель и оценим стоимость интеграции.",
     ctaSource: "article-openai-api-cta",
 

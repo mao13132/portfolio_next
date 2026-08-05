@@ -63,7 +63,7 @@ export const articleIntegraciyaApiSSajtom: Article = {
         },
     ],
 
-    ctaTitle: "Хотите интегрировать API с вашим сайтом?",
+    ctaTitle: "Хотите интеграцию API с сайтом от 15 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём API и оценим стоимость интеграции.",
     ctaSource: "article-integraciya-api-cta",
 

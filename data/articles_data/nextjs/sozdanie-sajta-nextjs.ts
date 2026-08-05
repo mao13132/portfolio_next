@@ -63,7 +63,7 @@ export const articleSozdanieSajtaNextjs: Article = {
         },
     ],
 
-    ctaTitle: "Хотите создать сайт на Next.js?",
+    ctaTitle: "Хотите сайт на Next.js от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — обсудим проект, спроектируем архитектуру и оценим стоимость создания сайта.",
     ctaSource: "article-nextjs-site-cta",
 

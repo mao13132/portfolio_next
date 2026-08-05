@@ -63,7 +63,7 @@ export const articleParserTelegramKanalov: Article = {
         },
     ],
 
-    ctaTitle: "Хотите парсер Telegram-каналов для вашего бизнеса?",
+    ctaTitle: "Хотите парсер каналов от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость разработки.",
     ctaSource: "article-parser-tg-cta",
 

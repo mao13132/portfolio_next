@@ -61,7 +61,7 @@ export const articleTelegramBotDlyaPriyomaZakazov2: Article = {
         },
     ],
 
-    ctaTitle: "Готовы принимать заказы через Telegram-бота?",
+    ctaTitle: "Хотите принимать заказы через бота от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — покажу, как бот увеличит количество заказов на 40-70% и окупится за 3-4 дня",
     ctaSource: "article-zakazy-2-cta",
 

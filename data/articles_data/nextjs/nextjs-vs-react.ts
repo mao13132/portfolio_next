@@ -63,7 +63,7 @@ export const articleNextjsVsReact: Article = {
         },
     ],
 
-    ctaTitle: "Не можете определиться между React и Next.js?",
+    ctaTitle: "Разработка на Next.js от 30 000 ₽ — React или Next?",
     ctaSubtitle: "Бесплатная консультация — поможем выбрать оптимальную технологию для вашего проекта и оценим стоимость.",
     ctaSource: "article-nextjs-vs-react-cta",
 

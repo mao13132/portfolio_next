@@ -63,7 +63,7 @@ export const articleAiAgentyDlyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Хотите AI-агента для вашего бизнеса?",
+    ctaTitle: "Хотите AI-агента от 30 000 ₽ — за 7 дней?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость разработки AI-агента.",
     ctaSource: "article-ai-agent-cta",
 

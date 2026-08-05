@@ -63,7 +63,7 @@ export const articleWebhookIntegraciya: Article = {
         },
     ],
 
-    ctaTitle: "Хотите настроить webhook-интеграцию для бизнеса?",
+    ctaTitle: "Хотите webhook-интеграцию от 15 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём сервисы и оценим стоимость webhook-интеграции.",
     ctaSource: "article-webhook-cta",
 

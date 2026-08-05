@@ -58,7 +58,7 @@ export const articlePythonParsingNaZakaz: Article = {
         },
     ],
 
-    ctaTitle: "Нужен парсер для вашего бизнеса?",
+    ctaTitle: "Нужен парсер на Python от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — оценим сложность и стоимость парсера. От 15 000₽.",
     ctaSource: "article-python-parsing-cta",
 

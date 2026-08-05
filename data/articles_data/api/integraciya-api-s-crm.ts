@@ -60,7 +60,7 @@ export const articleIntegraciyaApiSCrm: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать отдел продаж через CRM?",
+    ctaTitle: "Хотите интеграцию API с CRM от 15 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, выберем CRM и оценим стоимость интеграции. От 20 000 ₽.",
     ctaSource: "article-crm-cta",
 

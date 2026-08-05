@@ -61,7 +61,7 @@ export const articleKakTelegramBotUvelichivaetProdazhi: Article = {
         },
     ],
 
-    ctaTitle: "Хотите увеличить продажи с помощью Telegram бота?",
+    ctaTitle: "Хотите увеличить продажи ботом от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и покажем, какой бот даст максимальный ROI для вашего бизнеса",
     ctaSource: "article-prodazhi-cta",
 

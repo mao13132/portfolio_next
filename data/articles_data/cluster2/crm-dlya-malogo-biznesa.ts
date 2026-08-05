@@ -62,7 +62,7 @@ export const articleCrmDlyaMalogoBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Готовы внедрить CRM в свой бизнес?",
+    ctaTitle: "Хотите CRM от 80 000 ₽ — за 30 дней?",
     ctaSubtitle: "Бесплатная консультация — определим, какая CRM подходит именно вам, и посчитаем ROI",
     ctaSource: "article-crm-malogo-cta",
 

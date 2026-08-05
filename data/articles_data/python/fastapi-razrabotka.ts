@@ -59,7 +59,7 @@ export const articleFastapiRazrabotka: Article = {
         },
     ],
 
-    ctaTitle: "Хотите высокопроизводительный API на FastAPI?",
+    ctaTitle: "Хотите API на FastAPI от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — подберём оптимальную архитектуру для вашего проекта.",
     ctaSource: "article-fastapi-cta",
 

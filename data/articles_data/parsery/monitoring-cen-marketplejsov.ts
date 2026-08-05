@@ -63,7 +63,7 @@ export const articleMonitoringCenMarketplejsov: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать мониторинг цен?",
+    ctaTitle: "Хотите мониторинг цен от 10 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость системы мониторинга цен.",
     ctaSource: "article-monitoring-prices-cta",
 

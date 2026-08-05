@@ -288,7 +288,7 @@ export const articleRazrabotkaPrilozhenijDlyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Нужно мобильное приложение для вашего бизнеса?",
+    ctaTitle: "Нужно приложение для бизнеса от 50 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим, какие функции и интеграции нужны. Рассчитаем стоимость и ROI.",
     ctaSource: "article-mobile-business-cta",
 

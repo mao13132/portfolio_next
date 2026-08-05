@@ -59,7 +59,7 @@ export const articleTelegramBotSOplatoj: Article = {
         },
     ],
 
-    ctaTitle: "Добавьте оплату в вашего Telegram-бота",
+    ctaTitle: "Добавьте оплату в бота от 7 000 ₽ — за 5 дней",
     ctaSubtitle: "Интеграция ЮKassa, СБП, Stripe за 5–10 дней. Бесплатная поддержка 30 дней",
     ctaSource: "article-oplata-cta",
 

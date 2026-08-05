@@ -65,7 +65,7 @@ export const articleIntegraciyaNichevyhApi: Article = {
         },
     ],
 
-    ctaTitle: "Хотите интегрировать нишевые API для бизнеса?",
+    ctaTitle: "Хотите интеграцию нишевых API от 15 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём сервисы и оценим стоимость интеграции. От 15 000 ₽.",
     ctaSource: "article-niche-api-cta",
 

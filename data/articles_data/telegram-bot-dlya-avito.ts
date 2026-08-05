@@ -60,7 +60,7 @@ export const articleTelegramBotDlyaAvito: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать продажи на Авито?",
+    ctaTitle: "Хотите бота для Авито от 7 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём вашу задачу и подготовим коммерческое предложение",
     ctaSource: "article-avito-cta",
 

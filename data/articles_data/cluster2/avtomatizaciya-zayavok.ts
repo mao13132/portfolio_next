@@ -61,7 +61,7 @@ export const articleAvtomatizaciyaZayavok: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать приём заявок?",
+    ctaTitle: "Хотите автоматизацию заявок от 7 000 ₽?",
     ctaSubtitle: "Бесплатный аудит вашей системы заявок — покажу, что автоматизировать первым и сколько вы сэкономите",
     ctaSource: "article-avtomatizaciya-zayavok-cta",
 

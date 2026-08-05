@@ -64,7 +64,7 @@ export const articleTelegramWebApp: Article = {
         },
     ],
 
-    ctaTitle: "Нужен Telegram WebApp для вашего бизнеса?",
+    ctaTitle: "Нужен WebApp от 10 000 ₽ — за 5 дней?",
     ctaSubtitle: "Бесплатная консультация — покажу, как WebApp увеличит конверсию и автоматизирует процессы",
     ctaSource: "article-webapp-cta",
 

@@ -62,7 +62,7 @@ export const articleZakazatSajtNaBitrix: Article = {
         },
     ],
 
-    ctaTitle: "Хотите сайт на Битрикс с полной интеграцией 1С?",
+    ctaTitle: "Хотите сайт на Битрикс от 10 000 ₽?",
     ctaSubtitle: "Разработаю на шаблоне от 50 000 ₽ или кастом от 120 000 ₽. Синхронизация товаров, заказов, остатков с 1С. Бесплатная оценка.",
     ctaSource: "article-zakazat-sajt-na-bitrix-cta",
 

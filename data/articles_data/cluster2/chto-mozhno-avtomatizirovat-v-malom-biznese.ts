@@ -60,7 +60,7 @@ export const articleChtoMozhnoAvtomatizirovatVMalomBiznese: Article = {
         },
     ],
 
-    ctaTitle: "Готовы автоматизировать свой бизнес?",
+    ctaTitle: "Хотите автоматизацию бизнеса от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём ваши процессы и покажем, что можно автоматизировать прямо сейчас. Экономия от 3 часов/день.",
     ctaSource: "article-cto-mozhno-cta",
 

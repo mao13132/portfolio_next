@@ -63,7 +63,7 @@ export const articleLidogeneraciyaTelegramKakEtoRabotaet: Article = {
         },
     ],
 
-    ctaTitle: "Хотите систему лидогенерации в Telegram?",
+    ctaTitle: "Хотите лидогенерацию в Telegram от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу нишу, подберём подход и оценим стоимость.",
     ctaSource: "article-leadgen-tg-cta",
 

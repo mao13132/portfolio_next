@@ -58,7 +58,7 @@ export const articlePythonBackendRazrabotka: Article = {
         },
     ],
 
-    ctaTitle: "Нужен надёжный Python backend?",
+    ctaTitle: "Нужен Python backend от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — подберём оптимальную архитектуру для вашего проекта.",
     ctaSource: "article-python-backend-cta",
 

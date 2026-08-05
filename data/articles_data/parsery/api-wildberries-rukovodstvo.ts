@@ -65,7 +65,7 @@ export const articleApiWildberriesRukovodstvo: Article = {
         },
     ],
 
-    ctaTitle: "Нужна интеграция с API Wildberries?",
+    ctaTitle: "Нужна интеграция с API Wildberries от 10 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость разработки.",
     ctaSource: "article-api-wb-cta",
 

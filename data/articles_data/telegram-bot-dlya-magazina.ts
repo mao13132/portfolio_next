@@ -61,7 +61,7 @@ export const articleTelegramBotDlyaMagazina: Article = {
         },
     ],
 
-    ctaTitle: "Готовы запустить магазин в Telegram?",
+    ctaTitle: "Хотите магазин в Telegram от 50 000 ₽ — за 14 дней?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и предложим оптимальное решение за 24 часа",
     ctaSource: "article-magazin-cta",
 

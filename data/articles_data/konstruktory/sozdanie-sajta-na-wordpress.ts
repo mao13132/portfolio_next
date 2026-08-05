@@ -339,7 +339,7 @@ export const articleSozdanieSajtaNaWordpress: Article = {
         { question: "WordPress безопасен?", answer: "При правильной настройке — да. Обновления, плагины безопасности, SSL обязательны." },
     ],
 
-    ctaTitle: "Нужен сайт на WordPress?",
+    ctaTitle: "Нужен сайт на WordPress от 10 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим тип сайта, функциональность и рассчитаем стоимость. Ответ в течение 24 часов.",
     ctaSource: "article-wordpress-cta",
 

@@ -64,7 +64,7 @@ export const articleParserOtzyvov: Article = {
         },
     ],
 
-    ctaTitle: "Нужен мониторинг отзывов для вашего бизнеса?",
+    ctaTitle: "Нужен мониторинг отзывов от 10 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим источники, объём данных и подберём оптимальное решение. Ответ в течение 24 часов.",
     ctaSource: "article-parser-otzyvov-cta",
 

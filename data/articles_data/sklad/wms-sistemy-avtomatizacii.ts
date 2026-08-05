@@ -181,7 +181,7 @@ export const articleWmsSistemyAvtomatizacii: Article = {
         { question: "Какой ROI от WMS?", answer: "200-420% за 2-4 месяца за счёт снижения ошибок и роста скорости." },
     ],
 
-    ctaTitle: "Нужна WMS-система для склада?",
+    ctaTitle: "Нужна WMS от 30 000 ₽ — за 7 дней?",
     ctaSubtitle: "Бесплатный аудит — оценю текущую ситуацию и предложу оптимальное WMS-решение.",
     ctaSource: "article-wms-cta",
 

@@ -210,7 +210,7 @@ export const articleAvtomatizaciyaSklada1s: Article = {
         { question: "Сколько времени займёт внедрение?", answer: "Базовая настройка — 2-4 недели. Полное внедрение — 4-8 недель." },
     ],
 
-    ctaTitle: "Нужна автоматизация склада на 1С?",
+    ctaTitle: "Нужна автоматизация склада на 1С от 30 000 ₽?",
     ctaSubtitle: "Бесплатный аудит — оценю текущую ситуацию и предложу решение с расчётом ROI.",
     ctaSource: "article-sklad-1s-cta",
 

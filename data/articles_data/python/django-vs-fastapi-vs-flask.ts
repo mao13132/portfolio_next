@@ -60,7 +60,7 @@ export const articleDjangoVsFastapiVsFlask: Article = {
         },
     ],
 
-    ctaTitle: "Не можете выбрать фреймворк?",
+    ctaTitle: "Разработка на Python от 30 000 ₽ — какой фреймворк выбрать?",
     ctaSubtitle: "Бесплатная консультация — подберём оптимальный стек для вашего проекта.",
     ctaSource: "article-django-vs-fastapi-cta",
 

@@ -61,7 +61,7 @@ export const articleSozdanieSajtaKataloga: Article = {
         },
     ],
 
-    ctaTitle: "Хотите каталог с фильтрами и интеграцией с CRM?",
+    ctaTitle: "Хотите сайт-каталог от 10 000 ₽ — за 5 дней?",
     ctaSubtitle: "Создам сайт-каталог от 40 000 ₽ с личным кабинетом и выгрузкой из 1С. Бесплатная оценка за 24 часа.",
     ctaSource: "article-sozdanie-sajta-kataloga-cta",
 

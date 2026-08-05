@@ -63,7 +63,7 @@ export const articleRazrabotkaCrmErp: Article = {
         },
     ],
 
-    ctaTitle: "Нужна CRM или ERP для вашего бизнеса?",
+    ctaTitle: "Нужна CRM или ERP от 80 000 ₽?",
     ctaSubtitle: "Разработка CRM от 80 000 ₽, CRM + ERP от 150 000 ₽. Бесплатная оценка вашего проекта за 24 часа.",
     ctaSource: "article-crm-erp-cta",
 

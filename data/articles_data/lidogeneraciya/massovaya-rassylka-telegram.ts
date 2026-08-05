@@ -64,7 +64,7 @@ export const articleMassovayaRassylkaTelegram: Article = {
         },
     ],
 
-    ctaTitle: "Хотите настроить массовую рассылку в Telegram?",
+    ctaTitle: "Хотите рассылку в Telegram от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу аудиторию, подберём подход и оценим стоимость системы рассылок.",
     ctaSource: "article-rassylka-cta",
 

@@ -234,7 +234,7 @@ export const articleAvtomatizaciyaSkladaMarketplejsy: Article = {
         { question: "Какой ROI от автоматизации?", answer: "300-450% за 1-2 месяца за счёт снижения штрафов и роста заказов." },
     ],
 
-    ctaTitle: "Нужна автоматизация склада для маркетплейсов?",
+    ctaTitle: "Нужна автоматизация склада от 30 000 ₽?",
     ctaSubtitle: "Бесплатный аудит — оценю текущую ситуацию и предложу решение с расчётом ROI.",
     ctaSource: "article-sklad-marketplace-cta",
 

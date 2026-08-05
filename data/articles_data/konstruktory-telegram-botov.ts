@@ -60,7 +60,7 @@ export const articleKonstruktoryTelegramBotov: Article = {
         },
     ],
 
-    ctaTitle: "Не знаете, конструктор или разработка? Давайте разберёмся",
+    ctaTitle: "Конструктор бесплатно или бот от 7 000 ₽ — что выгоднее?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — оценю вашу задачу и подскажу оптимальный вариант",
     ctaSource: "article-konstruktory-cta",
 

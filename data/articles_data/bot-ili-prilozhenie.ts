@@ -64,7 +64,7 @@ export const articleBotIliPrilozhenie: Article = {
         },
     ],
 
-    ctaTitle: "Не знаете, что выбрать — бот или приложение?",
+    ctaTitle: "Бот от 7 000 ₽ или приложение от 50 000 ₽ — что выбрать?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и предложим оптимальное решение",
     ctaSource: "article-bot-vs-app-cta",
 

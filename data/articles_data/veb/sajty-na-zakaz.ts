@@ -63,7 +63,7 @@ export const articleSajtyNaZakaz: Article = {
         },
     ],
 
-    ctaTitle: "Хотите сайт, который окупится за первого клиента?",
+    ctaTitle: "Хотите продающий сайт от 10 000 ₽?",
     ctaSubtitle: "Разработаю сайт с конверсией 3-5% — от лендинга за 15 000 ₽ до магазина за 80 000 ₽. Бесплатная оценка за 24 часа.",
     ctaSource: "article-sajty-na-zakaz-cta",
 

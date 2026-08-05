@@ -59,7 +59,7 @@ export const articleParserOzon: Article = {
         },
     ],
 
-    ctaTitle: "Хотите парсер Ozon для вашего бизнеса?",
+    ctaTitle: "Хотите парсер Ozon от 10 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость разработки парсера.",
     ctaSource: "article-parser-ozon-cta",
 

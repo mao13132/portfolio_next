@@ -63,7 +63,7 @@ export const articleParserAvito: Article = {
         },
     ],
 
-    ctaTitle: "Хотите парсер Avito для вашего бизнеса?",
+    ctaTitle: "Хотите парсер Avito от 10 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость разработки парсера.",
     ctaSource: "article-parser-avito-cta",
 

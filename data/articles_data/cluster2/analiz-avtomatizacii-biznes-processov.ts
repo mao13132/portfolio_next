@@ -61,7 +61,7 @@ export const articleAnalizAvtomatizaciiBiznesProcessov: Article = {
         },
     ],
 
-    ctaTitle: "Сколько времени вы теряете на рутину?",
+    ctaTitle: "Автоматизация рутины от 30 000 ₽ — окупаемость за 3 месяца",
     ctaSubtitle: "Проведу бесплатный аудит и покажу, как сэкономить 10-20 часов/неделю на автоматизации процессов.",
     ctaSource: "article-analiz-avtomatizacii-biznes-processov-cta",
 

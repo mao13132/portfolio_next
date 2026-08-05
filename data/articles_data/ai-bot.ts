@@ -64,7 +64,7 @@ export const articleAiBot: Article = {
         },
     ],
 
-    ctaTitle: "Готовы внедрить AI-бота в свой бизнес?",
+    ctaTitle: "Хотите AI-бота от 30 000 ₽ — за 7 дней?",
     ctaSubtitle: "Создам AI Telegram-бота с GPT, базой знаний и интеграцией с CRM. Бесплатная консультация.",
     ctaSource: "article-ai-cta",
 

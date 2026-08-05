@@ -61,7 +61,7 @@ export const articleTelegramMiniAppChtoEto: Article = {
         },
     ],
 
-    ctaTitle: "Хотите заказать Telegram Mini App?",
+    ctaTitle: "Хотите Mini App от 10 000 ₽ — за 5 дней?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу, подберём оптимальный стек и оценим стоимость разработки Mini App для вашего бизнеса",
     ctaSource: "article-mini-app-cta",
 

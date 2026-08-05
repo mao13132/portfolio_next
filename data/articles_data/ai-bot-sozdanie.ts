@@ -62,7 +62,7 @@ export const articleAiBotSozdanie: Article = {
         },
     ],
 
-    ctaTitle: "Готовы создать AI-бота для вашего бизнеса?",
+    ctaTitle: "Хотите создать AI-бота от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — покажу, как AI-бот увеличит ваши продажи и сократит расходы",
     ctaSource: "article-ai-sozdanie-cta",
 

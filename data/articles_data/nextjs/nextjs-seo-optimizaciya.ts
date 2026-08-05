@@ -64,7 +64,7 @@ export const articleNextjsSeoOptimizaciya: Article = {
         },
     ],
 
-    ctaTitle: "Хотите SEO-оптимизацию вашего сайта на Next.js?",
+    ctaTitle: "Хотите SEO для Next.js от 30 000 ₽?",
     ctaSubtitle: "Бесплатный SEO-аудит — найдём точки роста и оценим стоимость оптимизации. От 80 000₽.",
     ctaSource: "article-nextjs-seo-cta",
 

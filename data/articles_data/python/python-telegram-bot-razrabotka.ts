@@ -58,7 +58,7 @@ export const articlePythonTelegramBotRazrabotka: Article = {
         },
     ],
 
-    ctaTitle: "Хотите Telegram-бота для вашего бизнеса?",
+    ctaTitle: "Хотите Telegram-бота на Python от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — обсудим задачу и оценим стоимость. ROI от 300%.",
     ctaSource: "article-python-tg-bot-cta",
 

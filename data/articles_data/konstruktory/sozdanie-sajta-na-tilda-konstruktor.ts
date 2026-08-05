@@ -324,7 +324,7 @@ export const articleSozdanieSajtaNaTildaKonstruktor: Article = {
         { question: "Можно ли интегрировать с CRM?", answer: "Да, amoCRM встроена. Другие — через webhook/API." },
     ],
 
-    ctaTitle: "Нужен сайт на Tilda?",
+    ctaTitle: "Нужен сайт на Tilda от 10 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим тип сайта, функциональность и рассчитаем стоимость. Ответ в течение 24 часов.",
     ctaSource: "article-tilda-cta",
 

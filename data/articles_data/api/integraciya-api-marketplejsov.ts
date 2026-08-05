@@ -64,7 +64,7 @@ export const articleIntegraciyaApiMarketplejsov: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать продажи на маркетплейсах?",
+    ctaTitle: "Хотите интеграцию с маркетплейсами от 15 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём маркетплейсы и оценим стоимость интеграции. От 15 000 ₽.",
     ctaSource: "article-marketplace-cta",
 

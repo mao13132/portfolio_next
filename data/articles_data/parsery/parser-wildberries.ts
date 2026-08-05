@@ -63,7 +63,7 @@ export const articleParserWildberries: Article = {
         },
     ],
 
-    ctaTitle: "Хотите парсер Wildberries для вашего бизнеса?",
+    ctaTitle: "Хотите парсер Wildberries от 10 000 ₽ — за 3 дня?",
     ctaSubtitle: "Бесплатная консультация — определим задачи, подберём подход и оценим стоимость разработки парсера.",
     ctaSource: "article-parser-wb-cta",
 

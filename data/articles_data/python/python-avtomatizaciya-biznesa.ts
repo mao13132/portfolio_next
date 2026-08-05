@@ -58,7 +58,7 @@ export const articlePythonAvtomatizaciyaBiznesa: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизировать бизнес-процесс?",
+    ctaTitle: "Хотите автоматизацию на Python от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — разберём ваши процессы и предложим решение. ROI от 300%.",
     ctaSource: "article-python-avtomatizaciya-cta",
 

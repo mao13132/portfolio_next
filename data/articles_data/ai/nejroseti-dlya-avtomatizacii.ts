@@ -44,7 +44,7 @@ export const articleNejrosetiDlyaAvtomatizacii: Article = {
         { question: "Какие нейросети лучше для бизнеса?", answer: "Для текстов — GPT-4o. Для изображений — DALL-E. Для данных — TensorFlow." },
     ],
 
-    ctaTitle: "Хотите внедрить нейросети в ваш бизнес?",
+    ctaTitle: "Хотите нейросети в бизнес от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи и оценим стоимость внедрения нейросетей.",
     ctaSource: "article-nejroseti-cta",
 

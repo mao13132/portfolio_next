@@ -45,7 +45,7 @@ export const articleAiBotTelegramChatgpt: Article = {
         { question: "Как быстро окупается AI-бот?", answer: "ROI 300-520% за 2-4 месяца." },
     ],
 
-    ctaTitle: "Хотите AI-бот на базе ChatGPT?",
+    ctaTitle: "Хотите AI-бот на ChatGPT от 30 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — определим задачи и оценим стоимость создания AI-бота в Telegram.",
     ctaSource: "article-ai-bot-tg-cta",
 

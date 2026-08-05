@@ -64,7 +64,7 @@ export const articleSkolkoStoitMobilnoePrilozhenie: Article = {
         },
     ],
 
-    ctaTitle: "Хотите узнать точную стоимость вашего приложения?",
+    ctaTitle: "Узнайте стоимость приложения — от 50 000 ₽",
     ctaSubtitle: "Отправьте описание проекта — получите детальную смету с разбивкой по этапам в течение 48 часов. Бесплатно.",
     ctaSource: "article-mobile-cost-cta",
 

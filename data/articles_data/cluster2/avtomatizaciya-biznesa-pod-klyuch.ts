@@ -63,7 +63,7 @@ export const articleAvtomatizaciyaPodKlyuch: Article = {
         },
     ],
 
-    ctaTitle: "Хотите автоматизацию под ключ без головной боли?",
+    ctaTitle: "Хотите автоматизацию под ключ от 30 000 ₽?",
     ctaSubtitle: "Автоматизация от 50 000 ₽, ROI 200-400%. Бесплатный аудит и смета за 24 часа.",
     ctaSource: "article-pod-klyuch-cta",
 

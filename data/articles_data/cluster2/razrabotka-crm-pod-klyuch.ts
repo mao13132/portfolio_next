@@ -62,7 +62,7 @@ export const articleRazrabotkaCrmPodKlyuch: Article = {
         },
     ],
 
-    ctaTitle: "Нужна CRM, которая подходит именно вам?",
+    ctaTitle: "Нужна CRM от 80 000 ₽ — за 30 дней?",
     ctaSubtitle: "Разработка CRM от 80 000 ₽, срок 30-45 дней. Бесплатная оценка вашего проекта за 24 часа.",
     ctaSource: "article-crm-pod-klyuch-cta",
 

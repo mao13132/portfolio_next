@@ -62,7 +62,7 @@ export const articleSozdanieInternetMagazina: Article = {
         },
     ],
 
-    ctaTitle: "Хотите интернет-магазин с оплатой и доставкой?",
+    ctaTitle: "Хотите интернет-магазин от 50 000 ₽ — за 14 дней?",
     ctaSubtitle: "Создам магазин на WooCommerce или 1С-Битрикс от 80 000 ₽. Интеграция с 1С, СДЭК, ЮKassa. Бесплатная оценка за 24 часа.",
     ctaSource: "article-sozdanie-internet-magazina-cta",
 

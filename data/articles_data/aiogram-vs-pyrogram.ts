@@ -61,7 +61,7 @@ export const articleAiogramVsPyrogram: Article = {
         },
     ],
 
-    ctaTitle: "Нужен Telegram-бот на Python?",
+    ctaTitle: "Нужен Telegram-бот на Python от 7 000 ₽?",
     ctaSubtitle: "Подберу оптимальный фреймворк (Aiogram или Pyrogram) под вашу задачу. Бесплатная консультация — разберём ваш проект и оценим стоимость.",
     ctaSource: "article-aiogram-vs-pyrogram-cta",
 

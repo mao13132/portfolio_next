@@ -60,7 +60,7 @@ export const articleSozdanieINastrojkaTelegramKanalovIBotov: Article = {
         },
     ],
 
-    ctaTitle: "Готовы запустить Telegram-канал и бота?",
+    ctaTitle: "Хотите канал + бота от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация — обсудим вашу нишу и создадим связку «канал + бот» за 7-14 дней",
     ctaSource: "article-kanaly-i-boty-cta",
 

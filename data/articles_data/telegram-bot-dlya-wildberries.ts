@@ -68,7 +68,7 @@ export const articleTelegramBotDlyaWildberries: Article = {
         },
     ],
 
-    ctaTitle: "Нужен бот для работы с Wildberries?",
+    ctaTitle: "Нужен бот для Wildberries от 7 000 ₽?",
     ctaSubtitle: "Бесплатная консультация за 30 минут — разберём ваши задачи и предложим решение",
     ctaSource: "article-wildberries-cta",
 

@@ -62,7 +62,7 @@ export const articlePythonRazrabotkaPodKlyuch: Article = {
         },
     ],
 
-    ctaTitle: "Хотите Python-разработку под ключ?",
+    ctaTitle: "Хотите Python-разработку от 30 000 ₽ — за 7 дней?",
     ctaSubtitle: "Бесплатная консультация — разберём вашу задачу и оценим стоимость разработки.",
     ctaSource: "article-python-pod-klyuch-cta",
 

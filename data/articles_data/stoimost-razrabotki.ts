@@ -67,7 +67,7 @@ export const articleStoimostRazrabotki: Article = {
         },
     ],
 
-    ctaTitle: "Узнайте точную стоимость вашего бота",
+    ctaTitle: "Узнайте стоимость разработки — от 7 000 ₽",
     ctaSubtitle: "Бесплатная консультация — расскажите задачу, и я подготовлю точную смету за 24 часа",
     ctaSource: "article-price-cta",
 
