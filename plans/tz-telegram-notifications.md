@@ -238,6 +238,93 @@ Telegram лимит: ~30 сообщений/сек в один чат, ~20 со�
 }
 ```
 
+### `/click` endpoint
+
+Отправляется при каждом заходе на страницу (через `ClickComponent`). Теперь включает `attribution`.
+
+```json
+{
+  "url": "https://dima-razrab.com/razrabotka-botov",
+  "utm_source": "yandex",
+  "attribution": {
+    "journey": [
+      {
+        "page": "/blog/telegram-bot-dlya-biznesa",
+        "ts": 1712345600000,
+        "timeOnPage": 187,
+        "scrollDepth": 82,
+        "ctaClicks": ["cta-bottom"]
+      },
+      {
+        "page": "/razrabotka-botov",
+        "ts": 1712345787000,
+        "timeOnPage": 0,
+        "scrollDepth": 0,
+        "ctaClicks": []
+      }
+    ],
+    "device": {
+      "screen": "1920x1080",
+      "mobile": false,
+      "browser": "Chrome",
+      "os": "Windows",
+      "language": "ru-RU",
+      "timezone": "Europe/Moscow"
+    },
+    "entry": {
+      "referrer": "yandex.ru",
+      "utm_source": "yandex",
+      "utm_medium": "organic",
+      "utm_campaign": null,
+      "utm_term": null,
+      "utm_content": null,
+      "landingPage": "/blog/telegram-bot-dlya-biznesa"
+    },
+    "form": {
+      "started": false,
+      "startedAt": null,
+      "fieldOrder": [],
+      "timeToSubmit": null,
+      "attempts": 0
+    },
+    "visits": 3,
+    "firstVisit": "2026-07-20T10:00:00.000Z",
+    "lastVisit": "2026-08-05T15:30:00.000Z",
+    "createdAt": 1712345600000
+  }
+}
+```
+
+**Примечание:** `attribution` может быть `null` (старые клиенты, кэш, SSR). Код должен обрабатывать `null`.
+
+**Рекомендация для бэкенда:** `/click` — это аналитика, а не заявка. Достаточно сохранить в БД для анализа. Telegram-уведомление для `/click` НЕ нужно (слишком много событий). Но можно добавить **опциональную** отправку в Telegram только для «горячих» визитов:
+
+```
+Если attribution.visits >= 3
+   ИЛИ attribution.form.started == true
+   ИЛИ суммарное timeOnPage по journey > 300 сек (5 мин)
+   ИЛИ attribution.device.mobile == false  (десктоп = выше конверсия)
+→ отправить краткое уведомление в Telegram
+```
+
+Пример уведомления для «горячего» визита:
+
+```
+🔥 Горячий визит
+
+🔗 Страница: /razrabotka-botov
+🕐 Время: 05.08.2026, 18:30 (МСК)
+
+📊 Путь:
+  1️⃣ /blog/telegram-bot-dlya-biznesa — 3 мин 7 сек, 82%
+  2️⃣ /razrabotka-botov — 0 сек (только зашёл)
+
+📱 Десктоп, Chrome, Windows
+🌐 Источник: yandex.ru
+🔁 Визитов: 3 | Первый: 20.07.2026
+⏱ Общее время на сайте: 5 мин 7 сек
+```
+
 ---
 
 ## 4. Вспомогательные функции
@@ -346,3 +433,6 @@ def format_entry(attribution: dict) -> str:
 4. **Telegram недоступен** — заблокировать API, проверить что заявка сохраняется и клиент получает 200
 5. **Rate limit** — отправить 25 заявок одновременно, проверить что все доходят
 6. **Retry** — эмулировать 429/500, проверить retry с задержкой
+7. **Click с attribution** — отправить `POST /click` с `attribution`, проверить что данные сохраняются в БД
+8. **Click без attribution** — отправить `POST /click` без `attribution`, проверить что не падает
+9. **Горячий визит** — отправить click с `visits >= 3` и `timeOnPage > 300`, проверить что уходит Telegram-уведомление

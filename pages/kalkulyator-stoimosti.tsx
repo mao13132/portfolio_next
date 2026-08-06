@@ -730,6 +730,7 @@ export default function KalkulyatorStoimostiPage() {
                             whileInView="visible"
                             viewport={{ once: true }}
                         >
+                            <div className={styles.tableWrapper}>
                             <table className={styles.priceTable}>
                                 <thead>
                                     <tr>
@@ -772,6 +773,7 @@ export default function KalkulyatorStoimostiPage() {
                                     </tr>
                                 </tbody>
                             </table>
+                            </div>
                         </motion.div>
 
                         <motion.div
@@ -813,6 +815,7 @@ export default function KalkulyatorStoimostiPage() {
                             whileInView="visible"
                             viewport={{ once: true }}
                         >
+                            <div className={styles.tableWrapper}>
                             <table className={styles.priceTable}>
                                 <thead>
                                     <tr>
@@ -855,6 +858,7 @@ export default function KalkulyatorStoimostiPage() {
                                     </tr>
                                 </tbody>
                             </table>
+                            </div>
                         </motion.div>
 
                         <motion.div
@@ -896,6 +900,7 @@ export default function KalkulyatorStoimostiPage() {
                             whileInView="visible"
                             viewport={{ once: true }}
                         >
+                            <div className={styles.tableWrapper}>
                             <table className={styles.priceTable}>
                                 <thead>
                                     <tr>
@@ -938,6 +943,7 @@ export default function KalkulyatorStoimostiPage() {
                                     </tr>
                                 </tbody>
                             </table>
+                            </div>
                         </motion.div>
 
                         <motion.div

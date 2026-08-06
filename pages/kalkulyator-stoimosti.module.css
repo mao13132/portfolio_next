@@ -231,6 +231,7 @@
 
 .section {
     padding: 80px 0;
+    overflow: hidden;
     position: relative;
 }
 
@@ -371,17 +372,39 @@
 }
 
 /* ─── Price Table ─── */
+.tableWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 12px;
+    border: 1px solid var(--lp-border);
+    background: var(--lp-glass-bg);
+}
+
+.tableWrapper::after {
+    content: '← Листайте →';
+    display: none;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    color: var(--lp-text-dim);
+}
+
+@media (max-width: 768px) {
+    .tableWrapper::after {
+        display: block;
+    }
+}
+
 .priceTable {
     width: 100%;
+    min-width: 500px;
     border-collapse: collapse;
-    margin: 20px 0;
-    border-radius: 12px;
-    overflow: hidden;
+    margin: 0;
 }
 
 .priceTable th {
     background: rgba(0, 220, 255, 0.1);
-    border: 1px solid var(--lp-border);
+    border-bottom: 2px solid var(--lp-cyan);
     padding: 12px 16px;
     text-align: left;
     font-size: 14px;
@@ -391,7 +414,7 @@
 }
 
 .priceTable td {
-    border: 1px solid var(--lp-border);
+    border-bottom: 1px solid var(--lp-border);
     padding: 12px 16px;
     font-size: 14px;
     color: var(--lp-text-muted);

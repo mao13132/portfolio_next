@@ -3,6 +3,7 @@ import { ClickComponentProps } from "./ClickComponent.props";
 import axios from "axios";
 import { API_URL, getClick } from "../utils/url.config";
 import { useRouter } from "next/router";
+import { journey } from "@/app/utils/journey";
 
 export const ClickComponent = ({ }: ClickComponentProps): JSX.Element => {
 
@@ -19,8 +20,11 @@ export const ClickComponent = ({ }: ClickComponentProps): JSX.Element => {
 
         const utm_source = cookies['utm_source'];
 
-        const data = { url: `${process.env.NEXT_PUBLIC_FRONTEND}${asPath}`, utm_source: utm_source };
-
+        const data = {
+            url: `${process.env.NEXT_PUBLIC_FRONTEND}${asPath}`,
+            utm_source: utm_source,
+            attribution: journey.getAttribution(),
+        };
 
         axios.post(link, data).then(
             response => {

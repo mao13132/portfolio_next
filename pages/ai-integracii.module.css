@@ -486,6 +486,7 @@
 .section {
     padding: 100px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .sectionDark {
@@ -709,6 +710,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    overflow: hidden;
 }
 
 .techCard {
@@ -720,6 +722,9 @@
     border: 1px solid var(--lp-glass-border);
     border-radius: var(--lp-radius-md);
     transition: all 0.3s ease;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .techCard:hover {
