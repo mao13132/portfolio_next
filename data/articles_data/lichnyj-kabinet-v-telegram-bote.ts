@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleLichnyjKabinetVBote: Article = {
     slug: "lichnyj-kabinet-v-telegram-bote",
-    title: "Telegram бот для онлайн записи клиентов: полное руководство — кейсы",
+    title: "Личный кабинет в Telegram боте: реализация для бизнеса",
     metaDescription: "Telegram бот для онлайн записи клиентов от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
     keywords: "личный кабинет в telegram боте, личный кабинет бота, профиль в telegram боте, история заказов в боте, баланс в telegram боте, кабинет клиента бот",
     h1: "Личный кабинет в Telegram боте: как реализовать для клиентов",

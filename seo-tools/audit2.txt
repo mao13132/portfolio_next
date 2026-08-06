@@ -1,0 +1,191 @@
+🔍 ПОЛНЫЙ АУДИТ SEO-СТАТЕЙ
+
+================================================================================
+
+📋 ВСЕ SLUG URL (120 статей):
+
+   /blog/ai-agenty-dlya-biznesa
+   /blog/ai-avtomatizaciya-biznesa
+   /blog/ai-bot-dlya-vedeniya-telegram-kanala
+   /blog/ai-bot-telegram-chatgpt
+   /blog/ai-dlya-obrabotki-dokumentov
+   /blog/ai-telegram-bot-dlya-biznesa
+   /blog/aiogram-vs-pyrogram
+   /blog/analitika-marketplejsov
+   /blog/analiz-avtomatizacii-biznes-processov
+   /blog/api-integraciya-1s
+   /blog/api-wildberries-rukovodstvo
+   /blog/avtomatizaciya-biznesa-pod-klyuch
+   /blog/avtomatizaciya-dokumentooborota
+   /blog/avtomatizaciya-klientov
+   /blog/avtomatizaciya-malogo-biznesa
+   /blog/avtomatizaciya-otdela-prodazh
+   /blog/avtomatizaciya-sklada
+   /blog/avtomatizaciya-sklada-1s
+   /blog/avtomatizaciya-sklada-marketplejsy
+   /blog/avtomatizaciya-voronki-prodazh
+   /blog/avtomatizaciya-zayavok
+   /blog/bot-dlya-avtomatizacii-prodazh
+   /blog/bot-dlya-zapisi-klientov
+   /blog/bot-menedzher-po-prodazham
+   /blog/bot-obratnoj-svyazi-telegram
+   /blog/bot-telegram-dlya-kurerov
+   /blog/chatgpt-dlya-biznesa
+   /blog/chto-mozhno-avtomatizirovat-v-malom-biznese
+   /blog/cifrovizaciya-malogo-biznesa
+   /blog/crm-dlya-malogo-biznesa
+   /blog/django-vs-fastapi-vs-flask
+   /blog/fastapi-dlya-api
+   /blog/fastapi-razrabotka
+   /blog/integraciya-api-dostavki
+   /blog/integraciya-api-marketplejsov
+   /blog/integraciya-api-s-crm
+   /blog/integraciya-api-s-sajtom
+   /blog/integraciya-crm-s-telegram
+   /blog/integraciya-nichevyh-api
+   /blog/integraciya-openai-api
+   /blog/kak-bystro-otvechat-klientam
+   /blog/kak-najti-klientov-v-telegram
+   /blog/kak-sdelat-telegram-bota-na-python
+   /blog/kak-sozdat-ai-bot-telegram
+   /blog/kak-telegram-bot-uvelichivaet-prodazhi
+   /blog/kak-vnedrit-chatgpt-v-biznes
+   /blog/konstruktory-telegram-botov
+   /blog/korporativnyj-telegram-bot
+   /blog/krossplatformennaya-razrabotka-prilozhenij
+   /blog/lichnyj-kabinet-v-telegram-bote
+   /blog/lichnyj-telegram-bot
+   /blog/lidogeneraciya-telegram-kak-eto-rabotaet
+   /blog/massovaya-rassylka-telegram
+   /blog/monitoring-cen-marketplejsov
+   /blog/nastrojka-telegram-bota
+   /blog/nejroseti-dlya-avtomatizacii
+   /blog/nejroseti-dlya-biznesa
+   /blog/nextjs-seo-optimizaciya
+   /blog/nextjs-vs-react
+   /blog/parser-avito
+   /blog/parser-dannyh
+   /blog/parser-otzyvov
+   /blog/parser-ozon
+   /blog/parser-telegram-kanalov
+   /blog/parser-wildberries
+   /blog/primery-avtomatizacii-biznesa
+   /blog/python-avtomatizaciya-biznesa
+   /blog/python-backend-razrabotka
+   /blog/python-obrabotka-dannyh
+   /blog/python-parsing-na-zakaz
+   /blog/python-razrabotka-pod-klyuch
+   /blog/python-telegram-bot-razrabotka
+   /blog/razrabotka-bota-dlya-telegram
+   /blog/razrabotka-crm-erp
+   /blog/razrabotka-crm-pod-klyuch
+   /blog/razrabotka-mobilnyh-prilozhenij
+   /blog/razrabotka-na-nextjs
+   /blog/razrabotka-prilozhenij-android-ios
+   /blog/razrabotka-prilozhenij-dlya-biznesa
+   /blog/razrabotka-rest-api
+   /blog/razrabotka-sajta-pod-klyuch-veb
+   /blog/razrabotka-telegram-bota-pod-klyuch
+   /blog/razrabotka-telegram-bota-s-nulya
+   /blog/repricer-wildberries
+   /blog/saas-razrabotka-nextjs
+   /blog/sajty-na-zakaz
+   /blog/sbor-bazy-klientov-telegram
+   /blog/sistema-avtomatizacii-biznes-processov
+   /blog/skolko-stoit-mobilnoe-prilozhenie
+   /blog/sozdanie-i-nastrojka-telegram-kanalov-i-botov
+   /blog/sozdanie-internet-magazina
+   /blog/sozdanie-lendinga
+   /blog/sozdanie-sajta-kataloga
+   /blog/sozdanie-sajta-na-1s-bitrix
+   /blog/sozdanie-sajta-na-tilda-konstruktor
+   /blog/sozdanie-sajta-na-wordpress
+   /blog/sozdanie-sajta-nextjs
+   /blog/stoimost-razrabotki
+   /blog/stoimost-telegram-bota
+   /blog/telegram-bot-dlya-avito
+   /blog/telegram-bot-dlya-biznesa
+   /blog/telegram-bot-dlya-internet-magazina
+   /blog/telegram-bot-dlya-magazina
+   /blog/telegram-bot-dlya-priyoma-zakazov
+   /blog/telegram-bot-dlya-priyoma-zakazov-2
+   /blog/telegram-bot-dlya-priyoma-zayavok
+   /blog/telegram-bot-dlya-prodazh
+   /blog/telegram-bot-dlya-wildberries
+   /blog/telegram-bot-dlya-zapisi-klientov
+   /blog/telegram-bot-ili-mobilnoe-prilozhenie
+   /blog/telegram-bot-ili-mobilnoe-prilozhenie-dlya-biznesa
+   /blog/telegram-bot-rassylka
+   /blog/telegram-bot-s-oplatoj
+   /blog/telegram-mini-app-chto-eto
+   /blog/telegram-webapp-razrabotka
+   /blog/webhook-integraciya
+   /blog/wms-sistemy-avtomatizacii
+   /blog/zakazat-sajt-na-bitrix
+   /blog/zakazat-sajt-na-tilde
+   /blog/zakazat-telegram-bota
+
+================================================================================
+
+🔴 ПРОВЕРКА ДУБЛЕЙ:
+
+   ✅ title: дублей нет
+   ✅ h1: дублей нет
+   ✅ ogTitle: дублей нет
+   🔴 metaDesc: 2 групп дублей
+      "Интеграция ChatGPT от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация ко..."
+         📄 data\articles_data\ai\chatgpt-dlya-biznesa.ts (slug: chatgpt-dlya-biznesa)
+         📄 data\articles_data\ai\integraciya-openai-api.ts (slug: integraciya-openai-api)
+      "Заказать сайт на тильде от 10 000 ₽. Tilda, WordPress, 1С-Битрикс — быстрый запу..."
+         📄 data\articles_data\konstruktory\sozdanie-sajta-na-tilda-konstruktor.ts (slug: sozdanie-sajta-na-tilda-konstruktor)
+         📄 data\articles_data\veb\zakazat-sajt-na-tilde.ts (slug: zakazat-sajt-na-tilde)
+
+================================================================================
+
+🟡 ПУСТЫЕ ПОЛЯ:
+
+   ✅ Все обязательные поля заполнены
+
+================================================================================
+
+🟡 TITLE ДЛИННЕЕ 70 СИМВОЛОВ:
+
+   ✅ Все title ≤ 70 символов
+
+================================================================================
+
+🟡 METADESCRIPTION ДЛИННЕЕ 160 СИМВОЛОВ:
+
+   ✅ Все metaDescription ≤ 160 символов
+
+================================================================================
+
+🔴 TITLE СОДЕРЖИТ "| DimaRazrab" (ЗАПРЕЩЕНО):
+
+   ✅ Ни один title не содержит "| DimaRazrab"
+
+================================================================================
+
+🟡 H1 = TITLE (должны отличаться):
+
+   ✅ Все H1 отличаются от title
+
+================================================================================
+
+🟡 KEYWORDS МЕНЕЕ 3 СЛОВ:
+
+   ✅ У всех статей ≥ 3 keywords
+
+================================================================================
+
+📊 СВОДКА АУДИТА:
+
+   Всего статей:            120
+   Slug URL:                120
+   Пустых полей:            0
+   Длинных title (>70):     0
+   Длинных desc (>160):     0
+   Title с DimaRazrab:      0
+   H1 = Title:              0
+   Keywords < 3:            0
+

@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramBotDlyaWildberries: Article = {
     slug: "telegram-bot-dlya-wildberries",
-    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
-    metaDescription: "Разработка бота для Telegram от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления, от 3 дней. Бесплатная оценка за 24 часа →",
+    title: "Telegram бот для Wildberries: мониторинг цен и аналитика",
+    metaDescription: "Telegram бот для Wildberries от 15 000 ₽. Мониторинг цен, уведомления о заказах, аналитика продаж, управление остатками. Бесплатная оценка за 24 часа →",
     keywords: "wildberries telegram бот, telegram бот для wildberries, бот для wildberries, мониторинг wildberries telegram, аналитика wildberries бот, парсер wildberries telegram",
     h1: "Telegram бот для Wildberries: мониторинг, аналитика, управление",
     ogTitle: "Telegram бот для Wildberries — мониторинг, аналитика, управление",

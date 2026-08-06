@@ -5,8 +5,8 @@ import { aiBotPart2 } from './texts/ai-bot-part2';
 
 export const articleAiBot: Article = {
     slug: "ai-telegram-bot-dlya-biznesa",
-    title: "Разработка бота для Telegram: всё что нужно знать о разработке",
-    metaDescription: "Разработка бота для Telegram от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация контента и поддержки клиентов, от 7. Бесплатная оценка за 24 часа →",
+    title: "AI Telegram бот: разработка от 30 000 ₽, кейсы",
+    metaDescription: "AI Telegram бот от 30 000 ₽. Внедрение ChatGPT и нейросетей, автоматизация поддержки и продаж, от 7 дней. Бесплатная оценка за 24 часа →",
     keywords: "разработка ии ботов, ai telegram бот, бот с искусственным интеллектом, чат бот telegram gpt, ии бот для бизнеса, нейросетевой бот telegram, разработка ai ботов telegram, gpt бот telegram",
     h1: "AI Telegram бот для бизнеса: разработка ботов с искусственным интеллектом",
     ogTitle: "AI Telegram бот — разработка ИИ ботов для бизнеса",

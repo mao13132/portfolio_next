@@ -6,8 +6,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articlePythonObrabotkaDannyh: Article = {
     slug: "python-obrabotka-dannyh",
-    title: "Фриланс для программистов на Python: полное руководство — кейсы",
-    metaDescription: "Фриланс для программистов на python от 30 000 ₽. Backend, API, парсеры, автоматизация бизнес-процессов и обработка данных. Бесплатная оценка за 24 часа →",
+    title: "Python для обработки данных: pandas, ETL, дашборды",
+    metaDescription: "Python для обработки данных от 30 000 ₽. pandas, ETL, дашборды, ML-анализ. Кейсы с ROI 420–450%. Бесплатная оценка за 24 часа →",
     keywords: "python обработка данных, python аналитика, pandas python, python data science, обработка данных python",
     h1: "Python для обработки и анализа данных",
     ogTitle: "Python для обработки данных — pandas, аналитика, дашборды",

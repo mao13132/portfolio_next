@@ -5,8 +5,8 @@ import { pythonBotPart2 } from './texts/python-bot-part2';
 
 export const articlePythonBot: Article = {
     slug: "kak-sdelat-telegram-bota-na-python",
-    title: "Разработка ботов Telegram Python: полное руководство — кейсы",
-    metaDescription: "Разработка ботов Telegram Python от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
+    title: "Разработка Telegram бота на Python: руководство с кодом",
+    metaDescription: "Разработка Telegram бота на Python от 7 000 ₽. Пошаговое руководство с кодом, aiogram, webhook. Бесплатная оценка за 24 часа →",
     keywords: "как сделать телеграм бота на python, telegram бот python, создать бота telegram python, python telegram бот урок, aiogram tutorial, разработка telegram бота python, бот telegram python пошагово",
     h1: "Как сделать Telegram бота на Python: пошаговое руководство для начинающих",
     ogTitle: "Как сделать Telegram бота на Python — пошаговое руководство",

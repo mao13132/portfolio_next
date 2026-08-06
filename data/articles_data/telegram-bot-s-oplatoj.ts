@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleTelegramBotSOplatoj: Article = {
     slug: "telegram-bot-s-oplatoj",
-    title: "Разработка ботов Telegram Python: полное руководство — кейсы",
-    metaDescription: "Разработка ботов Telegram Python от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
+    title: "Telegram бот с оплатой: приём платежей от 20 000 ₽",
+    metaDescription: "Telegram бот с оплатой от 20 000 ₽. Приём платежей через ЮKassa, Stripe, криптовалюта. Безопасность и возвраты. Бесплатная оценка за 24 часа →",
     keywords: "бот оплаты telegram, telegram бот с оплатой, оплата в telegram боте, юкасса telegram бот, принимать платежи telegram, интеграция оплаты telegram бот",
     h1: "Telegram бот с оплатой: как принимать платежи прямо в боте",
     ogTitle: "Telegram бот с оплатой — полное руководство",

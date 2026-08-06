@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleNastrojkaTelegramBota: Article = {
     slug: "nastrojka-telegram-bota",
-    title: "Разработка ботов Telegram Python: цена от 7 000 ₽, от 3 дней",
-    metaDescription: "Разработка ботов Telegram Python от 7 000 ₽. Автоматизация продаж и поддержки клиентов, приём заказов 24/7, уведомления. Бесплатная оценка за 24 часа →",
+    title: "Настройка Telegram бота: пошаговое руководство с кодом",
+    metaDescription: "Настройка Telegram бота от 7 000 ₽. Webhook, база данных, оплата, рассылка. Пошаговое руководство с кодом. Бесплатная оценка за 24 часа →",
     keywords: "настройка бота telegram, настройка telegram бота, как настроить бота в telegram, webhook telegram бот, команды telegram бота, клавиатура telegram бот",
     h1: "Настройка Telegram бота: пошаговое руководство",
     ogTitle: "Настройка Telegram бота — пошаговое руководство 2026",

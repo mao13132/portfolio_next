@@ -5,8 +5,8 @@ import { zapisKlientovOldPart2 } from './texts/zapis-klientov-old-part2';
 
 export const articleZapisKlientov: Article = {
     slug: "telegram-bot-dlya-zapisi-klientov",
-    title: "Telegram бот для онлайн записи клиентов: полное руководство — кейсы",
-    metaDescription: "Telegram бот для онлайн записи клиентов от 15 000 ₽. Интеграция с внешними сервисами, автоматизация обмена данными в реальном. Бесплатная оценка за 24 часа →",
+    title: "Telegram бот для записи: онлайн-запись 24/7 без звонков",
+    metaDescription: "Telegram бот для записи от 7 000 ₽. Онлайн-запись 24/7 без звонков: салоны, клиники, фитнес. Снижение no-show на 80%. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для записи клиентов, онлайн запись telegram, бот запись салон красоты, telegram бот бронирование, бот для записи на приём, автоматизация записи клиентов, telegram бот для клиники",
     h1: "Telegram бот для записи клиентов: онлайн-запись 24/7 без звонков",
     ogTitle: "Telegram бот для записи клиентов — онлайн-запись 24/7",

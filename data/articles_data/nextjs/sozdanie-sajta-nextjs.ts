@@ -6,7 +6,7 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleSozdanieSajtaNextjs: Article = {
     slug: "sozdanie-sajta-nextjs",
-    title: "Next js и figma разработке code сайта: цена от 80 000 ₽, от 10 дней",
+    title: "Создание сайта на Next.js: пошаговое руководство от 80 000 ₽",
     metaDescription: "Создание next js и figma разработке code сайта от 80 000 ₽. SSR, SSG, высокая производительность и встроенная SEO-оптимизация. Бесплатная оценка за 24 часа →",
     keywords: "создание сайта next.js, создание сайта на next.js, как создать сайт next.js, разработка сайта next.js, сайт на next.js, next.js создание сайта",
     h1: "Создание сайта на Next.js: пошаговое руководство",
