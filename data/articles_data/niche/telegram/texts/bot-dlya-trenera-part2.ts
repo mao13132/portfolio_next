@@ -16,7 +16,7 @@ export const botDlyaTreneraPart2: ArticleSection[] = [
 
 > ⏱️ [Напишите мне](/razrabotka-botov) — готовый результат за 7-10 дней.` },
 { id: "readmore", title: "Читать дальше", content: `- [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa)
-- [Telegram бот для фитнеса](/blog/bot-dlya-fitnesa)
+- [Telegram бот для фитнеса](/blog/bot-dlya-fitnes-kluba)
 - [Стоимость разработки](/blog/stoimost-razrabotki)
 - [Заказать разработку бота](/razrabotka-botov)` },
 ];

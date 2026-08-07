@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaJogaStudii: Article = {
     slug: "bot-dlya-joga-studii",
     title: "Telegram бот для студии йоги: запись, абонементы, расписание",
-    metaDescription: "Telegram бот для студии йоги от 25 000 ₽. Запись 24/7, абонементы, расписание, лояльность. Бесплатная оценка →",
+    metaDescription: "Telegram бот для студии йоги от 25 000 ₽. Запись 24/7, абонементы, расписание, лояльность.. Запись, абонементы, расписание . Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для йоги, бот студия йоги, автоматизация йоги, telegram бот запись йога",
     h1: "Telegram бот для студии йоги: как увеличить посещаемость на 175% с помощью абонементов",
     ogTitle: "Telegram бот для йоги — запись 24/7",
@@ -45,7 +45,7 @@ export const articleBotDlyaJogaStudii: Article = {
     ]),
     internalLinks: [
         { anchor: "заказать бота для йоги", url: "/razrabotka-botov", context: "Получите расчёт" },
-        { anchor: "Telegram бот для фитнеса", url: "/blog/bot-dlya-fitnesa", context: "Автоматизация фитнеса" },
+        { anchor: "Telegram бот для фитнеса", url: "/blog/bot-dlya-fitnes-kluba", context: "Автоматизация фитнеса" },
         { anchor: "Telegram бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Задачи ботов" },
         { anchor: "стоимость разработки", url: "/blog/stoimost-razrabotki", context: "Реальные цены" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл" },

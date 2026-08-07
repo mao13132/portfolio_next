@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaSeleraOzon: Article = {
     slug: "bot-dlya-selera-ozon",
     title: "Telegram бот для селлера Ozon: управление остатками и аналитика",
-    metaDescription: "Telegram бот для селлера Ozon от 35 000 ₽. Управление остатками, мониторинг цен, аналитика. ROI 380%. Бесплатная оценка за 24 часа →",
+    metaDescription: "Telegram бот для селлера Ozon от 35 000 ₽. Управление остатками, мониторинг цен, аналитика. ROI 380%.. Управление остатками. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для селлера ozon, бот ozon, автоматизация ozon, управление остатками ozon telegram",
     h1: "Telegram бот для селлера Ozon: управление остатками, мониторинг цен и увеличение продаж на 290%",
     ogTitle: "Telegram бот для селлера Ozon — управление и аналитика, ROI 380%",

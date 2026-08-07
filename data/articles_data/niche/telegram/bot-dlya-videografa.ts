@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaVideografa: Article = {
     slug: "bot-dlya-videografa",
     title: "Telegram бот для видеографа: портфолио, запись, предоплата",
-    metaDescription: "Telegram бот для видеографа от 30 000 ₽. Портфолио, запись 24/7, калькулятор, предоплата. Бесплатная оценка →",
+    metaDescription: "Telegram бот для видеографа от 30 000 ₽. Портфолио, запись 24/7, калькулятор, предоплата.. Портфолио видео, запись 24/7, ка. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для видеографа, бот видеограф, автоматизация видеографа",
     h1: "Telegram бот для видеографа: как увеличить заказы на 200%",
     ogTitle: "Telegram бот для видеографа — портфолио 24/7",

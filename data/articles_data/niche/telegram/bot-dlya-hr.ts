@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaHr: Article = {
     slug: "bot-dlya-hr",
     title: "Telegram бот для HR-агентства: вакансии, анкеты, фильтрация",
-    metaDescription: "Telegram бот для HR-агентства от 30 000 ₽. Каталог вакансий, анкета кандидата, фильтрация. Бесплатная оценка →",
+    metaDescription: "Telegram бот для HR-агентства от 30 000 ₽. Каталог вакансий, анкета кандидата, фильтрация.. Каталог вакансий, анкета кандид. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для HR, бот HR агентство, автоматизация подбора персонала",
     h1: "Telegram бот для HR-агентства: как увеличить кандидатов на 300%",
     ogTitle: "Telegram бот для HR — вакансии 24/7",

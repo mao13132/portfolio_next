@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaProkata: Article = {
     slug: "bot-dlya-prokata",
     title: "Telegram бот для проката: каталог, бронирование, оплата",
-    metaDescription: "Telegram бот для проката от 25 000 ₽. Каталог, бронирование 24/7, оплата, уведомления. Бесплатная оценка →",
+    metaDescription: "Telegram бот для проката от 25 000 ₽. Каталог, бронирование 24/7, оплата, уведомления.. Каталог оборудования, бронирование,. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для проката, бот прокат оборудования, автоматизация проката",
     h1: "Telegram бот для проката: как увеличить заказы на 180%",
     ogTitle: "Telegram бот для проката — каталог 24/7",

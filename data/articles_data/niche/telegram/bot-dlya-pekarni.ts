@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaPekarni: Article = {
     slug: "bot-dlya-pekarni",
     title: "Telegram бот для пекарни: каталог, заказ, доставка",
-    metaDescription: "Telegram бот для пекарни от 25 000 ₽. Каталог продукции, онлайн-заказ, доставка, лояльность. Бесплатная оценка →",
+    metaDescription: "Telegram бот для пекарни от 25 000 ₽. Каталог продукции, онлайн-заказ, доставка, лояльность.. Каталог продукции, онлайн-зак. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для пекарни, бот пекарня, автоматизация пекарни, telegram бот заказ выпечки",
     h1: "Telegram бот для пекарни: как увеличить заказы на 180% с помощью каталога",
     ogTitle: "Telegram бот для пекарни — каталог 24/7",

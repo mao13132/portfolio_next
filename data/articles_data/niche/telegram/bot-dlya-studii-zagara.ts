@@ -8,7 +8,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaStudiiZagara: Article = {
     slug: "bot-dlya-studii-zagara",
     title: "Telegram бот для студии загара: запись, лояльность, напоминания",
-    metaDescription: "Telegram бот для студии загара от 25 000 ₽. Запись 24/7, программа лояльности, напоминания, оплата. Бесплатная оценка за 24 часа →",
+    metaDescription: "Telegram бот для студии загара от 25 000 ₽. Запись 24/7, программа лояльности, напоминания, оплата.. Запись, программа лоял. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для студии загара, бот солярий, автоматизация студии загара, telegram бот запись загар",
     h1: "Telegram бот для студии загара: как увеличить визиты на 150% с помощью записи и лояльности",
     ogTitle: "Telegram бот для студии загара — запись 24/7",
@@ -78,6 +78,6 @@ export const articleBotDlyaStudiiZagara: Article = {
         { anchor: "Telegram бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Задачи ботов" },
         { anchor: "стоимость разработки", url: "/blog/stoimost-razrabotki", context: "Реальные цены" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл" },
-        { anchor: "Telegram бот для фитнеса", url: "/blog/bot-dlya-fitnesa", context: "Автоматизация фитнеса" },
+        { anchor: "Telegram бот для фитнеса", url: "/blog/bot-dlya-fitnes-kluba", context: "Автоматизация фитнеса" },
     ],
 };

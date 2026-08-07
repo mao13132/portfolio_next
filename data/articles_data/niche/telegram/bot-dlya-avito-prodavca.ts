@@ -8,7 +8,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaAvitoProdavca: Article = {
     slug: "bot-dlya-avito-prodavca",
     title: "Telegram бот для Avito: автоответы, заказы, отзывы",
-    metaDescription: "Telegram бот для Avito от 35 000 ₽. Автоответы, обработка заказов, управление отзывами, мониторинг цен. ROI 520%. Бесплатная оценка →",
+    metaDescription: "Telegram бот для Avito от 35 000 ₽. Автоответы, обработка заказов, управление отзывами, мониторинг цен. ROI 520%.. Автоотве. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для avito, бот avito, автоматизация avito, telegram бот продажи avito, бот автоответы avito",
     h1: "Telegram бот для Avito: как увеличить оборот на 280% с помощью автоматизации",
     ogTitle: "Telegram бот для Avito — автоответы 24/7, ROI 520%",
@@ -83,6 +83,6 @@ export const articleBotDlyaAvitoProdavca: Article = {
         { anchor: "Telegram бот для дропшиппинга", url: "/blog/bot-dlya-dropshippinga", context: "Автоматизация продаж" },
         { anchor: "стоимость разработки", url: "/blog/stoimost-razrabotki", context: "Реальные цены" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл" },
-        { anchor: "Telegram бот для селлера Wildberries", url: "/blog/bot-dlya-selera-wb", context: "Автоматизация маркетплейсов" },
+        { anchor: "Telegram бот для селлера Wildberries", url: "/blog/bot-dlya-selera-wildberries", context: "Автоматизация маркетплейсов" },
     ],
 };

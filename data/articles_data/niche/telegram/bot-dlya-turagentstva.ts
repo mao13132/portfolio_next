@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaTuragentstva: Article = {
     slug: "bot-dlya-turagentstva",
     title: "Telegram бот для турагентства: туры, бронирование, визы",
-    metaDescription: "Telegram бот для турагентства от 40 000 ₽. Каталог туров, бронирование, визы, оплата. ROI 600%. Бесплатная оценка за 24 часа →",
+    metaDescription: "Telegram бот для турагентства от 40 000 ₽. Каталог туров, бронирование, визы, оплата. ROI 600%.. Каталог туров, бронировани. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для турагентства, бот бронирование туров, автоматизация турагентства, telegram бот туризм",
     h1: "Telegram бот для турагентства: каталог туров, бронирование и автоматизация виз",
     ogTitle: "Telegram бот для турагентства — бронирование, ROI 600%",

@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaMassazha: Article = {
     slug: "bot-dlya-massazha",
     title: "Telegram бот для массажной студии: запись, лояльность, напоминания",
-    metaDescription: "Telegram бот для массажной студии от 25 000 ₽. Запись 24/7, программа лояльности, напоминания. Бесплатная оценка →",
+    metaDescription: "Telegram бот для массажной студии от 25 000 ₽. Запись 24/7, программа лояльности, напоминания.. Запись, программа лояльност. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для массажа, бот массажная студия, автоматизация массажа, telegram бот запись массаж",
     h1: "Telegram бот для массажной студии: как увеличить визиты на 200% с помощью лояльности",
     ogTitle: "Telegram бот для массажа — запись 24/7",
@@ -49,6 +49,6 @@ export const articleBotDlyaMassazha: Article = {
         { anchor: "Telegram бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Задачи ботов" },
         { anchor: "стоимость разработки", url: "/blog/stoimost-razrabotki", context: "Реальные цены" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл" },
-        { anchor: "Telegram бот для фитнеса", url: "/blog/bot-dlya-fitnesa", context: "Автоматизация фитнеса" },
+        { anchor: "Telegram бот для фитнеса", url: "/blog/bot-dlya-fitnes-kluba", context: "Автоматизация фитнеса" },
     ],
 };

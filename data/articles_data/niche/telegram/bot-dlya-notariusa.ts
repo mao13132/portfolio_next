@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaNotariusa: Article = {
     slug: "bot-dlya-notariusa",
     title: "Telegram бот для нотариуса: запись, документы, напоминания",
-    metaDescription: "Telegram бот для нотариуса от 25 000 ₽. Запись 24/7, каталог услуг, чек-лист документов. Бесплатная оценка →",
+    metaDescription: "Telegram бот для нотариуса от 25 000 ₽. Запись 24/7, каталог услуг, чек-лист документов.. Запись, каталог услуг, чек-лист д. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для нотариуса, бот нотариус, автоматизация нотариуса, telegram бот запись нотариус",
     h1: "Telegram бот для нотариуса: как увеличить клиентов на 150% с помощью записи",
     ogTitle: "Telegram бот для нотариуса — запись 24/7",

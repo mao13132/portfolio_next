@@ -7,7 +7,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaRestorana: Article = {
     slug: "bot-dlya-restorana",
     title: "Telegram бот для ресторана: меню, заказ, доставка, оплата",
-    metaDescription: "Telegram бот для ресторана от 50 000 ₽. Меню с фото, онлайн-заказ, оплата, трекинг доставки. ROI 380%. Бесплатная оценка за 24 часа →",
+    metaDescription: "Telegram бот для ресторана от 50 000 ₽. Меню с фото, онлайн-заказ, оплата, трекинг доставки. ROI 380%.. Меню с фото, онлайн. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для ресторана, бот заказ еды telegram, автоматизация ресторана, бот доставка еды, telegram бот кафе",
     h1: "Telegram бот для ресторана: заказ еды через Telegram с оплатой и трекингом доставки",
     ogTitle: "Telegram бот для ресторана — заказ еды, ROI 380%",

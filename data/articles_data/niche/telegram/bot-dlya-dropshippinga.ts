@@ -8,7 +8,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaDropshippinga: Article = {
     slug: "bot-dlya-dropshippinga",
     title: "Telegram бот для дропшиппинга: каталог, заказ, отслеживание",
-    metaDescription: "Telegram бот для дропшиппинга от 35 000 ₽. Каталог, автоматическое оформление, отслеживание, мониторинг цен. ROI 520%. Бесплатная оценка →",
+    metaDescription: "Telegram бот для дропшиппинга от 35 000 ₽. Каталог, автоматическое оформление, отслеживание, мониторинг цен. ROI 520%.. Кат. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для дропшиппинга, бот дропшиппинг, автоматизация дропшиппинга, telegram бот магазин",
     h1: "Telegram бот для дропшиппинга: как увеличить оборот на 280% и автоматизировать заказы",
     ogTitle: "Telegram бот для дропшиппинга — автооформление, ROI 520%",
@@ -81,7 +81,7 @@ export const articleBotDlyaDropshippinga: Article = {
         { anchor: "заказать бота для дропшиппинга", url: "/razrabotka-botov", context: "Получите расчёт стоимости" },
         { anchor: "Telegram бот для бизнеса", url: "/blog/telegram-bot-dlya-biznesa", context: "Задачи ботов" },
         { anchor: "стоимость разработки", url: "/blog/stoimost-razrabotki", context: "Реальные цены" },
-        { anchor: "Telegram бот для селлера Wildberries", url: "/blog/bot-dlya-selera-wb", context: "Автоматизация маркетплейсов" },
+        { anchor: "Telegram бот для селлера Wildberries", url: "/blog/bot-dlya-selera-wildberries", context: "Автоматизация маркетплейсов" },
         { anchor: "разработка бота под ключ", url: "/blog/razrabotka-telegram-bota-pod-klyuch", context: "Полный цикл" },
         { anchor: "Telegram бот для Avito", url: "/blog/bot-dlya-avito-prodavca", context: "Автоматизация продаж" },
     ],

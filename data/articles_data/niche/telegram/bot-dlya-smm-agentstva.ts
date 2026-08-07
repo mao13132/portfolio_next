@@ -8,7 +8,7 @@ const SITE_URL = 'https://dima-razrab.com';
 export const articleBotDlyaSmmAgentstva: Article = {
     slug: "bot-dlya-smm-agentstva",
     title: "Telegram бот для SMM-агентства: кейсы, бриф, отчёты",
-    metaDescription: "Telegram бот для SMM-агентства от 35 000 ₽. Портфолио кейсов, автоматический бриф, калькулятор, отчёты. ROI 700%. Бесплатная оценка за 24 часа →",
+    metaDescription: "Telegram бот для SMM-агентства от 35 000 ₽. Портфолио кейсов, автоматический бриф, калькулятор, отчёты. ROI 700%.. Портфоли. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для smm агентства, бот smm, автоматизация smm агентства, telegram бот ведение соцсетей",
     h1: "Telegram бот для SMM-агентства: как увеличить клиентов на 200% с помощью автоматизации",
     ogTitle: "Telegram бот для SMM-агентства — кейсы 24/7, ROI 700%",

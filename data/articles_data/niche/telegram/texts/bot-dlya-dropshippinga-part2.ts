@@ -40,7 +40,7 @@ export const botDlyaDropshippingaPart2: ArticleSection[] = [
             content: `- [Telegram бот для бизнеса](/blog/telegram-bot-dlya-biznesa) — задачи ботов
 - [Стоимость разработки Telegram-бота](/blog/stoimost-razrabotki) — реальные цены
 - [Разработка бота под ключ](/blog/razrabotka-telegram-bota-pod-klyuch) — полный цикл
-- [Telegram бот для селлера Wildberries](/blog/bot-dlya-selera-wb) — автоматизация маркетплейсов
+- [Telegram бот для селлера Wildberries](/blog/bot-dlya-selera-wildberries) — автоматизация маркетплейсов
 - [Заказать разработку бота](/razrabotka-botov) — бесплатная оценка`,
         },
 ];

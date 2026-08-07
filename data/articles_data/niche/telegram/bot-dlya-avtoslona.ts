@@ -7,8 +7,8 @@ const SITE_URL = 'https://dima-razrab.com';
 
 export const articleBotDlyaAvtosalona: Article = {
     slug: "bot-dlya-avtoslona",
-    title: "Telegram бот для автосалона: каталог, тест-драйв, trade-in",
-    metaDescription: "Telegram бот для автосалона от 40 000 ₽. Каталог авто, запись на тест-драйв, trade-in, follow-up. Бесплатная оценка за 24 часа →",
+    title: "Telegram бот для автосалона: каталог авто, тест-драйв, trade-in",
+    metaDescription: "Telegram бот для автосалона от 40 000 ₽. Каталог авто, запись на тест-драйв, trade-in, follow-up.. Каталог авто, тест-драйв. Бесплатная оценка за 24 часа →",
     keywords: "telegram бот для автосалона, бот автосалон, автоматизация автосалона, telegram бот тест-драйв",
     h1: "Telegram бот для автосалона: как увеличить тест-драйвы на 200% и продажи на 150%",
     ogTitle: "Telegram бот для автосалона — каталог 24/7",
