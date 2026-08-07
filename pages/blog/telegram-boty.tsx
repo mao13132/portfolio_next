@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { telegramBotyArticles } from '@/data/articles';
+import { nicheArticles } from '@/data/articles_data/niche/telegram/registry';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
@@ -245,6 +246,71 @@ export default function TelegramBotyHubPage() {
                                 </motion.article>
                             ))}
                         </div>
+
+                        {/* ═══════ NICHE ARTICLES SECTION ═══════ */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                            style={{
+                                maxWidth: 800,
+                                margin: '60px auto',
+                                background: 'var(--lp-glass-bg)',
+                                border: '1px solid var(--lp-glass-border)',
+                                borderRadius: 'var(--lp-radius-lg)',
+                                padding: '40px 36px',
+                                backdropFilter: 'blur(var(--lp-glass-blur))',
+                                WebkitBackdropFilter: 'blur(var(--lp-glass-blur))',
+                            }}
+                        >
+                            <h2 style={{ fontSize: '24px', fontWeight: 700, marginBottom: '16px', color: 'var(--lp-text)' }}>
+                                🏭 Боты для <span className={styles.textAccent}>конкретных отраслей</span>
+                            </h2>
+                            <p style={{ fontSize: '16px', color: 'var(--lp-text-muted)', marginBottom: '20px', lineHeight: 1.7 }}>
+                                {nicheArticles.length} подробных руководств по Telegram-ботам для конкретных ниш:
+                                салоны красоты, рестораны, аптеки, юристы, фитнес, доставка и ещё 48 отраслей.
+                                Каждая статья — реальный кейс с цифрами ROI и пошаговым планом внедрения.
+                            </p>
+                            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '20px' }}>
+                                {nicheArticles.slice(0, 12).map((a) => (
+                                    <Link
+                                        key={a.slug}
+                                        href={`/blog/${a.slug}`}
+                                        style={{
+                                            display: 'inline-block',
+                                            padding: '6px 14px',
+                                            background: 'rgba(0, 212, 255, 0.1)',
+                                            border: '1px solid rgba(0, 212, 255, 0.2)',
+                                            borderRadius: '20px',
+                                            color: 'var(--lp-cyan)',
+                                            fontSize: '13px',
+                                            textDecoration: 'none',
+                                            fontWeight: 500,
+                                        }}
+                                    >
+                                        {a.heroBadge?.split('•')[0]?.trim() || a.title.split(':')[0]}
+                                    </Link>
+                                ))}
+                            </div>
+                            <a
+                                href="/blog/telegram-boty-dlya-otraslej"
+                                style={{
+                                    display: 'inline-block',
+                                    padding: '12px 28px',
+                                    background: 'rgba(0, 212, 255, 0.15)',
+                                    border: '1px solid var(--lp-cyan)',
+                                    borderRadius: 'var(--lp-radius-sm)',
+                                    color: 'var(--lp-cyan)',
+                                    fontSize: '15px',
+                                    fontWeight: 600,
+                                    textDecoration: 'none',
+                                    transition: 'all 0.3s ease',
+                                }}
+                            >
+                                Все {nicheArticles.length} нишевых статей →
+                            </a>
+                        </motion.div>
 
                         {/* ═══════ CTA ═══════ */}
                         <motion.div

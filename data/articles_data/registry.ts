@@ -90,6 +90,9 @@ import { konstruktoryArticles } from './konstruktory/registry';
 /* Cluster L: Автоматизация склада */
 import { skladArticles } from './sklad/registry';
 
+/* Нишевые статьи по отраслям */
+import { nicheArticles } from './niche/telegram/registry';
+
 /* Кластер Telegram-ботов (27 статей) */
 export const telegramBotyArticles: Article[] = [
     articlePriyomZayavok,
@@ -168,6 +171,8 @@ export const articles: Article[] = [
     ...konstruktoryArticles,
     /* Cluster L: Автоматизация склада */
     ...skladArticles,
+    /* Нишевые статьи по отраслям */
+    ...nicheArticles,
 ];
 
 export const getArticleBySlug = (slug: string): Article | undefined =>

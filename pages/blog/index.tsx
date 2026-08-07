@@ -15,6 +15,7 @@ import { vebArticles } from '@/data/articles_data/veb/registry';
 import { mobileArticles } from '@/data/articles_data/mobile/registry';
 import { konstruktoryArticles } from '@/data/articles_data/konstruktory/registry';
 import { skladArticles } from '@/data/articles_data/sklad/registry';
+import { nicheArticles } from '@/data/articles_data/niche/telegram/registry';
 import { ParticlesBg } from '@/app/Components/Landing/ParticlesBg';
 import { LandingHeader } from '@/app/Components/Landing/LandingHeader';
 import { ScrollProgressBar } from '@/app/Components/Landing/ScrollProgressBar';
@@ -130,6 +131,15 @@ const clusters = [
         hubUrl: '/blog/mobilnye-prilozheniya',
         color: '#8b5cf6',
         articles: mobileArticles,
+    },
+    {
+        key: 'niche-telegram-bots',
+        title: 'Боты по отраслям',
+        emoji: '🏭',
+        description: '54 готовых решения Telegram-ботов для конкретных ниш: салоны, рестораны, аптеки, юристы, фитнес, доставка.',
+        hubUrl: '/blog/telegram-boty-dlya-otraslej',
+        color: '#f43f5e',
+        articles: nicheArticles,
     },
     {
         key: 'konstruktory',
