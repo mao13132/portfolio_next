@@ -368,6 +368,7 @@ async function main() {
     'ai-integracii', 'avtomatizaciya-biznesa', 'lidogeneraciya-telegram',
     'mobilnye-prilozheniya', 'nextjs-razrabotka', 'parsery-marketplejsov',
     'python-razrabotka', 'razrabotka-api', 'telegram-boty', 'veb-razrabotka',
+    'telegram-boty-dlya-otraslej',
   ]);
 
   // 3. Sitemap есть, но НЕТ в registry → 🟡 (кроме hub pages)
@@ -441,14 +442,14 @@ async function main() {
   if (domainNotInRegistry.length > 0) {
     console.log(`\n   ${C.red}${C.bold}Domain файл НЕ в registry → 500 ошибка при запросе!${C.reset}`);
     for (const item of domainNotInRegistry.sort((a, b) => a.slug.localeCompare(b.slug))) {
-      console.log(`   ${C.red}• /blog/${item.slug}${C.reset} ${C.dim}(${item.relPath})${C.reset}`);
+      console.log(`   ${C.red}• ${SITE_URL}/blog/${item.slug}${C.reset} ${C.dim}(${item.relPath})${C.reset}`);
     }
   }
 
   if (registryNotInSitemap.length > 0) {
     console.log(`\n   ${C.red}${C.bold}Registry есть, но НЕТ в sitemap → забыли добавить на бэкенде${C.reset}`);
     for (const item of registryNotInSitemap.sort((a, b) => a.slug.localeCompare(b.slug))) {
-      console.log(`   ${C.red}• /blog/${item.slug}${C.reset}`);
+      console.log(`   ${C.red}• ${SITE_URL}/blog/${item.slug}${C.reset}`);
     }
   }
 
@@ -463,7 +464,7 @@ async function main() {
   if (sitemapNotInRegistry.length > 0) {
     console.log(`\n   ${C.yellow}${C.bold}Sitemap ссылается на несуществующую статью (нет в registry):${C.reset}`);
     for (const item of sitemapNotInRegistry.sort((a, b) => a.slug.localeCompare(b.slug))) {
-      console.log(`   ${C.yellow}• /blog/${item.slug}${C.reset}`);
+      console.log(`   ${C.yellow}• ${SITE_URL}/blog/${item.slug}${C.reset}`);
     }
   }
 
@@ -477,7 +478,7 @@ async function main() {
   if (missingTextParts.length > 0) {
     console.log(`\n   ${C.yellow}${C.bold}Domain файл без текстовых частей:${C.reset}`);
     for (const item of missingTextParts.sort((a, b) => a.slug.localeCompare(b.slug))) {
-      console.log(`   ${C.yellow}• /blog/${item.slug}${C.reset} ${C.dim}(${item.relPath})${C.reset}`);
+      console.log(`   ${C.yellow}• ${SITE_URL}/blog/${item.slug}${C.reset} ${C.dim}(${item.relPath})${C.reset}`);
     }
   }
 
@@ -511,10 +512,19 @@ async function main() {
   }
 
   // ─── Список для деплоя (если есть что добавить) ───
-  if (registryNotInSitemap.length > 0) {
+  const deployList = [];
+  for (const item of registryNotInSitemap) {
+    deployList.push(`${SITE_URL}/blog/${item.slug}`);
+  }
+  for (const item of pagesNotInSitemap) {
+    if (!deployList.includes(item.url)) {
+      deployList.push(item.url);
+    }
+  }
+  if (deployList.length > 0) {
     console.log(`\n${C.bold}📋 СПИСОК ДЛЯ ДЕПЛОЯ (добавить в sitemap backend):${C.reset}`);
-    for (const item of registryNotInSitemap.sort((a, b) => a.slug.localeCompare(b.slug))) {
-      console.log(`   ${C.cyan}/blog/${item.slug}${C.reset}`);
+    for (const url of deployList.sort()) {
+      console.log(`   ${C.cyan}${url}${C.reset}`);
     }
   }
 
