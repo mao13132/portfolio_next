@@ -61,28 +61,20 @@ const renderCompareBlock = (content: string, key: number) => {
     const afterItems = extractItems(afterText);
 
     return (
-        <div key={key} className="compareBlock" style={{
-            display: 'flex', gap: '20px', margin: '24px 0',
-        }}>
-            <div className="compareItem compareBefore" style={{
-                flex: 1, padding: '24px', borderRadius: '12px',
-                background: 'rgba(239,68,68,0.06)', border: '1px solid rgba(239,68,68,0.2)',
-            }}>
-                <h4 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '12px', color: '#ef4444' }}>{beforeTitle}</h4>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+        <div key={key} className={styles.compareBlock}>
+            <div className={`${styles.compareItem} ${styles.compareBefore}`}>
+                <h4>{beforeTitle}</h4>
+                <ul>
                     {beforeItems.map((item, j) => (
-                        <li key={j} style={{ padding: '4px 0', fontSize: '15px', color: 'var(--lp-text-muted)' }}>{item}</li>
+                        <li key={j}>{item}</li>
                     ))}
                 </ul>
             </div>
-            <div className="compareItem compareAfter" style={{
-                flex: 1, padding: '24px', borderRadius: '12px',
-                background: 'rgba(34,197,94,0.06)', border: '1px solid rgba(34,197,94,0.2)',
-            }}>
-                <h4 style={{ fontSize: '18px', fontWeight: 700, marginBottom: '12px', color: '#22c55e' }}>{afterTitle}</h4>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            <div className={`${styles.compareItem} ${styles.compareAfter}`}>
+                <h4>{afterTitle}</h4>
+                <ul>
                     {afterItems.map((item, j) => (
-                        <li key={j} style={{ padding: '4px 0', fontSize: '15px', color: 'var(--lp-text-muted)' }}>{item}</li>
+                        <li key={j}>{item}</li>
                     ))}
                 </ul>
             </div>
@@ -259,6 +251,48 @@ const renderContent = (text: string) => {
         // Handle horizontal rule
         if (isHr(trimmed)) {
             return <hr key={i} style={{ border: 'none', borderTop: '1px solid var(--lp-glass-border)', margin: '24px 0' }} />;
+        }
+
+        // Handle blockquotes (> ... lines)
+        if (trimmed.startsWith('>')) {
+            const quoteLines = trimmed.split('\n')
+                .map(l => l.replace(/^>\s*/, '').trim())
+                .filter(l => l.length > 0);
+            return (
+                <div key={i} className="articleBlockquote">
+                    {quoteLines.map((line, j) => (
+                        <p key={j} style={{ margin: j > 0 ? '8px 0 0' : 0 }}>
+                            {parseInlineMarkdown(line)}
+                        </p>
+                    ))}
+                </div>
+            );
+        }
+
+        // Handle headings (### h3, ## h2, # h1)
+        const headingMatch = trimmed.match(/^(#{1,3})\s+(.+)$/);
+        if (headingMatch) {
+            const level = headingMatch[1].length;
+            const text = headingMatch[2];
+            const cls = level === 1 ? 'articleInlineH1' : level === 2 ? 'articleInlineH2' : 'articleInlineH3';
+            const Tag = (`h${level}` as keyof JSX.IntrinsicElements);
+            return (
+                <Tag key={i} className={cls}>
+                    {parseInlineMarkdown(text)}
+                </Tag>
+            );
+        }
+
+        // Handle code blocks (```lang ... ```)
+        if (trimmed.startsWith('```')) {
+            const codeMatch = trimmed.match(/^```\w*\n([\s\S]*?)```$/);
+            if (codeMatch) {
+                return (
+                    <pre key={i} className="articleCodeBlock">
+                        <code>{codeMatch[1]}</code>
+                    </pre>
+                );
+            }
         }
 
         // Handle tables
