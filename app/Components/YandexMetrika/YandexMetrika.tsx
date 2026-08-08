@@ -44,12 +44,12 @@ export default function YandexMetrika(): JSX.Element | null {
                 strategy="afterInteractive"
             />
 
-            {/* Шаг 3: Инициализация счётчика (ym — уже очередь, вызов встанет в очередь) */}
+            {/* Шаг 3: Инициализация счётчика — БЕЗ defer, чтобы clickmap работал сразу */}
             <Script
                 id="ym-init"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
-                    __html: `ym(${METRIKA_ID},"init",{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",accurateTrackBounce:true,trackLinks:true});`,
+                    __html: `ym(${METRIKA_ID},"init",{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true,trackHash:true});`,
                 }}
             />
 
@@ -60,6 +60,7 @@ export default function YandexMetrika(): JSX.Element | null {
                         src={`https://mc.yandex.ru/watch/${METRIKA_ID}`}
                         style={{ position: 'absolute', left: '-9999px' }}
                         alt=""
+                        referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
             </noscript>
